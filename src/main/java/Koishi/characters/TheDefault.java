@@ -4,9 +4,6 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -31,7 +28,7 @@ import Koishi.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static Koishi.DefaultMod.*;
-import static Koishi.characters.TheDefault.Enums.COLOR_GRAY;
+import static Koishi.characters.TheDefault.Enums.COLOR_DARK_GREEN;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -49,10 +46,10 @@ public class TheDefault extends CustomPlayer {
 
     public static class Enums {
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_DEFAULT;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
-        public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
+        public static AbstractPlayer.PlayerClass KOISHI;
+        @SpireEnum(name = "DARK_GREEN_COLOR") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor COLOR_DARK_GREEN;
+        @SpireEnum(name = "DARK_GREEN_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
 
@@ -73,7 +70,7 @@ public class TheDefault extends CustomPlayer {
 
     // =============== STRINGS =================
 
-    private static final String ID = makeID("DefaultCharacter");
+    private static final String ID = makeID("Koishi");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
@@ -205,13 +202,13 @@ public class TheDefault extends CustomPlayer {
     // Should return the card color enum to be associated with your character.
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return COLOR_GRAY;
+        return COLOR_DARK_GREEN;
     }
 
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return Koishi.DefaultMod.DEFAULT_GRAY;
+        return Koishi.DefaultMod.DARK_GREEN;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -248,14 +245,14 @@ public class TheDefault extends CustomPlayer {
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return Koishi.DefaultMod.DEFAULT_GRAY;
+        return Koishi.DefaultMod.DARK_GREEN;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return Koishi.DefaultMod.DEFAULT_GRAY;
+        return Koishi.DefaultMod.DARK_GREEN;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects

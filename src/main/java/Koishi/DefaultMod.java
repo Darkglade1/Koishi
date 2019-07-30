@@ -1,7 +1,6 @@
 package Koishi;
 
 import basemod.BaseMod;
-import basemod.ModLabel;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
@@ -95,7 +94,7 @@ public class DefaultMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
+    public static final Color DARK_GREEN = CardHelper.getColor(2.0f, 40.0f, 0.0f);
     
     // Potion Colors in RGB
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
@@ -110,16 +109,16 @@ public class DefaultMod implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "KoishiResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "KoishiResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "KoishiResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_GREEN = "KoishiResources/images/512/bg_attack_green.png";
+    private static final String SKILL_GREEN = "KoishiResources/images/512/bg_skill_green.png";
+    private static final String POWER_GREEN = "KoishiResources/images/512/bg_power_green.png";
     
     private static final String ENERGY_ORB_DEFAULT_GRAY = "KoishiResources/images/512/card_default_gray_orb.png";
     private static final String CARD_ENERGY_ORB = "KoishiResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_power_default_gray.png";
+    private static final String ATTACK_GREEN_PORTRAIT = "KoishiResources/images/1024/bg_attack_green.png";
+    private static final String SKILL_GREEN_PORTRAIT = "KoishiResources/images/1024/bg_skill_green.png";
+    private static final String POWER_GREEN_PORTRAIT = "KoishiResources/images/1024/bg_power_green.png";
     private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
@@ -163,7 +162,7 @@ public class DefaultMod implements
     // =============== /INPUT TEXTURE LOCATION/ =================
     
     
-    // =============== SUBSCRIBE, CREATE THE COLOR_GRAY, INITIALIZE =================
+    // =============== SUBSCRIBE, CREATE THE COLOR_DARK_GREEN, INITIALIZE =================
     
     public DefaultMod() {
         logger.info("Subscribe to BaseMod hooks");
@@ -196,12 +195,12 @@ public class DefaultMod implements
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + TheDefault.Enums.COLOR_GRAY.toString());
+        logger.info("Creating the color " + TheDefault.Enums.COLOR_DARK_GREEN.toString());
         
-        BaseMod.addColor(TheDefault.Enums.COLOR_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
+        BaseMod.addColor(TheDefault.Enums.COLOR_DARK_GREEN, DARK_GREEN, DARK_GREEN, DARK_GREEN,
+                DARK_GREEN, DARK_GREEN, DARK_GREEN, DARK_GREEN,
+                ATTACK_GREEN, SKILL_GREEN, POWER_GREEN, ENERGY_ORB_DEFAULT_GRAY,
+                ATTACK_GREEN_PORTRAIT, SKILL_GREEN_PORTRAIT, POWER_GREEN_PORTRAIT,
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
@@ -274,20 +273,20 @@ public class DefaultMod implements
         logger.info("========================= /Default Mod Initialized. Hello World./ =========================");
     }
     
-    // ============== /SUBSCRIBE, CREATE THE COLOR_GRAY, INITIALIZE/ =================
+    // ============== /SUBSCRIBE, CREATE THE COLOR_DARK_GREEN, INITIALIZE/ =================
     
     
     // =============== LOAD THE CHARACTER =================
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.KOISHI.toString());
         
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.KOISHI),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.KOISHI);
         
         receiveEditPotions();
-        logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + TheDefault.Enums.KOISHI.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================
@@ -350,9 +349,9 @@ public class DefaultMod implements
         logger.info("Beginning to edit potions");
         
         // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
+        // just remove the player class at the end (in this case the "TheDefaultEnum.KOISHI".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.KOISHI);
         
         logger.info("Done editing potions");
     }
@@ -367,9 +366,9 @@ public class DefaultMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_GRAY);
+        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_DARK_GREEN);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);

@@ -1,6 +1,5 @@
 package Koishi.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -38,7 +37,7 @@ public class DefaultCommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = TheDefault.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;
     private static final int MAGIC = 1;
