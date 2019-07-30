@@ -110,31 +110,27 @@ public class DefaultMod implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "Koishi/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "Koishi/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "Koishi/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_DEFAULT_GRAY = "KoishiResources/images/512/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY = "KoishiResources/images/512/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY = "KoishiResources/images/512/bg_power_default_gray.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "Koishi/images/512/card_default_gray_orb.png";
-    private static final String CARD_ENERGY_ORB = "Koishi/images/512/card_small_orb.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY = "KoishiResources/images/512/card_default_gray_orb.png";
+    private static final String CARD_ENERGY_ORB = "KoishiResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "Koishi/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "Koishi/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "Koishi/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "Koishi/images/1024/card_default_gray_orb.png";
+    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_attack_default_gray.png";
+    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_skill_default_gray.png";
+    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/bg_power_default_gray.png";
+    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "KoishiResources/images/1024/card_default_gray_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "Koishi/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "Koishi/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "Koishi/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "Koishi/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "Koishi/images/char/defaultCharacter/corpse.png";
+    private static final String THE_DEFAULT_BUTTON = "KoishiResources/images/charSelect/DefaultCharacterButton.png";
+    private static final String THE_DEFAULT_PORTRAIT = "KoishiResources/images/charSelect/KoishiCharacterPortrait.png";
+    public static final String THE_DEFAULT_SHOULDER_1 = "KoishiResources/images/char/defaultCharacter/shoulder.png";
+    public static final String THE_DEFAULT_SHOULDER_2 = "KoishiResources/images/char/defaultCharacter/shoulder2.png";
+    public static final String THE_DEFAULT_CORPSE = "KoishiResources/images/char/defaultCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
-    public static final String BADGE_IMAGE = "Koishi/images/Badge.png";
-    
-    // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "Koishi/images/char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "Koishi/images/char/defaultCharacter/skeleton.json";
+    public static final String BADGE_IMAGE = "KoishiResources/images/Badge.png";
     
     // =============== MAKE IMAGE PATHS =================
     

@@ -15,7 +15,7 @@
         <file id="11" name="Idle Animation/tile011.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
     </folder>
     <entity id="0" name="Koishi">
-        <animation id="0" name="Idle" length="1250" interval="100">
+        <animation id="0" name="Idle" length="1100" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
@@ -55,9 +55,6 @@
                 </key>
                 <key id="12" time="1099" curve_type="cubic" c1="0.706468" c2="0.78607">
                     <object_ref id="0" timeline="11" key="0" z_index="0"/>
-                </key>
-                <key id="13" time="1200" curve_type="cubic" c1="0.706468" c2="0.78607">
-                    <object_ref id="0" timeline="12" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="tile000">
@@ -121,11 +118,6 @@
             <timeline id="11" name="tile011">
                 <key id="0" time="1099" spin="0">
                     <object folder="0" file="11" x="-104" y="264" angle="0"/>
-                </key>
-            </timeline>
-            <timeline id="12" name="tile000_000">
-                <key id="0" time="1200" spin="0">
-                    <object folder="0" file="0" x="-104" y="264"/>
                 </key>
             </timeline>
         </animation>
