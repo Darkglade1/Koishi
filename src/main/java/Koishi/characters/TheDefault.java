@@ -119,16 +119,7 @@ public class TheDefault extends CustomPlayer {
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
 
-        // =============== ANIMATIONS =================  
 
-//        loadAnimation(
-//                THE_DEFAULT_SKELETON_ATLAS,
-//                THE_DEFAULT_SKELETON_JSON,
-//                1.0f);
-        //AnimationState.TrackEntry e = state.setAnimation(0, "Idle", true);
-        //e.setTime(e.getEndTime() * MathUtils.random());
-
-        // =============== /ANIMATIONS/ =================
 
 
         // =============== TEXT BUBBLE LOCATION =================
@@ -148,14 +139,6 @@ public class TheDefault extends CustomPlayer {
         return new CharSelectInfo(NAMES[0], TEXT[0],
                 STARTING_HP, MAX_HP, ORB_SLOTS, STARTING_GOLD, CARD_DRAW, this, getStartingRelics(),
                 getStartingDeck(), false);
-    }
-
-    @Override
-    public void renderPlayerImage(SpriteBatch sb)
-    {
-        sr.setPremultipliedAlpha(false);
-        super.renderPlayerImage(sb);
-        sr.setPremultipliedAlpha(true);
     }
 
     // Starting Deck
