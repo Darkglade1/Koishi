@@ -1,15 +1,15 @@
 package Koishi.cards;
 
+import Koishi.KoishiMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.DefaultMod;
-import Koishi.characters.TheDefault;
+import Koishi.characters.KoishiCharacter;
 
-import static Koishi.DefaultMod.makeCardPath;
+import static Koishi.KoishiMod.makeCardPath;
 
 public class DefaultUncommonAttack extends AbstractDynamicCard {
 
@@ -21,7 +21,7 @@ public class DefaultUncommonAttack extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = DefaultMod.makeID(DefaultUncommonAttack.class.getSimpleName());
+    public static final String ID = KoishiMod.makeID(DefaultUncommonAttack.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     // /TEXT DECLARATION/
@@ -32,7 +32,7 @@ public class DefaultUncommonAttack extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_DARK_GREEN;
+    public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;
     private static final int DAMAGE = 10;

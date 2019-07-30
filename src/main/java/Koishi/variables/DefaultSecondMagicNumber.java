@@ -4,7 +4,7 @@ import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import Koishi.cards.AbstractDefaultCard;
 
-import static Koishi.DefaultMod.makeID;
+import static Koishi.KoishiMod.makeID;
 
 public class DefaultSecondMagicNumber extends DynamicVariable {
 

@@ -19,7 +19,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import Koishi.DefaultMod;
+import Koishi.KoishiMod;
 import Koishi.cards.*;
 import Koishi.relics.DefaultClickableRelic;
 import Koishi.relics.PlaceholderRelic;
@@ -27,15 +27,15 @@ import Koishi.relics.PlaceholderRelic2;
 
 import java.util.ArrayList;
 
-import static Koishi.DefaultMod.*;
-import static Koishi.characters.TheDefault.Enums.COLOR_DARK_GREEN;
+import static Koishi.KoishiMod.*;
+import static Koishi.characters.KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
-//All text (starting description and loadout, anything labeled TEXT[]) can be found in DefaultMod-character-Strings.json in the resources
+//All text (starting description and loadout, anything labeled TEXT[]) can be found in KoishiMod-character-Strings.json in the resources
 
-public class TheDefault extends CustomPlayer {
-    public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
+public class KoishiCharacter extends CustomPlayer {
+    public static final Logger logger = LogManager.getLogger(KoishiMod.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
     // These are enums for your Characters color (both general color and for the card library) as well as
@@ -97,7 +97,7 @@ public class TheDefault extends CustomPlayer {
 
     // =============== CHARACTER CLASS START =================
 
-    public TheDefault(String name, PlayerClass setClass) {
+    public KoishiCharacter(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "KoishiResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
@@ -107,7 +107,7 @@ public class TheDefault extends CustomPlayer {
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                // I left these in DefaultMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
+                // I left these in KoishiMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
                 THE_DEFAULT_SHOULDER_1, // campfire pose
                 THE_DEFAULT_SHOULDER_2, // another campfire pose
                 THE_DEFAULT_CORPSE, // dead corpse
@@ -208,7 +208,7 @@ public class TheDefault extends CustomPlayer {
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return Koishi.DefaultMod.DARK_GREEN;
+        return KoishiMod.DARK_GREEN;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -239,20 +239,20 @@ public class TheDefault extends CustomPlayer {
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new TheDefault(name, chosenClass);
+        return new KoishiCharacter(name, chosenClass);
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return Koishi.DefaultMod.DARK_GREEN;
+        return KoishiMod.DARK_GREEN;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return Koishi.DefaultMod.DARK_GREEN;
+        return KoishiMod.DARK_GREEN;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects

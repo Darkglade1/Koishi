@@ -1,15 +1,15 @@
 package Koishi.cards;
 
+import Koishi.KoishiMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.DefaultMod;
-import Koishi.characters.TheDefault;
+import Koishi.characters.KoishiCharacter;
 
-import static Koishi.DefaultMod.makeCardPath;
+import static Koishi.KoishiMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 public class CardTemplate extends AbstractDynamicCard {
@@ -34,8 +34,8 @@ public class CardTemplate extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    // public static final String ID = DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String ID = DefaultMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    // public static final String ID = KoishiMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
+    public static final String ID = KoishiMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
@@ -48,7 +48,7 @@ public class CardTemplate extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
     private static final CardType TYPE = CardType.ATTACK;       //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_DARK_GREEN;
+    public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;  // COST = ${COST}
     private static final int UPGRADED_COST = 0; // UPGRADED_COST = ${UPGRADED_COST}

@@ -3,11 +3,11 @@ package Koishi.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import Koishi.DefaultMod;
+import Koishi.KoishiMod;
 import Koishi.util.TextureLoader;
 
-import static Koishi.DefaultMod.makeRelicOutlinePath;
-import static Koishi.DefaultMod.makeRelicPath;
+import static Koishi.KoishiMod.makeRelicOutlinePath;
+import static Koishi.KoishiMod.makeRelicPath;
 
 public class PlaceholderRelic extends CustomRelic {
 
@@ -18,7 +18,7 @@ public class PlaceholderRelic extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic");
+    public static final String ID = KoishiMod.makeID("PlaceholderRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

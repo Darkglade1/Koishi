@@ -1,4 +1,5 @@
 Koishi\actions\UncommonPowerAction.class
+Koishi\characters\KoishiCharacter.class
 Koishi\cards\DefaultCommonAttack.class
 Koishi\util\TextureLoader.class
 Koishi\cards\CardTemplate.class
@@ -7,8 +8,6 @@ Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\util\IDCheckDontTouchPls.class
 Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
-Koishi\characters\TheDefault.class
-Koishi\characters\TheDefault$Enums.class
 Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
@@ -19,6 +18,7 @@ Koishi\powers\CommonPower.class
 Koishi\cards\AbstractDefaultCard.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
+Koishi\KoishiMod.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\relics\DefaultClickableRelic.class
 Koishi\events\IdentityCrisisEvent.class
@@ -28,9 +28,9 @@ Koishi\cards\DefaultRareAttack.class
 Koishi\cards\DefaultRareSkill.class
 Koishi\potions\PlaceholderPotion.class
 Koishi\cards\AbstractDynamicCard.class
-Koishi\DefaultMod.class
 Koishi\cards\DefaultRarePower.class
 Koishi\cards\DefaultAttackWithVariable.class
+Koishi\characters\KoishiCharacter$Enums.class
 Koishi\cards\DefaultCommonPower.class
 Koishi\powers\RarePower.class
 Koishi\variables\DefaultCustomVariable.class

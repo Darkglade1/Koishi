@@ -1,16 +1,16 @@
 package Koishi.cards;
 
+import Koishi.KoishiMod;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.DefaultMod;
-import Koishi.characters.TheDefault;
+import Koishi.characters.KoishiCharacter;
 import Koishi.powers.CommonPower;
 
-import static Koishi.DefaultMod.makeCardPath;
+import static Koishi.KoishiMod.makeCardPath;
 
 public class DefaultCommonPower extends AbstractDynamicCard {
 
@@ -23,7 +23,7 @@ public class DefaultCommonPower extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = DefaultMod.makeID(DefaultCommonPower.class.getSimpleName());
+    public static final String ID = KoishiMod.makeID(DefaultCommonPower.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -37,7 +37,7 @@ public class DefaultCommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_DARK_GREEN;
+    public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;
     private static final int MAGIC = 1;

@@ -1,15 +1,15 @@
 package Koishi.cards;
 
+import Koishi.KoishiMod;
 import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.DefaultMod;
-import Koishi.characters.TheDefault;
+import Koishi.characters.KoishiCharacter;
 import Koishi.powers.RarePower;
 
-import static Koishi.DefaultMod.makeCardPath;
+import static Koishi.KoishiMod.makeCardPath;
 
 public class DefaultRarePower extends AbstractDynamicCard {
 
@@ -21,7 +21,7 @@ public class DefaultRarePower extends AbstractDynamicCard {
 
     // TEXT DECLARATION 
 
-    public static final String ID = DefaultMod.makeID(DefaultRarePower.class.getSimpleName());
+    public static final String ID = KoishiMod.makeID(DefaultRarePower.class.getSimpleName());
     public static final String IMG = makeCardPath("Power.png");
 
     // /TEXT DECLARATION/
@@ -32,7 +32,7 @@ public class DefaultRarePower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_DARK_GREEN;
+    public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;
