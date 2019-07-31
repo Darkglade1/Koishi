@@ -11,7 +11,7 @@ import Koishi.characters.KoishiCharacter;
 
 import static Koishi.KoishiMod.makeCardPath;
 
-public class DefaultUncommonAttack extends AbstractDynamicCard {
+public class DefaultUncommonAttack extends AbstractDefaultCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

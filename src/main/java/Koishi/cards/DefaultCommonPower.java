@@ -12,7 +12,7 @@ import Koishi.powers.CommonPower;
 
 import static Koishi.KoishiMod.makeCardPath;
 
-public class DefaultCommonPower extends AbstractDynamicCard {
+public class DefaultCommonPower extends AbstractDefaultCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

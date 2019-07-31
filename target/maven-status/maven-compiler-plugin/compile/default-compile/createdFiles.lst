@@ -11,11 +11,15 @@ Koishi\cards\DefaultUncommonAttack.class
 Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
+Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
 Koishi\patches\DefaultInsertPatch$Locator.class
 Koishi\cards\DefaultUncommonSkill.class
+Koishi\patches\IdCardPatch.class
+Koishi\patches\IdCardPatch$Locator.class
 Koishi\powers\CommonPower.class
 Koishi\cards\AbstractDefaultCard.class
+Koishi\cards\SubconsciousSweep.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
@@ -27,7 +31,6 @@ Koishi\patches\relics\BottledPlaceholderField.class
 Koishi\cards\DefaultRareAttack.class
 Koishi\cards\DefaultRareSkill.class
 Koishi\potions\PlaceholderPotion.class
-Koishi\cards\AbstractDynamicCard.class
 Koishi\cards\DefaultRarePower.class
 Koishi\cards\DefaultAttackWithVariable.class
 Koishi\characters\KoishiCharacter$Enums.class

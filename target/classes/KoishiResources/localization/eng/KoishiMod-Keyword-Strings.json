@@ -1,6 +1,12 @@
 [
   {
     "NAMES": [
+      "id"
+    ],
+    "DESCRIPTION": "Id cards are automatically played when drawn."
+  },
+  {
+    "NAMES": [
       "keyword",
       "keywords"
     ],

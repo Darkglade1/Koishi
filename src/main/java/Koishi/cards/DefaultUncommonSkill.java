@@ -10,7 +10,7 @@ import Koishi.characters.KoishiCharacter;
 
 import static Koishi.KoishiMod.makeCardPath;
 
-public class DefaultUncommonSkill extends AbstractDynamicCard {
+public class DefaultUncommonSkill extends AbstractDefaultCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

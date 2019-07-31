@@ -12,7 +12,7 @@ import Koishi.orbs.DefaultOrb;
 
 import static Koishi.KoishiMod.makeCardPath;
 
-public class OrbSkill extends AbstractDynamicCard {
+public class OrbSkill extends AbstractDefaultCard {
 
     /*
      * Orb time.
