@@ -1,5 +1,7 @@
 package Koishi.characters;
 
+import Koishi.cards.Attacks.SubconsciousSweep;
+import Koishi.cards.Skills.UnconsciousUprising;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
@@ -146,8 +148,7 @@ public class KoishiCharacter extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
+        retVal.add(UnconsciousUprising.ID);
         retVal.add(SubconsciousSweep.ID);
         retVal.add(SubconsciousSweep.ID);
 

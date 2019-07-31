@@ -1,3 +1,4 @@
+Koishi\cards\Skills\IdleWhim.class
 Koishi\actions\UncommonPowerAction.class
 Koishi\characters\KoishiCharacter.class
 Koishi\cards\DefaultCommonAttack.class
@@ -8,6 +9,7 @@ Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\util\IDCheckDontTouchPls.class
 Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
+Koishi\cards\Skills\UnconsciousUprising.class
 Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
@@ -19,10 +21,10 @@ Koishi\patches\IdCardPatch.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\powers\CommonPower.class
 Koishi\cards\AbstractDefaultCard.class
-Koishi\cards\SubconsciousSweep.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
+Koishi\cards\Attacks\SubconsciousSweep.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\relics\DefaultClickableRelic.class
 Koishi\events\IdentityCrisisEvent.class

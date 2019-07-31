@@ -3,6 +3,14 @@
     "NAME": "Subconscious Sweep",
     "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
   },
+  "Koishi:IdleWhim": {
+    "NAME": "Idle Whim",
+    "DESCRIPTION": "Id. NL Draw !M! cards."
+  },
+  "Koishi:UnconsciousUprising": {
+    "NAME": "Unconscious Uprising",
+    "DESCRIPTION": "Id. NL Gain !B! Block."
+  },
   "Koishi:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

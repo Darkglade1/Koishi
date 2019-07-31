@@ -1,5 +1,8 @@
 package Koishi;
 
+import Koishi.cards.Attacks.SubconsciousSweep;
+import Koishi.cards.Skills.IdleWhim;
+import Koishi.cards.Skills.UnconsciousUprising;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
@@ -399,7 +402,13 @@ public class KoishiMod implements
         // Don't comment out/delete these cards (yet). You need 1 of each type and rarity (technically) for your game not to crash
         // when generating card rewards/shop screen items.
 
+        //Attacks
         BaseMod.addCard(new SubconsciousSweep());
+
+        //Skills
+        BaseMod.addCard(new IdleWhim());
+        BaseMod.addCard(new UnconsciousUprising());
+
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
@@ -419,6 +428,10 @@ public class KoishiMod implements
         // before playing your mod.
 
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
+
+        UnlockTracker.unlockCard(IdleWhim.ID);
+        UnlockTracker.unlockCard(UnconsciousUprising.ID);
+
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonAttack.ID);
