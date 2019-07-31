@@ -13,6 +13,7 @@ Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
 Koishi\cards\Skills\UnconsciousUprising.class
 Koishi\cards\OrbSkill.class
+Koishi\cards\Attacks\PhantomStrike.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class
@@ -23,6 +24,7 @@ Koishi\patches\IdCardPatch.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\powers\CommonPower.class
 Koishi\cards\AbstractDefaultCard.class
+Koishi\powers\EphemeralPower.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class

@@ -1,5 +1,6 @@
 package Koishi.characters;
 
+import Koishi.cards.Attacks.PhantomStrike;
 import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
@@ -149,10 +150,14 @@ public class KoishiCharacter extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
         retVal.add(DefaultCommonAttack.ID);
-        retVal.add(UnconsciousUprising.ID);
-        retVal.add(PredatoryInstincts.ID);
-        retVal.add(SubconsciousSweep.ID);
-        retVal.add(SubconsciousSweep.ID);
+        retVal.add(PhantomStrike.ID);
+        retVal.add(PhantomStrike.ID);
+        retVal.add(PhantomStrike.ID);
+        retVal.add(PhantomStrike.ID);
+//        retVal.add(UnconsciousUprising.ID);
+//        retVal.add(PredatoryInstincts.ID);
+//        retVal.add(SubconsciousSweep.ID);
+//        retVal.add(SubconsciousSweep.ID);
 
         return retVal;
     }

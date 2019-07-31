@@ -3,13 +3,19 @@
     "NAMES": [
       "id"
     ],
-    "DESCRIPTION": "Id cards are automatically played when drawn."
+    "DESCRIPTION": "Id cards are automatically used when drawn."
   },
   {
     "NAMES": [
       "terror"
     ],
     "DESCRIPTION": "Whenever an enemy dies, heal HP equal to its Terror."
+  },
+  {
+    "NAMES": [
+      "ephemeral"
+    ],
+    "DESCRIPTION": "Whenever you gain #b15 Ephemeral, gain #b1 Intangible."
   },
   {
     "NAMES": [

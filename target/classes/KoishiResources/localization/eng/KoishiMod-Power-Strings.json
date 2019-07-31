@@ -1,4 +1,8 @@
 {
+"Koishi:EphemeralPower": {
+        "NAME": "Ephemeral",
+        "DESCRIPTIONS": ["Whenever you gain #b", " Ephemeral, gain #b", " Intangible."]
+},
 "Koishi:TerrorPower": {
         "NAME": "Terror",
         "DESCRIPTIONS": ["When this enemy dies, heal #b", " HP."]

@@ -1,4 +1,8 @@
 {
+  "Koishi:PhantomStrike": {
+    "NAME": "Phantom Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Ephemeral."
+  },
   "Koishi:SubconsciousSweep": {
     "NAME": "Subconscious Sweep",
     "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
