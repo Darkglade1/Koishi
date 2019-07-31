@@ -1,4 +1,8 @@
 {
+"Koishi:TerrorPower": {
+        "NAME": "Terror",
+        "DESCRIPTIONS": ["When this enemy dies, heal #b", " HP."]
+},
 "Koishi:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

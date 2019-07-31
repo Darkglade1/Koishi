@@ -7,6 +7,12 @@
   },
   {
     "NAMES": [
+      "terror"
+    ],
+    "DESCRIPTION": "Whenever an enemy dies, heal HP equal to its Terror."
+  },
+  {
+    "NAMES": [
       "keyword",
       "keywords"
     ],

@@ -3,6 +3,10 @@
     "NAME": "Subconscious Sweep",
     "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
   },
+  "Koishi:PredatoryInstincts": {
+    "NAME": "Predatory Instincts",
+    "DESCRIPTION": "Id. NL Apply !M! Terror to ALL enemies."
+  },
   "Koishi:IdleWhim": {
     "NAME": "Idle Whim",
     "DESCRIPTION": "Id. NL Draw !M! cards."

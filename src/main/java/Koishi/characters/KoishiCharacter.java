@@ -1,6 +1,7 @@
 package Koishi.characters;
 
 import Koishi.cards.Attacks.SubconsciousSweep;
+import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
@@ -149,6 +150,7 @@ public class KoishiCharacter extends CustomPlayer {
 
         retVal.add(DefaultCommonAttack.ID);
         retVal.add(UnconsciousUprising.ID);
+        retVal.add(PredatoryInstincts.ID);
         retVal.add(SubconsciousSweep.ID);
         retVal.add(SubconsciousSweep.ID);
 

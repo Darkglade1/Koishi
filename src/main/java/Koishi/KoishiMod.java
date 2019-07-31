@@ -2,6 +2,7 @@ package Koishi;
 
 import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.IdleWhim;
+import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
@@ -406,6 +407,7 @@ public class KoishiMod implements
         BaseMod.addCard(new SubconsciousSweep());
 
         //Skills
+        BaseMod.addCard(new PredatoryInstincts());
         BaseMod.addCard(new IdleWhim());
         BaseMod.addCard(new UnconsciousUprising());
 
@@ -429,6 +431,7 @@ public class KoishiMod implements
 
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
 
+        UnlockTracker.unlockCard(PredatoryInstincts.ID);
         UnlockTracker.unlockCard(IdleWhim.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);
 
