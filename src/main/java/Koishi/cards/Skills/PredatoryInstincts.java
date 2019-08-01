@@ -31,6 +31,7 @@ public class PredatoryInstincts extends AbstractIdCard {
     public PredatoryInstincts() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DEBUFF;
+        KoishiMod.setBackground(this, 1);
     }
 
     @Override

@@ -4,6 +4,7 @@ import Koishi.cards.Attacks.PhantomStrike;
 import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
+import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
@@ -166,13 +167,7 @@ public class KoishiCharacter extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
-
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        retVal.add(ImaginaryFriend.ID);
 
         return retVal;
     }

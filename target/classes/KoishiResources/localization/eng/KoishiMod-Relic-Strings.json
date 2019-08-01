@@ -1,4 +1,11 @@
 {
+  "Koishi:ImaginaryFriend": {
+    "NAME": "Imaginary Friend",
+    "FLAVOR": "They'll forget about me. They always do.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain #b", " Ephemeral."
+    ]
+  },
   "Koishi:PlaceholderRelic": {
     "NAME": "Placeholder Energy Relic",
     "FLAVOR": "The snake is a friend.",

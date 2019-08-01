@@ -48,6 +48,7 @@ public class DefaultRareAttack extends AbstractDefaultCard {
     public DefaultRareAttack() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        KoishiMod.setBackground(this, 0);
     }
 
 

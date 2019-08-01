@@ -5,9 +5,11 @@ import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.IdleWhim;
 import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
+import Koishi.relics.ImaginaryFriend;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
+import basemod.abstracts.CustomCard;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -18,6 +20,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -371,6 +374,7 @@ public class KoishiMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
+        BaseMod.addRelicToCustomPool(new ImaginaryFriend(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
@@ -530,5 +534,21 @@ public class KoishiMod implements
     // in order to avoid conflicts if any other mod uses the same ID.
     public static String makeID(String idText) {
         return getModID() + ":" + idText;
+    }
+
+    //used to set background of Terror cards
+    public static void setBackground(CustomCard card, int type) {
+        switch (type) {
+            case 0:
+                card.setBackgroundTexture("KoishiResources/images/512/bg_attack_black.png", "KoishiResources/images/1024/bg_attack_black.png");
+                break;
+            case 1:
+                card.setBackgroundTexture("KoishiResources/images/512/bg_skill_black.png", "KoishiResources/images/1024/bg_skill_black.png");
+                break;
+            case 2:
+                card.setBackgroundTexture("KoishiResources/images/512/bg_power_black.png", "KoishiResources/images/1024/bg_power_black.png");
+                break;
+        }
+
     }
 }

@@ -46,7 +46,7 @@ public class DefaultRarePower extends AbstractDefaultCard {
 
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
-
+        KoishiMod.setBackground(this, 2);
         this.tags.add(BaseModCardTags.FORM); //Tag your strike, defend and form cards so that they work correctly.
 
     }
