@@ -32,6 +32,7 @@ public class UnconsciousUprising extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        ((KoishiCharacter)AbstractDungeon.player).runAnim("spellA");
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
     }
 
