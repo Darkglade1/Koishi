@@ -17,6 +17,7 @@ Koishi\cards\OrbSkill.class
 Koishi\cards\Attacks\PhantomStrike.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
+Koishi\BetterSpriterAnimation.class
 Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
 Koishi\patches\DefaultInsertPatch$Locator.class
@@ -38,6 +39,7 @@ Koishi\patches\relics\BottledPlaceholderField.class
 Koishi\cards\DefaultRareAttack.class
 Koishi\cards\DefaultRareSkill.class
 Koishi\potions\PlaceholderPotion.class
+Koishi\KoishiPlayerListener.class
 Koishi\cards\DefaultRarePower.class
 Koishi\cards\DefaultAttackWithVariable.class
 Koishi\characters\KoishiCharacter$Enums.class

@@ -1,0 +1,214 @@
+{
+  "skeleton": {
+    "width": 185,
+    "height": 295,
+    "fps": 20,
+    "hash": " ",
+    "name": "Sprite"
+  },
+  "bones": [{
+    "name": "root"
+  }],
+  "slots": [{
+    "name": "sheetSlot",
+    "bone": "root",
+    "attachment": "idle0"
+  }],
+  "skins": {
+    "default": {
+      "sheetSlot": {
+        "idle0": {
+          "name": "idle0",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle1": {
+          "name": "idle1",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle2": {
+          "name": "idle2",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle3": {
+          "name": "idle3",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle4": {
+          "name": "idle4",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle5": {
+          "name": "idle5",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle6": {
+          "name": "idle6",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle7": {
+          "name": "idle7",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle8": {
+          "name": "idle8",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle9": {
+          "name": "idle9",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle10": {
+          "name": "idle10",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "idle11": {
+          "name": "idle11",
+          "width": 185,
+          "height": 295,
+          "y": 162
+        },
+        "kick0": {
+          "name": "kick0",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick1": {
+          "name": "kick1",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick2": {
+          "name": "kick2",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick3": {
+          "name": "kick3",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick4": {
+          "name": "kick4",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick5": {
+          "name": "kick5",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        },
+        "kick6": {
+          "name": "kick6",
+          "width": 295,
+          "height": 331,
+          "y": 162
+        }
+      }
+    }
+  },
+  "animations": {
+    "idle": {
+      "slots": {
+        "sheetSlot": {
+          "attachment": [{
+            "time": 0,
+            "name": "idle0"
+          }, {
+            "time": 0.1,
+            "name": "idle1"
+          }, {
+            "time": 0.2,
+            "name": "idle2"
+          }, {
+            "time": 0.3,
+            "name": "idle3"
+          }, {
+            "time": 0.4,
+            "name": "idle4"
+          }, {
+            "time": 0.5,
+            "name": "idle5"
+          }, {
+            "time": 0.6,
+            "name": "idle6"
+          }, {
+            "time": 0.7,
+            "name": "idle7"
+          }, {
+            "time": 0.8,
+            "name": "idle8"
+          }, {
+            "time": 0.9,
+            "name": "idle9"
+          }, {
+            "time": 1.0,
+            "name": "idle10"
+          }, {
+            "time": 1.1,
+            "name": "idle11"
+          }]
+        }
+      }
+    }
+    "kick": {
+      "slots": {
+        "sheetSlot": {
+          "attachment": [{
+            "time": 0,
+            "name": "kick0"
+          }, {
+            "time": 0.075,
+            "name": "kick1"
+          }, {
+            "time": 0.150,
+            "name": "kick2"
+          }, {
+            "time": 0.225,
+            "name": "kick3"
+          }, {
+            "time": 0.30,
+            "name": "kick4"
+          }, {
+            "time": 0.375,
+            "name": "kick5"
+          }, {
+            "time": 0.45,
+            "name": "kick6"
+          }, {
+            "time": 0.525,
+            "name": "kick7"
+          }]
+        }
+      }
+    }
+
+  }
+}

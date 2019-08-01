@@ -1,14 +1,16 @@
 package Koishi.characters;
 
+import Koishi.BetterSpriterAnimation;
+import Koishi.KoishiMod;
+import Koishi.KoishiPlayerListener;
 import Koishi.cards.Attacks.PhantomStrike;
-import Koishi.cards.Attacks.SubconsciousSweep;
-import Koishi.cards.Skills.PredatoryInstincts;
-import Koishi.cards.Skills.UnconsciousUprising;
+import Koishi.cards.DefaultCommonAttack;
 import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.brashmonkey.spriter.Player;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -21,14 +23,8 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import Koishi.KoishiMod;
-import Koishi.cards.*;
-import Koishi.relics.DefaultClickableRelic;
-import Koishi.relics.PlaceholderRelic;
-import Koishi.relics.PlaceholderRelic2;
 
 import java.util.ArrayList;
 
@@ -104,10 +100,11 @@ public class KoishiCharacter extends CustomPlayer {
 
     public KoishiCharacter(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "KoishiResources/images/char/defaultCharacter/orb/vfx.png", null,
-                new SpriterAnimation(
+                "KoishiResources/images/char/defaultCharacter/orb/vfx.png", null, new BetterSpriterAnimation(
                         "KoishiResources/images/char/defaultCharacter/Spriter/KoishiAnimation.scml"));
 
+        Player.PlayerListener listener = new KoishiPlayerListener(this);
+        ((BetterSpriterAnimation)this.animation).myPlayer.addListener(listener);
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
@@ -121,7 +118,9 @@ public class KoishiCharacter extends CustomPlayer {
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
 
-
+//        loadAnimation("KoishiResources/images/char/defaultCharacter/Koishi.atlas", "KoishiResources/images/char/defaultCharacter/Koishi.json", 1.0F);
+//        AnimationState.TrackEntry e = this.state.setAnimation(0, "idle", true);
+//        e.setTime(e.getEndTime() * MathUtils.random());
 
 
         // =============== TEXT BUBBLE LOCATION =================
@@ -275,5 +274,16 @@ public class KoishiCharacter extends CustomPlayer {
     public String getVampireText() {
         return TEXT[2];
     }
+
+    //Runs a specific animation
+    public void runAnim(String animation) {
+        ((BetterSpriterAnimation)this.animation).myPlayer.setAnimation(animation);
+    }
+
+    //Resets character back to idle animation
+    public void resetAnimation() {
+        ((BetterSpriterAnimation)this.animation).myPlayer.setAnimation("idle");
+    }
+
 
 }

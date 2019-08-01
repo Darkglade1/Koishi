@@ -39,6 +39,7 @@ public class PhantomStrike extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        ((KoishiCharacter)AbstractDungeon.player).runAnim("kick");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, magicNumber), magicNumber));

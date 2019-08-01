@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
     <folder id="0" name="Idle Animation">
-        <file id="0" name="Idle Animation/tile000.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="1" name="Idle Animation/tile001.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="2" name="Idle Animation/tile002.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="3" name="Idle Animation/tile003.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="4" name="Idle Animation/tile004.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="5" name="Idle Animation/tile005.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="6" name="Idle Animation/tile006.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="7" name="Idle Animation/tile007.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="8" name="Idle Animation/tile008.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="9" name="Idle Animation/tile009.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="10" name="Idle Animation/tile010.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
-        <file id="11" name="Idle Animation/tile011.png" width="180" height="290" pivot_x="0" pivot_y="1"/>
+        <file id="0" name="Idle Animation/tile000.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Idle Animation/tile001.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Idle Animation/tile002.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Idle Animation/tile003.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="Idle Animation/tile004.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Idle Animation/tile005.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="Idle Animation/tile006.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="Idle Animation/tile007.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="8" name="Idle Animation/tile008.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="9" name="Idle Animation/tile009.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="10" name="Idle Animation/tile010.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+        <file id="11" name="Idle Animation/tile011.png" width="185" height="295" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="1" name="Kick Animation">
+        <file id="0" name="Kick Animation/kick0.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Kick Animation/kick1.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Kick Animation/kick2.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Kick Animation/kick3.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="Kick Animation/kick4.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Kick Animation/kick5.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="Kick Animation/kick6.png" width="295" height="331" pivot_x="0" pivot_y="1"/>
     </folder>
     <entity id="0" name="Koishi">
-        <animation id="0" name="Idle" length="1100" interval="100">
+        <animation id="0" name="idle" length="1100" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
@@ -118,6 +127,66 @@
             <timeline id="11" name="tile011">
                 <key id="0" time="1099" spin="0">
                     <object folder="0" file="11" x="-104" y="264" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="kick" length="650" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="100">
+                    <object_ref id="0" timeline="1" key="0" z_index="0"/>
+                </key>
+                <key id="2" time="198">
+                    <object_ref id="0" timeline="2" key="0" z_index="0"/>
+                </key>
+                <key id="3" time="300">
+                    <object_ref id="0" timeline="3" key="0" z_index="0"/>
+                </key>
+                <key id="4" time="399">
+                    <object_ref id="0" timeline="4" key="0" z_index="0"/>
+                </key>
+                <key id="5" time="499">
+                    <object_ref id="0" timeline="5" key="0" z_index="0"/>
+                </key>
+                <key id="6" time="601">
+                    <object_ref id="0" timeline="6" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="kick0">
+                <key id="0" spin="0">
+                    <object folder="1" file="0" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="kick1">
+                <key id="0" time="100" spin="0">
+                    <object folder="1" file="1" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="kick2">
+                <key id="0" time="198" spin="0">
+                    <object folder="1" file="2" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="kick3">
+                <key id="0" time="300" spin="0">
+                    <object folder="1" file="3" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="kick4">
+                <key id="0" time="399" spin="0">
+                    <object folder="1" file="4" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="kick5">
+                <key id="0" time="499" spin="0">
+                    <object folder="1" file="5" x="-145" y="300"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="kick6">
+                <key id="0" time="601" spin="0">
+                    <object folder="1" file="6" x="-145" y="300"/>
                 </key>
             </timeline>
         </animation>
