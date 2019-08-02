@@ -9,9 +9,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.exordium.Hexaghost;
 
+import java.util.function.Predicate;
+
 public class ForceIntentAction extends AbstractGameAction {
 
 	private AbstractIntentChangingCard.IntentTypes intentType;
+	private static Predicate<AbstractMonster> attackTest = (mo) -> mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF;
+	private static Predicate<AbstractMonster> notAttackTest = (mo) -> !(mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF);
 
 	private AbstractPlayer p;
 	private AbstractMonster m;
@@ -37,40 +41,45 @@ public class ForceIntentAction extends AbstractGameAction {
 	}
 
 	public boolean newIntent(AbstractMonster m, AbstractIntentChangingCard.IntentTypes type) {
-
+		Predicate<AbstractMonster> test;
 		if (type == AbstractIntentChangingCard.IntentTypes.ATTACK) {
-			if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEFEND || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_BUFF) {
+			test = attackTest;
+		} else {
+			test = notAttackTest;
+		}
+		if (test.test(m)) {
+			return true;
+		}
+		int tries = 0;
+		while (tries < 10) {
+			m.rollMove();
+			m.createIntent();
+			if (test.test(m)) {
 				return true;
 			}
-			int tries = 0;
-			while (tries < 10) {
-				m.rollMove();
-				m.createIntent();
-				if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEFEND || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_BUFF) {
-					return true;
-				}
-				tries++;
-			}
-			return true;
+			tries++;
 		}
 		return true;
 	}
 
 	public static boolean previewNewIntent(AbstractMonster m, AbstractIntentChangingCard.IntentTypes type) {
+		Predicate<AbstractMonster> test;
 		if (type == AbstractIntentChangingCard.IntentTypes.ATTACK) {
-			if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEFEND || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_BUFF) {
+			test = attackTest;
+		} else {
+			test = notAttackTest;
+		}
+		if (test.test(m)) {
+			return true;
+		}
+		int tries = 0;
+		while (tries < 10) {
+			m.rollMove();
+			m.createIntent();
+			if (test.test(m)) {
 				return true;
 			}
-			int tries = 0;
-			while (tries < 10) {
-				m.rollMove();
-				m.createIntent();
-				if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_DEFEND || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_BUFF) {
-					return true;
-				}
-				tries++;
-			}
-			return true;
+			tries++;
 		}
 		return true;
 	}
@@ -120,8 +129,8 @@ public class ForceIntentAction extends AbstractGameAction {
 				break;
 
 			case "SlaverRed":
-				if (entangleReset) { 
-					ReflectionHacks.setPrivate(m, m.getClass(), "usedEntangle", false); 
+				if (entangleReset) {
+					ReflectionHacks.setPrivate(m, m.getClass(), "usedEntangle", false);
 					entangleReset = false;
 				}
 				break;
@@ -160,7 +169,7 @@ public class ForceIntentAction extends AbstractGameAction {
 						int debuffTurnCount = (int)ReflectionHacks.getPrivate(m, m.getClass(), "debuffTurnCount");
 						ReflectionHacks.setPrivate(m, m.getClass(), "debuffTurnCount", debuffTurnCount - 1);
 						break;
-				} 
+				}
             	break;
 			case "Chosen":
 				if (m.nextMove == 4) {

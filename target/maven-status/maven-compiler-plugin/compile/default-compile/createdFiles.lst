@@ -26,6 +26,7 @@ Koishi\patches\DefaultInsertPatch$Locator.class
 Koishi\cards\DefaultUncommonSkill.class
 Koishi\patches\IdCardPatch.class
 Koishi\patches\IdCardPatch$Locator.class
+Koishi\cards\Skills\EmbersOfLove.class
 Koishi\powers\CommonPower.class
 Koishi\cards\AbstractDefaultCard.class
 Koishi\powers\EphemeralPower.class

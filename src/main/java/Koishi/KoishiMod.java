@@ -2,6 +2,7 @@ package Koishi;
 
 import Koishi.cards.Attacks.PhantomStrike;
 import Koishi.cards.Attacks.SubconsciousSweep;
+import Koishi.cards.Skills.EmbersOfLove;
 import Koishi.cards.Skills.IdleWhim;
 import Koishi.cards.Skills.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.PredatoryInstincts;
@@ -416,6 +417,7 @@ public class KoishiMod implements
 
         //Skills
         BaseMod.addCard(new PhilosophyOfTheDespised());
+        BaseMod.addCard(new EmbersOfLove());
         BaseMod.addCard(new PredatoryInstincts());
         BaseMod.addCard(new IdleWhim());
         BaseMod.addCard(new UnconsciousUprising());
@@ -442,6 +444,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
 
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
+        UnlockTracker.unlockCard(EmbersOfLove.ID);
         UnlockTracker.unlockCard(PredatoryInstincts.ID);
         UnlockTracker.unlockCard(IdleWhim.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);

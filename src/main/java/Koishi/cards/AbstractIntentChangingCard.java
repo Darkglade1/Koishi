@@ -47,24 +47,23 @@ public abstract class AbstractIntentChangingCard extends AbstractDefaultCard {
             CardCrawlGame.sound.stop("EVENT_SHINING");
             songID = CardCrawlGame.sound.playA("EVENT_SHINING", -0.5F);
 
-            Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-            while (iterator.hasNext()) {
-                AbstractMonster m = (AbstractMonster)iterator.next();
-                this.newTarget = m;
-
+            ArrayList monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
+            for (int i = 0; i < monsters.size(); i++) {
+                AbstractMonster m = (AbstractMonster)monsters.get(i);
                 enemyMoves.add((EnemyMoveInfo) ReflectionHacks.getPrivate(m, AbstractMonster.class, "move"));
-                //this.move = (EnemyMoveInfo) ReflectionHacks.getPrivate(m, AbstractMonster.class, "move");
+                if (!m.isDeadOrEscaped() && !m.halfDead) {
+                    this.newTarget = m;
+                    //this.move = (EnemyMoveInfo) ReflectionHacks.getPrivate(m, AbstractMonster.class, "move");
 
+                    int counter = AbstractDungeon.aiRng.counter;
+                    long seed0 = ((Long) ReflectionHacks.getPrivate(AbstractDungeon.aiRng.random, com.badlogic.gdx.math.RandomXS128.class, "seed0")).longValue();
+                    long seed1 = ((Long) ReflectionHacks.getPrivate(AbstractDungeon.aiRng.random, com.badlogic.gdx.math.RandomXS128.class, "seed1")).longValue();
 
-                int counter = AbstractDungeon.aiRng.counter;
-                long seed0 = ((Long) ReflectionHacks.getPrivate(AbstractDungeon.aiRng.random, com.badlogic.gdx.math.RandomXS128.class, "seed0")).longValue();
-                long seed1 = ((Long) ReflectionHacks.getPrivate(AbstractDungeon.aiRng.random, com.badlogic.gdx.math.RandomXS128.class, "seed1")).longValue();
+                    ForceIntentAction.previewNewIntent(this.newTarget, intentType);
 
-                ForceIntentAction.previewNewIntent(this.newTarget, intentType);
-
-
-                AbstractDungeon.aiRng.counter = counter;
-                AbstractDungeon.aiRng.random.setState(seed0, seed1);
+                    AbstractDungeon.aiRng.counter = counter;
+                    AbstractDungeon.aiRng.random.setState(seed0, seed1);
+                }
             }
         }
 
@@ -78,8 +77,10 @@ public abstract class AbstractIntentChangingCard extends AbstractDefaultCard {
             Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
             while (iterator.hasNext()) {
                 AbstractMonster m = (AbstractMonster) iterator.next();
-                newTarget = m;
-                AbstractDungeon.effectsQueue.add(new ForceIntentChangePreviewEffect(this.newTarget.intentHb.cX, this.newTarget.intentHb.cY, 0.75F, 1.75F));
+                if (!m.isDeadOrEscaped() && !m.halfDead) {
+                    newTarget = m;
+                    AbstractDungeon.effectsQueue.add(new ForceIntentChangePreviewEffect(this.newTarget.intentHb.cX, this.newTarget.intentHb.cY, 0.75F, 1.75F));
+                }
             }
         }
 
@@ -89,17 +90,19 @@ public abstract class AbstractIntentChangingCard extends AbstractDefaultCard {
             ArrayList monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
             for (int i = 0; i < monsters.size(); i++) {
                 AbstractMonster m = (AbstractMonster)monsters.get(i);
-                newTarget = m;
-                this.newTarget.moveHistory.remove(this.newTarget.moveHistory.size() - 1);
-                if (this.newTarget.moveHistory.size() > 0) {
+                if (!m.isDeadOrEscaped() && !m.halfDead) {
+                    newTarget = m;
                     this.newTarget.moveHistory.remove(this.newTarget.moveHistory.size() - 1);
+                    if (this.newTarget.moveHistory.size() > 0) {
+                        this.newTarget.moveHistory.remove(this.newTarget.moveHistory.size() - 1);
+                    }
+
+                    EnemyMoveInfo move = enemyMoves.get(i);
+                    this.newTarget.setMove(move.nextMove, move.intent, move.baseDamage, move.multiplier, move.isMultiDamage);
+                    this.newTarget.createIntent();
+
+                    this.newTarget = null;
                 }
-
-                EnemyMoveInfo move = enemyMoves.get(i);
-                this.newTarget.setMove(move.nextMove, move.intent, move.baseDamage, move.multiplier, move.isMultiDamage);
-                this.newTarget.createIntent();
-
-                this.newTarget = null;
             }
             enemyMoves.clear();
         }

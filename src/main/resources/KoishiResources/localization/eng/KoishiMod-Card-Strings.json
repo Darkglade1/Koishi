@@ -7,6 +7,10 @@
     "NAME": "Subconscious Sweep",
     "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
   },
+  "Koishi:EmbersOfLove": {
+    "NAME": "Embers of Love",
+    "DESCRIPTION": "Retain. NL Apply !M! Weak. NL Force ALL enemies to NOT attack this turn. NL Exhaust."
+  },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",
     "DESCRIPTION": "Retain. NL Apply !M! Vulnerable. NL Force ALL enemies to attack this turn. NL Exhaust.",
