@@ -41,6 +41,7 @@ Koishi\relics\DefaultClickableRelic.class
 Koishi\vfx\ForceIntentChangePreviewEffect.class
 Koishi\events\IdentityCrisisEvent.class
 Koishi\cards\DefaultUncommonPower.class
+Koishi\patches\IntentChangePatch.class
 Koishi\patches\relics\BottledPlaceholderField.class
 Koishi\cards\DefaultRareAttack.class
 Koishi\cards\DefaultRareSkill.class

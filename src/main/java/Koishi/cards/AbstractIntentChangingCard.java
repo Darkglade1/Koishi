@@ -44,8 +44,8 @@ public abstract class AbstractIntentChangingCard extends AbstractDefaultCard {
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
         if (this.newTarget == null) {
-            CardCrawlGame.sound.stop("EVENT_SHINING");
-            songID = CardCrawlGame.sound.playA("EVENT_SHINING", -0.5F);
+            //CardCrawlGame.sound.stop("EVENT_SHINING");
+            //songID = CardCrawlGame.sound.playA("EVENT_SHINING", -0.5F);
 
             ArrayList monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
             for (int i = 0; i < monsters.size(); i++) {
@@ -85,7 +85,7 @@ public abstract class AbstractIntentChangingCard extends AbstractDefaultCard {
         }
 
         if (newTarget != null && this.intentRevert) {
-            CardCrawlGame.sound.stop("EVENT_SHINING");
+            //CardCrawlGame.sound.stop("EVENT_SHINING");
 
             ArrayList monsters = AbstractDungeon.getCurrRoom().monsters.monsters;
             for (int i = 0; i < monsters.size(); i++) {

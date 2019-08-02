@@ -9,12 +9,12 @@
   },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
-    "DESCRIPTION": "Retain. NL Apply !M! Weak. NL Force ALL enemies to NOT attack this turn. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn. NL Exhaust."
   },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",
-    "DESCRIPTION": "Retain. NL Apply !M! Vulnerable. NL Force ALL enemies to attack this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! Vulnerable. NL Force ALL enemies to attack this turn."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn."
   },
   "Koishi:PredatoryInstincts": {
     "NAME": "Predatory Instincts",

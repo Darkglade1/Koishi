@@ -4,12 +4,10 @@ import Koishi.KoishiMod;
 import Koishi.actions.ForceIntentAction;
 import Koishi.cards.AbstractIntentChangingCard;
 import Koishi.characters.KoishiCharacter;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 import java.util.Iterator;
 
@@ -21,19 +19,15 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("PhilosophyOfTheDespised.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;
     private static final int UPGRADED_COST = 0;
 
-    private static final int DEBUFF = 3;
-    private static final int UPGRADE_PLUS_DEBUFF = 1;
-
     public EmbersOfLove() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, IntentTypes.NOT_ATTACK);
-        magicNumber = baseMagicNumber = DEBUFF;
         retain = true;
         exhaust = true;
     }
@@ -45,7 +39,6 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster mo) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, magicNumber, false), magicNumber));
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster m = (AbstractMonster)iterator.next();
@@ -62,7 +55,6 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_DEBUFF);
             upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
