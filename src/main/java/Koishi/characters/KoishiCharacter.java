@@ -4,7 +4,9 @@ import Koishi.BetterSpriterAnimation;
 import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
 import Koishi.cards.Attacks.PhantomStrike;
+import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.DefaultCommonAttack;
+import Koishi.cards.Skills.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.UnconsciousUprising;
 import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
@@ -150,11 +152,13 @@ public class KoishiCharacter extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(DefaultCommonAttack.ID);
+//        retVal.add(DefaultCommonAttack.ID);
+//        retVal.add(PhantomStrike.ID);
         retVal.add(PhantomStrike.ID);
-        retVal.add(PhantomStrike.ID);
-        retVal.add(UnconsciousUprising.ID);
-        retVal.add(UnconsciousUprising.ID);
+        retVal.add(PhilosophyOfTheDespised.ID);
+        retVal.add(PhilosophyOfTheDespised.ID);
+//        retVal.add(UnconsciousUprising.ID);
+//        retVal.add(UnconsciousUprising.ID);
 //        retVal.add(PredatoryInstincts.ID);
 //        retVal.add(SubconsciousSweep.ID);
 //        retVal.add(SubconsciousSweep.ID);

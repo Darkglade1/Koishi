@@ -12,6 +12,8 @@ Koishi\relics\ImaginaryFriend.class
 Koishi\util\IDCheckDontTouchPls.class
 Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
+Koishi\actions\ForceIntentAction.class
+Koishi\cards\Skills\PhilosophyOfTheDespised.class
 Koishi\cards\Skills\UnconsciousUprising.class
 Koishi\cards\OrbSkill.class
 Koishi\cards\Attacks\PhantomStrike.class
@@ -31,8 +33,11 @@ Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\SubconsciousSweep.class
+Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\DefaultCommonSkill.class
+Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\relics\DefaultClickableRelic.class
+Koishi\vfx\ForceIntentChangePreviewEffect.class
 Koishi\events\IdentityCrisisEvent.class
 Koishi\cards\DefaultUncommonPower.class
 Koishi\patches\relics\BottledPlaceholderField.class
