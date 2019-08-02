@@ -4,6 +4,7 @@ import Koishi.BetterSpriterAnimation;
 import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
 import Koishi.cards.Attacks.PhantomStrike;
+import Koishi.cards.Attacks.ReflexRadar;
 import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.EmbersOfLove;
@@ -155,10 +156,12 @@ public class KoishiCharacter extends CustomPlayer {
 
 //        retVal.add(DefaultCommonAttack.ID);
 //        retVal.add(PhantomStrike.ID);
+        retVal.add(ReflexRadar.ID);
+        retVal.add(ReflexRadar.ID);
         retVal.add(PhantomStrike.ID);
         retVal.add(PhilosophyOfTheDespised.ID);
-        retVal.add(PhilosophyOfTheDespised.ID);
-        retVal.add(EmbersOfLove.ID);
+//        retVal.add(PhilosophyOfTheDespised.ID);
+//        retVal.add(EmbersOfLove.ID);
         retVal.add(EmbersOfLove.ID);
 //        retVal.add(UnconsciousUprising.ID);
 //        retVal.add(UnconsciousUprising.ID);

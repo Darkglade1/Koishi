@@ -4,6 +4,7 @@ Koishi\cards\Skills\IdleWhim.class
 Koishi\actions\UncommonPowerAction.class
 Koishi\characters\KoishiCharacter.class
 Koishi\cards\DefaultCommonAttack.class
+Koishi\cards\Attacks\ReflexRadar.class
 Koishi\util\TextureLoader.class
 Koishi\cards\CardTemplate.class
 Koishi\variables\DefaultSecondMagicNumber.class

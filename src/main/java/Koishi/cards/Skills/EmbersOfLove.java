@@ -4,7 +4,6 @@ import Koishi.KoishiMod;
 import Koishi.actions.ForceIntentAction;
 import Koishi.cards.AbstractIntentChangingCard;
 import Koishi.characters.KoishiCharacter;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -43,10 +42,6 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
         while (iterator.hasNext()) {
             AbstractMonster m = (AbstractMonster)iterator.next();
             AbstractDungeon.actionManager.addToTop(new ForceIntentAction(p, m, this.intentType));
-            if (m.hasPower("Sleep"))
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m, p, "Sleep"));
-            if (m.hasPower("Stun"))
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m, p, "Stun"));
         }
 
     }

@@ -1,6 +1,7 @@
 package Koishi;
 
 import Koishi.cards.Attacks.PhantomStrike;
+import Koishi.cards.Attacks.ReflexRadar;
 import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.EmbersOfLove;
 import Koishi.cards.Skills.IdleWhim;
@@ -412,6 +413,7 @@ public class KoishiMod implements
         // when generating card rewards/shop screen items.
 
         //Attacks
+        BaseMod.addCard(new ReflexRadar());
         BaseMod.addCard(new PhantomStrike());
         BaseMod.addCard(new SubconsciousSweep());
 
@@ -440,6 +442,7 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(ReflexRadar.ID);
         UnlockTracker.unlockCard(PhantomStrike.ID);
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
 

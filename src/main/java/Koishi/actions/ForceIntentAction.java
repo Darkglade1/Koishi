@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 import com.megacrit.cardcrawl.monsters.exordium.Hexaghost;
 
 import java.util.function.Predicate;
@@ -14,8 +15,8 @@ import java.util.function.Predicate;
 public class ForceIntentAction extends AbstractGameAction {
 
 	private AbstractIntentChangingCard.IntentTypes intentType;
-	private static Predicate<AbstractMonster> attackTest = (mo) -> mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF;
-	private static Predicate<AbstractMonster> notAttackTest = (mo) -> !(mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF);
+	public static Predicate<AbstractMonster> attackTest = (mo) -> mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF;
+	public static Predicate<AbstractMonster> notAttackTest = (mo) -> !(mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF);
 
 	private AbstractPlayer p;
 	private AbstractMonster m;
@@ -47,9 +48,12 @@ public class ForceIntentAction extends AbstractGameAction {
 		} else {
 			test = notAttackTest;
 		}
+		//Does nothing if the intent already matches
 		if (test.test(m)) {
 			return true;
 		}
+		//Stores the original move then tries to find another appropriate move
+		EnemyMoveInfo originalMove = (EnemyMoveInfo) ReflectionHacks.getPrivate(m, AbstractMonster.class, "move");
 		int tries = 0;
 		while (tries < 10) {
 			m.rollMove();
@@ -59,6 +63,9 @@ public class ForceIntentAction extends AbstractGameAction {
 			}
 			tries++;
 		}
+		//sets intent back to original move if no suitable moves were found
+		m.setMove(originalMove.nextMove, originalMove.intent, originalMove.baseDamage, originalMove.multiplier, originalMove.isMultiDamage);
+		m.createIntent();
 		return true;
 	}
 
@@ -69,9 +76,12 @@ public class ForceIntentAction extends AbstractGameAction {
 		} else {
 			test = notAttackTest;
 		}
+		//Does nothing if the intent already matches
 		if (test.test(m)) {
 			return true;
 		}
+		//Stores the original move then tries to find another appropriate move
+		EnemyMoveInfo originalMove = (EnemyMoveInfo) ReflectionHacks.getPrivate(m, AbstractMonster.class, "move");
 		int tries = 0;
 		while (tries < 10) {
 			m.rollMove();
@@ -81,6 +91,9 @@ public class ForceIntentAction extends AbstractGameAction {
 			}
 			tries++;
 		}
+		//sets intent back to original move if no suitable moves were found
+		m.setMove(originalMove.nextMove, originalMove.intent, originalMove.baseDamage, originalMove.multiplier, originalMove.isMultiDamage);
+		m.createIntent();
 		return true;
 	}
 

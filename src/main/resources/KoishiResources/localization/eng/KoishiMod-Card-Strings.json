@@ -1,4 +1,8 @@
 {
+  "Koishi:ReflexRadar": {
+    "NAME": "Reflex Radar",
+    "DESCRIPTION": "Deal !D! damage to ALL attacking enemies."
+  },
   "Koishi:PhantomStrike": {
     "NAME": "Phantom Strike",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Ephemeral."
