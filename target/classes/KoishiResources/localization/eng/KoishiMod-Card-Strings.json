@@ -11,9 +11,20 @@
     "NAME": "Subconscious Sweep",
     "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
   },
+  "Koishi:ImGoingToCallYouNow": {
+    "NAME": "I'm Going to Call You Now",
+    "DESCRIPTION": "Apply !M! Terror to ALL enemies. NL Add So Answer the Phone to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Terror to ALL enemies. NL Add So Answer the Phone+ to your hand. NL Exhaust."
+  },
+  "Koishi:SoAnswerThePhone": {
+    "NAME": "So Answer the Phone",
+    "DESCRIPTION": "Double ALL enemies' Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple ALL enemies' Terror. NL Exhaust."
+  },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn."
   },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",

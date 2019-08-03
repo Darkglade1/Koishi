@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.Iterator;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class EmbersOfLove extends AbstractIntentChangingCard {
 
@@ -22,8 +23,7 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
-    private static final int UPGRADED_COST = 0;
+    private static final int COST = 0;
 
     public EmbersOfLove() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, IntentTypes.NOT_ATTACK);
@@ -51,7 +51,8 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            exhaust = false;
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
