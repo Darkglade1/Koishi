@@ -1,6 +1,8 @@
 package Koishi.powers;
 
 import Koishi.KoishiMod;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
@@ -10,6 +12,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class PerfectMindControlPower extends AbstractPower {
@@ -37,23 +40,26 @@ public class PerfectMindControlPower extends AbstractPower {
     }
 
     @Override
-    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+    public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
         if (info.owner == owner) {
-            target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            AbstractDungeon.actionManager.currentAction.target = target;
-            //AbstractDungeon.actionManager.addToTop(new DamageAction(target, new DamageInfo(source, damageAmount, info.type), AbstractGameAction.AttackEffect.NONE));
+            AbstractMonster newTarget = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+            AbstractDungeon.actionManager.currentAction.target = newTarget;
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(newTarget, new DamageInfo(source, info.base, info.type), AbstractGameAction.AttackEffect.NONE));
+            return 0; //makes the monster do 0 damage to the player
         }
+        return damageAmount;
     }
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        power.owner = this.source;
         if (source == owner && power.type == PowerType.BUFF) {
+            power.owner = this.source;
             AbstractDungeon.actionManager.currentAction.target = this.source;
         }
         else if (source == owner && power.type == PowerType.DEBUFF) {
-            target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            AbstractDungeon.actionManager.currentAction.target = target;
+            AbstractMonster newTarget = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+            power.owner = newTarget;
+            AbstractDungeon.actionManager.currentAction.target = newTarget;
         }
     }
 
@@ -79,6 +85,10 @@ public class PerfectMindControlPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        if (amount == 1) {
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        } else {
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
+        }
     }
 }

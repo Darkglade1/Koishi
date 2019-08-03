@@ -29,7 +29,6 @@ Koishi\patches\DefaultInsertPatch$Locator.class
 Koishi\powers\PerfectMindControlPower.class
 Koishi\cards\DefaultUncommonSkill.class
 Koishi\patches\IdCardPatch.class
-Koishi\actions\ApplyMindControlledPowerAction.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Skills\EmbersOfLove.class
 Koishi\powers\CommonPower.class
@@ -50,6 +49,7 @@ Koishi\cards\DefaultUncommonPower.class
 Koishi\patches\IntentChangePatch.class
 Koishi\patches\relics\BottledPlaceholderField.class
 Koishi\cards\DefaultRareAttack.class
+Koishi\patches\onGainedBlockPatch.class
 Koishi\cards\DefaultRareSkill.class
 Koishi\potions\PlaceholderPotion.class
 Koishi\KoishiPlayerListener.class

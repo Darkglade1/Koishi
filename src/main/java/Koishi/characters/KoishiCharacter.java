@@ -163,7 +163,9 @@ public class KoishiCharacter extends CustomPlayer {
         //retVal.add(PhantomStrike.ID);
         //retVal.add(ImGoingToCallYouNow.ID);
         retVal.add(PerfectMindControl.ID);
-        retVal.add(ImGoingToCallYouNow.ID);
+        retVal.add(PerfectMindControl.ID);
+        retVal.add(PerfectMindControl.ID);
+        //retVal.add(ImGoingToCallYouNow.ID);
         retVal.add(PhilosophyOfTheDespised.ID);
 //        retVal.add(PhilosophyOfTheDespised.ID);
 //        retVal.add(EmbersOfLove.ID);

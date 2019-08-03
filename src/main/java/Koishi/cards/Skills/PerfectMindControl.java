@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.Iterator;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class PerfectMindControl extends AbstractDefaultCard {
 
@@ -23,15 +24,23 @@ public class PerfectMindControl extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 2;
+    private static final int COST = 3;
 
     private static final int TURNS = 1;
-    private static final int UPGRADE_PLUS_TURNS = 1;
+
+    private boolean isRetaining = false;
 
     public PerfectMindControl() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = TURNS;
         exhaust = true;
+    }
+
+    @Override
+    public void atTurnStart() {
+        if (isRetaining) {
+            retain = true;
+        }
     }
 
     @Override
@@ -47,7 +56,9 @@ public class PerfectMindControl extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_TURNS);
+            retain = true;
+            isRetaining = true;
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

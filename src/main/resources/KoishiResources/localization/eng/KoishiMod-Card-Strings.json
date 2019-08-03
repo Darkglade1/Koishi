@@ -23,8 +23,8 @@
   },
   "Koishi:PerfectMindControl": {
     "NAME": "Perfect Mind Control",
-    "DESCRIPTION": "This turn, enemies will help you. Exhaust.",
-    "UPGRADE_DESCRIPTION": "For the next !M! turns, enemies will help you. Exhaust."
+    "DESCRIPTION": "This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust."
   },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
