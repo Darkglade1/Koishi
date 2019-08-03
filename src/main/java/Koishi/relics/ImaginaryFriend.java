@@ -1,6 +1,7 @@
 package Koishi.relics;
 
 import Koishi.KoishiMod;
+import Koishi.cards.AbstractIdCard;
 import Koishi.powers.EphemeralPower;
 import Koishi.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
@@ -32,6 +33,15 @@ public class ImaginaryFriend extends CustomRelic {
         this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, EPHEMERAL), EPHEMERAL));
+    }
+
+    @Override
+    public void onCardDraw(AbstractCard drawnCard) {
+        if (drawnCard instanceof AbstractIdCard) {
+            this.flash();
+            AbstractPlayer p = AbstractDungeon.player;
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, EPHEMERAL), EPHEMERAL));
+        }
     }
 
     @Override

@@ -35,13 +35,9 @@ public class ReflexRadar extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        System.out.println("hello1");
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            System.out.println("hello2");
             if (!mo.isDeadOrEscaped() && !mo.halfDead) {
-                System.out.println("hello3");
                 if (ForceIntentAction.attackTest.test(mo)) {
-                    System.out.println("hello4");
                     AbstractDungeon.actionManager.addToBottom(
                             new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
                 }

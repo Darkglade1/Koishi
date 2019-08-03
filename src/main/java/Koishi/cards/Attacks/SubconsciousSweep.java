@@ -24,7 +24,7 @@ public class SubconsciousSweep extends AbstractIdCard {
     private static final int COST = 1;
 
     private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     public SubconsciousSweep() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -33,7 +33,7 @@ public class SubconsciousSweep extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ((KoishiCharacter)AbstractDungeon.player).runAnim("kick");
+        KoishiMod.runAnimation("kick");
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
 

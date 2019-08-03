@@ -23,7 +23,7 @@ public class UnconsciousUprising extends AbstractIdCard {
     private static final int COST = 1;
 
     private static final int BLOCK = 11;
-    private static final int UPGRADE_PLUS_BLOCK = 4;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
     public UnconsciousUprising() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -32,7 +32,7 @@ public class UnconsciousUprising extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ((KoishiCharacter)AbstractDungeon.player).runAnim("spellA");
+        KoishiMod.runAnimation("spellA");
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
     }
 

@@ -38,6 +38,7 @@ public class PhilosophyOfTheDespised extends AbstractIntentChangingCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster mo) {
+        KoishiMod.runAnimation("spellB");
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster m = (AbstractMonster)iterator.next();

@@ -38,6 +38,7 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster mo) {
+        KoishiMod.runAnimation("spellCall");
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster m = (AbstractMonster)iterator.next();

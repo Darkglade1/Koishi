@@ -3,7 +3,7 @@
     "NAME": "Imaginary Friend",
     "FLAVOR": "They'll forget about me. They always do.",
     "DESCRIPTIONS": [
-      "Whenever you play a card, gain #b", " Ephemeral."
+      "Whenever you play a card or draw an Id card, gain #b", " Ephemeral."
     ]
   },
   "Koishi:PlaceholderRelic": {

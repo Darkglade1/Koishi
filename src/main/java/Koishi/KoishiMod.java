@@ -559,6 +559,12 @@ public class KoishiMod implements
                 card.setBackgroundTexture("KoishiResources/images/512/bg_power_black.png", "KoishiResources/images/1024/bg_power_black.png");
                 break;
         }
+    }
 
+    //Checks to make sure player is playing this character before running animations
+    public static void runAnimation(String anim) {
+        if (AbstractDungeon.player instanceof KoishiCharacter) {
+            ((KoishiCharacter)AbstractDungeon.player).runAnim(anim);
+        }
     }
 }
