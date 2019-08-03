@@ -6,6 +6,7 @@ import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.Skills.EmbersOfLove;
 import Koishi.cards.Skills.IdleWhim;
 import Koishi.cards.Skills.ImGoingToCallYouNow;
+import Koishi.cards.Skills.PerfectMindControl;
 import Koishi.cards.Skills.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.PredatoryInstincts;
 import Koishi.cards.Skills.UnconsciousUprising;
@@ -420,6 +421,7 @@ public class KoishiMod implements
 
         //Skills
         BaseMod.addCard(new ImGoingToCallYouNow());
+        BaseMod.addCard(new PerfectMindControl());
         BaseMod.addCard(new PhilosophyOfTheDespised());
         BaseMod.addCard(new EmbersOfLove());
         BaseMod.addCard(new PredatoryInstincts());
@@ -449,6 +451,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
 
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
+        UnlockTracker.unlockCard(PerfectMindControl.ID);
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
         UnlockTracker.unlockCard(EmbersOfLove.ID);
         UnlockTracker.unlockCard(PredatoryInstincts.ID);

@@ -7,6 +7,10 @@
         "NAME": "Terror",
         "DESCRIPTIONS": ["When this enemy dies, heal #b", " HP."]
 },
+"Koishi:PerfectMindControlPower": {
+        "NAME": "Perfect Mind Control",
+        "DESCRIPTIONS": ["This enemy will help you for #b", " more turn.", " turns."]
+},
 "Koishi:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

@@ -612,30 +612,30 @@
                 </key>
             </timeline>
         </animation>
-        <animation id="6" name="lastWordB" length="750" interval="100">
+        <animation id="6" name="lastWordB" length="1500" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
                 </key>
-                <key id="1" time="100">
+                <key id="1" time="200">
                     <object_ref id="0" timeline="1" key="0" z_index="0"/>
                 </key>
-                <key id="2" time="198">
+                <key id="2" time="399">
                     <object_ref id="0" timeline="2" key="0" z_index="0"/>
                 </key>
-                <key id="3" time="298">
+                <key id="3" time="599">
                     <object_ref id="0" timeline="3" key="0" z_index="0"/>
                 </key>
-                <key id="4" time="400">
+                <key id="4" time="799">
                     <object_ref id="0" timeline="0" key="1" z_index="0"/>
                 </key>
-                <key id="5" time="500">
+                <key id="5" time="999">
                     <object_ref id="0" timeline="4" key="0" z_index="0"/>
                 </key>
-                <key id="6" time="598">
+                <key id="6" time="1200">
                     <object_ref id="0" timeline="5" key="0" z_index="0"/>
                 </key>
-                <key id="7" time="699">
+                <key id="7" time="1400">
                     <object_ref id="0" timeline="6" key="0" z_index="0"/>
                 </key>
             </mainline>
@@ -643,37 +643,37 @@
                 <key id="0" spin="0">
                     <object folder="6" file="0" x="-140" y="265"/>
                 </key>
-                <key id="1" time="400" spin="0">
+                <key id="1" time="799" spin="0">
                     <object folder="6" file="0" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="1" name="tile001_004">
-                <key id="0" time="100" spin="0">
+                <key id="0" time="200" spin="0">
                     <object folder="6" file="1" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="2" name="tile002_004">
-                <key id="0" time="198" spin="0">
+                <key id="0" time="399" spin="0">
                     <object folder="6" file="2" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="3" name="tile003_004">
-                <key id="0" time="298" spin="0">
+                <key id="0" time="599" spin="0">
                     <object folder="6" file="3" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="4" name="tile001_005">
-                <key id="0" time="500" spin="0">
+                <key id="0" time="999" spin="0">
                     <object folder="6" file="1" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="5" name="tile002_005">
-                <key id="0" time="598" spin="0">
+                <key id="0" time="1200" spin="0">
                     <object folder="6" file="2" x="-140" y="265"/>
                 </key>
             </timeline>
             <timeline id="6" name="tile003_005">
-                <key id="0" time="699" spin="0">
+                <key id="0" time="1400" spin="0">
                     <object folder="6" file="3" x="-140" y="265"/>
                 </key>
             </timeline>

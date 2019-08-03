@@ -9,6 +9,7 @@ import Koishi.cards.Attacks.SubconsciousSweep;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.EmbersOfLove;
 import Koishi.cards.Skills.ImGoingToCallYouNow;
+import Koishi.cards.Skills.PerfectMindControl;
 import Koishi.cards.Skills.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.UnconsciousUprising;
 import Koishi.relics.ImaginaryFriend;
@@ -160,7 +161,8 @@ public class KoishiCharacter extends CustomPlayer {
         retVal.add(ReflexRadar.ID);
         //retVal.add(ReflexRadar.ID);
         //retVal.add(PhantomStrike.ID);
-        retVal.add(ImGoingToCallYouNow.ID);
+        //retVal.add(ImGoingToCallYouNow.ID);
+        retVal.add(PerfectMindControl.ID);
         retVal.add(ImGoingToCallYouNow.ID);
         retVal.add(PhilosophyOfTheDespised.ID);
 //        retVal.add(PhilosophyOfTheDespised.ID);

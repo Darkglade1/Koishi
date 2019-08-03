@@ -26,8 +26,10 @@ Koishi\BetterSpriterAnimation.class
 Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
 Koishi\patches\DefaultInsertPatch$Locator.class
+Koishi\powers\PerfectMindControlPower.class
 Koishi\cards\DefaultUncommonSkill.class
 Koishi\patches\IdCardPatch.class
+Koishi\actions\ApplyMindControlledPowerAction.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Skills\EmbersOfLove.class
 Koishi\powers\CommonPower.class
@@ -37,6 +39,7 @@ Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\SubconsciousSweep.class
+Koishi\cards\Skills\PerfectMindControl.class
 Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class

@@ -21,6 +21,11 @@
     "DESCRIPTION": "Double ALL enemies' Terror. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Triple ALL enemies' Terror. NL Exhaust."
   },
+  "Koishi:PerfectMindControl": {
+    "NAME": "Perfect Mind Control",
+    "DESCRIPTION": "This turn, enemies will help you. Exhaust.",
+    "UPGRADE_DESCRIPTION": "For the next !M! turns, enemies will help you. Exhaust."
+  },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
     "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn. NL Exhaust.",

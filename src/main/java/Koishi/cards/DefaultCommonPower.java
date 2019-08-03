@@ -66,7 +66,7 @@ public class DefaultCommonPower extends AbstractDefaultCard {
         Hey do you see this "amount" and "stackAmount" up here^ (press ctrl+p inside the parentheses to see parameters)
         THIS DOES NOT MEAN APPLY 1 POWER 1 TIMES. If you put 2 in both numbers it would apply 2. NOT "2 STACKS, 2 TIMES".
 
-        The stackAmount is for telling ApplyPowerAction what to do if a stack already exists. Which means that it will go
+        The stackAmount is for telling ApplyMindControlledPowerAction what to do if a stack already exists. Which means that it will go
         "ah, I see this power has an ID ("") that matches the power I received. I will therefore instead add the stackAmount value
         to this existing power's amount" (Thank you Johnny)
 
