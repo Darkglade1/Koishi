@@ -36,6 +36,7 @@ public class PredatoryInstincts extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("occultAttack");
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();

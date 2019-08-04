@@ -32,6 +32,7 @@ public class IdleWhim extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellCall");
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
     }
 

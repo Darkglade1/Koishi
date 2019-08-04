@@ -44,6 +44,32 @@
     "NAME": "Idle Whim",
     "DESCRIPTION": "Id. NL Draw !M! cards."
   },
+  "Koishi:RorschachInDanmaku": {
+    "NAME": "Rorschach in Danmaku",
+    "DESCRIPTION": "Id. Gain Block equal to incoming damage.",
+    "UPGRADE_DESCRIPTION": "Id. Gain Block equal to incoming damage + 5."
+  },
+  "Koishi:CatchAndRose": {
+    "NAME": "Catch and Rose",
+    "DESCRIPTION": "Apply !M! Constricted. Exhaust."
+  },
+  "Koishi:JumpScare": {
+    "NAME": "Jump Scare",
+    "DESCRIPTION": "Innate. NL Apply !M! Terror. NL Exhaust."
+  },
+  "Koishi:HeartfeltFancy": {
+    "NAME": "Heartfelt Fancy",
+    "DESCRIPTION": "Gain !B! Block. NL Put a card from your discard pile on top of your draw pile."
+  },
+  "Koishi:PhantomBarrier": {
+    "NAME": "Phantom Barrier",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Ephemeral."
+  },
+  "Koishi:Whimsy": {
+    "NAME": "Whimsy",
+    "DESCRIPTION": "Retain. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Draw !M! card. NL Exhaust."
+  },
   "Koishi:UnconsciousUprising": {
     "NAME": "Unconscious Uprising",
     "DESCRIPTION": "Id. NL Gain !B! Block."

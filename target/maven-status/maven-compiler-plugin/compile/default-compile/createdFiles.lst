@@ -9,9 +9,11 @@ Koishi\cards\Attacks\ReflexRadar.class
 Koishi\util\TextureLoader.class
 Koishi\cards\CardTemplate.class
 Koishi\variables\DefaultSecondMagicNumber.class
+Koishi\cards\Skills\Whimsy.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\relics\ImaginaryFriend.class
 Koishi\util\IDCheckDontTouchPls.class
+Koishi\cards\Skills\JumpScare.class
 Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
 Koishi\actions\ForceIntentAction.class
@@ -19,7 +21,9 @@ Koishi\cards\Skills\PhilosophyOfTheDespised.class
 Koishi\cards\Skills\UnconsciousUprising.class
 Koishi\cards\Skills\ImGoingToCallYouNow.class
 Koishi\cards\OrbSkill.class
+Koishi\cards\Skills\RorschachInDanmaku.class
 Koishi\cards\Attacks\PhantomStrike.class
+Koishi\cards\Skills\CatchAndRose.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\relics\BottledPlaceholderRelic.class
 Koishi\BetterSpriterAnimation.class
@@ -43,6 +47,7 @@ Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\relics\DefaultClickableRelic.class
+Koishi\cards\Skills\PhantomBarrier.class
 Koishi\vfx\ForceIntentChangePreviewEffect.class
 Koishi\events\IdentityCrisisEvent.class
 Koishi\cards\DefaultUncommonPower.class
@@ -53,6 +58,7 @@ Koishi\patches\onGainedBlockPatch.class
 Koishi\cards\DefaultRareSkill.class
 Koishi\potions\PlaceholderPotion.class
 Koishi\KoishiPlayerListener.class
+Koishi\cards\Skills\HeartfeltFancy.class
 Koishi\cards\DefaultRarePower.class
 Koishi\cards\DefaultAttackWithVariable.class
 Koishi\characters\KoishiCharacter$Enums.class

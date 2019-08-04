@@ -3,13 +3,19 @@ package Koishi;
 import Koishi.cards.Attacks.PhantomStrike;
 import Koishi.cards.Attacks.ReflexRadar;
 import Koishi.cards.Attacks.SubconsciousSweep;
+import Koishi.cards.Skills.CatchAndRose;
 import Koishi.cards.Skills.EmbersOfLove;
+import Koishi.cards.Skills.HeartfeltFancy;
 import Koishi.cards.Skills.IdleWhim;
 import Koishi.cards.Skills.ImGoingToCallYouNow;
+import Koishi.cards.Skills.JumpScare;
 import Koishi.cards.Skills.PerfectMindControl;
+import Koishi.cards.Skills.PhantomBarrier;
 import Koishi.cards.Skills.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.PredatoryInstincts;
+import Koishi.cards.Skills.RorschachInDanmaku;
 import Koishi.cards.Skills.UnconsciousUprising;
+import Koishi.cards.Skills.Whimsy;
 import Koishi.relics.ImaginaryFriend;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
@@ -420,12 +426,21 @@ public class KoishiMod implements
         BaseMod.addCard(new SubconsciousSweep());
 
         //Skills
+        //Rares
         BaseMod.addCard(new ImGoingToCallYouNow());
         BaseMod.addCard(new PerfectMindControl());
+        //Uncommons
         BaseMod.addCard(new PhilosophyOfTheDespised());
         BaseMod.addCard(new EmbersOfLove());
         BaseMod.addCard(new PredatoryInstincts());
         BaseMod.addCard(new IdleWhim());
+        BaseMod.addCard(new RorschachInDanmaku());
+        BaseMod.addCard(new CatchAndRose());
+        //Commons
+        BaseMod.addCard(new JumpScare());
+        BaseMod.addCard(new HeartfeltFancy());
+        BaseMod.addCard(new PhantomBarrier());
+        BaseMod.addCard(new Whimsy());
         BaseMod.addCard(new UnconsciousUprising());
 
         BaseMod.addCard(new OrbSkill());
@@ -452,10 +467,18 @@ public class KoishiMod implements
 
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
         UnlockTracker.unlockCard(PerfectMindControl.ID);
+
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
         UnlockTracker.unlockCard(EmbersOfLove.ID);
         UnlockTracker.unlockCard(PredatoryInstincts.ID);
         UnlockTracker.unlockCard(IdleWhim.ID);
+        UnlockTracker.unlockCard(RorschachInDanmaku.ID);
+        UnlockTracker.unlockCard(CatchAndRose.ID);
+
+        UnlockTracker.unlockCard(JumpScare.ID);
+        UnlockTracker.unlockCard(HeartfeltFancy.ID);
+        UnlockTracker.unlockCard(PhantomBarrier.ID);
+        UnlockTracker.unlockCard(Whimsy.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);
 
         UnlockTracker.unlockCard(OrbSkill.ID);
