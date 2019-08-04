@@ -11,6 +11,7 @@ Koishi\cards\Skills\Uncommon\EmbersOfLove.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\powers\BloodlustPower.class
 Koishi\relics\ImaginaryFriend.class
+Koishi\cards\Attacks\Common\HauntingSlash.class
 Koishi\util\IDCheckDontTouchPls.class
 Koishi\cards\Attacks\Common\PhantomStrike.class
 Koishi\relics\PlaceholderRelic2.class
@@ -34,13 +35,16 @@ Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Skills\Common\UnansweredLove.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
 Koishi\powers\CommonPower.class
+Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Skills\Uncommon\Bloodlust.class
+Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\cards\AbstractDefaultCard.class
 Koishi\powers\EphemeralPower.class
 Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
+Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\DefaultCommonSkill.class

@@ -42,7 +42,7 @@ public class PhilosophyOfTheDespised extends AbstractIntentChangingCard {
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster m = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToTop(new ForceIntentAction(p, m, this.intentType));
+            AbstractDungeon.actionManager.addToTop(new ForceIntentAction(p, m, intentType));
         }
 
     }

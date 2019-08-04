@@ -3,8 +3,12 @@ package Koishi.characters;
 import Koishi.BetterSpriterAnimation;
 import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
+import Koishi.cards.Attacks.Common.DreadfulBlow;
+import Koishi.cards.Attacks.Common.HauntingSlash;
+import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.Common.FleetingPhantom;
+import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
@@ -173,11 +177,11 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(PhilosophyOfTheDespised.ID);
 //        retVal.add(EmbersOfLove.ID);
         //retVal.add(EmbersOfLove.ID);
-        retVal.add(ReleaseOfTheId.ID);
-        retVal.add(FleetingPhantom.ID);
-        retVal.add(UnansweredLove.ID);
-        retVal.add(GeneticsOfTheUnconscious.ID);
-        retVal.add(Bloodlust.ID);
+//        retVal.add(ReleaseOfTheId.ID);
+//        retVal.add(FleetingPhantom.ID);
+//        retVal.add(UnansweredLove.ID);
+//        retVal.add(GeneticsOfTheUnconscious.ID);
+//        retVal.add(Bloodlust.ID);
 //        retVal.add(RorschachInDanmaku.ID);
 //        retVal.add(CatchAndRose.ID);
 //        retVal.add(JumpScare.ID);
@@ -189,6 +193,10 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(PredatoryInstincts.ID);
 //        retVal.add(SubconsciousSweep.ID);
 //        retVal.add(SubconsciousSweep.ID);
+          retVal.add(HauntingSlash.ID);
+          retVal.add(Provoke.ID);
+          retVal.add(DreadfulBlow.ID);
+          retVal.add(StingingMind.ID);
 
         return retVal;
     }

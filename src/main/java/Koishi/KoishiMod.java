@@ -1,9 +1,13 @@
 package Koishi;
 
+import Koishi.cards.Attacks.Common.DreadfulBlow;
+import Koishi.cards.Attacks.Common.HauntingSlash;
 import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.ReflexRadar;
+import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Skills.Common.FleetingPhantom;
+import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
@@ -425,9 +429,12 @@ public class KoishiMod implements
         // when generating card rewards/shop screen items.
 
         //Attacks
+        BaseMod.addCard(new StingingMind());
+        BaseMod.addCard(new DreadfulBlow());
         BaseMod.addCard(new ReflexRadar());
         BaseMod.addCard(new PhantomStrike());
         BaseMod.addCard(new SubconsciousSweep());
+        BaseMod.addCard(new HauntingSlash());
 
         //Skills
         //Rares
@@ -451,6 +458,7 @@ public class KoishiMod implements
         BaseMod.addCard(new PhantomBarrier());
         BaseMod.addCard(new Whimsy());
         BaseMod.addCard(new UnconsciousUprising());
+        BaseMod.addCard(new Provoke());
 
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
@@ -470,9 +478,12 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(StingingMind.ID);
+        UnlockTracker.unlockCard(DreadfulBlow.ID);
         UnlockTracker.unlockCard(ReflexRadar.ID);
         UnlockTracker.unlockCard(PhantomStrike.ID);
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
+        UnlockTracker.unlockCard(HauntingSlash.ID);
 
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
         UnlockTracker.unlockCard(PerfectMindControl.ID);
@@ -494,6 +505,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(PhantomBarrier.ID);
         UnlockTracker.unlockCard(Whimsy.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);
+        UnlockTracker.unlockCard(Provoke.ID);
 
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
