@@ -1,21 +1,26 @@
 package Koishi;
 
-import Koishi.cards.Attacks.PhantomStrike;
-import Koishi.cards.Attacks.ReflexRadar;
-import Koishi.cards.Attacks.SubconsciousSweep;
-import Koishi.cards.Skills.CatchAndRose;
-import Koishi.cards.Skills.EmbersOfLove;
-import Koishi.cards.Skills.HeartfeltFancy;
-import Koishi.cards.Skills.IdleWhim;
-import Koishi.cards.Skills.ImGoingToCallYouNow;
-import Koishi.cards.Skills.JumpScare;
-import Koishi.cards.Skills.PerfectMindControl;
-import Koishi.cards.Skills.PhantomBarrier;
-import Koishi.cards.Skills.PhilosophyOfTheDespised;
-import Koishi.cards.Skills.PredatoryInstincts;
-import Koishi.cards.Skills.RorschachInDanmaku;
-import Koishi.cards.Skills.UnconsciousUprising;
-import Koishi.cards.Skills.Whimsy;
+import Koishi.cards.Attacks.Common.PhantomStrike;
+import Koishi.cards.Attacks.Common.ReflexRadar;
+import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Skills.Common.FleetingPhantom;
+import Koishi.cards.Skills.Common.UnansweredLove;
+import Koishi.cards.Skills.Uncommon.Bloodlust;
+import Koishi.cards.Skills.Uncommon.CatchAndRose;
+import Koishi.cards.Skills.Uncommon.EmbersOfLove;
+import Koishi.cards.Skills.Common.HeartfeltFancy;
+import Koishi.cards.Skills.Uncommon.GeneticsOfTheUnconscious;
+import Koishi.cards.Skills.Uncommon.IdleWhim;
+import Koishi.cards.Skills.Rare.ImGoingToCallYouNow;
+import Koishi.cards.Skills.Common.JumpScare;
+import Koishi.cards.Skills.Rare.PerfectMindControl;
+import Koishi.cards.Skills.Common.PhantomBarrier;
+import Koishi.cards.Skills.Uncommon.PhilosophyOfTheDespised;
+import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
+import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
+import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
+import Koishi.cards.Skills.Common.UnconsciousUprising;
+import Koishi.cards.Skills.Common.Whimsy;
 import Koishi.relics.ImaginaryFriend;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
@@ -31,7 +36,6 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
@@ -432,13 +436,18 @@ public class KoishiMod implements
         //Uncommons
         BaseMod.addCard(new PhilosophyOfTheDespised());
         BaseMod.addCard(new EmbersOfLove());
+        BaseMod.addCard(new ReleaseOfTheId());
         BaseMod.addCard(new PredatoryInstincts());
         BaseMod.addCard(new IdleWhim());
+        BaseMod.addCard(new Bloodlust());
+        BaseMod.addCard(new GeneticsOfTheUnconscious());
         BaseMod.addCard(new RorschachInDanmaku());
         BaseMod.addCard(new CatchAndRose());
         //Commons
         BaseMod.addCard(new JumpScare());
         BaseMod.addCard(new HeartfeltFancy());
+        BaseMod.addCard(new UnansweredLove());
+        BaseMod.addCard(new FleetingPhantom());
         BaseMod.addCard(new PhantomBarrier());
         BaseMod.addCard(new Whimsy());
         BaseMod.addCard(new UnconsciousUprising());
@@ -470,13 +479,18 @@ public class KoishiMod implements
 
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
         UnlockTracker.unlockCard(EmbersOfLove.ID);
+        UnlockTracker.unlockCard(ReleaseOfTheId.ID);
         UnlockTracker.unlockCard(PredatoryInstincts.ID);
         UnlockTracker.unlockCard(IdleWhim.ID);
+        UnlockTracker.unlockCard(Bloodlust.ID);
+        UnlockTracker.unlockCard(GeneticsOfTheUnconscious.ID);
         UnlockTracker.unlockCard(RorschachInDanmaku.ID);
         UnlockTracker.unlockCard(CatchAndRose.ID);
 
         UnlockTracker.unlockCard(JumpScare.ID);
         UnlockTracker.unlockCard(HeartfeltFancy.ID);
+        UnlockTracker.unlockCard(UnansweredLove.ID);
+        UnlockTracker.unlockCard(FleetingPhantom.ID);
         UnlockTracker.unlockCard(PhantomBarrier.ID);
         UnlockTracker.unlockCard(Whimsy.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);

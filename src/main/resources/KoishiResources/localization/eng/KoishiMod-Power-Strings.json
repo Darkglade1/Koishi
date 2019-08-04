@@ -11,6 +11,10 @@
         "NAME": "Perfect Mind Control",
         "DESCRIPTIONS": ["This enemy will help you for #b", " more turn.", " more turns."]
 },
+"Koishi:BloodlustPower": {
+        "NAME": "Bloodlust",
+        "DESCRIPTIONS": ["Lose", " next turn."]
+},
 "Koishi:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

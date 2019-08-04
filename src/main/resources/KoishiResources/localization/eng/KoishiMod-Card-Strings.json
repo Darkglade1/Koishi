@@ -36,6 +36,11 @@
     "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn."
   },
+  "Koishi:ReleaseOfTheId": {
+    "NAME": "Release of the Id",
+    "DESCRIPTION": "Shuffle !M! random Id cards into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! random upgraded Id cards into your draw pile. NL Exhaust."
+  },
   "Koishi:PredatoryInstincts": {
     "NAME": "Predatory Instincts",
     "DESCRIPTION": "Id. NL Apply !M! Terror to ALL enemies."
@@ -43,6 +48,15 @@
   "Koishi:IdleWhim": {
     "NAME": "Idle Whim",
     "DESCRIPTION": "Id. NL Draw !M! cards."
+  },
+  "Koishi:Bloodlust": {
+    "NAME": "Bloodlust",
+    "DESCRIPTION": "Gain [E] [E]. NL Lose [E] [E] next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Lose [E] [E] next turn."
+  },
+  "Koishi:GeneticsOfTheUnconscious": {
+    "NAME": "Genetics of the Unconscious",
+    "DESCRIPTION": "Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards."
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",
@@ -60,6 +74,14 @@
   "Koishi:HeartfeltFancy": {
     "NAME": "Heartfelt Fancy",
     "DESCRIPTION": "Gain !B! Block. NL Put a card from your discard pile on top of your draw pile."
+  },
+  "Koishi:UnansweredLove": {
+    "NAME": "Unanswered Love",
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL Gain !M! Ephemeral."
+  },
+  "Koishi:FleetingPhantom": {
+    "NAME": "Fleeting Phantom",
+    "DESCRIPTION": "Draw !M! cards. NL Gain !Koishi:SecondMagic! Ephemeral."
   },
   "Koishi:PhantomBarrier": {
     "NAME": "Phantom Barrier",
