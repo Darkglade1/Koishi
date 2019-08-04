@@ -37,7 +37,7 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < magicNumber; i++) {
+        for (int i = 0; i < defaultSecondMagicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new DiscardPileToTopOfDeckAction(p));
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
