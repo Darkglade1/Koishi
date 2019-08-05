@@ -6,19 +6,24 @@ import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
+import Koishi.cards.Skills.Uncommon.DanmakuParanoia;
 import Koishi.cards.Skills.Uncommon.EmbersOfLove;
 import Koishi.cards.Skills.Common.HeartfeltFancy;
+import Koishi.cards.Skills.Uncommon.FourthEye;
 import Koishi.cards.Skills.Uncommon.GeneticsOfTheUnconscious;
+import Koishi.cards.Skills.Uncommon.GhostParty;
 import Koishi.cards.Skills.Uncommon.IdleWhim;
 import Koishi.cards.Skills.Rare.ImGoingToCallYouNow;
 import Koishi.cards.Skills.Common.JumpScare;
 import Koishi.cards.Skills.Rare.PerfectMindControl;
 import Koishi.cards.Skills.Common.PhantomBarrier;
+import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
@@ -441,8 +446,12 @@ public class KoishiMod implements
         BaseMod.addCard(new ImGoingToCallYouNow());
         BaseMod.addCard(new PerfectMindControl());
         //Uncommons
+        BaseMod.addCard(new GhostParty());
+        BaseMod.addCard(new DanmakuParanoia());
         BaseMod.addCard(new PhilosophyOfTheDespised());
         BaseMod.addCard(new EmbersOfLove());
+        BaseMod.addCard(new MassHysteria());
+        BaseMod.addCard(new FourthEye());
         BaseMod.addCard(new ReleaseOfTheId());
         BaseMod.addCard(new PredatoryInstincts());
         BaseMod.addCard(new IdleWhim());
@@ -451,6 +460,7 @@ public class KoishiMod implements
         BaseMod.addCard(new RorschachInDanmaku());
         BaseMod.addCard(new CatchAndRose());
         //Commons
+        BaseMod.addCard(new EmbryosDream());
         BaseMod.addCard(new JumpScare());
         BaseMod.addCard(new HeartfeltFancy());
         BaseMod.addCard(new UnansweredLove());
@@ -488,8 +498,12 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
         UnlockTracker.unlockCard(PerfectMindControl.ID);
 
+        UnlockTracker.unlockCard(GhostParty.ID);
+        UnlockTracker.unlockCard(DanmakuParanoia.ID);
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
         UnlockTracker.unlockCard(EmbersOfLove.ID);
+        UnlockTracker.unlockCard(MassHysteria.ID);
+        UnlockTracker.unlockCard(FourthEye.ID);
         UnlockTracker.unlockCard(ReleaseOfTheId.ID);
         UnlockTracker.unlockCard(PredatoryInstincts.ID);
         UnlockTracker.unlockCard(IdleWhim.ID);
@@ -498,6 +512,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(RorschachInDanmaku.ID);
         UnlockTracker.unlockCard(CatchAndRose.ID);
 
+        UnlockTracker.unlockCard(EmbryosDream.ID);
         UnlockTracker.unlockCard(JumpScare.ID);
         UnlockTracker.unlockCard(HeartfeltFancy.ID);
         UnlockTracker.unlockCard(UnansweredLove.ID);

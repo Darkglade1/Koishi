@@ -11,6 +11,10 @@
         "NAME": "Perfect Mind Control",
         "DESCRIPTIONS": ["This enemy will help you for #b", " more turn.", " more turns."]
 },
+"Koishi:FourthEyePower": {
+        "NAME": "Fourth Eye",
+        "DESCRIPTIONS": ["Lose Frozen Eye at the end of combat."]
+},
 "Koishi:BloodlustPower": {
         "NAME": "Bloodlust",
         "DESCRIPTIONS": ["Lose", " next turn."]

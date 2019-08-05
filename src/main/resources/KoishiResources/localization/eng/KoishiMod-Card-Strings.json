@@ -38,6 +38,14 @@
     "DESCRIPTION": "This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust."
   },
+  "Koishi:GhostParty": {
+    "NAME": "Ghost Party",
+    "DESCRIPTION": "koishi:Id. NL ALL characters gain !M! Intangible."
+  },
+  "Koishi:DanmakuParanoia": {
+    "NAME": "Danmaku Paranoia",
+    "DESCRIPTION": "Gain !B! Block. NL Gains !M! additional Block for each koishi:Terror on an enemy."
+  },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
     "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn if possible. NL Exhaust.",
@@ -47,6 +55,15 @@
     "NAME": "Philosophy of the Despised",
     "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible."
+  },
+  "Koishi:MassHysteria": {
+    "NAME": "Mass Hysteria",
+    "DESCRIPTION": "ALL enemies lose HP equal to their combined intents."
+  },
+  "Koishi:FourthEye": {
+    "NAME": "Fourth Eye",
+    "DESCRIPTION": "Gain Frozen Eye this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain Frozen Eye this combat. NL Exhaust."
   },
   "Koishi:ReleaseOfTheId": {
     "NAME": "Release of the Id",
@@ -78,6 +95,10 @@
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",
     "DESCRIPTION": "Apply !M! Constricted. Exhaust."
+  },
+  "Koishi:EmbryosDream": {
+    "NAME": "Embryo's Dream",
+    "DESCRIPTION": "If target enemy intends to attack, gain !B! Block. NL If target enemy does not intend to attack, deal !D! damage."
   },
   "Koishi:JumpScare": {
     "NAME": "Jump Scare",
