@@ -1,11 +1,11 @@
 {
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Terror twice."
+    "DESCRIPTION": "Deal !D! damage and apply !M! koishi:Terror twice."
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Terror. NL Force target enemy to NOT attack this turn."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT attack this turn."
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
@@ -13,25 +13,25 @@
   },
   "Koishi:PhantomStrike": {
     "NAME": "Phantom Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Ephemeral."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! koishi:Ephemeral."
   },
   "Koishi:SubconsciousSweep": {
     "NAME": "Subconscious Sweep",
-    "DESCRIPTION": "Id. NL Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to ALL enemies."
   },
   "Koishi:HauntingSlash": {
     "NAME": "Haunting Slash",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Terror."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror."
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
-    "DESCRIPTION": "Apply !M! Terror to ALL enemies. NL Add So Answer the Phone to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Terror to ALL enemies. NL Add So Answer the Phone+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add So Answer the Phone to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add So Answer the Phone+ to your hand. NL Exhaust."
   },
   "Koishi:SoAnswerThePhone": {
     "NAME": "So Answer the Phone",
-    "DESCRIPTION": "Double ALL enemies' Terror. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple ALL enemies' Terror. NL Exhaust."
+    "DESCRIPTION": "Double ALL enemies' koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple ALL enemies' koishi:Terror. NL Exhaust."
   },
   "Koishi:PerfectMindControl": {
     "NAME": "Perfect Mind Control",
@@ -40,26 +40,26 @@
   },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn if possible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn if possible."
   },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible."
   },
   "Koishi:ReleaseOfTheId": {
     "NAME": "Release of the Id",
-    "DESCRIPTION": "Shuffle !M! random Id cards into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! random upgraded Id cards into your draw pile. NL Exhaust."
+    "DESCRIPTION": "Shuffle !M! random koishi:Id cards into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! random upgraded koishi:Id cards into your draw pile. NL Exhaust."
   },
   "Koishi:PredatoryInstincts": {
     "NAME": "Predatory Instincts",
-    "DESCRIPTION": "Id. NL Apply !M! Terror to ALL enemies."
+    "DESCRIPTION": "koishi:Id. NL Apply !M! koishi:Terror to ALL enemies."
   },
   "Koishi:IdleWhim": {
     "NAME": "Idle Whim",
-    "DESCRIPTION": "Id. NL Draw !M! cards."
+    "DESCRIPTION": "koishi:Id. NL Draw !M! cards."
   },
   "Koishi:Bloodlust": {
     "NAME": "Bloodlust",
@@ -81,7 +81,7 @@
   },
   "Koishi:JumpScare": {
     "NAME": "Jump Scare",
-    "DESCRIPTION": "Innate. NL Apply !M! Terror. NL Exhaust."
+    "DESCRIPTION": "Innate. NL Apply !M! koishi:Terror. NL Exhaust."
   },
   "Koishi:HeartfeltFancy": {
     "NAME": "Heartfelt Fancy",
@@ -89,15 +89,15 @@
   },
   "Koishi:UnansweredLove": {
     "NAME": "Unanswered Love",
-    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL Gain !M! Ephemeral."
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL Gain !M! koishi:Ephemeral."
   },
   "Koishi:FleetingPhantom": {
     "NAME": "Fleeting Phantom",
-    "DESCRIPTION": "Draw !M! cards. NL Gain !Koishi:SecondMagic! Ephemeral."
+    "DESCRIPTION": "Draw !M! cards. NL Gain !Koishi:SecondMagic! koishi:Ephemeral."
   },
   "Koishi:PhantomBarrier": {
     "NAME": "Phantom Barrier",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Ephemeral."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! koishi:Ephemeral."
   },
   "Koishi:Whimsy": {
     "NAME": "Whimsy",
@@ -106,11 +106,11 @@
   },
   "Koishi:UnconsciousUprising": {
     "NAME": "Unconscious Uprising",
-    "DESCRIPTION": "Id. NL Gain !B! Block."
+    "DESCRIPTION": "koishi:Id. NL Gain !B! Block."
   },
   "Koishi:Provoke": {
     "NAME": "Provoke",
-    "DESCRIPTION": "Gain !B! Block. NL Force target enemy to attack this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Force target enemy to attack this turn if possible."
   },
   "Koishi:DefaultCommonAttack": {
     "NAME": "Strike",

@@ -1,5 +1,10 @@
 package Koishi.cards;
 
+import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Skills.Common.UnconsciousUprising;
+import Koishi.cards.Skills.Uncommon.IdleWhim;
+import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
+import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,33 +37,11 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
 
     public static AbstractIdCard returnTrulyRandomIdCard() {
         ArrayList<AbstractCard> list = new ArrayList();
-        Iterator iterator = AbstractDungeon.srcCommonCardPool.group.iterator();
-
-        AbstractCard c;
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractIdCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcUncommonCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractIdCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcRareCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractIdCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
+        list.add(new SubconsciousSweep());
+        list.add(new UnconsciousUprising());
+        list.add(new IdleWhim());
+        list.add(new PredatoryInstincts());
+        list.add(new RorschachInDanmaku());
 
         return (AbstractIdCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
