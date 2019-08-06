@@ -41,7 +41,7 @@ public class DreadfulBlow extends AbstractIntentChangingCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("airAttack");
+        KoishiMod.runAnimation("dashAttackB");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
