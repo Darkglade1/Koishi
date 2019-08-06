@@ -1,4 +1,8 @@
 {
+  "Koishi:SpiritedAway": {
+    "NAME": "Spirited Away",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Draw !M! card. NL This card costs 0 while you are Intangible."
+  },
   "Koishi:GrowingPain": {
     "NAME": "Growing Pain",
     "DESCRIPTION": "Deal !D! damage !M! time(s). NL Deals damage an additional time for every Intangible you gained this combat."

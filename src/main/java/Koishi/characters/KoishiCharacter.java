@@ -9,6 +9,7 @@ import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
+import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
@@ -176,12 +177,12 @@ public class KoishiCharacter extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
 
 //        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(PhantomStrike.ID);
+        //retVal.add(PhantomStrike.ID);
         //retVal.add(ReflexRadar.ID);
         //retVal.add(ReflexRadar.ID);
         //retVal.add(PhantomStrike.ID);
         //retVal.add(ImGoingToCallYouNow.ID);
-        retVal.add(PerfectMindControl.ID);
+        //retVal.add(PerfectMindControl.ID);
        // retVal.add(PerfectMindControl.ID);
         //retVal.add(PerfectMindControl.ID);
         //retVal.add(ImGoingToCallYouNow.ID);
@@ -222,6 +223,7 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(MindStellarRelief.ID);
         retVal.add(SubterraneanRose.ID);
         retVal.add(GrowingPain.ID);
+        retVal.add(SpiritedAway.ID);
 
         return retVal;
     }

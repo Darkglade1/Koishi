@@ -8,6 +8,7 @@ import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
+import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
@@ -453,6 +454,7 @@ public class KoishiMod implements
 
         //Attacks
         //Uncommons
+        BaseMod.addCard(new SpiritedAway());
         BaseMod.addCard(new GrowingPain());
         //Commons
         BaseMod.addCard(new SubterraneanRose());
@@ -514,6 +516,7 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(SpiritedAway.ID);
         UnlockTracker.unlockCard(GrowingPain.ID);
 
         UnlockTracker.unlockCard(SubterraneanRose.ID);

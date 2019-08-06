@@ -49,6 +49,7 @@ Koishi\cards\Skills\Uncommon\DanmakuParanoia.class
 Koishi\powers\FourthEyePower.class
 Koishi\cards\Skills\Uncommon\MassHysteria.class
 Koishi\characters\KoishiCharacter.class
+Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\CardTemplate.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
