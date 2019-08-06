@@ -19,6 +19,10 @@
         "NAME": "Bloodlust",
         "DESCRIPTIONS": ["Lose", " next turn."]
 },
+"Koishi:LoseThornsPower": {
+        "NAME": "Thorns Down",
+        "DESCRIPTIONS": ["Next turn, lose #b", " Thorns."]
+},
 "Koishi:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

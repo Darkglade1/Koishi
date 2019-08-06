@@ -7,6 +7,8 @@ import Koishi.cards.Attacks.Common.DreadfulBlow;
 import Koishi.cards.Attacks.Common.HauntingSlash;
 import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.StingingMind;
+import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
@@ -214,10 +216,12 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(FourthEye.ID);
         //retVal.add(JumpScare.ID);
         //retVal.add(JumpScare.ID);
-        retVal.add(Vanish.ID);
-        retVal.add(ApparitionsStalkTheNight.ID);
+//        retVal.add(Vanish.ID);
+//        retVal.add(ApparitionsStalkTheNight.ID);
         retVal.add(DNAsFlaw.ID);
-        retVal.add(MindStellarRelief.ID);
+//        retVal.add(MindStellarRelief.ID);
+        retVal.add(SubterraneanRose.ID);
+        retVal.add(GrowingPain.ID);
 
         return retVal;
     }

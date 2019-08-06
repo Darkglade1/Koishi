@@ -1,4 +1,12 @@
 {
+  "Koishi:GrowingPain": {
+    "NAME": "Growing Pain",
+    "DESCRIPTION": "Deal !D! damage !M! time(s). NL Deals damage an additional time for every Intangible you gained this combat."
+  },
+  "Koishi:SubterraneanRose": {
+    "NAME": "Subterranean Rose",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Thorns this turn."
+  },
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
     "DESCRIPTION": "Deal !D! damage and apply !M! koishi:Terror twice."

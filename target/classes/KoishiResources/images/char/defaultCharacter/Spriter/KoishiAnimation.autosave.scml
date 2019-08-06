@@ -1245,7 +1245,7 @@
                 </key>
             </timeline>
         </animation>
-        <animation id="13" name="winB" length="750" interval="100">
+        <animation id="13" name="winB" length="1150" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
@@ -1274,6 +1274,22 @@
                 <key id="7" time="700">
                     <object_ref id="0" timeline="7" key="0" z_index="0"/>
                     <object_ref id="1" timeline="11" key="0" z_index="1"/>
+                </key>
+                <key id="8" time="800">
+                    <object_ref id="0" timeline="7" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="12" key="0" z_index="1"/>
+                </key>
+                <key id="9" time="900">
+                    <object_ref id="0" timeline="7" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="13" key="0" z_index="1"/>
+                </key>
+                <key id="10" time="999">
+                    <object_ref id="0" timeline="7" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="14" key="0" z_index="1"/>
+                </key>
+                <key id="11" time="1099">
+                    <object_ref id="0" timeline="7" key="4" z_index="0"/>
+                    <object_ref id="1" timeline="15" key="0" z_index="1"/>
                 </key>
             </mainline>
             <timeline id="0" name="tile000_011">
@@ -1315,6 +1331,18 @@
                 <key id="0" time="700" spin="0">
                     <object folder="13" file="7" x="-94" y="273"/>
                 </key>
+                <key id="1" time="800" spin="0">
+                    <object folder="13" file="7" x="-94" y="273"/>
+                </key>
+                <key id="2" time="900" spin="0">
+                    <object folder="13" file="7" x="-94" y="273"/>
+                </key>
+                <key id="3" time="999" spin="0">
+                    <object folder="13" file="7" x="-94" y="273"/>
+                </key>
+                <key id="4" time="1099" spin="0">
+                    <object folder="13" file="7" x="-94" y="273"/>
+                </key>
             </timeline>
             <timeline id="8" name="tile000_012">
                 <key id="0" time="400" spin="0">
@@ -1328,12 +1356,32 @@
             </timeline>
             <timeline id="10" name="tile002_013">
                 <key id="0" time="599" spin="0">
-                    <object folder="13" file="10" x="12" y="295"/>
+                    <object folder="13" file="10" x="12" y="335"/>
                 </key>
             </timeline>
             <timeline id="11" name="tile003_013">
                 <key id="0" time="700" spin="0">
-                    <object folder="13" file="11" x="14" y="245"/>
+                    <object folder="13" file="11" x="12" y="355"/>
+                </key>
+            </timeline>
+            <timeline id="12" name="tile000_013">
+                <key id="0" time="800" spin="0">
+                    <object folder="13" file="8" x="12" y="335"/>
+                </key>
+            </timeline>
+            <timeline id="13" name="tile001_014">
+                <key id="0" time="900" spin="0">
+                    <object folder="13" file="9" x="12" y="315"/>
+                </key>
+            </timeline>
+            <timeline id="14" name="tile002_014">
+                <key id="0" time="999" spin="0">
+                    <object folder="13" file="10" x="12" y="295"/>
+                </key>
+            </timeline>
+            <timeline id="15" name="tile003_014">
+                <key id="0" time="1099" spin="0">
+                    <object folder="13" file="11" x="14" y="244"/>
                 </key>
             </timeline>
         </animation>

@@ -6,6 +6,8 @@ import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
@@ -49,12 +51,16 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -113,7 +119,11 @@ public class KoishiMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
         PostInitializeSubscriber,
-        PostBattleSubscriber {
+        OnStartBattleSubscriber,
+        PostBattleSubscriber,
+        StartGameSubscriber,
+        SetUnlocksSubscriber,
+        PostPowerApplySubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(KoishiMod.class.getName());
@@ -128,6 +138,8 @@ public class KoishiMod implements
     private static final String MODNAME = "Koishi";
     private static final String AUTHOR = "Darkglade"; // And pretty soon - You!
     private static final String DESCRIPTION = "My hat is my friend. It helps me relax.";
+
+    public static int intangibleCount = 0;
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -440,6 +452,10 @@ public class KoishiMod implements
         // when generating card rewards/shop screen items.
 
         //Attacks
+        //Uncommons
+        BaseMod.addCard(new GrowingPain());
+        //Commons
+        BaseMod.addCard(new SubterraneanRose());
         BaseMod.addCard(new StingingMind());
         BaseMod.addCard(new DreadfulBlow());
         BaseMod.addCard(new ReflexRadar());
@@ -498,6 +514,9 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(GrowingPain.ID);
+
+        UnlockTracker.unlockCard(SubterraneanRose.ID);
         UnlockTracker.unlockCard(StingingMind.ID);
         UnlockTracker.unlockCard(DreadfulBlow.ID);
         UnlockTracker.unlockCard(ReflexRadar.ID);
@@ -648,6 +667,31 @@ public class KoishiMod implements
     @Override
     public void receivePostBattle(AbstractRoom room) {
         runAnimation("winB");
+        intangibleCount = 0;
+    }
+
+    @Override
+    public void receiveOnBattleStart(AbstractRoom var1) {
+        intangibleCount = 0;
+    }
+
+    @Override
+    public void receiveStartGame() {
+        intangibleCount = 0;
+    }
+
+    @Override
+    public void receiveSetUnlocks() {
+        intangibleCount = 0;
+    }
+
+    @Override
+    public void receivePostPowerApplySubscriber(AbstractPower p, AbstractCreature target, AbstractCreature source) {
+        if (target == AbstractDungeon.player) {
+            if (p.ID.equals(IntangiblePlayerPower.POWER_ID) || p.ID.equals(IntangiblePower.POWER_ID)) {
+                intangibleCount += p.amount;
+            }
+        }
     }
 
     //Checks to make sure player is playing this character before running animations

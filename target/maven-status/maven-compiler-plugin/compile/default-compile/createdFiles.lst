@@ -1,5 +1,6 @@
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\actions\UncommonPowerAction.class
+Koishi\powers\LoseThornsPower.class
 Koishi\cards\DefaultCommonAttack.class
 Koishi\util\TextureLoader.class
 Koishi\variables\DefaultSecondMagicNumber.class
@@ -54,6 +55,7 @@ Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
+Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class
@@ -68,6 +70,7 @@ Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\GhostParty.class
+Koishi\cards\Attacks\Uncommon\GrowingPain.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
