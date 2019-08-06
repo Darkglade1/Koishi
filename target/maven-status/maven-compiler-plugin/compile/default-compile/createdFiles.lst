@@ -11,6 +11,7 @@ Koishi\util\IDCheckDontTouchPls.class
 Koishi\cards\Attacks\Common\PhantomStrike.class
 Koishi\relics\PlaceholderRelic2.class
 Koishi\cards\DefaultUncommonAttack.class
+Koishi\powers\MindControlPower.class
 Koishi\actions\ForceIntentAction.class
 Koishi\cards\Skills\Common\UnconsciousUprising.class
 Koishi\relics\BottledPlaceholderRelic.class
@@ -26,9 +27,11 @@ Koishi\cards\AbstractDefaultCard.class
 Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\patches\DefaultInsertPatch.class
+Koishi\cards\Skills\Rare\MindStellarRelief.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
 Koishi\cards\DefaultUncommonPower.class
+Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class
 Koishi\patches\relics\BottledPlaceholderField.class
 Koishi\patches\onGainedBlockPatch.class
 Koishi\cards\DefaultRareSkill.class
@@ -47,13 +50,14 @@ Koishi\cards\Skills\Uncommon\MassHysteria.class
 Koishi\characters\KoishiCharacter.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\CardTemplate.class
+Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
+Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
-Koishi\powers\PerfectMindControlPower.class
 Koishi\cards\Skills\Common\JumpScare.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class

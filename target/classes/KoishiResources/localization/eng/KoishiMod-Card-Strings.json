@@ -23,6 +23,14 @@
     "NAME": "Haunting Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror."
   },
+  "Koishi:MindStellarRelief": {
+    "NAME": "Mind Stellar Relief",
+    "DESCRIPTION": "Retain. NL Remove all debuffs from target enemy. NL It loses !M! HP times the amount of debuffs removed. NL Exhaust."
+  },
+  "Koishi:DNAsFlaw": {
+    "NAME": "DNA's Flaw",
+    "DESCRIPTION": "Gain !M! Intangible. NL Exhaust."
+  },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
     "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add So Answer the Phone to your hand. NL Exhaust.",
@@ -35,8 +43,16 @@
   },
   "Koishi:PerfectMindControl": {
     "NAME": "Perfect Mind Control",
-    "DESCRIPTION": "This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL This turn, whenever an enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever an enemy applies a buff, you receive it instead. Whenever an enemy gains Block or heals HP, you receive it as well. NL Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Mind_Control to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! koishi:Mind_Control to ALL enemies. NL Exhaust."
+  },
+  "Koishi:ApparitionsStalkTheNight": {
+    "NAME": "Apparitions Stalk the Night",
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL If you do not have Intangible, gain !M! Intangible. NL Exhaust."
+  },
+  "Koishi:Vanish": {
+    "NAME": "Vanish",
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP twice. NL Gain !M! koishi:Ephemeral. NL Exhaust."
   },
   "Koishi:GhostParty": {
     "NAME": "Ghost Party",

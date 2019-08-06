@@ -3,7 +3,7 @@ package Koishi.cards.Skills.Rare;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
-import Koishi.powers.PerfectMindControlPower;
+import Koishi.powers.MindControlPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -49,7 +49,7 @@ public class PerfectMindControl extends AbstractDefaultCard {
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new PerfectMindControlPower(mo, p, magicNumber), magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new MindControlPower(mo, p, magicNumber), magicNumber));
         }
     }
 

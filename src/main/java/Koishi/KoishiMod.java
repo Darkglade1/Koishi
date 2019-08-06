@@ -10,6 +10,9 @@ import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.UnansweredLove;
+import Koishi.cards.Skills.Rare.DNAsFlaw;
+import Koishi.cards.Skills.Rare.MindStellarRelief;
+import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
 import Koishi.cards.Skills.Uncommon.DanmakuParanoia;
@@ -30,6 +33,7 @@ import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Common.Whimsy;
+import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.relics.ImaginaryFriend;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
@@ -443,9 +447,13 @@ public class KoishiMod implements
 
         //Skills
         //Rares
+        BaseMod.addCard(new MindStellarRelief());
+        BaseMod.addCard(new DNAsFlaw());
         BaseMod.addCard(new ImGoingToCallYouNow());
         BaseMod.addCard(new PerfectMindControl());
         //Uncommons
+        BaseMod.addCard(new ApparitionsStalkTheNight());
+        BaseMod.addCard(new Vanish());
         BaseMod.addCard(new GhostParty());
         BaseMod.addCard(new DanmakuParanoia());
         BaseMod.addCard(new PhilosophyOfTheDespised());
@@ -495,9 +503,13 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
         UnlockTracker.unlockCard(HauntingSlash.ID);
 
+        UnlockTracker.unlockCard(MindStellarRelief.ID);
+        UnlockTracker.unlockCard(DNAsFlaw.ID);
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
         UnlockTracker.unlockCard(PerfectMindControl.ID);
 
+        UnlockTracker.unlockCard(ApparitionsStalkTheNight.ID);
+        UnlockTracker.unlockCard(Vanish.ID);
         UnlockTracker.unlockCard(GhostParty.ID);
         UnlockTracker.unlockCard(DanmakuParanoia.ID);
         UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);

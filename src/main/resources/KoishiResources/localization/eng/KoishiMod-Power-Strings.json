@@ -7,8 +7,8 @@
         "NAME": "Terror",
         "DESCRIPTIONS": ["When this enemy dies, heal #b", " HP."]
 },
-"Koishi:PerfectMindControlPower": {
-        "NAME": "Perfect Mind Control",
+"Koishi:MindControlPower": {
+        "NAME": "Mind Control",
         "DESCRIPTIONS": ["This enemy will help you for #b", " more turn.", " more turns."]
 },
 "Koishi:FourthEyePower": {

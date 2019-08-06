@@ -34,6 +34,7 @@ public class DanmakuParanoia extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
         magicNumber = baseMagicNumber = MULTIPLIER;
+        KoishiMod.setBackground(this, 1);
     }
 
     @Override
