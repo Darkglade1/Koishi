@@ -55,6 +55,7 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -111,7 +112,8 @@ public class KoishiMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        PostBattleSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(KoishiMod.class.getName());
@@ -641,6 +643,11 @@ public class KoishiMod implements
                 card.setBackgroundTexture("KoishiResources/images/512/bg_power_black.png", "KoishiResources/images/1024/bg_power_black.png");
                 break;
         }
+    }
+
+    @Override
+    public void receivePostBattle(AbstractRoom room) {
+        runAnimation("winB");
     }
 
     //Checks to make sure player is playing this character before running animations

@@ -16,6 +16,7 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\KoishiPlayerListener.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\OrbSkill.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\DefaultCommonAttack.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\MindControlPower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Common\HauntingSlash.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\patches\DefaultInsertPatch.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\BetterSpriterAnimation.java
@@ -30,7 +31,6 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\events\IdentityCrisisEvent.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\ReleaseOfTheId.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\relics\DefaultClickableRelic.java
-C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\PerfectMindControlPower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\FourthEye.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Common\EmbryosDream.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Rare\DNAsFlaw.java
