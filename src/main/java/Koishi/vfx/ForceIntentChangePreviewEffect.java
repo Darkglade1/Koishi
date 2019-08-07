@@ -45,12 +45,12 @@ public class ForceIntentChangePreviewEffect
 
     int tmp = MathUtils.random(5);
     if (tmp == 0) {
-      this.color = Color.GOLD.cpy();
+      this.color = Color.RED.cpy();
       this.scale = this.scale / 4.0F;
     } else if (tmp < 3) {
-      this.color = Color.SKY.cpy();
+      this.color = Color.BLACK.cpy();
     } else {
-      this.color = Color.SLATE.cpy();
+      this.color = Color.GREEN.cpy();
     }
     this.color.a = 0.25F;
   }

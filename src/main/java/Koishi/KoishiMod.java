@@ -9,10 +9,13 @@ import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
+import Koishi.cards.Attacks.Uncommon.Catatonia;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.Attacks.Uncommon.TremblingHands;
+import Koishi.cards.Attacks.Uncommon.UnseenTerror;
+import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
@@ -20,6 +23,7 @@ import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
+import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
@@ -459,6 +463,9 @@ public class KoishiMod implements
 
         //Attacks
         //Uncommons
+        BaseMod.addCard(new UnseenTerror());
+        BaseMod.addCard(new Catatonia());
+        BaseMod.addCard(new YoukaiPolygraph());
         BaseMod.addCard(new TremblingHands());
         BaseMod.addCard(new ParalyzingFear());
         BaseMod.addCard(new BloodcurdlingScream());
@@ -476,6 +483,7 @@ public class KoishiMod implements
 
         //Skills
         //Rares
+        BaseMod.addCard(new RoseHell());
         BaseMod.addCard(new MindStellarRelief());
         BaseMod.addCard(new DNAsFlaw());
         BaseMod.addCard(new ImGoingToCallYouNow());
@@ -526,6 +534,9 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(UnseenTerror.ID);
+        UnlockTracker.unlockCard(Catatonia.ID);
+        UnlockTracker.unlockCard(YoukaiPolygraph.ID);
         UnlockTracker.unlockCard(TremblingHands.ID);
         UnlockTracker.unlockCard(ParalyzingFear.ID);
         UnlockTracker.unlockCard(BloodcurdlingScream.ID);
@@ -541,6 +552,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
         UnlockTracker.unlockCard(HauntingSlash.ID);
 
+        UnlockTracker.unlockCard(RoseHell.ID);
         UnlockTracker.unlockCard(MindStellarRelief.ID);
         UnlockTracker.unlockCard(DNAsFlaw.ID);
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);

@@ -10,10 +10,13 @@ import Koishi.cards.Attacks.Common.RacingHeart;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
+import Koishi.cards.Attacks.Uncommon.Catatonia;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.Attacks.Uncommon.TremblingHands;
+import Koishi.cards.Attacks.Uncommon.UnseenTerror;
+import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
 import Koishi.cards.DefaultCommonAttack;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
@@ -22,6 +25,7 @@ import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
+import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
@@ -231,11 +235,15 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(SubterraneanRose.ID);
 //        retVal.add(GrowingPain.ID);
 //        retVal.add(SpiritedAway.ID);
-        retVal.add(BloodcurdlingScream.ID);
-        retVal.add(TremblingHands.ID);
-        retVal.add(ParalyzingFear.ID);
-        retVal.add(RacingHeart.ID);
-        retVal.add(SprinkleStarAndHeart.ID);
+//        retVal.add(BloodcurdlingScream.ID);
+//        retVal.add(TremblingHands.ID);
+//        retVal.add(ParalyzingFear.ID);
+//        retVal.add(RacingHeart.ID);
+//        retVal.add(SprinkleStarAndHeart.ID);
+        retVal.add(RoseHell.ID);
+        retVal.add(YoukaiPolygraph.ID);
+        retVal.add(Catatonia.ID);
+        retVal.add(UnseenTerror.ID);
 
         return retVal;
     }
@@ -360,7 +368,7 @@ public class KoishiCharacter extends CustomPlayer {
         int trueDamage = thisHealth - this.currentHealth;
         if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && trueDamage > 0) {
             if (this.isDead) {
-                KoishiMod.runAnimation("downed");
+                playDeathAnimation();
             } else {
                 KoishiMod.runAnimation("hit");
             }
@@ -370,7 +378,7 @@ public class KoishiCharacter extends CustomPlayer {
     //Stops the corpse img from overwriting the SpriterAnimation
     @Override
     public void playDeathAnimation() {
-        return;
+        KoishiMod.runAnimation("downed");
     }
 
     //Runs a specific animation

@@ -6,6 +6,7 @@ Koishi\cards\DefaultCommonAttack.class
 Koishi\util\TextureLoader.class
 Koishi\variables\DefaultSecondMagicNumber.class
 Koishi\cards\Skills\Uncommon\EmbersOfLove.class
+Koishi\cards\Attacks\Uncommon\UnseenTerror.class
 Koishi\powers\BloodlustPower.class
 Koishi\relics\ImaginaryFriend.class
 Koishi\cards\Attacks\Common\HauntingSlash.class
@@ -20,6 +21,7 @@ Koishi\relics\BottledPlaceholderRelic.class
 Koishi\BetterSpriterAnimation.class
 Koishi\patches\DefaultInsertPatch$Locator.class
 Koishi\cards\Attacks\Common\RacingHeart.class
+Koishi\cards\Attacks\Uncommon\Catatonia.class
 Koishi\cards\Skills\Uncommon\PhilosophyOfTheDespised.class
 Koishi\cards\DefaultUncommonSkill.class
 Koishi\patches\IdCardPatch.class
@@ -66,6 +68,7 @@ Koishi\cards\OrbSkill.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
+Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
 Koishi\cards\Skills\Common\JumpScare.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
@@ -76,6 +79,7 @@ Koishi\orbs\DefaultOrb.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\GhostParty.class
+Koishi\cards\Skills\Rare\RoseHell.class
 Koishi\cards\Attacks\Uncommon\GrowingPain.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class

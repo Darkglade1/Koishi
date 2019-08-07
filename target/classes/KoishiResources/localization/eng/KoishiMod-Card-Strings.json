@@ -1,4 +1,16 @@
 {
+  "Koishi:UnseenTerror": {
+    "NAME": "Unseen Terror",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Gain !Koishi:SecondMagic! koishi:Ephemeral."
+  },
+  "Koishi:Catatonia": {
+    "NAME": "Catatonia",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of koishi:Terror on target enemy."
+  },
+  "Koishi:YoukaiPolygraph": {
+    "NAME": "Youkai Polygraph",
+    "DESCRIPTION": "Deal !D! damage. NL If target enemy intends to attack, deal !D! damage again."
+  },
   "Koishi:TremblingHands": {
     "NAME": "Trembling Hands",
     "DESCRIPTION": "Deal !D! damage. NL Target enemy loses Strength this turn equal to its koishi:Terror."
@@ -50,6 +62,11 @@
   "Koishi:HauntingSlash": {
     "NAME": "Haunting Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror."
+  },
+  "Koishi:RoseHell": {
+    "NAME": "Rose Hell",
+    "DESCRIPTION": "Gain !M! Thorns X times. NL Apply !M! Constricted to ALL enemies X times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns X + 1 times. NL Apply !M! Constricted to ALL enemies X + 1 times. NL Exhaust."
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
