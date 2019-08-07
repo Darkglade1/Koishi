@@ -46,10 +46,12 @@ import com.brashmonkey.spriter.Player;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -351,6 +353,26 @@ public class KoishiCharacter extends CustomPlayer {
         return TEXT[2];
     }
 
+    @Override
+    public void damage(DamageInfo info) {
+        int thisHealth = this.currentHealth;
+        super.damage(info);
+        int trueDamage = thisHealth - this.currentHealth;
+        if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && trueDamage > 0) {
+            if (this.isDead) {
+                KoishiMod.runAnimation("downed");
+            } else {
+                KoishiMod.runAnimation("hit");
+            }
+        }
+    }
+
+    //Stops the corpse img from overwriting the SpriterAnimation
+    @Override
+    public void playDeathAnimation() {
+        return;
+    }
+
     //Runs a specific animation
     public void runAnim(String animation) {
         ((BetterSpriterAnimation)this.animation).myPlayer.setAnimation(animation);
@@ -359,6 +381,13 @@ public class KoishiCharacter extends CustomPlayer {
     //Resets character back to idle animation
     public void resetAnimation() {
         ((BetterSpriterAnimation)this.animation).myPlayer.setAnimation("idle");
+    }
+
+    //Prevents any further animation once the death animation is finished
+    public void stopAnimation() {
+        int time = ((BetterSpriterAnimation)this.animation).myPlayer.getAnimation().length;
+        ((BetterSpriterAnimation)this.animation).myPlayer.setTime(time);
+        ((BetterSpriterAnimation)this.animation).myPlayer.speed = 0;
     }
 
 

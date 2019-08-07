@@ -12,7 +12,9 @@ public class KoishiPlayerListener implements Player.PlayerListener {
         this.character = character;
     }
     public void animationFinished(Animation animation){
-        if (!animation.name.equals("idle")) {
+        if (animation.name.equals("downed")) {
+            character.stopAnimation();
+        } else if (!animation.name.equals("idle")) {
             character.resetAnimation();
         }
     }
