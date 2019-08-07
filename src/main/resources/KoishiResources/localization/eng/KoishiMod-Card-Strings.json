@@ -1,4 +1,16 @@
 {
+  "Koishi:TremblingHands": {
+    "NAME": "Trembling Hands",
+    "DESCRIPTION": "Deal !D! damage. NL Target enemy loses Strength this turn equal to its koishi:Terror."
+  },
+  "Koishi:ParalyzingFear": {
+    "NAME": "Paralyzing Fear",
+    "DESCRIPTION": "Deal !D! damage. NL If target enemy has koishi:Terror, apply !M! Weak."
+  },
+  "Koishi:BloodcurdlingScream": {
+    "NAME": "Bloodcurdling Scream",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Vulnerable to ALL enemies with koishi:Terror."
+  },
   "Koishi:SpiritedAway": {
     "NAME": "Spirited Away",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Draw !M! card. NL This card costs 0 while you are Intangible."
@@ -6,6 +18,10 @@
   "Koishi:GrowingPain": {
     "NAME": "Growing Pain",
     "DESCRIPTION": "Deal !D! damage !M! time(s). NL Deals damage an additional time for every Intangible you gained this combat."
+  },
+  "Koishi:RacingHeart": {
+    "NAME": "Racing Heart",
+    "DESCRIPTION": "Deal !D! damage. NL If target enemy has koishi:Terror, apply !M! koishi:Terror."
   },
   "Koishi:SubterraneanRose": {
     "NAME": "Subterranean Rose",
@@ -123,6 +139,10 @@
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",
     "DESCRIPTION": "Apply !M! Constricted. Exhaust."
+  },
+  "Koishi:SprinkleStarAndHeart": {
+    "NAME": "Sprinkle Star and Heart",
+    "DESCRIPTION": "koishi:Id. NL Apply !M! Weak and Vulnerable to ALL enemies."
   },
   "Koishi:EmbryosDream": {
     "NAME": "Embryo's Dream",

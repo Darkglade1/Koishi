@@ -1,3 +1,4 @@
+Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\actions\UncommonPowerAction.class
 Koishi\powers\LoseThornsPower.class
@@ -18,6 +19,7 @@ Koishi\cards\Skills\Common\UnconsciousUprising.class
 Koishi\relics\BottledPlaceholderRelic.class
 Koishi\BetterSpriterAnimation.class
 Koishi\patches\DefaultInsertPatch$Locator.class
+Koishi\cards\Attacks\Common\RacingHeart.class
 Koishi\cards\Skills\Uncommon\PhilosophyOfTheDespised.class
 Koishi\cards\DefaultUncommonSkill.class
 Koishi\patches\IdCardPatch.class
@@ -29,8 +31,10 @@ Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\patches\DefaultInsertPatch.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
+Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
 Koishi\cards\DefaultCommonSkill.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
+Koishi\cards\Attacks\Uncommon\TremblingHands.class
 Koishi\cards\DefaultUncommonPower.class
 Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class
 Koishi\patches\relics\BottledPlaceholderField.class
@@ -55,6 +59,7 @@ Koishi\cards\CardTemplate.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\cards\Skills\Uncommon\Vanish.class
+Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\cards\OrbSkill.class

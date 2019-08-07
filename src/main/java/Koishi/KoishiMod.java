@@ -3,15 +3,20 @@ package Koishi;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
 import Koishi.cards.Attacks.Common.HauntingSlash;
 import Koishi.cards.Attacks.Common.PhantomStrike;
+import Koishi.cards.Attacks.Common.RacingHeart;
 import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
+import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
+import Koishi.cards.Attacks.Uncommon.TremblingHands;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
+import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
@@ -454,9 +459,13 @@ public class KoishiMod implements
 
         //Attacks
         //Uncommons
+        BaseMod.addCard(new TremblingHands());
+        BaseMod.addCard(new ParalyzingFear());
+        BaseMod.addCard(new BloodcurdlingScream());
         BaseMod.addCard(new SpiritedAway());
         BaseMod.addCard(new GrowingPain());
         //Commons
+        BaseMod.addCard(new RacingHeart());
         BaseMod.addCard(new SubterraneanRose());
         BaseMod.addCard(new StingingMind());
         BaseMod.addCard(new DreadfulBlow());
@@ -488,6 +497,7 @@ public class KoishiMod implements
         BaseMod.addCard(new RorschachInDanmaku());
         BaseMod.addCard(new CatchAndRose());
         //Commons
+        BaseMod.addCard(new SprinkleStarAndHeart());
         BaseMod.addCard(new EmbryosDream());
         BaseMod.addCard(new JumpScare());
         BaseMod.addCard(new HeartfeltFancy());
@@ -516,9 +526,13 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(TremblingHands.ID);
+        UnlockTracker.unlockCard(ParalyzingFear.ID);
+        UnlockTracker.unlockCard(BloodcurdlingScream.ID);
         UnlockTracker.unlockCard(SpiritedAway.ID);
         UnlockTracker.unlockCard(GrowingPain.ID);
 
+        UnlockTracker.unlockCard(RacingHeart.ID);
         UnlockTracker.unlockCard(SubterraneanRose.ID);
         UnlockTracker.unlockCard(StingingMind.ID);
         UnlockTracker.unlockCard(DreadfulBlow.ID);
@@ -548,6 +562,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(RorschachInDanmaku.ID);
         UnlockTracker.unlockCard(CatchAndRose.ID);
 
+        UnlockTracker.unlockCard(SprinkleStarAndHeart.ID);
         UnlockTracker.unlockCard(EmbryosDream.ID);
         UnlockTracker.unlockCard(JumpScare.ID);
         UnlockTracker.unlockCard(HeartfeltFancy.ID);

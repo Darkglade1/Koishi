@@ -1,7 +1,9 @@
 package Koishi.cards;
 
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
+import Koishi.cards.Skills.Uncommon.GhostParty;
 import Koishi.cards.Skills.Uncommon.IdleWhim;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
@@ -42,6 +44,8 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
         list.add(new IdleWhim());
         list.add(new PredatoryInstincts());
         list.add(new RorschachInDanmaku());
+        list.add(new GhostParty());
+        list.add(new SprinkleStarAndHeart());
 
         return (AbstractIdCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
