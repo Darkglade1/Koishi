@@ -254,6 +254,7 @@ public class KoishiCharacter extends CustomPlayer {
         retVal.add(MindNumbingTerror.ID);
         retVal.add(TraumaticStroke.ID);
         retVal.add(StrangeCloudFist.ID);
+        retVal.add(StrangeCloudFist.ID);
 
         return retVal;
     }
