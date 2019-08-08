@@ -1,4 +1,16 @@
 {
+  "Koishi:StrangeCloudFist": {
+    "NAME": "Strange Cloud Fist",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Deals double damage while you are Intangible."
+  },
+  "Koishi:TraumaticStroke": {
+    "NAME": "Traumatic Stroke",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block for each different debuff on target enemy."
+  },
+  "Koishi:MindNumbingTerror": {
+    "NAME": "Mind Numbing Terror",
+    "DESCRIPTION": "Deal !D! damage. NL Remove all koishi:Terror from target enemy and heal HP equal to the amount removed. NL Exhaust."
+  },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Gain !Koishi:SecondMagic! koishi:Ephemeral."
@@ -63,6 +75,11 @@
     "NAME": "Haunting Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror."
   },
+  "Koishi:FadingMemory": {
+    "NAME": "Fading Memory",
+    "DESCRIPTION": "Id. NL Exhaust a card in your hand. NL Draw !Koishi:SecondMagic! card.",
+    "UPGRADE_DESCRIPTION": "Id. NL Exhaust a card in your hand. NL Draw !Koishi:SecondMagic! cards."
+  },
   "Koishi:RoseHell": {
     "NAME": "Rose Hell",
     "DESCRIPTION": "Gain !M! Thorns X times. NL Apply !M! Constricted to ALL enemies X times. NL Exhaust.",
@@ -90,6 +107,10 @@
     "NAME": "Perfect Mind Control",
     "DESCRIPTION": "Apply !M! koishi:Mind_Control to ALL enemies. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Apply !M! koishi:Mind_Control to ALL enemies. NL Exhaust."
+  },
+  "Koishi:Possession": {
+    "NAME": "Possession",
+    "DESCRIPTION": "Retain. NL Apply !M! koishi:Mind_Control. NL This card can only be played while you are Intangible. NL Exhaust."
   },
   "Koishi:ApparitionsStalkTheNight": {
     "NAME": "Apparitions Stalk the Night",

@@ -11,8 +11,11 @@ import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
 import Koishi.cards.Attacks.Uncommon.Catatonia;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
+import Koishi.cards.Attacks.Uncommon.MindNumbingTerror;
 import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
+import Koishi.cards.Attacks.Uncommon.StrangeCloudFist;
+import Koishi.cards.Attacks.Uncommon.TraumaticStroke;
 import Koishi.cards.Attacks.Uncommon.TremblingHands;
 import Koishi.cards.Attacks.Uncommon.UnseenTerror;
 import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
@@ -22,6 +25,7 @@ import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
+import Koishi.cards.Skills.Rare.FadingMemory;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
 import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
@@ -40,6 +44,7 @@ import Koishi.cards.Skills.Rare.PerfectMindControl;
 import Koishi.cards.Skills.Common.PhantomBarrier;
 import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.PhilosophyOfTheDespised;
+import Koishi.cards.Skills.Uncommon.Possession;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
@@ -463,6 +468,9 @@ public class KoishiMod implements
 
         //Attacks
         //Uncommons
+        BaseMod.addCard(new StrangeCloudFist());
+        BaseMod.addCard(new TraumaticStroke());
+        BaseMod.addCard(new MindNumbingTerror());
         BaseMod.addCard(new UnseenTerror());
         BaseMod.addCard(new Catatonia());
         BaseMod.addCard(new YoukaiPolygraph());
@@ -483,12 +491,14 @@ public class KoishiMod implements
 
         //Skills
         //Rares
+        BaseMod.addCard(new FadingMemory());
         BaseMod.addCard(new RoseHell());
         BaseMod.addCard(new MindStellarRelief());
         BaseMod.addCard(new DNAsFlaw());
         BaseMod.addCard(new ImGoingToCallYouNow());
         BaseMod.addCard(new PerfectMindControl());
         //Uncommons
+        BaseMod.addCard(new Possession());
         BaseMod.addCard(new ApparitionsStalkTheNight());
         BaseMod.addCard(new Vanish());
         BaseMod.addCard(new GhostParty());
@@ -534,6 +544,9 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(StrangeCloudFist.ID);
+        UnlockTracker.unlockCard(TraumaticStroke.ID);
+        UnlockTracker.unlockCard(MindNumbingTerror.ID);
         UnlockTracker.unlockCard(UnseenTerror.ID);
         UnlockTracker.unlockCard(Catatonia.ID);
         UnlockTracker.unlockCard(YoukaiPolygraph.ID);
@@ -552,12 +565,14 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
         UnlockTracker.unlockCard(HauntingSlash.ID);
 
+        UnlockTracker.unlockCard(FadingMemory.ID);
         UnlockTracker.unlockCard(RoseHell.ID);
         UnlockTracker.unlockCard(MindStellarRelief.ID);
         UnlockTracker.unlockCard(DNAsFlaw.ID);
         UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
         UnlockTracker.unlockCard(PerfectMindControl.ID);
 
+        UnlockTracker.unlockCard(Possession.ID);
         UnlockTracker.unlockCard(ApparitionsStalkTheNight.ID);
         UnlockTracker.unlockCard(Vanish.ID);
         UnlockTracker.unlockCard(GhostParty.ID);

@@ -58,6 +58,7 @@ Koishi\characters\KoishiCharacter.class
 Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\CardTemplate.class
+Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\DefaultSecondMagicNumberSkill.class
 Koishi\cards\Skills\Uncommon\Vanish.class
@@ -72,10 +73,12 @@ Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
 Koishi\cards\Skills\Common\JumpScare.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
+Koishi\cards\Skills\Uncommon\Possession.class
 Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\powers\EphemeralPower.class
 Koishi\orbs\DefaultOrb.class
+Koishi\cards\Attacks\Uncommon\StrangeCloudFist.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\GhostParty.class
@@ -86,6 +89,7 @@ Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\relics\DefaultClickableRelic.class
 Koishi\cards\Skills\Uncommon\FourthEye.class
+Koishi\cards\Attacks\Uncommon\MindNumbingTerror.class
 Koishi\cards\Skills\Rare\ImGoingToCallYouNow.class
 Koishi\cards\Skills\Common\FleetingPhantom.class
 Koishi\vfx\ForceIntentChangePreviewEffect.class
@@ -99,3 +103,4 @@ Koishi\KoishiPlayerListener.class
 Koishi\cards\Skills\Uncommon\PredatoryInstincts.class
 Koishi\cards\DefaultAttackWithVariable.class
 Koishi\powers\RarePower.class
+Koishi\cards\Attacks\Uncommon\TraumaticStroke.class
