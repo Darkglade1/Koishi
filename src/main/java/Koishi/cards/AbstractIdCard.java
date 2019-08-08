@@ -11,11 +11,15 @@ import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public abstract class AbstractIdCard extends AbstractDefaultCard {
+
+    public static int idCardsDrawn = 0;
+
     public AbstractIdCard(final String id,
                           final String img,
                           final int cost,
@@ -29,13 +33,21 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
 
     @Override
     public void triggerWhenDrawn() {
-        calculateCardDamage(null);
-        use(AbstractDungeon.player, null);
+        if (this.target == CardTarget.ENEMY) {
+            AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng);
+            calculateCardDamage(mo);
+            use(AbstractDungeon.player, mo);
+        } else {
+            calculateCardDamage(null);
+            use(AbstractDungeon.player, null);
+        }
+
         if (!freeToPlayOnce) {
             AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
         } else {
             freeToPlayOnce = false;
         }
+        idCardsDrawn++;
     }
 
     public static AbstractIdCard returnTrulyRandomIdCard() {

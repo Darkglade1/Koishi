@@ -1,4 +1,16 @@
 {
+  "Koishi:SuperEgo": {
+    "NAME": "Super-Ego",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL your Id cards. NL Gain [E] and draw !M! card for each card exhausted this way. NL Exhaust."
+  },
+  "Koishi:RuptureMind": {
+    "NAME": "Rupture Mind",
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each different debuff on target enemy."
+  },
+  "Koishi:HeartAttack": {
+    "NAME": "Heart Attack",
+    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy. NL Deals !M! additional damage for each Id card you drew this combat."
+  },
   "Koishi:StrangeCloudFist": {
     "NAME": "Strange Cloud Fist",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Deals double damage while you are Intangible."

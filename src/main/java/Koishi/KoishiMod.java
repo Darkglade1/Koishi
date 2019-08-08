@@ -8,9 +8,12 @@ import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Attacks.Rare.RuptureMind;
+import Koishi.cards.Attacks.Rare.SuperEgo;
 import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
 import Koishi.cards.Attacks.Uncommon.Catatonia;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
+import Koishi.cards.Attacks.Uncommon.HeartAttack;
 import Koishi.cards.Attacks.Uncommon.MindNumbingTerror;
 import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
@@ -467,7 +470,11 @@ public class KoishiMod implements
         // when generating card rewards/shop screen items.
 
         //Attacks
+        //Rares
+        BaseMod.addCard(new SuperEgo());
+        BaseMod.addCard(new RuptureMind());
         //Uncommons
+        BaseMod.addCard(new HeartAttack());
         BaseMod.addCard(new StrangeCloudFist());
         BaseMod.addCard(new TraumaticStroke());
         BaseMod.addCard(new MindNumbingTerror());
@@ -544,6 +551,10 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(SuperEgo.ID);
+        UnlockTracker.unlockCard(RuptureMind.ID);
+
+        UnlockTracker.unlockCard(HeartAttack.ID);
         UnlockTracker.unlockCard(StrangeCloudFist.ID);
         UnlockTracker.unlockCard(TraumaticStroke.ID);
         UnlockTracker.unlockCard(MindNumbingTerror.ID);
@@ -713,21 +724,25 @@ public class KoishiMod implements
     public void receivePostBattle(AbstractRoom room) {
         runAnimation("winB");
         intangibleCount = 0;
+        AbstractIdCard.idCardsDrawn = 0;
     }
 
     @Override
     public void receiveOnBattleStart(AbstractRoom var1) {
         intangibleCount = 0;
+        AbstractIdCard.idCardsDrawn = 0;
     }
 
     @Override
     public void receiveStartGame() {
         intangibleCount = 0;
+        AbstractIdCard.idCardsDrawn = 0;
     }
 
     @Override
     public void receiveSetUnlocks() {
         intangibleCount = 0;
+        AbstractIdCard.idCardsDrawn = 0;
     }
 
     @Override

@@ -1,6 +1,7 @@
 Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\actions\UncommonPowerAction.class
+Koishi\cards\Attacks\Rare\RuptureMind.class
 Koishi\powers\LoseThornsPower.class
 Koishi\cards\DefaultCommonAttack.class
 Koishi\util\TextureLoader.class
@@ -66,6 +67,7 @@ Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\cards\OrbSkill.class
+Koishi\cards\Attacks\Uncommon\HeartAttack.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class
 Koishi\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
@@ -104,3 +106,4 @@ Koishi\cards\Skills\Uncommon\PredatoryInstincts.class
 Koishi\cards\DefaultAttackWithVariable.class
 Koishi\powers\RarePower.class
 Koishi\cards\Attacks\Uncommon\TraumaticStroke.class
+Koishi\cards\Attacks\Rare\SuperEgo.class
