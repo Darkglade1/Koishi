@@ -1,5 +1,6 @@
 package Koishi;
 
+import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
 import Koishi.cards.Attacks.Common.HauntingSlash;
 import Koishi.cards.Attacks.Common.PhantomStrike;
@@ -23,6 +24,11 @@ import Koishi.cards.Attacks.Uncommon.TraumaticStroke;
 import Koishi.cards.Attacks.Uncommon.TremblingHands;
 import Koishi.cards.Attacks.Uncommon.UnseenTerror;
 import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
+import Koishi.cards.Powers.Rare.Heartbroken;
+import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
+import Koishi.cards.Powers.Uncommon.TerrifyingSpectre;
+import Koishi.cards.Powers.Uncommon.VengefulSpirit;
+import Koishi.cards.Skills.Common.BasicDefend;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
 import Koishi.cards.Skills.Common.Provoke;
@@ -499,6 +505,7 @@ public class KoishiMod implements
         BaseMod.addCard(new PhantomStrike());
         BaseMod.addCard(new SubconsciousSweep());
         BaseMod.addCard(new HauntingSlash());
+        BaseMod.addCard(new BasicStrike());
 
         //Skills
         //Rares
@@ -536,19 +543,15 @@ public class KoishiMod implements
         BaseMod.addCard(new Whimsy());
         BaseMod.addCard(new UnconsciousUprising());
         BaseMod.addCard(new Provoke());
+        BaseMod.addCard(new BasicDefend());
 
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultCommonAttack());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonSkill());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
-        BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
-        BaseMod.addCard(new DefaultRarePower());
+        //Powers
+        //Rares
+        BaseMod.addCard(new Heartbroken());
+        //Uncommons
+        BaseMod.addCard(new TerrifyingSpectre());
+        BaseMod.addCard(new VengefulSpirit());
+        BaseMod.addCard(new FidgetySnatcher());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -580,6 +583,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(PhantomStrike.ID);
         UnlockTracker.unlockCard(SubconsciousSweep.ID);
         UnlockTracker.unlockCard(HauntingSlash.ID);
+        UnlockTracker.unlockCard(BasicStrike.ID);
 
         UnlockTracker.unlockCard(FadingMemory.ID);
         UnlockTracker.unlockCard(RoseHell.ID);
@@ -615,19 +619,13 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(Whimsy.ID);
         UnlockTracker.unlockCard(UnconsciousUprising.ID);
         UnlockTracker.unlockCard(Provoke.ID);
+        UnlockTracker.unlockCard(BasicDefend.ID);
 
-        UnlockTracker.unlockCard(OrbSkill.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
-        UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
-        UnlockTracker.unlockCard(DefaultRarePower.ID);
+        UnlockTracker.unlockCard(Heartbroken.ID);
+
+        UnlockTracker.unlockCard(TerrifyingSpectre.ID);
+        UnlockTracker.unlockCard(VengefulSpirit.ID);
+        UnlockTracker.unlockCard(FidgetySnatcher.ID);
         
         logger.info("Done adding cards!");
     }

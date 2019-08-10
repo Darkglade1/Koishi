@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -39,7 +40,7 @@ public class ApparitionsStalkTheNight extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, defaultSecondMagicNumber));
-        if (!p.hasPower(IntangiblePlayerPower.POWER_ID)) {
+        if (!p.hasPower(IntangiblePlayerPower.POWER_ID) && !p.hasPower(IntangiblePower.POWER_ID)) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber), magicNumber));
         }
     }

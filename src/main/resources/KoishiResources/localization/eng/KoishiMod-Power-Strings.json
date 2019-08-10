@@ -23,6 +23,22 @@
         "NAME": "Thorns Down",
         "DESCRIPTIONS": ["Next turn, lose #b", " Thorns."]
 },
+"Koishi:HeartbrokenPower": {
+        "NAME": "Heartbroken",
+        "DESCRIPTIONS": ["While you are Intangible, deal #b", "x damage."]
+},
+"Koishi:TerrifyingSpectrePower": {
+        "NAME": "Terrifying Spectre",
+        "DESCRIPTIONS": ["Whenever you gain Intangible, apply #b", " Terror to ALL enemies."]
+},
+"Koishi:VengefulSpiritPower": {
+        "NAME": "Vengeful Spirit",
+        "DESCRIPTIONS": ["Whenever you gain Intangible, apply #b", " Vulnerable to ALL enemies."]
+},
+"Koishi:FidgetySnatcherPower": {
+        "NAME": "Fidgety Snatcher",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Constricted to ALL enemies."]
+},
 "Koishi:CommonPower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]

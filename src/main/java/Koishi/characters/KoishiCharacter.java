@@ -3,54 +3,21 @@ package Koishi.characters;
 import Koishi.BetterSpriterAnimation;
 import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
+import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
-import Koishi.cards.Attacks.Common.HauntingSlash;
-import Koishi.cards.Attacks.Common.PhantomStrike;
-import Koishi.cards.Attacks.Common.RacingHeart;
-import Koishi.cards.Attacks.Common.StingingMind;
-import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Rare.RuptureMind;
 import Koishi.cards.Attacks.Rare.SuperEgo;
-import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
-import Koishi.cards.Attacks.Uncommon.Catatonia;
-import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
-import Koishi.cards.Attacks.Uncommon.MindNumbingTerror;
-import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
-import Koishi.cards.Attacks.Uncommon.SpiritedAway;
-import Koishi.cards.Attacks.Uncommon.StrangeCloudFist;
-import Koishi.cards.Attacks.Uncommon.TraumaticStroke;
-import Koishi.cards.Attacks.Uncommon.TremblingHands;
-import Koishi.cards.Attacks.Uncommon.UnseenTerror;
-import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
-import Koishi.cards.DefaultCommonAttack;
-import Koishi.cards.Skills.Common.EmbryosDream;
-import Koishi.cards.Skills.Common.FleetingPhantom;
-import Koishi.cards.Skills.Common.Provoke;
-import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
-import Koishi.cards.Skills.Common.UnansweredLove;
+import Koishi.cards.Powers.Rare.Heartbroken;
+import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
+import Koishi.cards.Powers.Uncommon.TerrifyingSpectre;
+import Koishi.cards.Powers.Uncommon.VengefulSpirit;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
-import Koishi.cards.Skills.Rare.FadingMemory;
-import Koishi.cards.Skills.Rare.MindStellarRelief;
-import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
-import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
-import Koishi.cards.Skills.Common.HeartfeltFancy;
 import Koishi.cards.Skills.Common.JumpScare;
-import Koishi.cards.Skills.Rare.PerfectMindControl;
-import Koishi.cards.Skills.Common.PhantomBarrier;
-import Koishi.cards.Skills.Uncommon.DanmakuParanoia;
-import Koishi.cards.Skills.Uncommon.FourthEye;
-import Koishi.cards.Skills.Uncommon.GeneticsOfTheUnconscious;
 import Koishi.cards.Skills.Uncommon.GhostParty;
-import Koishi.cards.Skills.Uncommon.MassHysteria;
-import Koishi.cards.Skills.Uncommon.Possession;
-import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
-import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
-import Koishi.cards.Skills.Common.Whimsy;
-import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -64,7 +31,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -196,7 +162,7 @@ public class KoishiCharacter extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-//        retVal.add(DefaultCommonAttack.ID);
+//        retVal.add(BasicStrike.ID);
         //retVal.add(PhantomStrike.ID);
         //retVal.add(ReflexRadar.ID);
         //retVal.add(ReflexRadar.ID);
@@ -216,30 +182,30 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(GeneticsOfTheUnconscious.ID);
 //        retVal.add(Bloodlust.ID);
 //        retVal.add(RorschachInDanmaku.ID);
-        retVal.add(CatchAndRose.ID);
+        //retVal.add(CatchAndRose.ID);
 //        retVal.add(JumpScare.ID);
 //        retVal.add(HeartfeltFancy.ID);
 //        retVal.add(Whimsy.ID);
 //        retVal.add(PhantomBarrier.ID);
-        retVal.add(UnconsciousUprising.ID);
+        //retVal.add(UnconsciousUprising.ID);
 //        retVal.add(UnconsciousUprising.ID);
 //        retVal.add(PredatoryInstincts.ID);
 //        retVal.add(SubconsciousSweep.ID);
 //        retVal.add(SubconsciousSweep.ID);
 //          retVal.add(HauntingSlash.ID);
 //          retVal.add(Provoke.ID);
-          retVal.add(DreadfulBlow.ID);
+          //retVal.add(DreadfulBlow.ID);
 //          retVal.add(StingingMind.ID);
-        //retVal.add(GhostParty.ID);
+        retVal.add(GhostParty.ID);
 //        retVal.add(MassHysteria.ID);
 //        retVal.add(DanmakuParanoia.ID);
 //        retVal.add(EmbryosDream.ID);
 //        retVal.add(FourthEye.ID);
-        retVal.add(JumpScare.ID);
+        //retVal.add(JumpScare.ID);
         //retVal.add(JumpScare.ID);
 //        retVal.add(Vanish.ID);
-//        retVal.add(ApparitionsStalkTheNight.ID);
-       // retVal.add(DNAsFlaw.ID);
+        retVal.add(ApparitionsStalkTheNight.ID);
+        retVal.add(DNAsFlaw.ID);
 //        retVal.add(MindStellarRelief.ID);
 //        retVal.add(SubterraneanRose.ID);
 //        retVal.add(GrowingPain.ID);
@@ -259,9 +225,17 @@ public class KoishiCharacter extends CustomPlayer {
 //        retVal.add(TraumaticStroke.ID);
 //        retVal.add(StrangeCloudFist.ID);
 //        retVal.add(StrangeCloudFist.ID);
-        retVal.add(HeartAttack.ID);
-        retVal.add(RuptureMind.ID);
-        retVal.add(SuperEgo.ID);
+//        retVal.add(HeartAttack.ID);
+//        retVal.add(RuptureMind.ID);
+//        retVal.add(SuperEgo.ID);
+        retVal.add(Heartbroken.ID);
+        retVal.add(FidgetySnatcher.ID);
+        retVal.add(VengefulSpirit.ID);
+        retVal.add(TerrifyingSpectre.ID);
+        retVal.add(Heartbroken.ID);
+        retVal.add(FidgetySnatcher.ID);
+        retVal.add(VengefulSpirit.ID);
+        retVal.add(TerrifyingSpectre.ID);
 
         return retVal;
     }
@@ -324,7 +298,7 @@ public class KoishiCharacter extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new BasicStrike();
     }
 
     // The class name as it appears next to your player name in-game

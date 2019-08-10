@@ -35,7 +35,7 @@ public class CardTemplate extends AbstractDefaultCard {
     // TEXT DECLARATION
 
     // public static final String ID = KoishiMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String ID = KoishiMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    public static final String ID = KoishiMod.makeID("BasicStrike"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
