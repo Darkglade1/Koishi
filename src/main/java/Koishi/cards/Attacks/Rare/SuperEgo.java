@@ -28,10 +28,10 @@ public class SuperEgo extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
 
-    private static final int DAMAGE = 20;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int DAMAGE = 12;
 
     private static final int EFFECT = 1;
 
@@ -47,7 +47,7 @@ public class SuperEgo extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         ArrayList<AbstractIdCard> cardsToRemove = new ArrayList<>();
-
+        int exhaustCounter = 0;
         for (AbstractCard card : p.hand.group) {
             if (card instanceof AbstractIdCard) {
                 cardsToRemove.add((AbstractIdCard)card);
@@ -55,8 +55,7 @@ public class SuperEgo extends AbstractDefaultCard {
         }
         for (AbstractIdCard card : cardsToRemove) {
             p.hand.moveToExhaustPile(card);
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+            exhaustCounter++;
         }
         cardsToRemove.clear();
 
@@ -67,8 +66,7 @@ public class SuperEgo extends AbstractDefaultCard {
         }
         for (AbstractIdCard card : cardsToRemove) {
             p.drawPile.moveToExhaustPile(card);
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+            exhaustCounter++;
         }
         cardsToRemove.clear();
 
@@ -79,9 +77,10 @@ public class SuperEgo extends AbstractDefaultCard {
         }
         for (AbstractIdCard card : cardsToRemove) {
             p.discardPile.moveToExhaustPile(card);
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+            exhaustCounter++;
         }
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber * exhaustCounter));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber * exhaustCounter));
         cardsToRemove.clear();
     }
 
@@ -89,7 +88,7 @@ public class SuperEgo extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

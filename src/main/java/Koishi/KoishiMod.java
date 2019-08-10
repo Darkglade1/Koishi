@@ -14,6 +14,7 @@ import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
 import Koishi.cards.Attacks.Uncommon.Catatonia;
 import Koishi.cards.Attacks.Uncommon.GrowingPain;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
+import Koishi.cards.Attacks.Uncommon.LastRemote;
 import Koishi.cards.Attacks.Uncommon.MindNumbingTerror;
 import Koishi.cards.Attacks.Uncommon.ParalyzingFear;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
@@ -76,6 +77,7 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
@@ -141,7 +143,8 @@ public class KoishiMod implements
         PostBattleSubscriber,
         StartGameSubscriber,
         SetUnlocksSubscriber,
-        PostPowerApplySubscriber {
+        PostPowerApplySubscriber,
+        PreMonsterTurnSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(KoishiMod.class.getName());
@@ -474,6 +477,7 @@ public class KoishiMod implements
         BaseMod.addCard(new SuperEgo());
         BaseMod.addCard(new RuptureMind());
         //Uncommons
+        BaseMod.addCard(new LastRemote());
         BaseMod.addCard(new HeartAttack());
         BaseMod.addCard(new StrangeCloudFist());
         BaseMod.addCard(new TraumaticStroke());
@@ -554,6 +558,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SuperEgo.ID);
         UnlockTracker.unlockCard(RuptureMind.ID);
 
+        UnlockTracker.unlockCard(LastRemote.ID);
         UnlockTracker.unlockCard(HeartAttack.ID);
         UnlockTracker.unlockCard(StrangeCloudFist.ID);
         UnlockTracker.unlockCard(TraumaticStroke.ID);
@@ -752,6 +757,12 @@ public class KoishiMod implements
                 intangibleCount += p.amount;
             }
         }
+    }
+
+    @Override
+    public boolean receivePreMonsterTurn(AbstractMonster m) {
+        AbstractIdCard.drewIdCardThisTurn = false;
+        return true;
     }
 
     //Checks to make sure player is playing this character before running animations

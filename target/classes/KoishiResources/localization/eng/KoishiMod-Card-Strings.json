@@ -7,6 +7,10 @@
     "NAME": "Rupture Mind",
     "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each different debuff on target enemy."
   },
+  "Koishi:LastRemote": {
+    "NAME": "Last Remote",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL This card costs 0 if you drew an Id card this turn."
+  },
   "Koishi:HeartAttack": {
     "NAME": "Heart Attack",
     "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy. NL Deals !M! additional damage for each Id card you drew this combat."
@@ -89,8 +93,7 @@
   },
   "Koishi:FadingMemory": {
     "NAME": "Fading Memory",
-    "DESCRIPTION": "Id. NL Exhaust a card in your hand. NL Draw !Koishi:SecondMagic! card.",
-    "UPGRADE_DESCRIPTION": "Id. NL Exhaust a card in your hand. NL Draw !Koishi:SecondMagic! cards."
+    "DESCRIPTION": "Id. NL Exhaust a card in your hand. NL Next turn, draw !Koishi:SecondMagic! cards."
   },
   "Koishi:RoseHell": {
     "NAME": "Rose Hell",
@@ -170,7 +173,7 @@
   },
   "Koishi:IdleWhim": {
     "NAME": "Idle Whim",
-    "DESCRIPTION": "koishi:Id. NL Draw !M! cards."
+    "DESCRIPTION": "koishi:Id. NL Next turn, draw !M! cards."
   },
   "Koishi:Bloodlust": {
     "NAME": "Bloodlust",
@@ -183,8 +186,8 @@
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",
-    "DESCRIPTION": "Id. Gain Block equal to incoming damage.",
-    "UPGRADE_DESCRIPTION": "Id. Gain Block equal to incoming damage + 5."
+    "DESCRIPTION": "koishi:Id. Gain Block equal to incoming damage.",
+    "UPGRADE_DESCRIPTION": "koishi:Id. Gain Block equal to incoming damage + 5."
   },
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",

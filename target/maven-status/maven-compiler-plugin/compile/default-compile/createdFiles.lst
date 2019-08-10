@@ -67,6 +67,7 @@ Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\cards\OrbSkill.class
+Koishi\cards\Attacks\Uncommon\LastRemote.class
 Koishi\cards\Attacks\Uncommon\HeartAttack.class
 Koishi\relics\PlaceholderRelic.class
 Koishi\cards\AbstractIdCard.class

@@ -19,6 +19,7 @@ import java.util.Iterator;
 public abstract class AbstractIdCard extends AbstractDefaultCard {
 
     public static int idCardsDrawn = 0;
+    public static boolean drewIdCardThisTurn = false;
 
     public AbstractIdCard(final String id,
                           final String img,
@@ -48,6 +49,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
             freeToPlayOnce = false;
         }
         idCardsDrawn++;
+        drewIdCardThisTurn = true;
     }
 
     public static AbstractIdCard returnTrulyRandomIdCard() {
