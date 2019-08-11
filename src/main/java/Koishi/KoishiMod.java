@@ -4,13 +4,16 @@ import Koishi.cards.AbstractIdCard;
 import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
 import Koishi.cards.Attacks.Common.HauntingSlash;
+import Koishi.cards.Attacks.Common.Jaunt;
 import Koishi.cards.Attacks.Common.PhantomStrike;
+import Koishi.cards.Attacks.Common.Prune;
 import Koishi.cards.Attacks.Common.RacingHeart;
 import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Rare.RuptureMind;
+import Koishi.cards.Attacks.Rare.SilentAndRestless;
 import Koishi.cards.Attacks.Rare.SuperEgo;
 import Koishi.cards.Attacks.Uncommon.BloodcurdlingScream;
 import Koishi.cards.Attacks.Uncommon.Catatonia;
@@ -467,6 +470,7 @@ public class KoishiMod implements
 
         //Attacks
         //Rares
+        BaseMod.addCard(new SilentAndRestless());
         BaseMod.addCard(new SuperEgo());
         BaseMod.addCard(new RuptureMind());
         //Uncommons
@@ -484,6 +488,8 @@ public class KoishiMod implements
         BaseMod.addCard(new SpiritedAway());
         BaseMod.addCard(new GrowingPain());
         //Commons
+        BaseMod.addCard(new Prune());
+        BaseMod.addCard(new Jaunt());
         BaseMod.addCard(new RacingHeart());
         BaseMod.addCard(new SubterraneanRose());
         BaseMod.addCard(new StingingMind());
@@ -549,6 +555,7 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(SilentAndRestless.ID);
         UnlockTracker.unlockCard(SuperEgo.ID);
         UnlockTracker.unlockCard(RuptureMind.ID);
 
@@ -566,6 +573,8 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(SpiritedAway.ID);
         UnlockTracker.unlockCard(GrowingPain.ID);
 
+        UnlockTracker.unlockCard(Prune.ID);
+        UnlockTracker.unlockCard(Jaunt.ID);
         UnlockTracker.unlockCard(RacingHeart.ID);
         UnlockTracker.unlockCard(SubterraneanRose.ID);
         UnlockTracker.unlockCard(StingingMind.ID);

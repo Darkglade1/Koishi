@@ -4,6 +4,7 @@ Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\cards\Attacks\Rare\RuptureMind.class
+Koishi\cards\Attacks\Rare\SilentAndRestless.class
 Koishi\powers\LoseThornsPower.class
 Koishi\util\TextureLoader.class
 Koishi\variables\DefaultSecondMagicNumber.class
@@ -16,6 +17,7 @@ Koishi\cards\Attacks\Common\HauntingSlash.class
 Koishi\util\IDCheckDontTouchPls.class
 Koishi\cards\Attacks\Common\PhantomStrike.class
 Koishi\powers\MindControlPower.class
+Koishi\cards\Attacks\Common\Prune.class
 Koishi\actions\ForceIntentAction.class
 Koishi\cards\Skills\Common\UnconsciousUprising.class
 Koishi\BetterSpriterAnimation.class
@@ -33,6 +35,7 @@ Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
 Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
+Koishi\actions\SilentAndRestlessAction.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
 Koishi\cards\Attacks\Uncommon\TremblingHands.class
 Koishi\powers\FormlessExistencePower.class
@@ -64,6 +67,7 @@ Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\cards\Attacks\Uncommon\LastRemote.class
 Koishi\cards\Attacks\Uncommon\HeartAttack.class
+Koishi\actions\PruneAction.class
 Koishi\cards\AbstractIdCard.class
 Koishi\cards\Powers\Rare\ConfinedInnocent.class
 Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
@@ -90,6 +94,7 @@ Koishi\cards\Attacks\Uncommon\MindNumbingTerror.class
 Koishi\cards\Skills\Rare\ImGoingToCallYouNow.class
 Koishi\cards\Skills\Common\FleetingPhantom.class
 Koishi\vfx\ForceIntentChangePreviewEffect.class
+Koishi\cards\Attacks\Common\Jaunt.class
 Koishi\events\IdentityCrisisEvent.class
 Koishi\cards\Powers\Rare\FormlessExistence.class
 Koishi\powers\TerrifyingSpectrePower.class

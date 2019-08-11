@@ -5,7 +5,10 @@ import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
 import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
+import Koishi.cards.Attacks.Common.Jaunt;
+import Koishi.cards.Attacks.Common.Prune;
 import Koishi.cards.Attacks.Rare.RuptureMind;
+import Koishi.cards.Attacks.Rare.SilentAndRestless;
 import Koishi.cards.Attacks.Rare.SuperEgo;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
 import Koishi.cards.Powers.Rare.ConfinedInnocent;
@@ -208,8 +211,8 @@ public class KoishiCharacter extends CustomPlayer {
         //retVal.add(JumpScare.ID);
         //retVal.add(JumpScare.ID);
 //        retVal.add(Vanish.ID);
-        retVal.add(ApparitionsStalkTheNight.ID);
-        retVal.add(DNAsFlaw.ID);
+        //retVal.add(ApparitionsStalkTheNight.ID);
+       // retVal.add(DNAsFlaw.ID);
 //        retVal.add(MindStellarRelief.ID);
 //        retVal.add(SubterraneanRose.ID);
 //        retVal.add(GrowingPain.ID);
@@ -248,6 +251,9 @@ public class KoishiCharacter extends CustomPlayer {
         retVal.add(FormlessExistence.ID);
         retVal.add(BramblyRoseGarden.ID);
         retVal.add(FreudianInstinct.ID);
+        retVal.add(Prune.ID);
+        retVal.add(Jaunt.ID);
+        retVal.add(SilentAndRestless.ID);
 
         return retVal;
     }

@@ -1,4 +1,8 @@
 {
+  "Koishi:SilentAndRestless": {
+    "NAME": "Silent and Restless",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
+  },
   "Koishi:SuperEgo": {
     "NAME": "Super-Ego",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL your Id cards. NL Gain [E] and draw !M! card for each card exhausted this way. NL Exhaust."
@@ -58,6 +62,14 @@
   "Koishi:GrowingPain": {
     "NAME": "Growing Pain",
     "DESCRIPTION": "Deal !D! damage !M! time(s). NL Deals damage an additional time for every Intangible you gained this combat."
+  },
+  "Koishi:Prune": {
+    "NAME": "Prune",
+    "DESCRIPTION": "Deal !D! damage. NL Discard a card from your draw pile."
+  },
+  "Koishi:Jaunt": {
+    "NAME": "Jaunt",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If target enemy intends to attack, draw !M! card."
   },
   "Koishi:RacingHeart": {
     "NAME": "Racing Heart",
@@ -177,8 +189,8 @@
   },
   "Koishi:Bloodlust": {
     "NAME": "Bloodlust",
-    "DESCRIPTION": "Gain [E] [E]. NL Lose [E] [E] next turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Lose [E] [E] next turn."
+    "DESCRIPTION": "Retain. NL Gain [E] [E]. NL Lose [E] [E] next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Lose [E] [E] next turn."
   },
   "Koishi:GeneticsOfTheUnconscious": {
     "NAME": "Genetics of the Unconscious",
