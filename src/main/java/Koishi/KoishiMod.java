@@ -1,5 +1,6 @@
 package Koishi;
 
+import Koishi.cards.AbstractIdCard;
 import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.DreadfulBlow;
 import Koishi.cards.Attacks.Common.HauntingSlash;
@@ -24,50 +25,70 @@ import Koishi.cards.Attacks.Uncommon.TraumaticStroke;
 import Koishi.cards.Attacks.Uncommon.TremblingHands;
 import Koishi.cards.Attacks.Uncommon.UnseenTerror;
 import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
+import Koishi.cards.Powers.Rare.ConfinedInnocent;
+import Koishi.cards.Powers.Rare.FormlessExistence;
 import Koishi.cards.Powers.Rare.Heartbroken;
+import Koishi.cards.Powers.Uncommon.BramblyRoseGarden;
 import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
+import Koishi.cards.Powers.Uncommon.FreudianInstinct;
 import Koishi.cards.Powers.Uncommon.TerrifyingSpectre;
 import Koishi.cards.Powers.Uncommon.VengefulSpirit;
 import Koishi.cards.Skills.Common.BasicDefend;
 import Koishi.cards.Skills.Common.EmbryosDream;
 import Koishi.cards.Skills.Common.FleetingPhantom;
+import Koishi.cards.Skills.Common.HeartfeltFancy;
+import Koishi.cards.Skills.Common.JumpScare;
+import Koishi.cards.Skills.Common.PhantomBarrier;
 import Koishi.cards.Skills.Common.Provoke;
 import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
+import Koishi.cards.Skills.Common.UnconsciousUprising;
+import Koishi.cards.Skills.Common.Whimsy;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
 import Koishi.cards.Skills.Rare.FadingMemory;
+import Koishi.cards.Skills.Rare.ImGoingToCallYouNow;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
+import Koishi.cards.Skills.Rare.PerfectMindControl;
 import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
 import Koishi.cards.Skills.Uncommon.CatchAndRose;
 import Koishi.cards.Skills.Uncommon.DanmakuParanoia;
 import Koishi.cards.Skills.Uncommon.EmbersOfLove;
-import Koishi.cards.Skills.Common.HeartfeltFancy;
 import Koishi.cards.Skills.Uncommon.FourthEye;
 import Koishi.cards.Skills.Uncommon.GeneticsOfTheUnconscious;
 import Koishi.cards.Skills.Uncommon.GhostParty;
 import Koishi.cards.Skills.Uncommon.IdleWhim;
-import Koishi.cards.Skills.Rare.ImGoingToCallYouNow;
-import Koishi.cards.Skills.Common.JumpScare;
-import Koishi.cards.Skills.Rare.PerfectMindControl;
-import Koishi.cards.Skills.Common.PhantomBarrier;
 import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.PhilosophyOfTheDespised;
 import Koishi.cards.Skills.Uncommon.Possession;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
-import Koishi.cards.Skills.Common.UnconsciousUprising;
-import Koishi.cards.Skills.Common.Whimsy;
 import Koishi.cards.Skills.Uncommon.Vanish;
+import Koishi.characters.KoishiCharacter;
+import Koishi.events.IdentityCrisisEvent;
+import Koishi.potions.PlaceholderPotion;
 import Koishi.relics.ImaginaryFriend;
+import Koishi.util.IDCheckDontTouchPls;
+import Koishi.util.TextureLoader;
+import Koishi.variables.DefaultSecondMagicNumber;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.abstracts.CustomCard;
-import basemod.helpers.RelicType;
-import basemod.interfaces.*;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.PostPowerApplySubscriber;
+import basemod.interfaces.PreMonsterTurnSubscriber;
+import basemod.interfaces.SetUnlocksSubscriber;
+import basemod.interfaces.StartGameSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -82,7 +103,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
@@ -91,18 +118,6 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import Koishi.cards.*;
-import Koishi.characters.KoishiCharacter;
-import Koishi.events.IdentityCrisisEvent;
-import Koishi.potions.PlaceholderPotion;
-import Koishi.relics.BottledPlaceholderRelic;
-import Koishi.relics.DefaultClickableRelic;
-import Koishi.relics.PlaceholderRelic;
-import Koishi.relics.PlaceholderRelic2;
-import Koishi.util.IDCheckDontTouchPls;
-import Koishi.util.TextureLoader;
-import Koishi.variables.DefaultCustomVariable;
-import Koishi.variables.DefaultSecondMagicNumber;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -173,18 +188,6 @@ public class KoishiMod implements
     // Colors (RGB)
     // Character Color
     public static final Color DARK_GREEN = CardHelper.getColor(2.0f, 40.0f, 0.0f);
-    
-    // Potion Colors in RGB
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
-    
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_GREEN = "KoishiResources/images/512/bg_attack_green.png";
@@ -424,14 +427,7 @@ public class KoishiMod implements
     // ================ ADD POTIONS ===================
     
     public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-        
-        // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.KOISHI".
-        // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, KoishiCharacter.Enums.KOISHI);
-        
-        logger.info("Done editing potions");
+
     }
     
     // ================ /ADD POTIONS/ ===================
@@ -445,15 +441,7 @@ public class KoishiMod implements
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new ImaginaryFriend(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
-        
-        // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        
-        // Mark relics as seen (the others are all starters so they're marked as seen in the character file
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+
         logger.info("Done adding relics!");
     }
     
@@ -470,7 +458,6 @@ public class KoishiMod implements
         // Add the Custom Dynamic Variables
         logger.info("Add variabls");
         // Add the Custom Dynamic variabls
-        BaseMod.addDynamicVariable(new DefaultCustomVariable());
         BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
         
         logger.info("Adding cards");
@@ -548,7 +535,11 @@ public class KoishiMod implements
         //Powers
         //Rares
         BaseMod.addCard(new Heartbroken());
+        BaseMod.addCard(new ConfinedInnocent());
+        BaseMod.addCard(new FormlessExistence());
         //Uncommons
+        BaseMod.addCard(new FreudianInstinct());
+        BaseMod.addCard(new BramblyRoseGarden());
         BaseMod.addCard(new TerrifyingSpectre());
         BaseMod.addCard(new VengefulSpirit());
         BaseMod.addCard(new FidgetySnatcher());
@@ -622,7 +613,11 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(BasicDefend.ID);
 
         UnlockTracker.unlockCard(Heartbroken.ID);
+        UnlockTracker.unlockCard(ConfinedInnocent.ID);
+        UnlockTracker.unlockCard(FormlessExistence.ID);
 
+        UnlockTracker.unlockCard(FreudianInstinct.ID);
+        UnlockTracker.unlockCard(BramblyRoseGarden.ID);
         UnlockTracker.unlockCard(TerrifyingSpectre.ID);
         UnlockTracker.unlockCard(VengefulSpirit.ID);
         UnlockTracker.unlockCard(FidgetySnatcher.ID);

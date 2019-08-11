@@ -238,6 +238,22 @@
     "NAME": "Heartbroken",
     "DESCRIPTION": "While you are Intangible, deal double damage."
   },
+  "Koishi:ConfinedInnocent": {
+    "NAME": "Confined Innocent",
+    "DESCRIPTION": "At the start of your turn, lose !Koishi:SecondMagic! HP and gain !M! koishi:Ephemeral."
+  },
+  "Koishi:FormlessExistence": {
+    "NAME": "Formless Existence",
+    "DESCRIPTION": "Whenever you gain Intangible, gain twice as much. NL You can no longer heal."
+  },
+  "Koishi:FreudianInstinct": {
+    "NAME": "Freudian Instinct",
+    "DESCRIPTION": "Whenever you draw an koishi:Id card, gain !M! Block."
+  },
+  "Koishi:BramblyRoseGarden": {
+    "NAME": "Brambly Rose Garden",
+    "DESCRIPTION": "Gain !M! Thorns."
+  },
   "Koishi:TerrifyingSpectre": {
     "NAME": "Terrifying Spectre",
     "DESCRIPTION": "Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies."
@@ -257,48 +273,5 @@
   "Koishi:BasicDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
-  },
-  "Koishi:DefaultCommonPower": {
-    "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Keywords."
-  },
-  "Koishi:DefaultUncommonAttack": {
-    "NAME": "Big slap",
-    "DESCRIPTION": "Deal !D! Damage."
-  },
-  "Koishi:DefaultUncommonSkill": {
-    "NAME": "A Better Defend",
-    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
-  },
-  "Koishi:DefaultUncommonPower": {
-    "NAME": "Weirdness",
-    "DESCRIPTION": "Gain X Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 Keywords."
-  },
-  "Koishi:DefaultRareAttack": {
-    "NAME": "TOUCH",
-    "DESCRIPTION": "Deal !D! Damage."
-  },
-  "Koishi:DefaultRareSkill": {
-    "NAME": "For Each Loop x2",
-    "DESCRIPTION": "Apply !M! vulnerable to all enemies, 2 times.",
-    "UPGRADE_DESCRIPTION": "Apply !M! vulnerable to all enemies, 3 times."
-  },
-  "Koishi:DefaultRarePower": {
-    "NAME": "In-Progress Form",
-    "DESCRIPTION": "At the start of your turn, play a TOUCH."
-  },
-  "Koishi:DefaultAttackWithVariable": {
-    "NAME": "Special Strike",
-    "DESCRIPTION": "Deal !D! Damage [E] times. NL (Deal !Koishi:ENERGY_DAMAGE! damage total.)"
-  },
-  "Koishi:DefaultSecondMagicNumberSkill": {
-    "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! vulnerable and !Koishi:SecondMagic! poison to an enemy."
-  },
-  "Koishi:OrbSkill": {
-    "NAME": "Get Orb",
-    "DESCRIPTION": "Channel 1 Default Orb."
   }
 }
