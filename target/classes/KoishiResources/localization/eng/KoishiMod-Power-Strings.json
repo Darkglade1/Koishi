@@ -33,7 +33,7 @@
 },
 "Koishi:FormlessExistencePower": {
         "NAME": "Formless Existence",
-        "DESCRIPTIONS": ["Whenever you gain Intangible, gain #b", "x as much."]
+        "DESCRIPTIONS": ["Whenever you gain Intangible, gain #b", "x as much. You can no longer heal."]
 },
 "Koishi:FreudianInstinctPower": {
         "NAME": "Freudian Instinct",

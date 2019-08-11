@@ -69,6 +69,7 @@ Koishi\cards\Powers\Rare\ConfinedInnocent.class
 Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
 Koishi\cards\Skills\Common\JumpScare.class
 Koishi\patches\IdCardPatch$Locator.class
+Koishi\patches\onGainedBlockPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
 Koishi\cards\Skills\Uncommon\Possession.class
 Koishi\cards\Skills\Common\Provoke.class

@@ -32,6 +32,6 @@
       "Mind_Control",
       "mind controlled"
     ],
-    "DESCRIPTION": "Whenever a mind controlled enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever it applies a buff, you receive it instead. Whenever it gains Block or heals HP, you receive it as well."
+    "DESCRIPTION": "Whenever a mind controlled enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever it applies a buff, gains Block, or heals HP, you receive it instead."
   }
 ]

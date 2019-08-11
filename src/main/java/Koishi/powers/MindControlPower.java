@@ -63,15 +63,15 @@ public class MindControlPower extends AbstractPower {
         }
     }
 
-    @Override
-    public void onGainedBlock(float blockAmount) {
+    public int onBlock(float blockAmount) {
         AbstractDungeon.actionManager.addToTop(new GainBlockAction(source, source, (int)blockAmount));
+        return 0;
     }
 
     @Override
     public int onHeal(int healAmount) {
         AbstractDungeon.actionManager.addToTop(new HealAction(source, source, healAmount));
-        return healAmount;
+        return 0;
     }
 
     @Override
