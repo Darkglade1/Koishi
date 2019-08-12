@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
-import com.megacrit.cardcrawl.powers.IntangiblePower;
 
 import java.util.Iterator;
 
@@ -40,7 +39,7 @@ public class GhostParty extends AbstractIdCard {
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new IntangiblePower(mo, magicNumber), magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new IntangiblePlayerPower(mo, magicNumber), magicNumber));
         }
     }
 

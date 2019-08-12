@@ -27,6 +27,14 @@
         "NAME": "Heartbroken",
         "DESCRIPTIONS": ["While you are Intangible, deal #b", "x damage."]
 },
+"Koishi:HeartStoppingHorrorPower": {
+        "NAME": "Heart-Stopping Horror",
+        "DESCRIPTIONS": ["At the end of your turn, ALL enemies lose HP equal to #b", "x their Terror."]
+},
+"Koishi:EgoPower": {
+        "NAME": "Ego",
+        "DESCRIPTIONS": ["Your Id cards no longer automatically use themselves. Whenever you play an Id card, draw #b", " card.", " cards."]
+},
 "Koishi:ConfinedInnocentPower": {
         "NAME": "Confined Innocent",
         "DESCRIPTIONS": ["At the start of your turn, lose #b1 HP #b", " time", " times", " and gain #b", " Ephemeral."]

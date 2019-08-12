@@ -33,5 +33,17 @@
       "mind controlled"
     ],
     "DESCRIPTION": "Whenever a mind controlled enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever it applies a buff, gains Block, or heals HP, you receive it instead."
+  },
+  {
+    "NAMES": [
+      "stun"
+    ],
+    "DESCRIPTION": "Stunned enemies do nothing on their turn."
+  },
+  {
+    "NAMES": [
+      "constricted"
+    ],
+    "DESCRIPTION": "Constricted enemies take damage at the end of their turn."
   }
 ]

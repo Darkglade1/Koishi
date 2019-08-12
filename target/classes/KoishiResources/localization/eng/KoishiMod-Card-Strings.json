@@ -1,4 +1,9 @@
 {
+  "Koishi:MentalBreakdown": {
+    "NAME": "Mental Breakdown",
+    "DESCRIPTION": "Deal !D! damage. NL If target enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If target enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust."
+  },
   "Koishi:SilentAndRestless": {
     "NAME": "Silent and Restless",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
@@ -109,8 +114,8 @@
   },
   "Koishi:RoseHell": {
     "NAME": "Rose Hell",
-    "DESCRIPTION": "Gain !M! Thorns X times. NL Apply !M! Constricted to ALL enemies X times. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Thorns X + 1 times. NL Apply !M! Constricted to ALL enemies X + 1 times. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Thorns X times. NL Apply !M! koishi:Constricted to ALL enemies X times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Thorns X + 1 times. NL Apply !M! koishi:Constricted to ALL enemies X + 1 times. NL Exhaust."
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
@@ -203,7 +208,7 @@
   },
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",
-    "DESCRIPTION": "Apply !M! Constricted. Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Constricted. Exhaust."
   },
   "Koishi:SprinkleStarAndHeart": {
     "NAME": "Sprinkle Star and Heart",
@@ -246,9 +251,17 @@
     "NAME": "Provoke",
     "DESCRIPTION": "Gain !B! Block. NL Force target enemy to attack this turn if possible."
   },
+  "Koishi:HeartStoppingHorror": {
+    "NAME": "Heart-Stopping Horror",
+    "DESCRIPTION": "At the end of your turn, ALL enemies lose HP equal to their koishi:Terror."
+  },
   "Koishi:Heartbroken": {
     "NAME": "Heartbroken",
     "DESCRIPTION": "While you are Intangible, deal double damage."
+  },
+  "Koishi:Ego": {
+    "NAME": "Ego",
+    "DESCRIPTION": "Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card."
   },
   "Koishi:ConfinedInnocent": {
     "NAME": "Confined Innocent",
@@ -276,7 +289,7 @@
   },
   "Koishi:FidgetySnatcher": {
     "NAME": "Fidgety Snatcher",
-    "DESCRIPTION": "At the start of your turn, apply !M! Constricted to ALL enemies."
+    "DESCRIPTION": "At the start of your turn, apply !M! koishi:Constricted to ALL enemies."
   },
   "Koishi:BasicStrike": {
     "NAME": "Strike",

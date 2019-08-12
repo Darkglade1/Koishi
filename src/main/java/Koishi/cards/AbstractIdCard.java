@@ -20,6 +20,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
 
     public static int idCardsDrawn = 0;
     public static boolean drewIdCardThisTurn = false;
+    public static boolean idEnabled = true;
 
     public AbstractIdCard(final String id,
                           final String img,
@@ -34,19 +35,21 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
 
     @Override
     public void triggerWhenDrawn() {
-        if (this.target == CardTarget.ENEMY) {
-            AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng);
-            calculateCardDamage(mo);
-            use(AbstractDungeon.player, mo);
-        } else {
-            calculateCardDamage(null);
-            use(AbstractDungeon.player, null);
-        }
+        if (idEnabled) {
+            if (this.target == CardTarget.ENEMY) {
+                AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+                calculateCardDamage(mo);
+                use(AbstractDungeon.player, mo);
+            } else {
+                calculateCardDamage(null);
+                use(AbstractDungeon.player, null);
+            }
 
-        if (!freeToPlayOnce) {
-            AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
-        } else {
-            freeToPlayOnce = false;
+            if (!freeToPlayOnce) {
+                AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
+            } else {
+                freeToPlayOnce = false;
+            }
         }
         idCardsDrawn++;
         drewIdCardThisTurn = true;

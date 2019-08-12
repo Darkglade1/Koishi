@@ -47,6 +47,7 @@ Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
 Koishi\powers\TerrorPower.class
+Koishi\powers\HeartStoppingHorrorPower.class
 Koishi\powers\FidgetySnatcherPower.class
 Koishi\cards\Skills\Uncommon\DanmakuParanoia.class
 Koishi\cards\Powers\Uncommon\FreudianInstinct.class
@@ -61,7 +62,10 @@ Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\Powers\Rare\Heartbroken.class
 Koishi\cards\Skills\Uncommon\Vanish.class
+Koishi\cards\Powers\Rare\HeartStoppingHorror.class
+Koishi\cards\Attacks\Rare\MentalBreakdown.class
 Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
+Koishi\cards\Powers\Rare\Ego.class
 Koishi\powers\ConfinedInnocentPower.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
@@ -86,6 +90,7 @@ Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\GhostParty.class
 Koishi\cards\Skills\Rare\RoseHell.class
 Koishi\cards\Attacks\Uncommon\GrowingPain.class
+Koishi\powers\EgoPower.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class

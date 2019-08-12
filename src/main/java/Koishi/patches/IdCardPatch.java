@@ -24,7 +24,7 @@ public class IdCardPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = "c")
     public static void FixDiscardPatch(AbstractPlayer instance, int drawAmount, AbstractCard c) {
-        if (c instanceof AbstractIdCard) {
+        if (c instanceof AbstractIdCard && AbstractIdCard.idEnabled) {
             instance.hand.moveToDiscardPile(c);
         }
     }

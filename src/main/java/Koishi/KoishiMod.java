@@ -12,6 +12,7 @@ import Koishi.cards.Attacks.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Attacks.Rare.MentalBreakdown;
 import Koishi.cards.Attacks.Rare.RuptureMind;
 import Koishi.cards.Attacks.Rare.SilentAndRestless;
 import Koishi.cards.Attacks.Rare.SuperEgo;
@@ -29,7 +30,9 @@ import Koishi.cards.Attacks.Uncommon.TremblingHands;
 import Koishi.cards.Attacks.Uncommon.UnseenTerror;
 import Koishi.cards.Attacks.Uncommon.YoukaiPolygraph;
 import Koishi.cards.Powers.Rare.ConfinedInnocent;
+import Koishi.cards.Powers.Rare.Ego;
 import Koishi.cards.Powers.Rare.FormlessExistence;
+import Koishi.cards.Powers.Rare.HeartStoppingHorror;
 import Koishi.cards.Powers.Rare.Heartbroken;
 import Koishi.cards.Powers.Uncommon.BramblyRoseGarden;
 import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
@@ -470,6 +473,7 @@ public class KoishiMod implements
 
         //Attacks
         //Rares
+        BaseMod.addCard(new MentalBreakdown());
         BaseMod.addCard(new SilentAndRestless());
         BaseMod.addCard(new SuperEgo());
         BaseMod.addCard(new RuptureMind());
@@ -540,7 +544,9 @@ public class KoishiMod implements
 
         //Powers
         //Rares
+        BaseMod.addCard(new HeartStoppingHorror());
         BaseMod.addCard(new Heartbroken());
+        BaseMod.addCard(new Ego());
         BaseMod.addCard(new ConfinedInnocent());
         BaseMod.addCard(new FormlessExistence());
         //Uncommons
@@ -555,6 +561,7 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
+        UnlockTracker.unlockCard(MentalBreakdown.ID);
         UnlockTracker.unlockCard(SilentAndRestless.ID);
         UnlockTracker.unlockCard(SuperEgo.ID);
         UnlockTracker.unlockCard(RuptureMind.ID);
@@ -621,7 +628,9 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(Provoke.ID);
         UnlockTracker.unlockCard(BasicDefend.ID);
 
+        UnlockTracker.unlockCard(HeartStoppingHorror.ID);
         UnlockTracker.unlockCard(Heartbroken.ID);
+        UnlockTracker.unlockCard(Ego.ID);
         UnlockTracker.unlockCard(ConfinedInnocent.ID);
         UnlockTracker.unlockCard(FormlessExistence.ID);
 
@@ -732,24 +741,28 @@ public class KoishiMod implements
         runAnimation("winB");
         intangibleCount = 0;
         AbstractIdCard.idCardsDrawn = 0;
+        AbstractIdCard.idEnabled = true;
     }
 
     @Override
     public void receiveOnBattleStart(AbstractRoom var1) {
         intangibleCount = 0;
         AbstractIdCard.idCardsDrawn = 0;
+        AbstractIdCard.idEnabled = true;
     }
 
     @Override
     public void receiveStartGame() {
         intangibleCount = 0;
         AbstractIdCard.idCardsDrawn = 0;
+        AbstractIdCard.idEnabled = true;
     }
 
     @Override
     public void receiveSetUnlocks() {
         intangibleCount = 0;
         AbstractIdCard.idCardsDrawn = 0;
+        AbstractIdCard.idEnabled = true;
     }
 
     @Override
