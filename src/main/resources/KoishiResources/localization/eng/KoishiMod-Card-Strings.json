@@ -108,6 +108,15 @@
     "NAME": "Haunting Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror."
   },
+  "Koishi:ConditionedTeleport": {
+    "NAME": "Conditioned Teleport",
+    "DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards."
+  },
+  "Koishi:RollingInRichesHeart": {
+    "NAME": "Rolling-in-Riches Heart",
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! Gold. NL Increase the damage of ALL Attacks in your hand by !M! this combat."
+  },
   "Koishi:FadingMemory": {
     "NAME": "Fading Memory",
     "DESCRIPTION": "koishi:Id. NL Exhaust a card in your hand. NL Next turn, draw !Koishi:SecondMagic! cards."
@@ -270,6 +279,11 @@
   "Koishi:FormlessExistence": {
     "NAME": "Formless Existence",
     "DESCRIPTION": "Whenever you gain Intangible, gain twice as much. NL You can no longer heal."
+  },
+  "Koishi:UnconsciousUrges": {
+    "NAME": "Unconscious Urges",
+    "DESCRIPTION": "At the start of your turn, randomly select a card in your hand. NL If you play it, gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, randomly select a card in your hand. NL If you play it, gain [E] next turn."
   },
   "Koishi:FreudianInstinct": {
     "NAME": "Freudian Instinct",

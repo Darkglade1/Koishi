@@ -5,8 +5,11 @@ import Koishi.KoishiMod;
 import Koishi.KoishiPlayerListener;
 import Koishi.cards.Attacks.Common.BasicStrike;
 import Koishi.cards.Attacks.Common.HauntingSlash;
+import Koishi.cards.Powers.Uncommon.UnconsciousUrges;
 import Koishi.cards.Skills.Common.BasicDefend;
 import Koishi.cards.Skills.Common.Provoke;
+import Koishi.cards.Skills.Rare.ConditionedTeleport;
+import Koishi.cards.Skills.Rare.RollingInRichesHeart;
 import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -151,16 +154,21 @@ public class KoishiCharacter extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(Provoke.ID);
-        retVal.add(HauntingSlash.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(Provoke.ID);
+//        retVal.add(HauntingSlash.ID);
+
+        retVal.add(UnconsciousUrges.ID);
+        retVal.add(UnconsciousUrges.ID);
+        retVal.add(ConditionedTeleport.ID);
+        retVal.add(RollingInRichesHeart.ID);
 
         return retVal;
     }

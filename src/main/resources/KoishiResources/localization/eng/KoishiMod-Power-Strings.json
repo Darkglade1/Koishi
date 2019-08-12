@@ -43,6 +43,14 @@
         "NAME": "Formless Existence",
         "DESCRIPTIONS": ["Whenever you gain Intangible, gain #b", "x as much. You can no longer heal."]
 },
+"Koishi:UnconsciousUrgesPower": {
+        "NAME": "Unconscious Urges",
+        "DESCRIPTIONS": ["At the start of your turn, randomly select a card in your hand. If you play it, gain", " next turn.", "Play ", " to gain"]
+},
+"Koishi:EnergyNextTurnPower": {
+        "NAME": "Energized",
+        "DESCRIPTIONS": ["Next turn, gain", " ."]
+},
 "Koishi:FreudianInstinctPower": {
         "NAME": "Freudian Instinct",
         "DESCRIPTIONS": ["Whenever you draw an Id card, gain #b", " Block."]

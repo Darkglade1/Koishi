@@ -38,6 +38,7 @@ import Koishi.cards.Powers.Uncommon.BramblyRoseGarden;
 import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
 import Koishi.cards.Powers.Uncommon.FreudianInstinct;
 import Koishi.cards.Powers.Uncommon.TerrifyingSpectre;
+import Koishi.cards.Powers.Uncommon.UnconsciousUrges;
 import Koishi.cards.Powers.Uncommon.VengefulSpirit;
 import Koishi.cards.Skills.Common.BasicDefend;
 import Koishi.cards.Skills.Common.EmbryosDream;
@@ -50,11 +51,13 @@ import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnansweredLove;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Common.Whimsy;
+import Koishi.cards.Skills.Rare.ConditionedTeleport;
 import Koishi.cards.Skills.Rare.DNAsFlaw;
 import Koishi.cards.Skills.Rare.FadingMemory;
 import Koishi.cards.Skills.Rare.ImGoingToCallYouNow;
 import Koishi.cards.Skills.Rare.MindStellarRelief;
 import Koishi.cards.Skills.Rare.PerfectMindControl;
+import Koishi.cards.Skills.Rare.RollingInRichesHeart;
 import Koishi.cards.Skills.Rare.RoseHell;
 import Koishi.cards.Skills.Uncommon.ApparitionsStalkTheNight;
 import Koishi.cards.Skills.Uncommon.Bloodlust;
@@ -506,6 +509,8 @@ public class KoishiMod implements
 
         //Skills
         //Rares
+        BaseMod.addCard(new ConditionedTeleport());
+        BaseMod.addCard(new RollingInRichesHeart());
         BaseMod.addCard(new FadingMemory());
         BaseMod.addCard(new RoseHell());
         BaseMod.addCard(new MindStellarRelief());
@@ -550,6 +555,7 @@ public class KoishiMod implements
         BaseMod.addCard(new ConfinedInnocent());
         BaseMod.addCard(new FormlessExistence());
         //Uncommons
+        BaseMod.addCard(new UnconsciousUrges());
         BaseMod.addCard(new FreudianInstinct());
         BaseMod.addCard(new BramblyRoseGarden());
         BaseMod.addCard(new TerrifyingSpectre());
@@ -592,6 +598,8 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(HauntingSlash.ID);
         UnlockTracker.unlockCard(BasicStrike.ID);
 
+        UnlockTracker.unlockCard(ConditionedTeleport.ID);
+        UnlockTracker.unlockCard(RollingInRichesHeart.ID);
         UnlockTracker.unlockCard(FadingMemory.ID);
         UnlockTracker.unlockCard(RoseHell.ID);
         UnlockTracker.unlockCard(MindStellarRelief.ID);
@@ -634,6 +642,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(ConfinedInnocent.ID);
         UnlockTracker.unlockCard(FormlessExistence.ID);
 
+        UnlockTracker.unlockCard(UnconsciousUrges.ID);
         UnlockTracker.unlockCard(FreudianInstinct.ID);
         UnlockTracker.unlockCard(BramblyRoseGarden.ID);
         UnlockTracker.unlockCard(TerrifyingSpectre.ID);

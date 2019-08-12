@@ -4,9 +4,11 @@ Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\cards\Attacks\Rare\RuptureMind.class
+Koishi\powers\UnconsciousUrgesPower.class
 Koishi\cards\Attacks\Rare\SilentAndRestless.class
 Koishi\powers\LoseThornsPower.class
 Koishi\util\TextureLoader.class
+Koishi\actions\UnconsciousUrgesAction.class
 Koishi\variables\DefaultSecondMagicNumber.class
 Koishi\cards\Skills\Uncommon\EmbersOfLove.class
 Koishi\cards\Attacks\Uncommon\UnseenTerror.class
@@ -25,6 +27,7 @@ Koishi\cards\Attacks\Common\BasicStrike.class
 Koishi\cards\Attacks\Common\RacingHeart.class
 Koishi\cards\Attacks\Uncommon\Catatonia.class
 Koishi\cards\Skills\Uncommon\PhilosophyOfTheDespised.class
+Koishi\powers\EnergyNextTurnPower.class
 Koishi\patches\IdCardPatch.class
 Koishi\cards\Skills\Common\BasicDefend.class
 Koishi\cards\Skills\Common\UnansweredLove.class
@@ -46,6 +49,7 @@ Koishi\potions\PlaceholderPotion.class
 Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
+Koishi\cards\Skills\Rare\ConditionedTeleport.class
 Koishi\powers\TerrorPower.class
 Koishi\powers\HeartStoppingHorrorPower.class
 Koishi\powers\FidgetySnatcherPower.class
@@ -57,9 +61,11 @@ Koishi\characters\KoishiCharacter.class
 Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
+Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
 Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
+Koishi\cards\Powers\Uncommon\UnconsciousUrges.class
 Koishi\cards\Powers\Rare\Heartbroken.class
 Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Powers\Rare\HeartStoppingHorror.class
