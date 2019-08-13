@@ -18,7 +18,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class SprinkleStarAndHeart extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(SprinkleStarAndHeart.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SprinkleStarAndHeart.png");
+    public static final String IMG = makeCardPath("SprinkleStarAndHeart.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

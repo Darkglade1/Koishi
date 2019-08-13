@@ -15,7 +15,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class UnconsciousUrges extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(UnconsciousUrges.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("UnconsciousUrges.png");
+    public static final String IMG = makeCardPath("UnconsciousUrges.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

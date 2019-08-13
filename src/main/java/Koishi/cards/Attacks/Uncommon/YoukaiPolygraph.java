@@ -16,7 +16,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class YoukaiPolygraph extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(YoukaiPolygraph.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("YoukaiPolygraph.png");
+    public static final String IMG = makeCardPath("YoukaiPolygraph.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
