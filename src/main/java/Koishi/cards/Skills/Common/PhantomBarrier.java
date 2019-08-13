@@ -15,7 +15,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class PhantomBarrier extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(PhantomBarrier.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("PhantomBarrier.png");
+    public static final String IMG = makeCardPath("PhantomBarrier.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

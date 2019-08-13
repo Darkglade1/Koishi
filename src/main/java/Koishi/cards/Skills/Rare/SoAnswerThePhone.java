@@ -21,7 +21,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class SoAnswerThePhone extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(SoAnswerThePhone.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SoAnswerThePhone.png");
+    public static final String IMG = makeCardPath("SoAnswerThePhone.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
