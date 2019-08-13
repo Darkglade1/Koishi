@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class SubconsciousSweep extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(SubconsciousSweep.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SubconsciousSweep.png");
+    public static final String IMG = makeCardPath("SubconsciousSweep.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

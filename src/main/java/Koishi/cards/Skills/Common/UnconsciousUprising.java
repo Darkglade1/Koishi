@@ -13,7 +13,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class UnconsciousUprising extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(UnconsciousUprising.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("UnconsciousUprising.png");
+    public static final String IMG = makeCardPath("UnconsciousUprising.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

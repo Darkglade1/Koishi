@@ -19,7 +19,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class TremblingHands extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(TremblingHands.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("TremblingHands.png");
+    public static final String IMG = makeCardPath("TremblingHands.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
