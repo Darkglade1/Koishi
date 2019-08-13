@@ -17,7 +17,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class HauntingSlash extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(HauntingSlash.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("HauntingSlash.png");
+    public static final String IMG = makeCardPath("HauntingSlash.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -16,7 +16,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class ApparitionsStalkTheNight extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(ApparitionsStalkTheNight.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("ApparitionsStalkTheNight.png");
+    public static final String IMG = makeCardPath("ApparitionsStalkTheNight.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -28,7 +28,7 @@ public class ApparitionsStalkTheNight extends AbstractDefaultCard {
 
     private static final int BUFF = 1;
 
-    private static final int HP_LOSS = 3;
+    private static final int HP_LOSS = 5;
 
     public ApparitionsStalkTheNight() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

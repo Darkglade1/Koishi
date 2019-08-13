@@ -27,7 +27,7 @@ public class Vanish extends AbstractDefaultCard {
     private static final int BUFF = 7;
     private static final int UPGRADE_PLUS_BUFF = 2;
 
-    private static final int HP_LOSS = 2;
+    private static final int HP_LOSS = 3;
 
     public Vanish() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

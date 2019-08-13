@@ -23,7 +23,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class BloodcurdlingScream extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(BloodcurdlingScream.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("BloodcurdlingScream.png");
+    public static final String IMG = makeCardPath("BloodcurdlingScream.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
