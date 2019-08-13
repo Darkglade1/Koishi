@@ -16,7 +16,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class DanmakuParanoia extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(DanmakuParanoia.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("DanmakuParanoia.png");
+    public static final String IMG = makeCardPath("DanmakuParanoia.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

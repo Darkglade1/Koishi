@@ -15,7 +15,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class HeartAttack extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(HeartAttack.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("HeartAttack.png");
+    public static final String IMG = makeCardPath("HeartAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -15,7 +15,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class FleetingPhantom extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(FleetingPhantom.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("FleetingPhantom.png");
+    public static final String IMG = makeCardPath("FleetingPhantom.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

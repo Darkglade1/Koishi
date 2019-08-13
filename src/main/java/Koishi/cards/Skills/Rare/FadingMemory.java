@@ -16,7 +16,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class FadingMemory extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(FadingMemory.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("FadingMemory.png");
+    public static final String IMG = makeCardPath("FadingMemory.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

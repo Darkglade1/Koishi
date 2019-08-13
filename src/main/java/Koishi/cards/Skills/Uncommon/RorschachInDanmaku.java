@@ -18,7 +18,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class RorschachInDanmaku extends AbstractIdCard {
 
     public static final String ID = KoishiMod.makeID(RorschachInDanmaku.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("RorschachInDanmaku.png");
+    public static final String IMG = makeCardPath("RorschachInDanmaku.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -16,7 +16,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class Prune extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(Prune.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Prune.png");
+    public static final String IMG = makeCardPath("Prune.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -16,7 +16,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class Bloodlust extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(Bloodlust.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Bloodlust.png");
+    public static final String IMG = makeCardPath("Bloodlust.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

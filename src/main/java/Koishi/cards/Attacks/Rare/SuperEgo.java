@@ -21,7 +21,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class SuperEgo extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(SuperEgo.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SuperEgo.png");
+    public static final String IMG = makeCardPath("SuperEgo.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

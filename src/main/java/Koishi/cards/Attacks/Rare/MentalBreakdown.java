@@ -19,7 +19,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class MentalBreakdown extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(MentalBreakdown.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("MentalBreakdown.png");
+    public static final String IMG = makeCardPath("MentalBreakdown.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

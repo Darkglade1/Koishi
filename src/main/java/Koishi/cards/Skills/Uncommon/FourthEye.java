@@ -14,7 +14,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class FourthEye extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(FourthEye.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("FourthEye.png");
+    public static final String IMG = makeCardPath("FourthEye.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
