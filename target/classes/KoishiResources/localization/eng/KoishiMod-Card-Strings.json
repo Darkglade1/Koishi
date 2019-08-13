@@ -159,7 +159,7 @@
   },
   "Koishi:Vanish": {
     "NAME": "Vanish",
-    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP twice. NL Gain !M! koishi:Ephemeral. NL Exhaust."
+    "DESCRIPTION": "Lose 1 HP !Koishi:SecondMagic! times. NL Gain !M! koishi:Ephemeral. NL Exhaust."
   },
   "Koishi:GhostParty": {
     "NAME": "Ghost Party",

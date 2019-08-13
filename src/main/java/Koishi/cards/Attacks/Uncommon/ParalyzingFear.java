@@ -18,7 +18,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class ParalyzingFear extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(ParalyzingFear.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("ParalyzingFear.png");
+    public static final String IMG = makeCardPath("ParalyzingFear.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class JumpScare extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(JumpScare.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("JumpScare.png");
+    public static final String IMG = makeCardPath("JumpScare.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

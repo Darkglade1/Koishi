@@ -18,7 +18,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class MindNumbingTerror extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(MindNumbingTerror.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("MindNumbingTerror.png");
+    public static final String IMG = makeCardPath("MindNumbingTerror.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
