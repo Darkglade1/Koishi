@@ -24,7 +24,7 @@ public class UnansweredLove extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
-    private static final int BUFF = 2;
+    private static final int BUFF = 3;
     private static final int UPGRADE_PLUS_BUFF = 1;
 
     private static final int HP_LOSS = 1;
