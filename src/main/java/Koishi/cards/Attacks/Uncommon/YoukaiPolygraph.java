@@ -35,6 +35,7 @@ public class YoukaiPolygraph extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("occultAttack");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if (ForceIntentAction.attackTest.test(m)) {

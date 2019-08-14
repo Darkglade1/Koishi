@@ -33,7 +33,7 @@ public class HeartfeltFancy extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("spellCall");
+        KoishiMod.runAnimation("spellA");
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         AbstractDungeon.actionManager.addToBottom(new DiscardPileToTopOfDeckAction(p));
     }

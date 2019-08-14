@@ -40,6 +40,7 @@ public class TraumaticStroke extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("airAttack");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         for (AbstractPower power : m.powers) {

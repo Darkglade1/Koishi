@@ -39,6 +39,7 @@ public class ApparitionsStalkTheNight extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellB");
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, defaultSecondMagicNumber));
         if (!p.hasPower(IntangiblePlayerPower.POWER_ID) && !p.hasPower(IntangiblePower.POWER_ID)) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber), magicNumber));

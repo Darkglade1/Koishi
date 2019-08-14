@@ -41,6 +41,7 @@ public class Bloodlust extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new BloodlustPower(p, magicNumber), magicNumber));

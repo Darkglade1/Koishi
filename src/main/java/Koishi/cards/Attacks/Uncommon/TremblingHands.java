@@ -39,7 +39,7 @@ public class TremblingHands extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("magicAttackB");
+        KoishiMod.runAnimation("dashAttackA");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (m.hasPower(TerrorPower.POWER_ID)) {

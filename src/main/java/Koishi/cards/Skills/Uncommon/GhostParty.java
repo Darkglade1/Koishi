@@ -35,6 +35,7 @@ public class GhostParty extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellB");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, magicNumber), magicNumber));
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {

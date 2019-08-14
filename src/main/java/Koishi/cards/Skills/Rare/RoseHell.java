@@ -38,6 +38,7 @@ public class RoseHell extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         int effect = EnergyPanel.totalCount;
         if (energyOnUse > 0) {
             effect = energyOnUse;

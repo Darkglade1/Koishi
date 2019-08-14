@@ -51,6 +51,7 @@ public class Possession extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new MindControlPower(m, p, magicNumber), magicNumber));
     }
 

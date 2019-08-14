@@ -33,6 +33,7 @@ public class Heartbroken extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HeartbrokenPower(p, magicNumber), magicNumber));
     }
 

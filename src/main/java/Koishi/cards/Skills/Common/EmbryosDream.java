@@ -40,6 +40,7 @@ public class EmbryosDream extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         if (ForceIntentAction.attackTest.test(m)) {
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         } else {

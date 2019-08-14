@@ -42,6 +42,7 @@ public class SilentAndRestless extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("dashAttackA");
         AbstractDungeon.actionManager.addToBottom(new SilentAndRestlessAction(m, new DamageInfo(p, damage, damageTypeForTurn), defaultSecondMagicNumber, uuid));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, baseMagicNumber), baseMagicNumber));
     }

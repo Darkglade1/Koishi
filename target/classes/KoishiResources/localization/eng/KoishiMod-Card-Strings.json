@@ -90,7 +90,7 @@
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT attack this turn."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT attack this turn if possible."
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",

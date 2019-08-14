@@ -30,6 +30,7 @@ public class FourthEye extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellCall");
         AbstractDungeon.actionManager.addToBottom(new FourthEyeAction());
     }
 

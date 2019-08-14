@@ -34,6 +34,7 @@ public class HeartStoppingHorror extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("occultAttack");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HeartStoppingHorrorPower(p, magicNumber), magicNumber));
     }
 

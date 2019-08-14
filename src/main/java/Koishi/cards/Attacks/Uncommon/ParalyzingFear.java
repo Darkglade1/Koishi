@@ -42,7 +42,7 @@ public class ParalyzingFear extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("specialAttackC");
+        KoishiMod.runAnimation("magicAttackB");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if (m.hasPower(TerrorPower.POWER_ID)) {

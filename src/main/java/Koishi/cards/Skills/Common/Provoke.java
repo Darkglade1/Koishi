@@ -33,7 +33,7 @@ public class Provoke extends AbstractIntentChangingCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("spellB");
+        KoishiMod.runAnimation("spellA");
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         AbstractDungeon.actionManager.addToTop(new ForceIntentAction(p, m, intentType));
     }

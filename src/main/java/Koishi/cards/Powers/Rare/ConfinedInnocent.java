@@ -36,6 +36,7 @@ public class ConfinedInnocent extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellB");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ConfinedInnocentPower(p, magicNumber), magicNumber));
     }
 

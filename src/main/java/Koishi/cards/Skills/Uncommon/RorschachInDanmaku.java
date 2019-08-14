@@ -36,7 +36,7 @@ public class RorschachInDanmaku extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("spellB");
+        KoishiMod.runAnimation("spellA");
         int totalBlock = 0;
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while(iterator.hasNext()) {

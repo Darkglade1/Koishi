@@ -38,6 +38,7 @@ public class Vanish extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellB");
         for (int i = 0; i < defaultSecondMagicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 1));
         }

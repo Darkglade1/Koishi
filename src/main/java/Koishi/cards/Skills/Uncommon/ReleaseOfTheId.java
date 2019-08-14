@@ -34,6 +34,7 @@ public class ReleaseOfTheId extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellCall");
         for (int i = 0; i < magicNumber; i++) {
             AbstractIdCard card = AbstractIdCard.returnTrulyRandomIdCard();
             if (upgraded) {

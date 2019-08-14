@@ -44,6 +44,7 @@ public class SuperEgo extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("dashAttackB");
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         ArrayList<AbstractIdCard> cardsToRemove = new ArrayList<>();

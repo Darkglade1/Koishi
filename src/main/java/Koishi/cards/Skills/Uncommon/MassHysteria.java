@@ -38,6 +38,7 @@ public class MassHysteria extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         int totalDamage = 0;
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while(iterator.hasNext()) {

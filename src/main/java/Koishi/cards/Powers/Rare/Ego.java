@@ -34,6 +34,7 @@ public class Ego extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellC");
         AbstractIdCard.idEnabled = false;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EgoPower(p, magicNumber), magicNumber));
     }

@@ -33,6 +33,7 @@ public class FormlessExistence extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellB");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FormlessExistencePower(p, magicNumber), magicNumber));
     }
 

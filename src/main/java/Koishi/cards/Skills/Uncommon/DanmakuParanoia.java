@@ -39,6 +39,7 @@ public class DanmakuParanoia extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellA");
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
     }
 

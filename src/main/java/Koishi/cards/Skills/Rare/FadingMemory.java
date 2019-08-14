@@ -38,6 +38,7 @@ public class FadingMemory extends AbstractIdCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        KoishiMod.runAnimation("spellCall");
         AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
     }

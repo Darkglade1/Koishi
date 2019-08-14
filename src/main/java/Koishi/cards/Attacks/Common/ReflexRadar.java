@@ -35,7 +35,7 @@ public class ReflexRadar extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("occultAttack");
+        KoishiMod.runAnimation("magicAttackForward");
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!mo.isDeadOrEscaped() && !mo.halfDead) {
                 if (ForceIntentAction.attackTest.test(mo)) {
