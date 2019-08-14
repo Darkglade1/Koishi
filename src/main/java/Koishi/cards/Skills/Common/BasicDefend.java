@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class BasicDefend extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(BasicDefend.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("BasicDefend.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;

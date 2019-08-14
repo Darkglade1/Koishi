@@ -34,7 +34,7 @@
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "Mind Numbing Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Remove all koishi:Terror from target enemy and heal HP equal to the amount removed. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust."
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
@@ -155,7 +155,8 @@
   },
   "Koishi:ApparitionsStalkTheNight": {
     "NAME": "Apparitions Stalk the Night",
-    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL If you do not have Intangible, gain !M! Intangible. NL Exhaust."
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL If you do not have Intangible, gain !M! Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Lose !Koishi:SecondMagic! HP. NL If you do not have Intangible, gain !M! Intangible. NL Exhaust."
   },
   "Koishi:Vanish": {
     "NAME": "Vanish",

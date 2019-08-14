@@ -54,6 +54,7 @@ public class EphemeralPower extends AbstractPower {
 
     public void checkTrigger() {
         if ((amount / threshold) >= 1) {
+            this.flash();
             stackPower(-threshold);
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new IntangiblePlayerPower(owner, intangible), intangible));
         }

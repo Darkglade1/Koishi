@@ -35,6 +35,7 @@ public class FreudianInstinctPower extends AbstractPower {
     @Override
     public void onCardDraw(AbstractCard card) {
         if (card instanceof AbstractIdCard) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, amount));
         }
     }

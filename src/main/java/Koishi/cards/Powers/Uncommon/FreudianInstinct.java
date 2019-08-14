@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class FreudianInstinct extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(FreudianInstinct.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("FreudianInstinct.png");
+    public static final String IMG = makeCardPath("FreudianInstinct.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

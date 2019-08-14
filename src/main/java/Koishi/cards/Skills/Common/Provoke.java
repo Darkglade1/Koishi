@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class Provoke extends AbstractIntentChangingCard {
 
     public static final String ID = KoishiMod.makeID(Provoke.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Provoke.png");
+    public static final String IMG = makeCardPath("Provoke.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;

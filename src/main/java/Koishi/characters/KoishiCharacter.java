@@ -154,21 +154,16 @@ public class KoishiCharacter extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-//        retVal.add(BasicStrike.ID);
-//        retVal.add(BasicStrike.ID);
-//        retVal.add(BasicStrike.ID);
-//        retVal.add(BasicStrike.ID);
-//        retVal.add(BasicDefend.ID);
-//        retVal.add(BasicDefend.ID);
-//        retVal.add(BasicDefend.ID);
-//        retVal.add(BasicDefend.ID);
-//        retVal.add(Provoke.ID);
-//        retVal.add(HauntingSlash.ID);
-
-        retVal.add(UnconsciousUrges.ID);
-        retVal.add(UnconsciousUrges.ID);
-        retVal.add(ConditionedTeleport.ID);
-        retVal.add(RollingInRichesHeart.ID);
+        retVal.add(BasicStrike.ID);
+        retVal.add(BasicStrike.ID);
+        retVal.add(BasicStrike.ID);
+        retVal.add(BasicStrike.ID);
+        retVal.add(BasicDefend.ID);
+        retVal.add(BasicDefend.ID);
+        retVal.add(BasicDefend.ID);
+        retVal.add(BasicDefend.ID);
+        retVal.add(Provoke.ID);
+        retVal.add(HauntingSlash.ID);
 
         return retVal;
     }

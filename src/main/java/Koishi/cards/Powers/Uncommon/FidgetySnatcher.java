@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class FidgetySnatcher extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(FidgetySnatcher.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("FidgetySnatcher.png");
+    public static final String IMG = makeCardPath("FidgetySnatcher.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

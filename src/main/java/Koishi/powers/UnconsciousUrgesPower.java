@@ -45,6 +45,7 @@ public class UnconsciousUrgesPower extends AbstractPower {
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         if (!triggered && chosenCard != null && card.cardID.equals(chosenCard.cardID)) {
+            this.flash();
             triggered = true;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new EnergyNextTurnPower(owner, amount), amount));
             updateDescription();

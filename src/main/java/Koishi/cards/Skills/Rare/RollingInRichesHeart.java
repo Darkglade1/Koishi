@@ -13,7 +13,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class RollingInRichesHeart extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(RollingInRichesHeart.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("RollingInRichesHeart.png");
+    public static final String IMG = makeCardPath("RollingInRichesHeart.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

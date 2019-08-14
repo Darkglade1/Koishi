@@ -35,6 +35,7 @@ public class EgoPower extends AbstractPower {
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         if (card instanceof AbstractIdCard) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
         }
     }

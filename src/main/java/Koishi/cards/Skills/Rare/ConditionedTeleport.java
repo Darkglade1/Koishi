@@ -17,7 +17,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public class ConditionedTeleport extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(ConditionedTeleport.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("ConditionedTeleport.png");
+    public static final String IMG = makeCardPath("ConditionedTeleport.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

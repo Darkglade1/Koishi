@@ -43,8 +43,7 @@ public class MindNumbingTerror extends AbstractDefaultCard {
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         if (m.hasPower(TerrorPower.POWER_ID)) {
             int healAmount = m.getPower(TerrorPower.POWER_ID).amount;
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m, m, TerrorPower.POWER_ID));
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, healAmount));
+            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, healAmount / 2));
         }
     }
 

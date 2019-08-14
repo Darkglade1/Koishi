@@ -14,7 +14,7 @@ import static Koishi.KoishiMod.makeCardPath;
 public class CatchAndRose extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(CatchAndRose.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("CatchAndRose.png");
+    public static final String IMG = makeCardPath("CatchAndRose.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
