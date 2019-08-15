@@ -236,8 +236,8 @@ public class KoishiMod implements
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
     
-    public static String makeOrbPath(String resourcePath) {
-        return getModID() + "Resources/orbs/" + resourcePath;
+    public static String makeEffectPath(String resourcePath) {
+        return getModID() + "Resources/images/effects/" + resourcePath;
     }
     
     public static String makePowerPath(String resourcePath) {

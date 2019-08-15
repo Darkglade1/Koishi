@@ -3,6 +3,7 @@ Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
+Koishi\vfx\CloudFistEffect.class
 Koishi\cards\Attacks\Rare\RuptureMind.class
 Koishi\powers\UnconsciousUrgesPower.class
 Koishi\cards\Attacks\Rare\SilentAndRestless.class
