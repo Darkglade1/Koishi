@@ -22,8 +22,8 @@ public class Ego extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 3;
-    private static final int UPGRADED_COST = 2;
+    private static final int COST = 2;
+    private static final int UPGRADED_COST = 1;
 
     private static final int DRAW = 1;
 
