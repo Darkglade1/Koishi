@@ -4,6 +4,7 @@ import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.MindControlPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -28,19 +29,10 @@ public class PerfectMindControl extends AbstractDefaultCard {
 
     private static final int TURNS = 1;
 
-    private boolean isRetaining = false;
-
     public PerfectMindControl() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = TURNS;
         exhaust = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (isRetaining) {
-            retain = true;
-        }
     }
 
     @Override
@@ -57,8 +49,7 @@ public class PerfectMindControl extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            retain = true;
-            isRetaining = true;
+            AlwaysRetainField.alwaysRetain.set(this, true);
             rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }

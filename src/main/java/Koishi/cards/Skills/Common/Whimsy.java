@@ -3,6 +3,7 @@ package Koishi.cards.Skills.Common;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -29,12 +30,7 @@ public class Whimsy extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DRAW;
         exhaust = true;
-        retain = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override

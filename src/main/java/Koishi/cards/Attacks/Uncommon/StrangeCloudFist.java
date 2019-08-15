@@ -1,6 +1,7 @@
 package Koishi.cards.Attacks.Uncommon;
 
 import Koishi.cards.AbstractDefaultCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -32,12 +33,7 @@ public class StrangeCloudFist extends AbstractDefaultCard {
     public StrangeCloudFist() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        retain = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override

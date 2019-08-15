@@ -3,6 +3,7 @@ package Koishi.cards.Skills.Rare;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -29,13 +30,8 @@ public class ConditionedTeleport extends AbstractDefaultCard {
     public ConditionedTeleport() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.isInnate = true;
-        this.retain = true;
-        FleetingField.fleeting.set(this, Boolean.valueOf(true));
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
+        FleetingField.fleeting.set(this, true);
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override
@@ -66,7 +62,7 @@ public class ConditionedTeleport extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            FleetingField.fleeting.set(this, Boolean.valueOf(false));
+            FleetingField.fleeting.set(this, false);
             rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }

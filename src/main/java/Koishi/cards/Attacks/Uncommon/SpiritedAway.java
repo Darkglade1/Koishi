@@ -1,6 +1,7 @@
 package Koishi.cards.Attacks.Uncommon;
 
 import Koishi.cards.AbstractDefaultCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -36,12 +37,7 @@ public class SpiritedAway extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = DRAW;
-        retain = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override

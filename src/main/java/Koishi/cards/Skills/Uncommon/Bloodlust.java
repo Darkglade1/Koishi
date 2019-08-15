@@ -4,6 +4,7 @@ import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.BloodlustPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,12 +32,7 @@ public class Bloodlust extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = ENERGY;
         exhaust = true;
-        retain = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override

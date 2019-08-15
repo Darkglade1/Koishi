@@ -1,6 +1,7 @@
 package Koishi.cards.Skills.Rare;
 
 import Koishi.cards.AbstractDefaultCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -34,13 +35,8 @@ public class MindStellarRelief extends AbstractDefaultCard {
     public MindStellarRelief() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DAMAGE;
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
         exhaust = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
     }
 
     @Override
