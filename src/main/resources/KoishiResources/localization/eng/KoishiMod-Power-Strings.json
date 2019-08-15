@@ -23,6 +23,10 @@
         "NAME": "Thorns Down",
         "DESCRIPTIONS": ["Next turn, lose #b", " Thorns."]
 },
+"Koishi:UntouchablePower": {
+        "NAME": "Untouchable",
+        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your Status cards."]
+},
 "Koishi:HeartbrokenPower": {
         "NAME": "Heartbroken",
         "DESCRIPTIONS": ["While you are Intangible, deal #b", "x damage."]

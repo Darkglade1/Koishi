@@ -27,9 +27,9 @@ public class StingingMind extends AbstractDefaultCard {
     private static final int COST = 2;
 
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int DEBUFF = 1;
+    private static final int DEBUFF = 3;
     private static final int UPGRADE_PLUS_DEBUFF = 1;
 
     public StingingMind() {
@@ -42,12 +42,11 @@ public class StingingMind extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("specialAttackC");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        for (int i = 0; i < magicNumber; i++) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, 1), 1));
+        }
     }
 
     @Override

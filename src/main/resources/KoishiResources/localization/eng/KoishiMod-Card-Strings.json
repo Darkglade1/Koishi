@@ -86,7 +86,7 @@
   },
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
-    "DESCRIPTION": "Deal !D! damage and apply !M! koishi:Terror twice."
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply 1 koishi:Terror !M! times."
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
@@ -260,6 +260,10 @@
   "Koishi:Provoke": {
     "NAME": "Provoke",
     "DESCRIPTION": "Gain !B! Block. NL Force target enemy to intend to attack this turn if possible."
+  },
+  "Koishi:Untouchable": {
+    "NAME": "Untouchable",
+    "DESCRIPTION": "Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status cards."
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "Heart-Stopping Horror",

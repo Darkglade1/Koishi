@@ -43,9 +43,9 @@ Koishi\cards\Skills\Common\PhantomBarrier.class
 Koishi\cards\Attacks\Uncommon\TremblingHands.class
 Koishi\powers\FormlessExistencePower.class
 Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class
+Koishi\powers\UntouchablePower.class
 Koishi\patches\onGainedBlockPatch.class
 Koishi\cards\Attacks\Common\ReflexRadar.class
-Koishi\potions\PlaceholderPotion.class
 Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
@@ -63,6 +63,7 @@ Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
 Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
+Koishi\cards\Powers\Rare\Untouchable.class
 Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\Powers\Uncommon\UnconsciousUrges.class
@@ -89,7 +90,6 @@ Koishi\cards\Skills\Uncommon\Possession.class
 Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\powers\EphemeralPower.class
-Koishi\orbs\DefaultOrb.class
 Koishi\cards\Attacks\Uncommon\StrangeCloudFist.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class

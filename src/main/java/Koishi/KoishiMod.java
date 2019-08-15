@@ -34,6 +34,7 @@ import Koishi.cards.Powers.Rare.Ego;
 import Koishi.cards.Powers.Rare.FormlessExistence;
 import Koishi.cards.Powers.Rare.HeartStoppingHorror;
 import Koishi.cards.Powers.Rare.Heartbroken;
+import Koishi.cards.Powers.Rare.Untouchable;
 import Koishi.cards.Powers.Uncommon.BramblyRoseGarden;
 import Koishi.cards.Powers.Uncommon.FidgetySnatcher;
 import Koishi.cards.Powers.Uncommon.FreudianInstinct;
@@ -549,6 +550,7 @@ public class KoishiMod implements
 
         //Powers
         //Rares
+        BaseMod.addCard(new Untouchable());
         BaseMod.addCard(new HeartStoppingHorror());
         BaseMod.addCard(new Heartbroken());
         BaseMod.addCard(new Ego());
@@ -636,6 +638,7 @@ public class KoishiMod implements
         UnlockTracker.unlockCard(Provoke.ID);
         UnlockTracker.unlockCard(BasicDefend.ID);
 
+        UnlockTracker.unlockCard(Untouchable.ID);
         UnlockTracker.unlockCard(HeartStoppingHorror.ID);
         UnlockTracker.unlockCard(Heartbroken.ID);
         UnlockTracker.unlockCard(Ego.ID);
