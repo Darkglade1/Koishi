@@ -186,8 +186,8 @@
   },
   "Koishi:FourthEye": {
     "NAME": "Fourth Eye",
-    "DESCRIPTION": "Gain Frozen Eye this combat. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain Frozen Eye this combat. NL Exhaust."
+    "DESCRIPTION": "Gain koishi:Frozen_Eye this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain koishi:Frozen_Eye this combat. NL Exhaust."
   },
   "Koishi:ReleaseOfTheId": {
     "NAME": "Release of the Id",

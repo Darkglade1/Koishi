@@ -8,6 +8,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
+import com.megacrit.cardcrawl.monsters.beyond.GiantHead;
+import com.megacrit.cardcrawl.monsters.beyond.Maw;
+import com.megacrit.cardcrawl.monsters.city.BookOfStabbing;
+import com.megacrit.cardcrawl.monsters.ending.CorruptHeart;
 import com.megacrit.cardcrawl.monsters.exordium.Hexaghost;
 
 import java.util.function.Predicate;
@@ -20,16 +24,6 @@ public class ForceIntentAction extends AbstractGameAction {
 
 	private AbstractPlayer p;
 	private AbstractMonster m;
-	private boolean upgraded;
-	private AbstractCard transformToCard;
-  	private AbstractCard transformee;
-  	public int seed = 0;
-  	public static int StabbyMcStabs = 1;
-  	public static boolean entangleReset = false;
-
-  	public static boolean champThresholdReached;
-  	public static int champNumTurns;
-  	public static int forgeTimes;
 
 	public ForceIntentAction(AbstractPlayer p, AbstractMonster m, AbstractIntentChangingCard.IntentTypes type) {
 		this.p = p;
@@ -42,6 +36,11 @@ public class ForceIntentAction extends AbstractGameAction {
 	}
 
 	public boolean newIntent(AbstractMonster m, AbstractIntentChangingCard.IntentTypes type) {
+		//Doesn't change the intent of these monsters because doing so messes with their internal counters
+		if (m.id.equals(GiantHead.ID) || m.id.equals(Maw.ID) || m.id.equals(BookOfStabbing.ID) || m.id.equals(CorruptHeart.ID)) {
+			return true;
+		}
+
 		Predicate<AbstractMonster> test;
 		if (type == AbstractIntentChangingCard.IntentTypes.ATTACK) {
 			test = attackTest;
@@ -70,6 +69,11 @@ public class ForceIntentAction extends AbstractGameAction {
 	}
 
 	public static boolean previewNewIntent(AbstractMonster m, AbstractIntentChangingCard.IntentTypes type) {
+		//Doesn't change the intent of these monsters because doing so messes with their internal counters
+		if (m.id.equals(GiantHead.ID) || m.id.equals(Maw.ID) || m.id.equals(BookOfStabbing.ID) || m.id.equals(CorruptHeart.ID)) {
+			return true;
+		}
+
 		Predicate<AbstractMonster> test;
 		if (type == AbstractIntentChangingCard.IntentTypes.ATTACK) {
 			test = attackTest;

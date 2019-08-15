@@ -26,6 +26,7 @@ public class SilentAndRestless extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int DAMAGE = 13;
+    private static final int UPGRADE_PLUS_DAMAGE = 3;
 
     private static final int BUFF = 2;
 
@@ -51,6 +52,7 @@ public class SilentAndRestless extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeDamage(UPGRADE_PLUS_DAMAGE);
             upgradeDefaultSecondMagicNumber(UPGRADE_PLUS_KILL_BONUS);
             initializeDescription();
         }

@@ -3,7 +3,7 @@
     "NAMES": [
       "id"
     ],
-    "DESCRIPTION": "Id cards are automatically used when drawn."
+    "DESCRIPTION": "Id cards are automatically used when drawn regardless of Energy."
   },
   {
     "NAMES": [
@@ -33,6 +33,15 @@
       "mind controlled"
     ],
     "DESCRIPTION": "Whenever a mind controlled enemy deals damage or applies a debuff, a random enemy receives it instead. Whenever it applies a buff, gains Block, or heals HP, you receive it instead."
+  },
+  {
+    "PROPER_NAME": "Frozen Eye",
+    "NAMES": [
+      "Frozen Eye",
+      "frozen_eye",
+      "Frozen_Eye"
+    ],
+    "DESCRIPTION": "A relic that allows you to view your draw pile in order."
   },
   {
     "NAMES": [

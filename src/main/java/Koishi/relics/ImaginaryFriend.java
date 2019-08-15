@@ -19,8 +19,8 @@ public class ImaginaryFriend extends CustomRelic {
 
     public static final String ID = KoishiMod.makeID("ImaginaryFriend");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ImaginaryFriend.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("ImaginaryFriend.png"));
 
     private static final int EPHEMERAL = 1;
 
