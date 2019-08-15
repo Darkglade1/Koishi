@@ -4,6 +4,7 @@ import Koishi.KoishiMod;
 import Koishi.actions.ForceIntentAction;
 import Koishi.cards.AbstractIntentChangingCard;
 import Koishi.characters.KoishiCharacter;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -27,13 +28,8 @@ public class EmbersOfLove extends AbstractIntentChangingCard {
 
     public EmbersOfLove() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, IntentTypes.NOT_ATTACK);
-        retain = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
         exhaust = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        retain = true;
     }
 
     @Override
