@@ -44,6 +44,15 @@
     "DESCRIPTION": "A relic that allows you to view your draw pile in order."
   },
   {
+    "PROPER_NAME": "So Answer the Phone",
+    "NAMES": [
+      "So Answer the Phone",
+      "so_answer_the_phone",
+      "So_Answer_The_Phone"
+    ],
+    "DESCRIPTION": "A 2 cost Skill that doubles(triples) ALL enemies' Terror then exhausts."
+  },
+  {
     "NAMES": [
       "stun"
     ],

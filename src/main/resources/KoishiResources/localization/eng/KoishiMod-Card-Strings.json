@@ -94,7 +94,7 @@
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
-    "DESCRIPTION": "Deal !D! damage to ALL attacking enemies."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies intending to attack."
   },
   "Koishi:PhantomStrike": {
     "NAME": "Phantom Strike",
@@ -128,7 +128,7 @@
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
-    "DESCRIPTION": "Retain. NL Remove all debuffs from target enemy. NL It loses !M! HP times the amount of debuffs removed. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Remove all debuffs from target enemy. NL It loses !M! HP for each stack of a debuff removed. NL Exhaust."
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA's Flaw",
@@ -136,8 +136,8 @@
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
-    "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add So Answer the Phone to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add So Answer the Phone+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add koishi:So_Answer_The_Phone to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add koishi:So_Answer_The_Phone+ to your hand. NL Exhaust."
   },
   "Koishi:SoAnswerThePhone": {
     "NAME": "So Answer the Phone",
