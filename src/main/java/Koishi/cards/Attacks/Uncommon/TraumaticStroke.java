@@ -26,11 +26,11 @@ public class TraumaticStroke extends AbstractDefaultCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 3;
 
-    private static final int BLOCK = 6;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
+    private static final int BLOCK = 12;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
     public TraumaticStroke() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -41,12 +41,9 @@ public class TraumaticStroke extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("airAttack");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        for (AbstractPower power : m.powers) {
-            if (power.type == AbstractPower.PowerType.DEBUFF) {
-                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-            }
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if (KoishiMod.appliedDebuffThisTurn) {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         }
 
     }

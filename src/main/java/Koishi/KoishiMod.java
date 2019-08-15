@@ -77,7 +77,6 @@ import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.characters.KoishiCharacter;
 import Koishi.events.IdentityCrisisEvent;
-import Koishi.potions.PlaceholderPotion;
 import Koishi.relics.ImaginaryFriend;
 import Koishi.util.IDCheckDontTouchPls;
 import Koishi.util.TextureLoader;
@@ -191,6 +190,7 @@ public class KoishiMod implements
     private static final String DESCRIPTION = "My hat is my friend. It helps me relax.";
 
     public static int intangibleCount = 0;
+    public static boolean appliedDebuffThisTurn = false;
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -749,6 +749,8 @@ public class KoishiMod implements
     public void receivePostBattle(AbstractRoom room) {
         runAnimation("winB");
         intangibleCount = 0;
+        appliedDebuffThisTurn = false;
+        AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
         AbstractIdCard.idEnabled = true;
     }
@@ -756,6 +758,8 @@ public class KoishiMod implements
     @Override
     public void receiveOnBattleStart(AbstractRoom var1) {
         intangibleCount = 0;
+        appliedDebuffThisTurn = false;
+        AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
         AbstractIdCard.idEnabled = true;
     }
@@ -763,6 +767,8 @@ public class KoishiMod implements
     @Override
     public void receiveStartGame() {
         intangibleCount = 0;
+        appliedDebuffThisTurn = false;
+        AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
         AbstractIdCard.idEnabled = true;
     }
@@ -770,6 +776,8 @@ public class KoishiMod implements
     @Override
     public void receiveSetUnlocks() {
         intangibleCount = 0;
+        appliedDebuffThisTurn = false;
+        AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
         AbstractIdCard.idEnabled = true;
     }
@@ -781,10 +789,16 @@ public class KoishiMod implements
                 intangibleCount += p.amount;
             }
         }
+        if (source == AbstractDungeon.player) {
+            if (p.type == AbstractPower.PowerType.DEBUFF) {
+                appliedDebuffThisTurn = true;
+            }
+        }
     }
 
     @Override
     public boolean receivePreMonsterTurn(AbstractMonster m) {
+        appliedDebuffThisTurn = false;
         AbstractIdCard.drewIdCardThisTurn = false;
         return true;
     }

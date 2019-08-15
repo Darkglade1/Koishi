@@ -14,7 +14,7 @@
   },
   "Koishi:RuptureMind": {
     "NAME": "Rupture Mind",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each different debuff on target enemy."
+    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, apply !M! koishi:Constricted."
   },
   "Koishi:LastRemote": {
     "NAME": "Last Remote",
@@ -30,7 +30,7 @@
   },
   "Koishi:TraumaticStroke": {
     "NAME": "Traumatic Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block for each different debuff on target enemy."
+    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, gain !B! Block."
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "Mind Numbing Terror",
@@ -38,7 +38,7 @@
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Gain !Koishi:SecondMagic! koishi:Ephemeral."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !Koishi:SecondMagic! koishi:Ephemeral. NL If target enemy has koishi:Terror, apply !M! koishi:Terror."
   },
   "Koishi:Catatonia": {
     "NAME": "Catatonia",
@@ -90,7 +90,7 @@
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT attack this turn if possible."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT intend to attack this turn if possible."
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
@@ -172,13 +172,13 @@
   },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn if possible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT attack this turn if possible."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible."
   },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to attack this turn if possible."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible."
   },
   "Koishi:MassHysteria": {
     "NAME": "Mass Hysteria",
@@ -259,7 +259,7 @@
   },
   "Koishi:Provoke": {
     "NAME": "Provoke",
-    "DESCRIPTION": "Gain !B! Block. NL Force target enemy to attack this turn if possible."
+    "DESCRIPTION": "Gain !B! Block. NL Force target enemy to intend to attack this turn if possible."
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "Heart-Stopping Horror",
