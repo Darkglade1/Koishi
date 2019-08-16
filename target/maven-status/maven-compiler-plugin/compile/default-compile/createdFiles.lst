@@ -4,6 +4,7 @@ Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\vfx\CloudFistEffect.class
+Koishi\relics\ColorfulDays.class
 Koishi\cards\Attacks\Rare\RuptureMind.class
 Koishi\powers\UnconsciousUrgesPower.class
 Koishi\cards\Attacks\Rare\SilentAndRestless.class
@@ -117,6 +118,7 @@ Koishi\cards\Skills\Rare\PerfectMindControl.class
 Koishi\patches\IntentChangePatch.class
 Koishi\cards\Skills\Rare\SoAnswerThePhone.class
 Koishi\KoishiPlayerListener.class
+Koishi\relics\ImperfectMetamorphosis.class
 Koishi\cards\Skills\Uncommon\PredatoryInstincts.class
 Koishi\cards\Attacks\Uncommon\TraumaticStroke.class
 Koishi\cards\Attacks\Rare\SuperEgo.class

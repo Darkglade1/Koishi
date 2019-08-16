@@ -78,7 +78,9 @@ import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.characters.KoishiCharacter;
 import Koishi.relics.BloodstainedWhiteRose;
+import Koishi.relics.ColorfulDays;
 import Koishi.relics.ImaginaryFriend;
+import Koishi.relics.ImperfectMetamorphosis;
 import Koishi.relics.LettersToReimu;
 import Koishi.util.IDCheckDontTouchPls;
 import Koishi.util.TextureLoader;
@@ -349,6 +351,8 @@ public class KoishiMod implements
         BaseMod.addRelicToCustomPool(new ImaginaryFriend(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new BloodstainedWhiteRose(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new LettersToReimu(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new ImperfectMetamorphosis(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new ColorfulDays(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
 
         logger.info("Done adding relics!");
     }

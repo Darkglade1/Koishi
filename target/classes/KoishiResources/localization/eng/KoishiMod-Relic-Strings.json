@@ -15,9 +15,23 @@
   },
   "Koishi:LettersToReimu": {
     "NAME": "Letters to Reimu",
-    "FLAVOR": "In this wondrous world of illusions, they were happy. But everything comes to an end, even the dream they had believed in. Even this story must have a sad, tragic end.",
+    "FLAVOR": "Everything comes to an end, even the dream they had believed in. Even this story must have a sad, tragic end.",
     "DESCRIPTIONS": [
       "Whenever a card is exhausted, gain #b", " #yTemporary #yHP."
+    ]
+  },
+  "Koishi:ImperfectMetamorphosis": {
+    "NAME": "Imperfect Metamorphosis",
+    "FLAVOR": "It was the first day of spring, and nobody cared.",
+    "DESCRIPTIONS": [
+      "Upon pickup, choose and Transform #b", " cards."
+    ]
+  },
+  "Koishi:ColorfulDays": {
+    "NAME": "Colorful Days",
+    "FLAVOR": "Everything I saw, everything I heard, everything I felt . . . all the scenery around me started to take color.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn. #yEphemeral now triggers at #b20 stacks instead of #b15."
     ]
   }
 }
