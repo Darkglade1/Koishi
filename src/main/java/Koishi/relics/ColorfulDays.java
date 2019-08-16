@@ -1,6 +1,7 @@
 package Koishi.relics;
 
 import Koishi.KoishiMod;
+import Koishi.powers.EphemeralPower;
 import Koishi.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -34,7 +35,7 @@ public class ColorfulDays extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + EPHEMERAL_INCREASE + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + EPHEMERAL_INCREASE + DESCRIPTIONS[1] + EphemeralPower.ORIGINAL_THRESHOLD + DESCRIPTIONS[2];
     }
 
 }

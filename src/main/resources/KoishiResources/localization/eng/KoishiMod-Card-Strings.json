@@ -263,7 +263,8 @@
   },
   "Koishi:Untouchable": {
     "NAME": "Untouchable",
-    "DESCRIPTION": "Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status cards."
+    "DESCRIPTION": "Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status and Curse cards.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status and Curse cards."
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "Heart-Stopping Horror",

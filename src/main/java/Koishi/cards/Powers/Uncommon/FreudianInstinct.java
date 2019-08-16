@@ -22,9 +22,9 @@ public class FreudianInstinct extends AbstractDefaultCard {
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
     private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
 
     private static final int BLOCK = 2;
-    private static final int UPGRADE_PLUS_BLOCK = 1;
 
     public FreudianInstinct() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -40,7 +40,7 @@ public class FreudianInstinct extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_BLOCK);
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

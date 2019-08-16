@@ -22,9 +22,9 @@ public class ReleaseOfTheId extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
 
-    private static final int EFFECT = 3;
+    private static final int EFFECT = 2;
 
     public ReleaseOfTheId() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

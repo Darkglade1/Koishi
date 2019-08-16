@@ -37,15 +37,8 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     @Override
     public void triggerWhenDrawn() {
         if (idEnabled) {
-            if (this.target == CardTarget.ENEMY) {
-                AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-                calculateCardDamage(mo);
-                use(AbstractDungeon.player, mo);
-            } else {
-                calculateCardDamage(null);
-                use(AbstractDungeon.player, null);
-            }
-
+            calculateCardDamage(null);
+            use(AbstractDungeon.player, null);
             if (!freeToPlayOnce) {
                 AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
             } else {

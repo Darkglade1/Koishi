@@ -20,21 +20,21 @@ public class UnconsciousUrgesAction extends AbstractGameAction {
     public void update() {
         this.isDone = false;
 
-        ArrayList<AbstractCard> hand = AbstractDungeon.player.hand.group;
+        ArrayList<AbstractCard> hand = new ArrayList<>();
+        for (AbstractCard card : AbstractDungeon.player.hand.group) {
+            if (card.type != AbstractCard.CardType.STATUS && card.type != AbstractCard.CardType.CURSE) {
+                hand.add(card);
+            }
+        }
         if (hand.size() > 0) {
             power.chosenCard = hand.get(AbstractDungeon.cardRandomRng.random(hand.size() - 1));
-            int count = 0;
-            //Tries to avoid selecting unplayable cards like Status and Curse
-            while ((power.chosenCard.type == AbstractCard.CardType.CURSE || power.chosenCard.type == AbstractCard.CardType.STATUS) && count < 10) {
-                power.chosenCard = hand.get(AbstractDungeon.cardRandomRng.random(hand.size() - 1));
-                count++;
+
+            for (AbstractCard card : AbstractDungeon.player.hand.group) {
+                if (card.cardID.equals(power.chosenCard.cardID)) {
+                    card.flash();
+                }
             }
-            if (power.chosenCard.type == AbstractCard.CardType.CURSE || power.chosenCard.type == AbstractCard.CardType.STATUS) {
-                power.chosenCard = null;
-            }
-            if (power.chosenCard != null) {
-                power.chosenCard.flash();
-            }
+
         } else {
             power.chosenCard = null;
         }

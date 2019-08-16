@@ -18,8 +18,8 @@ public class EphemeralPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public static int originalThreshold = 15;
-    public static int threshold = originalThreshold;
+    public static final int ORIGINAL_THRESHOLD = 15;
+    public static int threshold = ORIGINAL_THRESHOLD;
     public static int intangible = 1;
 
     public EphemeralPower(final AbstractCreature owner, final int amount) {
@@ -58,7 +58,7 @@ public class EphemeralPower extends AbstractPower {
         if (AbstractDungeon.player.hasRelic(ColorfulDays.ID)) {
             threshold = ColorfulDays.EPHEMERAL_INCREASE;
         } else {
-            threshold = originalThreshold;
+            threshold = ORIGINAL_THRESHOLD;
         }
         updateDescription();
         if ((amount / threshold) >= 1) {

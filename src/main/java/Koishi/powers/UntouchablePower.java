@@ -37,7 +37,7 @@ public class UntouchablePower extends AbstractPower {
         ArrayList<AbstractCard> exhaustList = new ArrayList<>();
         AbstractPlayer p = AbstractDungeon.player;
         for (AbstractCard card : p.hand.group) {
-            if (card.type == AbstractCard.CardType.STATUS) {
+            if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
                 exhaustList.add(card);
             }
         }
@@ -47,7 +47,7 @@ public class UntouchablePower extends AbstractPower {
         exhaustList.clear();
 
         for (AbstractCard card : p.drawPile.group) {
-            if (card.type == AbstractCard.CardType.STATUS) {
+            if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
                 exhaustList.add(card);
             }
         }
@@ -57,7 +57,7 @@ public class UntouchablePower extends AbstractPower {
         exhaustList.clear();
 
         for (AbstractCard card : p.discardPile.group) {
-            if (card.type == AbstractCard.CardType.STATUS) {
+            if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
                 exhaustList.add(card);
             }
         }

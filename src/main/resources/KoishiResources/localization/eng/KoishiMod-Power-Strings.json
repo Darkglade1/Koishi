@@ -25,7 +25,7 @@
 },
 "Koishi:UntouchablePower": {
         "NAME": "Untouchable",
-        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your Status cards."]
+        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your Status and Curse cards."]
 },
 "Koishi:HeartbrokenPower": {
         "NAME": "Heartbroken",

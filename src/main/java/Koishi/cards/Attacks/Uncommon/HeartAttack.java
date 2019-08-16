@@ -18,7 +18,7 @@ public class HeartAttack extends AbstractIdCard {
     public static final String IMG = makeCardPath("HeartAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
@@ -39,8 +39,9 @@ public class HeartAttack extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("downAttack");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        calculateCardDamage(mo);
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override
