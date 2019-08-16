@@ -5,5 +5,19 @@
     "DESCRIPTIONS": [
       "Whenever you play a card or draw an #yId card, gain #b", " #yEphemeral."
     ]
+  },
+  "Koishi:BloodstainedWhiteRose": {
+    "NAME": "Bloodstained White Rose",
+    "FLAVOR": "The treaty was broken, and the White Rose of Chireiden was stained forever.",
+    "DESCRIPTIONS": [
+      "At the start of combat, apply #b", " #yTerror to a random enemy."
+    ]
+  },
+  "Koishi:LettersToReimu": {
+    "NAME": "Letters to Reimu",
+    "FLAVOR": "In this wondrous world of illusions, they were happy. But everything comes to an end, even the dream they had believed in. Even this story must have a sad, tragic end.",
+    "DESCRIPTIONS": [
+      "Whenever a card is exhausted, gain #b", " #yTemporary #yHP."
+    ]
   }
 }

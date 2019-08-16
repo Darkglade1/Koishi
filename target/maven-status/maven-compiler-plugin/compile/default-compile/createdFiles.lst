@@ -73,6 +73,7 @@ Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Powers\Rare\HeartStoppingHorror.class
 Koishi\cards\Attacks\Rare\MentalBreakdown.class
 Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
+Koishi\relics\LettersToReimu.class
 Koishi\cards\Powers\Rare\Ego.class
 Koishi\powers\ConfinedInnocentPower.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
@@ -85,6 +86,7 @@ Koishi\cards\Powers\Rare\ConfinedInnocent.class
 Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
 Koishi\cards\Skills\Common\JumpScare.class
 Koishi\patches\IdCardPatch$Locator.class
+Koishi\relics\BloodstainedWhiteRose.class
 Koishi\patches\onGainedBlockPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
 Koishi\cards\Skills\Uncommon\Possession.class

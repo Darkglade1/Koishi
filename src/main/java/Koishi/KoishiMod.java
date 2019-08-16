@@ -77,13 +77,13 @@ import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.characters.KoishiCharacter;
-import Koishi.events.IdentityCrisisEvent;
+import Koishi.relics.BloodstainedWhiteRose;
 import Koishi.relics.ImaginaryFriend;
+import Koishi.relics.LettersToReimu;
 import Koishi.util.IDCheckDontTouchPls;
 import Koishi.util.TextureLoader;
 import Koishi.variables.DefaultSecondMagicNumber;
 import basemod.BaseMod;
-import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.abstracts.CustomCard;
 import basemod.interfaces.EditCardsSubscriber;
@@ -103,15 +103,11 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
@@ -131,7 +127,6 @@ import org.apache.logging.log4j.Logger;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Properties;
 
 @SpireInitializer
 public class KoishiMod implements
@@ -304,8 +299,7 @@ public class KoishiMod implements
         
         BaseMod.addCharacter(new KoishiCharacter("the Default", KoishiCharacter.Enums.KOISHI),
                 THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, KoishiCharacter.Enums.KOISHI);
-        
-        receiveEditPotions();
+
         logger.info("Added " + KoishiCharacter.Enums.KOISHI.toString());
     }
     
@@ -342,13 +336,7 @@ public class KoishiMod implements
     // =============== / POST-INITIALIZE/ =================
     
     
-    // ================ ADD POTIONS ===================
-    
-    public void receiveEditPotions() {
 
-    }
-    
-    // ================ /ADD POTIONS/ ===================
     
     
     // ================ ADD RELICS ===================
@@ -359,6 +347,8 @@ public class KoishiMod implements
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new ImaginaryFriend(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new BloodstainedWhiteRose(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new LettersToReimu(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
 
         logger.info("Done adding relics!");
     }
