@@ -35,7 +35,7 @@ public class RollingInRichesHeart extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("spellC");
+        KoishiMod.runAnimation("rollingInRiches");
         AbstractDungeon.player.loseGold(defaultSecondMagicNumber);
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.ATTACK) {
