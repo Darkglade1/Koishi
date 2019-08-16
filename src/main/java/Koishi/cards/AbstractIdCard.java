@@ -1,6 +1,7 @@
 package Koishi.cards;
 
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Attacks.Uncommon.HeartAttack;
 import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Rare.FadingMemory;
@@ -62,7 +63,8 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
         list.add(new IdleWhim());
         list.add(new PredatoryInstincts());
         list.add(new RorschachInDanmaku());
-        list.add(new GhostParty());
+        list.add(new HeartAttack());
+        //list.add(new GhostParty());
         list.add(new SprinkleStarAndHeart());
         list.add(new FadingMemory());
 

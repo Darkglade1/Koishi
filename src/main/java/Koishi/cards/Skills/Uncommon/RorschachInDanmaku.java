@@ -1,16 +1,12 @@
 package Koishi.cards.Skills.Uncommon;
 
 import Koishi.KoishiMod;
-import Koishi.actions.ForceIntentAction;
+import Koishi.actions.RorshachInDanmakuAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
-import basemod.ReflectionHacks;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import java.util.Iterator;
 
 import static Koishi.KoishiMod.makeCardPath;
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
@@ -37,24 +33,11 @@ public class RorschachInDanmaku extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellA");
-        int totalBlock = 0;
-        Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while(iterator.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)iterator.next();
-            if (!mo.isDeadOrEscaped()) {
-                if (ForceIntentAction.attackTest.test(mo)) {
-                    int moDamage = (Integer) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "intentDmg");
-                    if ((Boolean) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "isMultiDmg")) {
-                        moDamage *= (Integer) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "intentMultiAmt");
-                    }
-                    totalBlock += moDamage;
-                }
-            }
-        }
         if (upgraded) {
-            totalBlock += magicNumber;
+            AbstractDungeon.actionManager.addToBottom(new RorshachInDanmakuAction(magicNumber));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new RorshachInDanmakuAction(0));
         }
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, totalBlock));
     }
 
     @Override

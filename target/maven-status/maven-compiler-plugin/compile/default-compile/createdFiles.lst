@@ -1,6 +1,7 @@
 Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
+Koishi\actions\RorshachInDanmakuAction.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
 Koishi\vfx\CloudFistEffect.class

@@ -31,7 +31,7 @@
     "NAME": "Colorful Days",
     "FLAVOR": "Everything I saw, everything I heard, everything I felt . . . all the scenery around me started to take color.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn. #yEphemeral now triggers at #b20 stacks instead of #b15."
+      "Gain [E] at the start of each turn. #yEphemeral now triggers at #b", " stacks instead of #b15."
     ]
   }
 }

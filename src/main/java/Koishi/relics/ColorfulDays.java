@@ -1,7 +1,6 @@
 package Koishi.relics;
 
 import Koishi.KoishiMod;
-import Koishi.powers.EphemeralPower;
 import Koishi.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -17,7 +16,7 @@ public class ColorfulDays extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("ColorfulDays.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("ColorfulDays.png"));
 
-    private static final int EPHEMERAL_INCREASE = 5;
+    public static final int EPHEMERAL_INCREASE = 20;
 
     public ColorfulDays() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
@@ -26,18 +25,16 @@ public class ColorfulDays extends CustomRelic {
     @Override
     public void onEquip() {
         ++AbstractDungeon.player.energy.energyMaster;
-        EphemeralPower.threshold += EPHEMERAL_INCREASE;
     }
 
     @Override
     public void onUnequip() {
         --AbstractDungeon.player.energy.energyMaster;
-        EphemeralPower.threshold -= EPHEMERAL_INCREASE;
     }
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0];
+        return DESCRIPTIONS[0] + EPHEMERAL_INCREASE + DESCRIPTIONS[1];
     }
 
 }

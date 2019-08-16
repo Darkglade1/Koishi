@@ -1,6 +1,7 @@
 package Koishi.powers;
 
 import Koishi.KoishiMod;
+import Koishi.relics.ColorfulDays;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -17,7 +18,8 @@ public class EphemeralPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public static int threshold = 15;
+    public static int originalThreshold = 15;
+    public static int threshold = originalThreshold;
     public static int intangible = 1;
 
     public EphemeralPower(final AbstractCreature owner, final int amount) {
@@ -53,6 +55,12 @@ public class EphemeralPower extends AbstractPower {
     }
 
     public void checkTrigger() {
+        if (AbstractDungeon.player.hasRelic(ColorfulDays.ID)) {
+            threshold = ColorfulDays.EPHEMERAL_INCREASE;
+        } else {
+            threshold = originalThreshold;
+        }
+        updateDescription();
         if ((amount / threshold) >= 1) {
             this.flash();
             stackPower(-threshold);
