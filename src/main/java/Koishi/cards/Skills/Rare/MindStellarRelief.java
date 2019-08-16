@@ -41,7 +41,7 @@ public class MindStellarRelief extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        KoishiMod.runAnimation("spellC");
+        KoishiMod.runAnimation("mindStellarRelief");
         ArrayList<AbstractPower> debuffsToRemove = new ArrayList<>();
         int debuffCount = 0;
         for (AbstractPower power : m.powers) {
