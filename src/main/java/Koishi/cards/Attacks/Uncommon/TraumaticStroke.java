@@ -3,6 +3,7 @@ package Koishi.cards.Attacks.Uncommon;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
+import Koishi.tags.Tags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -36,6 +37,7 @@ public class TraumaticStroke extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
+        tags.add(Tags.DEBUFF_THIS_TURN);
     }
 
     @Override

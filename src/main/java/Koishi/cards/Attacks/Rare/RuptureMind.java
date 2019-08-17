@@ -3,6 +3,7 @@ package Koishi.cards.Attacks.Rare;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
+import Koishi.tags.Tags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -37,6 +38,7 @@ public class RuptureMind extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = DEBUFF;
+        tags.add(Tags.DEBUFF_THIS_TURN);
     }
 
     @Override

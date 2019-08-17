@@ -25,6 +25,7 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\TraumaticStroke.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\ParalyzingFear.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\patches\IdCardPatch.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\patches\CardGlowBorderPatch.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\DanmakuParanoia.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\FreudianInstinctPower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\SilentAndRestlessAction.java
@@ -108,6 +109,7 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Common\SubterraneanRose.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\tags\Tags.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\AbstractDefaultCard.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Powers\Rare\Untouchable.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\GhostParty.java

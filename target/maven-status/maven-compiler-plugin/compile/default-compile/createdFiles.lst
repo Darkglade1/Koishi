@@ -38,6 +38,7 @@ Koishi\cards\Powers\Uncommon\BramblyRoseGarden.class
 Koishi\cards\Skills\Uncommon\Bloodlust.class
 Koishi\cards\AbstractDefaultCard.class
 Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
+Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
 Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
@@ -64,6 +65,7 @@ Koishi\characters\KoishiCharacter.class
 Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
+Koishi\patches\CardGlowBorderPatch.class
 Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
 Koishi\cards\Powers\Rare\Untouchable.class
