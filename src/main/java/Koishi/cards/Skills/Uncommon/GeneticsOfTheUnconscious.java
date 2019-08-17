@@ -3,13 +3,16 @@ package Koishi.cards.Skills.Uncommon;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
+import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
 
@@ -21,13 +24,13 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
+
+    private static final int ENERGY_LOSS = 1;
 
     private static final int DRAW = 2;
-    private static final int UPGRADE_PLUS_DRAW = 1;
 
     private static final int EFFECT = 2;
-    private static final int UPGRADE_PLUS_EFFECT = 1;
 
     public GeneticsOfTheUnconscious() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -38,6 +41,7 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellCall");
+        AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(ENERGY_LOSS));
         for (int i = 0; i < defaultSecondMagicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new DiscardPileToTopOfDeckAction(p));
         }
@@ -48,8 +52,8 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_DRAW);
-            upgradeDefaultSecondMagicNumber(UPGRADE_PLUS_EFFECT);
+            AlwaysRetainField.alwaysRetain.set(this, true);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -48,8 +48,8 @@ Koishi\cards\Attacks\Uncommon\TremblingHands.class
 Koishi\powers\FormlessExistencePower.class
 Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class
 Koishi\powers\UntouchablePower.class
+Koishi\cards\Skills\Common\ReflexRadar.class
 Koishi\patches\onGainedBlockPatch.class
-Koishi\cards\Attacks\Common\ReflexRadar.class
 Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
@@ -76,6 +76,7 @@ Koishi\cards\Powers\Rare\Heartbroken.class
 Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Powers\Rare\HeartStoppingHorror.class
 Koishi\cards\Attacks\Rare\MentalBreakdown.class
+Koishi\actions\MassHysteriaAction.class
 Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
 Koishi\relics\LettersToReimu.class
 Koishi\cards\Powers\Rare\Ego.class

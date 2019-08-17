@@ -1,21 +1,20 @@
 package Koishi.cards;
 
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
+import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
 import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Rare.FadingMemory;
-import Koishi.cards.Skills.Uncommon.GhostParty;
 import Koishi.cards.Skills.Uncommon.IdleWhim;
+import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public abstract class AbstractIdCard extends AbstractDefaultCard {
 
@@ -50,15 +49,17 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     }
 
     public static AbstractIdCard returnTrulyRandomIdCard() {
-        ArrayList<AbstractCard> list = new ArrayList();
+        ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new SubconsciousSweep());
         list.add(new UnconsciousUprising());
+        list.add(new SprinkleStarAndHeart());
+        list.add(new SubterraneanRose());
         list.add(new IdleWhim());
         list.add(new PredatoryInstincts());
         list.add(new RorschachInDanmaku());
         list.add(new HeartAttack());
+        list.add(new MassHysteria());
         //list.add(new GhostParty());
-        list.add(new SprinkleStarAndHeart());
         list.add(new FadingMemory());
 
         return (AbstractIdCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));

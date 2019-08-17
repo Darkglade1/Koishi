@@ -8,7 +8,7 @@ import Koishi.cards.Attacks.Common.Jaunt;
 import Koishi.cards.Attacks.Common.PhantomStrike;
 import Koishi.cards.Attacks.Common.Prune;
 import Koishi.cards.Attacks.Common.RacingHeart;
-import Koishi.cards.Attacks.Common.ReflexRadar;
+import Koishi.cards.Skills.Common.ReflexRadar;
 import Koishi.cards.Attacks.Common.StingingMind;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;

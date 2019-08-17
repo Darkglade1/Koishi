@@ -82,7 +82,7 @@
   },
   "Koishi:SubterraneanRose": {
     "NAME": "Subterranean Rose",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Thorns this turn."
+    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy. NL Gain !M! Thorns this turn."
   },
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
@@ -94,7 +94,7 @@
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies intending to attack."
+    "DESCRIPTION": "Lose [E]. NL Draw !M! cards. "
   },
   "Koishi:PhantomStrike": {
     "NAME": "Phantom Strike",
@@ -182,7 +182,7 @@
   },
   "Koishi:MassHysteria": {
     "NAME": "Mass Hysteria",
-    "DESCRIPTION": "ALL enemies lose HP equal to their combined intents."
+    "DESCRIPTION": "koishi:Id. NL ALL enemies lose HP equal to their combined intents."
   },
   "Koishi:FourthEye": {
     "NAME": "Fourth Eye",
@@ -209,7 +209,8 @@
   },
   "Koishi:GeneticsOfTheUnconscious": {
     "NAME": "Genetics of the Unconscious",
-    "DESCRIPTION": "Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards."
+    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards."
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",
@@ -218,7 +219,7 @@
   },
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",
-    "DESCRIPTION": "Apply !M! koishi:Constricted. Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Constricted."
   },
   "Koishi:SprinkleStarAndHeart": {
     "NAME": "Sprinkle Star and Heart",
