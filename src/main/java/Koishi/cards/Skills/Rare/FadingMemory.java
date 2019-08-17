@@ -1,17 +1,14 @@
 package Koishi.cards.Skills.Rare;
 
 import Koishi.KoishiMod;
+import Koishi.actions.FadingMemoryAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import static Koishi.KoishiMod.makeCardPath;
-import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class FadingMemory extends AbstractIdCard {
 
@@ -39,8 +36,7 @@ public class FadingMemory extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellCall");
-        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, magicNumber, false));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new FadingMemoryAction(this));
     }
 
     @Override

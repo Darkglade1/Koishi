@@ -208,10 +208,6 @@ public class KoishiMod implements
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
     
-    public static String makeEventPath(String resourcePath) {
-        return getModID() + "Resources/images/events/" + resourcePath;
-    }
-    
     // =============== /MAKE IMAGE PATHS/ =================
     
     // =============== /INPUT TEXTURE LOCATION/ =================
@@ -322,16 +318,6 @@ public class KoishiMod implements
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
 
-        
-        // =============== EVENTS =================
-        
-        // This event will be exclusive to the City (act 2). If you want an event that's present at any
-        // part of the game, simply don't include the dungeon ID
-        // If you want to have a character-specific event, look at slimebound (CityRemoveEventPatch).
-        // Essentially, you need to patch the game and say "if a player is not playing my character class, remove the event from the pool"
-        //BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
-        
-        // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
     }
     
@@ -471,88 +457,88 @@ public class KoishiMod implements
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
 
-        UnlockTracker.unlockCard(MentalBreakdown.ID);
-        UnlockTracker.unlockCard(SilentAndRestless.ID);
-        UnlockTracker.unlockCard(SuperEgo.ID);
-        UnlockTracker.unlockCard(RuptureMind.ID);
-
-        UnlockTracker.unlockCard(LastRemote.ID);
-        UnlockTracker.unlockCard(HeartAttack.ID);
-        UnlockTracker.unlockCard(StrangeCloudFist.ID);
-        UnlockTracker.unlockCard(TraumaticStroke.ID);
-        UnlockTracker.unlockCard(MindNumbingTerror.ID);
-        UnlockTracker.unlockCard(UnseenTerror.ID);
-        UnlockTracker.unlockCard(Catatonia.ID);
-        UnlockTracker.unlockCard(YoukaiPolygraph.ID);
-        UnlockTracker.unlockCard(TremblingHands.ID);
-        UnlockTracker.unlockCard(ParalyzingFear.ID);
-        UnlockTracker.unlockCard(BloodcurdlingScream.ID);
-        UnlockTracker.unlockCard(SpiritedAway.ID);
-        UnlockTracker.unlockCard(GrowingPain.ID);
-
-        UnlockTracker.unlockCard(Prune.ID);
-        UnlockTracker.unlockCard(Jaunt.ID);
-        UnlockTracker.unlockCard(RacingHeart.ID);
-        UnlockTracker.unlockCard(SubterraneanRose.ID);
-        UnlockTracker.unlockCard(StingingMind.ID);
-        UnlockTracker.unlockCard(DreadfulBlow.ID);
-        UnlockTracker.unlockCard(ReflexRadar.ID);
-        UnlockTracker.unlockCard(PhantomStrike.ID);
-        UnlockTracker.unlockCard(SubconsciousSweep.ID);
-        UnlockTracker.unlockCard(HauntingSlash.ID);
-        UnlockTracker.unlockCard(BasicStrike.ID);
-
-        UnlockTracker.unlockCard(ConditionedTeleport.ID);
-        UnlockTracker.unlockCard(RollingInRichesHeart.ID);
-        UnlockTracker.unlockCard(FadingMemory.ID);
-        UnlockTracker.unlockCard(RoseHell.ID);
-        UnlockTracker.unlockCard(MindStellarRelief.ID);
-        UnlockTracker.unlockCard(DNAsFlaw.ID);
-        UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
-        UnlockTracker.unlockCard(PerfectMindControl.ID);
-
-        UnlockTracker.unlockCard(Possession.ID);
-        UnlockTracker.unlockCard(ApparitionsStalkTheNight.ID);
-        UnlockTracker.unlockCard(Vanish.ID);
-        UnlockTracker.unlockCard(GhostParty.ID);
-        UnlockTracker.unlockCard(DanmakuParanoia.ID);
-        UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
-        UnlockTracker.unlockCard(EmbersOfLove.ID);
-        UnlockTracker.unlockCard(MassHysteria.ID);
-        UnlockTracker.unlockCard(FourthEye.ID);
-        UnlockTracker.unlockCard(ReleaseOfTheId.ID);
-        UnlockTracker.unlockCard(PredatoryInstincts.ID);
-        UnlockTracker.unlockCard(IdleWhim.ID);
-        UnlockTracker.unlockCard(Bloodlust.ID);
-        UnlockTracker.unlockCard(GeneticsOfTheUnconscious.ID);
-        UnlockTracker.unlockCard(RorschachInDanmaku.ID);
-        UnlockTracker.unlockCard(CatchAndRose.ID);
-
-        UnlockTracker.unlockCard(SprinkleStarAndHeart.ID);
-        UnlockTracker.unlockCard(EmbryosDream.ID);
-        UnlockTracker.unlockCard(JumpScare.ID);
-        UnlockTracker.unlockCard(HeartfeltFancy.ID);
-        UnlockTracker.unlockCard(UnansweredLove.ID);
-        UnlockTracker.unlockCard(FleetingPhantom.ID);
-        UnlockTracker.unlockCard(PhantomBarrier.ID);
-        UnlockTracker.unlockCard(Whimsy.ID);
-        UnlockTracker.unlockCard(UnconsciousUprising.ID);
-        UnlockTracker.unlockCard(Provoke.ID);
-        UnlockTracker.unlockCard(BasicDefend.ID);
-
-        UnlockTracker.unlockCard(Untouchable.ID);
-        UnlockTracker.unlockCard(HeartStoppingHorror.ID);
-        UnlockTracker.unlockCard(Heartbroken.ID);
-        UnlockTracker.unlockCard(Ego.ID);
-        UnlockTracker.unlockCard(ConfinedInnocent.ID);
-        UnlockTracker.unlockCard(FormlessExistence.ID);
-
-        UnlockTracker.unlockCard(UnconsciousUrges.ID);
-        UnlockTracker.unlockCard(FreudianInstinct.ID);
-        UnlockTracker.unlockCard(BramblyRoseGarden.ID);
-        UnlockTracker.unlockCard(TerrifyingSpectre.ID);
-        UnlockTracker.unlockCard(VengefulSpirit.ID);
-        UnlockTracker.unlockCard(FidgetySnatcher.ID);
+//        UnlockTracker.unlockCard(MentalBreakdown.ID);
+//        UnlockTracker.unlockCard(SilentAndRestless.ID);
+//        UnlockTracker.unlockCard(SuperEgo.ID);
+//        UnlockTracker.unlockCard(RuptureMind.ID);
+//
+//        UnlockTracker.unlockCard(LastRemote.ID);
+//        UnlockTracker.unlockCard(HeartAttack.ID);
+//        UnlockTracker.unlockCard(StrangeCloudFist.ID);
+//        UnlockTracker.unlockCard(TraumaticStroke.ID);
+//        UnlockTracker.unlockCard(MindNumbingTerror.ID);
+//        UnlockTracker.unlockCard(UnseenTerror.ID);
+//        UnlockTracker.unlockCard(Catatonia.ID);
+//        UnlockTracker.unlockCard(YoukaiPolygraph.ID);
+//        UnlockTracker.unlockCard(TremblingHands.ID);
+//        UnlockTracker.unlockCard(ParalyzingFear.ID);
+//        UnlockTracker.unlockCard(BloodcurdlingScream.ID);
+//        UnlockTracker.unlockCard(SpiritedAway.ID);
+//        UnlockTracker.unlockCard(GrowingPain.ID);
+//
+//        UnlockTracker.unlockCard(Prune.ID);
+//        UnlockTracker.unlockCard(Jaunt.ID);
+//        UnlockTracker.unlockCard(RacingHeart.ID);
+//        UnlockTracker.unlockCard(SubterraneanRose.ID);
+//        UnlockTracker.unlockCard(StingingMind.ID);
+//        UnlockTracker.unlockCard(DreadfulBlow.ID);
+//        UnlockTracker.unlockCard(ReflexRadar.ID);
+//        UnlockTracker.unlockCard(PhantomStrike.ID);
+//        UnlockTracker.unlockCard(SubconsciousSweep.ID);
+//        UnlockTracker.unlockCard(HauntingSlash.ID);
+//        UnlockTracker.unlockCard(BasicStrike.ID);
+//
+//        UnlockTracker.unlockCard(ConditionedTeleport.ID);
+//        UnlockTracker.unlockCard(RollingInRichesHeart.ID);
+//        UnlockTracker.unlockCard(FadingMemory.ID);
+//        UnlockTracker.unlockCard(RoseHell.ID);
+//        UnlockTracker.unlockCard(MindStellarRelief.ID);
+//        UnlockTracker.unlockCard(DNAsFlaw.ID);
+//        UnlockTracker.unlockCard(ImGoingToCallYouNow.ID);
+//        UnlockTracker.unlockCard(PerfectMindControl.ID);
+//
+//        UnlockTracker.unlockCard(Possession.ID);
+//        UnlockTracker.unlockCard(ApparitionsStalkTheNight.ID);
+//        UnlockTracker.unlockCard(Vanish.ID);
+//        UnlockTracker.unlockCard(GhostParty.ID);
+//        UnlockTracker.unlockCard(DanmakuParanoia.ID);
+//        UnlockTracker.unlockCard(PhilosophyOfTheDespised.ID);
+//        UnlockTracker.unlockCard(EmbersOfLove.ID);
+//        UnlockTracker.unlockCard(MassHysteria.ID);
+//        UnlockTracker.unlockCard(FourthEye.ID);
+//        UnlockTracker.unlockCard(ReleaseOfTheId.ID);
+//        UnlockTracker.unlockCard(PredatoryInstincts.ID);
+//        UnlockTracker.unlockCard(IdleWhim.ID);
+//        UnlockTracker.unlockCard(Bloodlust.ID);
+//        UnlockTracker.unlockCard(GeneticsOfTheUnconscious.ID);
+//        UnlockTracker.unlockCard(RorschachInDanmaku.ID);
+//        UnlockTracker.unlockCard(CatchAndRose.ID);
+//
+//        UnlockTracker.unlockCard(SprinkleStarAndHeart.ID);
+//        UnlockTracker.unlockCard(EmbryosDream.ID);
+//        UnlockTracker.unlockCard(JumpScare.ID);
+//        UnlockTracker.unlockCard(HeartfeltFancy.ID);
+//        UnlockTracker.unlockCard(UnansweredLove.ID);
+//        UnlockTracker.unlockCard(FleetingPhantom.ID);
+//        UnlockTracker.unlockCard(PhantomBarrier.ID);
+//        UnlockTracker.unlockCard(Whimsy.ID);
+//        UnlockTracker.unlockCard(UnconsciousUprising.ID);
+//        UnlockTracker.unlockCard(Provoke.ID);
+//        UnlockTracker.unlockCard(BasicDefend.ID);
+//
+//        UnlockTracker.unlockCard(Untouchable.ID);
+//        UnlockTracker.unlockCard(HeartStoppingHorror.ID);
+//        UnlockTracker.unlockCard(Heartbroken.ID);
+//        UnlockTracker.unlockCard(Ego.ID);
+//        UnlockTracker.unlockCard(ConfinedInnocent.ID);
+//        UnlockTracker.unlockCard(FormlessExistence.ID);
+//
+//        UnlockTracker.unlockCard(UnconsciousUrges.ID);
+//        UnlockTracker.unlockCard(FreudianInstinct.ID);
+//        UnlockTracker.unlockCard(BramblyRoseGarden.ID);
+//        UnlockTracker.unlockCard(TerrifyingSpectre.ID);
+//        UnlockTracker.unlockCard(VengefulSpirit.ID);
+//        UnlockTracker.unlockCard(FidgetySnatcher.ID);
         
         logger.info("Done adding cards!");
     }
@@ -583,21 +569,9 @@ public class KoishiMod implements
         BaseMod.loadCustomStringsFile(RelicStrings.class,
                 getModID() + "Resources/localization/eng/KoishiMod-Relic-Strings.json");
         
-        // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Event-Strings.json");
-        
-        // PotionStrings
-        BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Potion-Strings.json");
-        
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
                 getModID() + "Resources/localization/eng/KoishiMod-Character-Strings.json");
-        
-        // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Orb-Strings.json");
         
         logger.info("Done edittting strings");
     }

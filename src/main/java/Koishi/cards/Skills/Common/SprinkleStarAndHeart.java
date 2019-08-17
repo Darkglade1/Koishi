@@ -1,17 +1,12 @@
 package Koishi.cards.Skills.Common;
 
 import Koishi.KoishiMod;
+import Koishi.actions.SprinkleStarAndHeartAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
-
-import java.util.Iterator;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -38,12 +33,7 @@ public class SprinkleStarAndHeart extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("sprinkleStar");
-        Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while(iterator.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, magicNumber, false), magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, magicNumber, false), magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-        }
+        AbstractDungeon.actionManager.addToBottom(new SprinkleStarAndHeartAction(this));
     }
 
     @Override

@@ -1,11 +1,9 @@
 package Koishi.cards.Attacks.Uncommon;
 
 import Koishi.KoishiMod;
+import Koishi.actions.HeartAttackAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -39,9 +37,7 @@ public class HeartAttack extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("downAttack");
-        AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-        calculateCardDamage(mo);
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new HeartAttackAction(this));
     }
 
     @Override
