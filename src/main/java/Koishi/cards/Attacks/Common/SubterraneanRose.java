@@ -1,17 +1,12 @@
 package Koishi.cards.Attacks.Common;
 
 import Koishi.KoishiMod;
+import Koishi.actions.SubterraneanRoseAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
-import Koishi.powers.LoseThornsPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ThornsPower;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -42,11 +37,7 @@ public class SubterraneanRose extends AbstractIdCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("kick");
-        AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-        calculateCardDamage(mo);
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ThornsPower(p, magicNumber), magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new LoseThornsPower(p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new SubterraneanRoseAction(this));
     }
 
     @Override

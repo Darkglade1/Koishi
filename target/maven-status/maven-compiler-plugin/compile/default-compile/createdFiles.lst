@@ -70,6 +70,7 @@ Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
 Koishi\cards\Powers\Rare\Untouchable.class
 Koishi\cards\Skills\Rare\FadingMemory.class
+Koishi\actions\SubterraneanRoseAction.class
 Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\Powers\Uncommon\UnconsciousUrges.class
 Koishi\cards\Powers\Rare\Heartbroken.class

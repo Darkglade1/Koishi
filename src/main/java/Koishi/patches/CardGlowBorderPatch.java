@@ -1,6 +1,10 @@
 package Koishi.patches;
 
 import Koishi.KoishiMod;
+import Koishi.cards.AbstractIdCard;
+import Koishi.cards.Attacks.Uncommon.LastRemote;
+import Koishi.cards.Attacks.Uncommon.SpiritedAway;
+import Koishi.cards.Attacks.Uncommon.StrangeCloudFist;
 import Koishi.cards.Skills.Uncommon.Possession;
 import Koishi.tags.Tags;
 import basemod.ReflectionHacks;
@@ -22,6 +26,12 @@ public class CardGlowBorderPatch {
             if (c.hasTag(Tags.DEBUFF_THIS_TURN) && KoishiMod.appliedDebuffThisTurn) {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             } else if (c instanceof Possession && (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID))) {
+                ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
+            } else if (c instanceof SpiritedAway && (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID))) {
+                ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
+            } else if (c instanceof StrangeCloudFist && (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID))) {
+                ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
+            } else if (c instanceof LastRemote && AbstractIdCard.drewIdCardThisTurn) {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             }
         }

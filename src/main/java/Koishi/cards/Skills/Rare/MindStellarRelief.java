@@ -42,16 +42,11 @@ public class MindStellarRelief extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("mindStellarRelief");
-        ArrayList<AbstractPower> debuffsToRemove = new ArrayList<>();
         int debuffCount = 0;
         for (AbstractPower power : m.powers) {
             if (power.type == AbstractPower.PowerType.DEBUFF) {
-                debuffsToRemove.add(power);
                 debuffCount += Math.abs(power.amount);
             }
-        }
-        for (AbstractPower power : debuffsToRemove) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m, m, power.ID));
         }
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, debuffCount * magicNumber, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.FIRE));

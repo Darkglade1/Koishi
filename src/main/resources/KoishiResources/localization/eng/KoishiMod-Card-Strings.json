@@ -128,7 +128,7 @@
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
-    "DESCRIPTION": "Retain. NL Remove all debuffs from target enemy. NL It loses !M! HP for each stack of a debuff removed. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Target enemy loses !M! HP for each stack of a debuff on it. NL Exhaust."
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA's Flaw",
@@ -235,7 +235,7 @@
   },
   "Koishi:HeartfeltFancy": {
     "NAME": "Heartfelt Fancy",
-    "DESCRIPTION": "Gain !B! Block. NL Put a card from your discard pile on top of your draw pile."
+    "DESCRIPTION": "Put a card from your discard pile on top of your draw pile. NL Lose [E]. NL If you do, gain !B! Block."
   },
   "Koishi:UnansweredLove": {
     "NAME": "Unanswered Love",
@@ -302,7 +302,8 @@
   },
   "Koishi:TerrifyingSpectre": {
     "NAME": "Terrifying Spectre",
-    "DESCRIPTION": "Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies."
+    "DESCRIPTION": "Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies."
   },
   "Koishi:VengefulSpirit": {
     "NAME": "Vengeful Spirit",
