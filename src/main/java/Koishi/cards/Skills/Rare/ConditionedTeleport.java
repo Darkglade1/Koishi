@@ -5,6 +5,7 @@ import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -56,6 +57,11 @@ public class ConditionedTeleport extends AbstractDefaultCard {
             AbstractDungeon.overlayMenu.endTurnButton.disable();
             AbstractDungeon.player.escapeTimer = 2.5F;
         }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 
     @Override

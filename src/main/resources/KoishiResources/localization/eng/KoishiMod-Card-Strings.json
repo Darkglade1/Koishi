@@ -110,8 +110,8 @@
   },
   "Koishi:ConditionedTeleport": {
     "NAME": "Conditioned Teleport",
-    "DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards. NL Fleeting.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards."
+    "DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards. NL koishi:Flow. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Escape from a non-boss combat and receive no rewards. NL koishi:Flow."
   },
   "Koishi:RollingInRichesHeart": {
     "NAME": "Rolling-in-Riches Heart",
@@ -172,13 +172,13 @@
   },
   "Koishi:EmbersOfLove": {
     "NAME": "Embers of Love",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible. NL koishi:Flow. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to NOT intend to attack this turn if possible. NL koishi:Flow."
   },
   "Koishi:PhilosophyOfTheDespised": {
     "NAME": "Philosophy of the Despised",
-    "DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible."
+    "DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible. NL koishi:Flow. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Force ALL enemies to intend to attack this turn if possible. NL koishi:Flow."
   },
   "Koishi:MassHysteria": {
     "NAME": "Mass Hysteria",

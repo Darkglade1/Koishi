@@ -5,6 +5,7 @@ import Koishi.actions.ForceIntentAction;
 import Koishi.cards.AbstractIntentChangingCard;
 import Koishi.characters.KoishiCharacter;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -41,6 +42,11 @@ public class PhilosophyOfTheDespised extends AbstractIntentChangingCard {
             AbstractDungeon.actionManager.addToTop(new ForceIntentAction(p, m, intentType));
         }
 
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 
     @Override
