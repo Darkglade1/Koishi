@@ -25,10 +25,11 @@ public class IdCardPatch {
     @SpireInsertPatch(locator = Locator.class, localvars = "c")
     public static void FixDiscardPatch(AbstractPlayer instance, int drawAmount, AbstractCard c) {
         if (c instanceof AbstractIdCard && AbstractIdCard.idEnabled) {
-            instance.hand.moveToDiscardPile(c);
+            instance.hand.removeCard(c);
+            instance.discardPile.addToTop(c);
         }
     }
-    
+
     private static class Locator extends SpireInsertLocator {
         @Override
         public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {

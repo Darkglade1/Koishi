@@ -11,8 +11,13 @@ import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.PredatoryInstincts;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
+import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardQueueItem;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 
 import java.util.ArrayList;
 
@@ -36,13 +41,19 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     @Override
     public void triggerWhenDrawn() {
         if (idEnabled) {
-            calculateCardDamage(null);
-            use(AbstractDungeon.player, null);
+            AbstractCard tmp = this.makeSameInstanceOf();
+            AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(tmp));
+            AbstractDungeon.player.discardPile.removeCard(tmp);
+
             if (!freeToPlayOnce) {
                 AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
             } else {
                 freeToPlayOnce = false;
             }
+            calculateCardDamage(null);
+            use(AbstractDungeon.player, null);
+
+            AbstractDungeon.player.hand.glowCheck();
         }
         idCardsDrawn++;
         drewIdCardThisTurn = true;
