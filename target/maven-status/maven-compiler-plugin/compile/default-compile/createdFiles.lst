@@ -1,6 +1,7 @@
 Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
+Koishi\patches\MindControlDamagePatch$Locator.class
 Koishi\actions\RorshachInDanmakuAction.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
@@ -110,6 +111,7 @@ Koishi\cards\Attacks\Uncommon\GrowingPain.class
 Koishi\powers\EgoPower.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
+Koishi\patches\MindControlDamagePatch.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\cards\Skills\Uncommon\FourthEye.class
 Koishi\cards\Attacks\Uncommon\MindNumbingTerror.class

@@ -39,8 +39,7 @@ public class MindControlPower extends AbstractPower {
         updateDescription();
     }
 
-    @Override
-    public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
+    public int onAttackToChangeDamagePreBlock(DamageInfo info, int damageAmount) {
         if (info.owner == owner) {
             AbstractMonster newTarget = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             AbstractDungeon.actionManager.currentAction.target = newTarget;
