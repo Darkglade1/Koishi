@@ -1,7 +1,7 @@
 {
 "Koishi:EphemeralPower": {
         "NAME": "Ephemeral",
-        "DESCRIPTIONS": ["Whenever you gain #b", " Ephemeral, gain #b", " Intangible."]
+        "DESCRIPTIONS": ["Whenever you gain #b", " #yEphemeral, gain #b", " #yIntangible."]
 },
 "Koishi:TerrorPower": {
         "NAME": "Terror",
@@ -13,7 +13,7 @@
 },
 "Koishi:FourthEyePower": {
         "NAME": "Fourth Eye",
-        "DESCRIPTIONS": ["Lose Frozen Eye at the end of combat."]
+        "DESCRIPTIONS": ["Lose #yFrozen #yEye at the end of combat."]
 },
 "Koishi:BloodlustPower": {
         "NAME": "Bloodlust",
@@ -21,31 +21,31 @@
 },
 "Koishi:LoseThornsPower": {
         "NAME": "Thorns Down",
-        "DESCRIPTIONS": ["Next turn, lose #b", " Thorns."]
+        "DESCRIPTIONS": ["Next turn, lose #b", " #yThorns."]
 },
 "Koishi:UntouchablePower": {
         "NAME": "Untouchable",
-        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your Status and Curse cards."]
+        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your #yStatus and #yCurse cards."]
 },
 "Koishi:HeartbrokenPower": {
         "NAME": "Heartbroken",
-        "DESCRIPTIONS": ["While you are Intangible, deal #b", "x damage."]
+        "DESCRIPTIONS": ["While you are #yIntangible, deal #b", "x damage."]
 },
 "Koishi:HeartStoppingHorrorPower": {
         "NAME": "Heart-Stopping Horror",
-        "DESCRIPTIONS": ["At the end of your turn, ALL enemies lose HP equal to #b", "x their Terror."]
+        "DESCRIPTIONS": ["At the end of your turn, ALL enemies lose HP equal to #b", "x their #yTerror."]
 },
 "Koishi:EgoPower": {
         "NAME": "Ego",
-        "DESCRIPTIONS": ["Your Id cards no longer automatically use themselves. Whenever you play an Id card, draw #b", " card.", " cards."]
+        "DESCRIPTIONS": ["Your #yId cards no longer automatically use themselves. Whenever you play an #yId card, draw #b", " card.", " cards."]
 },
 "Koishi:ConfinedInnocentPower": {
         "NAME": "Confined Innocent",
-        "DESCRIPTIONS": ["At the start of your turn, lose #b1 HP #b", " time", " times", " and gain #b", " Ephemeral."]
+        "DESCRIPTIONS": ["At the start of your turn, lose #b1 HP #b", " time", " times", " and gain #b", " #yEphemeral."]
 },
 "Koishi:FormlessExistencePower": {
         "NAME": "Formless Existence",
-        "DESCRIPTIONS": ["Whenever you gain Intangible, gain #b", "x as much. You can no longer heal."]
+        "DESCRIPTIONS": ["Whenever you gain #yIntangible, gain #b", "x as much. You can no longer heal."]
 },
 "Koishi:UnconsciousUrgesPower": {
         "NAME": "Unconscious Urges",
@@ -57,26 +57,18 @@
 },
 "Koishi:FreudianInstinctPower": {
         "NAME": "Freudian Instinct",
-        "DESCRIPTIONS": ["Whenever you draw an Id card, gain #b", " Block."]
+        "DESCRIPTIONS": ["Whenever you draw an #yId card, gain #b", " Block."]
 },
 "Koishi:TerrifyingSpectrePower": {
         "NAME": "Terrifying Spectre",
-        "DESCRIPTIONS": ["Whenever you gain Intangible, apply #b", " Terror to ALL enemies."]
+        "DESCRIPTIONS": ["Whenever you gain #yIntangible, apply #b", " #yTerror to ALL enemies."]
 },
 "Koishi:VengefulSpiritPower": {
         "NAME": "Vengeful Spirit",
-        "DESCRIPTIONS": ["Whenever you gain Intangible, apply #b", " Vulnerable to ALL enemies."]
+        "DESCRIPTIONS": ["Whenever you gain #yIntangible, apply #b", " #yVulnerable to ALL enemies."]
 },
 "Koishi:FidgetySnatcherPower": {
         "NAME": "Fidgety Snatcher",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Constricted to ALL enemies."]
-},
-"Koishi:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"Koishi:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " #yConstricted to ALL enemies."]
 }
 }

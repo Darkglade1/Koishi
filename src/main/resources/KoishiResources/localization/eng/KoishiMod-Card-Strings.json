@@ -136,13 +136,13 @@
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
-    "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add koishi:So_Answer_The_Phone to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Add koishi:So_Answer_The_Phone+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Apply !M! koishi:Terror. NL Add koishi:So_Answer_The_Phone to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! koishi:Terror. NL Add koishi:So_Answer_The_Phone+ to your hand. NL Exhaust."
   },
   "Koishi:SoAnswerThePhone": {
     "NAME": "So Answer the Phone",
-    "DESCRIPTION": "Double ALL enemies' koishi:Terror. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple ALL enemies' koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Double target enemy's koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple target enemy's koishi:Terror. NL Exhaust."
   },
   "Koishi:PerfectMindControl": {
     "NAME": "Perfect Mind Control",

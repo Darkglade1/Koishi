@@ -3,25 +3,25 @@
     "NAMES": [
       "id"
     ],
-    "DESCRIPTION": "Id cards are automatically used when drawn regardless of Energy."
+    "DESCRIPTION": "#yId cards are automatically used when drawn regardless of Energy."
   },
   {
     "NAMES": [
       "terror"
     ],
-    "DESCRIPTION": "Whenever an enemy dies, heal HP equal to its Terror."
+    "DESCRIPTION": "Whenever an enemy dies, heal HP equal to its #yTerror."
   },
   {
     "NAMES": [
       "ephemeral"
     ],
-    "DESCRIPTION": "Whenever you gain #b15 Ephemeral, gain #b1 Intangible."
+    "DESCRIPTION": "Whenever you gain #b15 #yEphemeral, gain #b1 #yIntangible."
   },
   {
     "NAMES": [
       "flow"
     ],
-    "DESCRIPTION": "Flow cards draw #b1 card when drawn."
+    "DESCRIPTION": "#yFlow cards draw #b1 card when drawn."
   },
   {
     "PROPER_NAME": "Mind Control",
@@ -49,18 +49,18 @@
       "so_answer_the_phone",
       "So_Answer_The_Phone"
     ],
-    "DESCRIPTION": "A 2 cost Skill that doubles(triples) ALL enemies' Terror then exhausts."
+    "DESCRIPTION": "A 1 cost Skill that doubles(triples) target enemy's #yTerror then exhausts."
   },
   {
     "NAMES": [
       "stun"
     ],
-    "DESCRIPTION": "Stunned enemies do nothing on their turn."
+    "DESCRIPTION": "#yStunned enemies do nothing on their turn."
   },
   {
     "NAMES": [
       "constricted"
     ],
-    "DESCRIPTION": "Constricted enemies take damage at the end of their turn."
+    "DESCRIPTION": "#yConstricted enemies take damage at the end of their turn."
   }
 ]
