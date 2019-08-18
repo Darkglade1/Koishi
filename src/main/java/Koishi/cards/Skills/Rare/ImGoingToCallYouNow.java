@@ -54,6 +54,13 @@ public class ImGoingToCallYouNow extends AbstractDefaultCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 12;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

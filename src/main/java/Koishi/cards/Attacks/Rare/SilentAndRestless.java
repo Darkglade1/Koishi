@@ -49,6 +49,13 @@ public class SilentAndRestless extends AbstractDefaultCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 20;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

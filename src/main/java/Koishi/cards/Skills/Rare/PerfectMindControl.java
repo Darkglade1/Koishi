@@ -46,6 +46,13 @@ public class PerfectMindControl extends AbstractDefaultCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 17;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

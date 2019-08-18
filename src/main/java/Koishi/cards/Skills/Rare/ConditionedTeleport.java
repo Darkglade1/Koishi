@@ -48,6 +48,13 @@ public class ConditionedTeleport extends AbstractDefaultCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 18;
+    }
+
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             AbstractDungeon.getCurrRoom().smoked = true;

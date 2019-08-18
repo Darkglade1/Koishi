@@ -41,6 +41,13 @@ public class RorschachInDanmaku extends AbstractIdCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 16;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

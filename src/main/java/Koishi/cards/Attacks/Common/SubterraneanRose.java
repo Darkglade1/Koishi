@@ -41,6 +41,13 @@ public class SubterraneanRose extends AbstractIdCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 18;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

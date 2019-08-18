@@ -44,6 +44,13 @@ public class DanmakuParanoia extends AbstractDefaultCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 20;
+    }
+
+
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int realBaseBlock = this.baseBlock;
         this.baseBlock += countTerror() * magicNumber;

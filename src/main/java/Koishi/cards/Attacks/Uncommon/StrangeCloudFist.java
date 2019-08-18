@@ -63,6 +63,13 @@ public class StrangeCloudFist extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
+    @Override
+    public float getTitleFontSize()
+    {
+        return 20;
+    }
+
+
     private int intangibleMultiplier() {
         if (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID)) {
             return 2;

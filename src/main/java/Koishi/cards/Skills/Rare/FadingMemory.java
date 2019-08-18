@@ -40,6 +40,13 @@ public class FadingMemory extends AbstractIdCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 19;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();

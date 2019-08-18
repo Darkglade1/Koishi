@@ -50,6 +50,13 @@ public class PhilosophyOfTheDespised extends AbstractIntentChangingCard {
     }
 
     @Override
+    public float getTitleFontSize()
+    {
+        return 12;
+    }
+
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
