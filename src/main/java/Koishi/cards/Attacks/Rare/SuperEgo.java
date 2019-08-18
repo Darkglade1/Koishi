@@ -2,6 +2,7 @@ package Koishi.cards.Attacks.Rare;
 
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.cards.AbstractIdCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -17,6 +18,7 @@ import Koishi.characters.KoishiCharacter;
 import java.util.ArrayList;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class SuperEgo extends AbstractDefaultCard {
 
@@ -28,10 +30,9 @@ public class SuperEgo extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
-    private static final int UPGRADED_COST = 0;
+    private static final int COST = 0;
 
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 8;
 
     private static final int EFFECT = 1;
 
@@ -89,7 +90,8 @@ public class SuperEgo extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            AlwaysRetainField.alwaysRetain.set(this, true);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

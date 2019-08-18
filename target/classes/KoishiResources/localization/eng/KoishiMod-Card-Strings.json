@@ -10,7 +10,8 @@
   },
   "Koishi:SuperEgo": {
     "NAME": "Super-Ego",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL your Id cards. NL Gain [E] and draw !M! card for each card exhausted this way. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL your Id cards. NL Gain [E] and draw !M! card for each card exhausted this way. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust ALL your Id cards. NL Gain [E] and draw !M! card for each card exhausted this way. NL Exhaust."
   },
   "Koishi:RuptureMind": {
     "NAME": "Rupture Mind",
@@ -277,7 +278,8 @@
   },
   "Koishi:Ego": {
     "NAME": "Ego",
-    "DESCRIPTION": "Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card."
+    "DESCRIPTION": "Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card."
   },
   "Koishi:ConfinedInnocent": {
     "NAME": "Confined Innocent",
