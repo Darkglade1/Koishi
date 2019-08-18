@@ -18,7 +18,7 @@
   },
   "Koishi:LastRemote": {
     "NAME": "Last Remote",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL This card costs 0 if you drew an Id card this turn."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL This card costs 0 if you drew an koishi:Id card this turn."
   },
   "Koishi:HeartAttack": {
     "NAME": "Heart Attack",
@@ -70,7 +70,7 @@
   },
   "Koishi:Prune": {
     "NAME": "Prune",
-    "DESCRIPTION": "Deal !D! damage. NL Discard a card from your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Discard a card from your draw pile. NL This card costs 0 if you drew an koishi:Id card this turn."
   },
   "Koishi:Jaunt": {
     "NAME": "Jaunt",

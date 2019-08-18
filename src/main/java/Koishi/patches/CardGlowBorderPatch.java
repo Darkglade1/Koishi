@@ -2,6 +2,7 @@ package Koishi.patches;
 
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractIdCard;
+import Koishi.cards.Attacks.Common.Prune;
 import Koishi.cards.Attacks.Uncommon.LastRemote;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.Attacks.Uncommon.StrangeCloudFist;
@@ -32,6 +33,8 @@ public class CardGlowBorderPatch {
             } else if (c instanceof StrangeCloudFist && (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID))) {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             } else if (c instanceof LastRemote && AbstractIdCard.drewIdCardThisTurn) {
+                ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
+            } else if (c instanceof Prune && AbstractIdCard.drewIdCardThisTurn) {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             }
         }

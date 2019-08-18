@@ -1,5 +1,6 @@
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Powers\Rare\Ego.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\AbstractIdCard.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\SprinkleStarAndHeartAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Rare\SoAnswerThePhone.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\EphemeralPower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\relics\BloodstainedWhiteRose.java
@@ -31,6 +32,7 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\SilentAndRestlessAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Rare\ImGoingToCallYouNow.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Common\SubconsciousSweep.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\HeartAttackAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\util\TextureLoader.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\VengefulSpiritPower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\patches\onGainedBlockPatch.java
@@ -54,6 +56,7 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\vfx\CloudFistEffect.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Rare\SuperEgo.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Powers\Uncommon\UnconsciousUrges.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\GhostPartyAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Common\FleetingPhantom.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\TremblingHands.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Powers\Uncommon\BramblyRoseGarden.java
@@ -87,7 +90,6 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\UnseenTerror.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\variables\DefaultSecondMagicNumber.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Rare\RuptureMind.java
-C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\events\IdentityCrisisEvent.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Common\BasicDefend.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\FourthEye.java
@@ -101,11 +103,13 @@ C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultMod
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\patches\IntentChangePatch.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\SpiritedAway.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Common\SprinkleStarAndHeart.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\FadingMemoryAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\FormlessExistencePower.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Common\Whimsy.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\relics\LettersToReimu.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\EmbersOfLove.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\powers\FourthEyePower.java
+C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\actions\SubterraneanRoseAction.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Common\SubterraneanRose.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.java
 C:\Users\jeffr\Documents\my_mods\Koishi\StS-DefaultModBase-master\StS-DefaultModBase-master\theDefault\src\main\java\Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.java

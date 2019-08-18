@@ -3,8 +3,8 @@
   "name": "${project.name}",
   "author_list": ["Darkglade"],
   "description": "${project.description}",
-  "version": "${project.version}",
-  "sts_version": "${SlayTheSpire.version}",
+  "version": "0.8.2",
+  "sts_version": "07-17-2019",
   "mts_version": "${ModTheSpire.version}",
   "dependencies": ["basemod", "stslib"],
   "update_json": ""

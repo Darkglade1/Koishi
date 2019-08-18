@@ -3,6 +3,7 @@ package Koishi.cards.Attacks.Common;
 import Koishi.KoishiMod;
 import Koishi.actions.PruneAction;
 import Koishi.cards.AbstractDefaultCard;
+import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -25,7 +26,7 @@ public class Prune extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
-    private static final int DAMAGE = 9;
+    private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 3;
 
     private static final int DISCARD = 1;
@@ -42,6 +43,16 @@ public class Prune extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new PruneAction(magicNumber, false));
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        if (AbstractIdCard.drewIdCardThisTurn) {
+            freeToPlayOnce = true;
+        } else {
+            freeToPlayOnce = false;
+        }
     }
 
     @Override
