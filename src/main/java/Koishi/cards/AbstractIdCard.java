@@ -1,5 +1,6 @@
 package Koishi.cards;
 
+import Koishi.actions.GlowCheckAction;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
@@ -49,7 +50,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
             calculateCardDamage(null);
             use(AbstractDungeon.player, null);
 
-            AbstractDungeon.player.hand.glowCheck();
+            AbstractDungeon.actionManager.addToBottom(new GlowCheckAction());
         }
         idCardsDrawn++;
         drewIdCardThisTurn = true;

@@ -18,7 +18,7 @@ public class UnconsciousUrgesPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public AbstractCard chosenCard;
-    private boolean triggered = false;
+    public boolean triggered = false;
 
     public UnconsciousUrgesPower(final AbstractCreature owner, final int amount) {
         name = NAME;

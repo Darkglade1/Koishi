@@ -102,6 +102,7 @@ Koishi\cards\Skills\Uncommon\Possession.class
 Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\powers\EphemeralPower.class
+Koishi\actions\GlowCheckAction.class
 Koishi\cards\Attacks\Uncommon\StrangeCloudFist.class
 Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class

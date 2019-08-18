@@ -7,6 +7,7 @@ import Koishi.cards.Attacks.Uncommon.LastRemote;
 import Koishi.cards.Attacks.Uncommon.SpiritedAway;
 import Koishi.cards.Attacks.Uncommon.StrangeCloudFist;
 import Koishi.cards.Skills.Uncommon.Possession;
+import Koishi.powers.UnconsciousUrgesPower;
 import Koishi.tags.Tags;
 import basemod.ReflectionHacks;
 import com.badlogic.gdx.graphics.Color;
@@ -36,6 +37,11 @@ public class CardGlowBorderPatch {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             } else if (c instanceof Prune && AbstractIdCard.drewIdCardThisTurn) {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
+            } else if (AbstractDungeon.player.hasPower(UnconsciousUrgesPower.POWER_ID)) {
+                UnconsciousUrgesPower p = (UnconsciousUrgesPower)AbstractDungeon.player.getPower(UnconsciousUrgesPower.POWER_ID);
+                if (p.chosenCard != null && !p.triggered && p.chosenCard.name.equals(c.name)) {
+                    ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.0F, 0.85F, 0.0F, 1.0F));
+                }
             }
         }
     }
