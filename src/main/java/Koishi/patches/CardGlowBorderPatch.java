@@ -39,7 +39,7 @@ public class CardGlowBorderPatch {
                 ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.93F, 0.85F, 0.0F, 1.0F));
             } else if (AbstractDungeon.player.hasPower(UnconsciousUrgesPower.POWER_ID)) {
                 UnconsciousUrgesPower p = (UnconsciousUrgesPower)AbstractDungeon.player.getPower(UnconsciousUrgesPower.POWER_ID);
-                if (p.chosenCard != null && !p.triggered && p.chosenCard.name.equals(c.name)) {
+                if (p.chosenCard != null && !p.triggered && p.chosenCard.cardID.equals(c.cardID)) {
                     ReflectionHacks.setPrivate(__instance, com.megacrit.cardcrawl.vfx.AbstractGameEffect.class, "color", new Color(0.0F, 0.85F, 0.0F, 1.0F));
                 }
             }

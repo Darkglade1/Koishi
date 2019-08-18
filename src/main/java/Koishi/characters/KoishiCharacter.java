@@ -11,6 +11,7 @@ import Koishi.relics.ImaginaryFriend;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.math.MathUtils;
 import com.brashmonkey.spriter.Player;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -229,7 +230,7 @@ public class KoishiCharacter extends CustomPlayer {
     // The class name as it appears next to your player name in-game
     @Override
     public String getTitle(AbstractPlayer.PlayerClass playerClass) {
-        return NAMES[1];
+        return NAMES[MathUtils.random(1, NAMES.length - 1)];
     }
 
     // Should return a new instance of your character, sending name as its name parameter.
