@@ -27,6 +27,7 @@ Koishi\powers\MindControlPower.class
 Koishi\cards\Attacks\Common\Prune.class
 Koishi\actions\ForceIntentAction.class
 Koishi\cards\Skills\Common\UnconsciousUprising.class
+Koishi\patches\MindControlRemoveDebuffsPatch$Locator.class
 Koishi\BetterSpriterAnimation.class
 Koishi\cards\Attacks\Common\BasicStrike.class
 Koishi\cards\Attacks\Common\RacingHeart.class
@@ -88,6 +89,7 @@ Koishi\cards\Powers\Rare\Ego.class
 Koishi\powers\ConfinedInnocentPower.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\cards\Attacks\Common\SubterraneanRose.class
+Koishi\patches\MindControlRemoveDebuffsPatch.class
 Koishi\cards\Attacks\Uncommon\LastRemote.class
 Koishi\cards\Attacks\Uncommon\HeartAttack.class
 Koishi\actions\PruneAction.class

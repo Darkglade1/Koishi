@@ -119,6 +119,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
@@ -155,6 +156,7 @@ public class KoishiMod implements
     private static final String DESCRIPTION = "My hat is my friend. It helps me relax.";
 
     public static int intangibleCount = 0;
+    public static int debuffCount = 0;
     public static boolean appliedDebuffThisTurn = false;
     
     // =============== INPUT TEXTURE LOCATION =================
@@ -628,6 +630,7 @@ public class KoishiMod implements
     public void receivePostBattle(AbstractRoom room) {
         runAnimation("winB");
         intangibleCount = 0;
+        debuffCount = 0;
         appliedDebuffThisTurn = false;
         AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
@@ -637,6 +640,7 @@ public class KoishiMod implements
     @Override
     public void receiveOnBattleStart(AbstractRoom var1) {
         intangibleCount = 0;
+        debuffCount = 0;
         appliedDebuffThisTurn = false;
         AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
@@ -646,6 +650,7 @@ public class KoishiMod implements
     @Override
     public void receiveStartGame() {
         intangibleCount = 0;
+        debuffCount = 0;
         appliedDebuffThisTurn = false;
         AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
@@ -655,6 +660,7 @@ public class KoishiMod implements
     @Override
     public void receiveSetUnlocks() {
         intangibleCount = 0;
+        debuffCount = 0;
         appliedDebuffThisTurn = false;
         AbstractIdCard.drewIdCardThisTurn = false;
         AbstractIdCard.idCardsDrawn = 0;
@@ -668,9 +674,10 @@ public class KoishiMod implements
                 intangibleCount += p.amount;
             }
         }
-        if (source == AbstractDungeon.player) {
+        if (source == AbstractDungeon.player && target != AbstractDungeon.player && !target.hasPower(ArtifactPower.POWER_ID)) {
             if (p.type == AbstractPower.PowerType.DEBUFF) {
                 appliedDebuffThisTurn = true;
+                debuffCount++;
             }
         }
     }

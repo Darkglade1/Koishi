@@ -6,7 +6,7 @@
   },
   "Koishi:SilentAndRestless": {
     "NAME": "Silent and Restless",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
   },
   "Koishi:SuperEgo": {
     "NAME": "Super-Ego",
@@ -129,7 +129,7 @@
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
-    "DESCRIPTION": "Retain. NL Target enemy loses !M! HP for each stack of a debuff on it. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Target enemy loses !M! HP. NL It loses !Koishi:SecondMagic! additional HP for every time you applied a debuff this combat. NL Exhaust."
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA's Flaw",
@@ -210,8 +210,8 @@
   },
   "Koishi:GeneticsOfTheUnconscious": {
     "NAME": "Genetics of the Unconscious",
-    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards."
+    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! cards."
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",

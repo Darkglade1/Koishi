@@ -30,7 +30,7 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
 
     private static final int DRAW = 2;
 
-    private static final int EFFECT = 2;
+    private static final int EFFECT = 1;
 
     public GeneticsOfTheUnconscious() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -5,6 +5,7 @@ import Koishi.actions.SilentAndRestlessAction;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.EphemeralPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -39,6 +40,7 @@ public class SilentAndRestless extends AbstractDefaultCard {
         magicNumber = baseMagicNumber = misc = BUFF;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = KILL_BONUS;
         exhaust = true;
+        AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     @Override
