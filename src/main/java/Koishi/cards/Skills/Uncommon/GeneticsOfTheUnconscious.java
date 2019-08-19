@@ -28,7 +28,7 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
 
     private static final int ENERGY_LOSS = 1;
 
-    private static final int DRAW = 2;
+    private static final int DRAW = 1;
 
     private static final int EFFECT = 1;
 
