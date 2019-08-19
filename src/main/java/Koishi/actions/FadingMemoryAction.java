@@ -3,6 +3,7 @@ package Koishi.actions;
 import Koishi.cards.Skills.Rare.FadingMemory;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
@@ -22,7 +23,9 @@ public class FadingMemoryAction extends AbstractGameAction {
     public void update() {
         this.isDone = false;
         AbstractPlayer p = AbstractDungeon.player;
-
+        if (p.hand.size() != 0) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, card.magicNumber));
+        }
         AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, card.magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, card.defaultSecondMagicNumber), card.defaultSecondMagicNumber));
 

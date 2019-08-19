@@ -43,6 +43,7 @@ Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
+Koishi\relics\ImperfectMetamorphosis$1.class
 Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
 Koishi\actions\SilentAndRestlessAction.class
 Koishi\cards\Skills\Common\PhantomBarrier.class

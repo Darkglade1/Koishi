@@ -24,7 +24,7 @@
     "NAME": "Imperfect Metamorphosis",
     "FLAVOR": "It was the first day of spring, and nobody cared.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose and Transform #b", " cards."
+      "Upon pickup, choose and Transform #b", " cards into random #yId cards."
     ]
   },
   "Koishi:ColorfulDays": {

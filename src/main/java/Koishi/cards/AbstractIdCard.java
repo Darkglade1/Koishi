@@ -67,7 +67,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
         list.add(new RorschachInDanmaku());
         list.add(new HeartAttack());
         list.add(new MassHysteria());
-        //list.add(new GhostParty());
+        //list.add(new GhostParty()); //Avoids randomly giving out Ghost Party since it's a pain to deal with when unexpected
         list.add(new FadingMemory());
 
         return (AbstractIdCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));

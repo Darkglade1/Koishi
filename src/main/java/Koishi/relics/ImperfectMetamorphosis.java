@@ -1,6 +1,7 @@
 package Koishi.relics;
 
 import Koishi.KoishiMod;
+import Koishi.cards.AbstractIdCard;
 import Koishi.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -8,7 +9,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.LocalizedStrings;
+import com.megacrit.cardcrawl.random.Random;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import java.util.ArrayList;
@@ -79,9 +83,21 @@ public class ImperfectMetamorphosis extends CustomRelic {
             card.untip();
             card.unhover();
             AbstractDungeon.player.masterDeck.removeCard(card);
-            AbstractDungeon.transformCard(card, false, AbstractDungeon.miscRng);
-            if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.TRANSFORM && AbstractDungeon.transformedCard != null) {
-                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(AbstractDungeon.getTransformedCard(), (float) Settings.WIDTH / 3.0F + displayCount, (float)Settings.HEIGHT / 2.0F, false));
+
+            AbstractCard transformedCard;
+            Random rng = AbstractDungeon.miscRng;
+            switch(card.color) {
+                case CURSE:
+                    transformedCard = CardLibrary.getCurse(card, rng).makeCopy();
+                    break;
+                default:
+                    transformedCard = AbstractIdCard.returnTrulyRandomIdCard().makeCopy();
+            }
+
+            UnlockTracker.markCardAsSeen(transformedCard.cardID);
+
+            if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.TRANSFORM) {
+                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(transformedCard, (float) Settings.WIDTH / 3.0F + displayCount, (float)Settings.HEIGHT / 2.0F, false));
                 displayCount += (float)Settings.WIDTH / 6.0F;
             }
         }
