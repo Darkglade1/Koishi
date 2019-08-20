@@ -77,11 +77,14 @@ import Koishi.cards.Skills.Uncommon.ReleaseOfTheId;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.Vanish;
 import Koishi.characters.KoishiCharacter;
+import Koishi.relics.AHoleWhereASisterShouldBe;
 import Koishi.relics.BloodstainedWhiteRose;
 import Koishi.relics.ColorfulDays;
+import Koishi.relics.EchoesOfADeadGirl;
 import Koishi.relics.ImaginaryFriend;
 import Koishi.relics.ImperfectMetamorphosis;
 import Koishi.relics.LettersToReimu;
+import Koishi.relics.TeethAndClaws;
 import Koishi.util.IDCheckDontTouchPls;
 import Koishi.util.TextureLoader;
 import Koishi.variables.DefaultSecondMagicNumber;
@@ -338,8 +341,11 @@ public class KoishiMod implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new ImaginaryFriend(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new BloodstainedWhiteRose(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new AHoleWhereASisterShouldBe(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new LettersToReimu(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new TeethAndClaws(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new ImperfectMetamorphosis(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
+        BaseMod.addRelicToCustomPool(new EchoesOfADeadGirl(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
         BaseMod.addRelicToCustomPool(new ColorfulDays(), KoishiCharacter.Enums.COLOR_DARK_GREEN);
 
         logger.info("Done adding relics!");

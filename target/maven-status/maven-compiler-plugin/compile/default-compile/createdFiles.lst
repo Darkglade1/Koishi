@@ -2,6 +2,7 @@ Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\patches\MindControlDamagePatch$Locator.class
+Koishi\patches\ApplyPowerRelicPatch$Locator.class
 Koishi\actions\RorshachInDanmakuAction.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
@@ -30,6 +31,7 @@ Koishi\cards\Skills\Common\UnconsciousUprising.class
 Koishi\patches\MindControlRemoveDebuffsPatch$Locator.class
 Koishi\BetterSpriterAnimation.class
 Koishi\cards\Attacks\Common\BasicStrike.class
+Koishi\relics\EchoesOfADeadGirl.class
 Koishi\cards\Attacks\Common\RacingHeart.class
 Koishi\cards\Attacks\Uncommon\Catatonia.class
 Koishi\cards\Skills\Uncommon\PhilosophyOfTheDespised.class
@@ -38,8 +40,10 @@ Koishi\patches\IdCardPatch.class
 Koishi\cards\Skills\Common\BasicDefend.class
 Koishi\cards\Skills\Common\UnansweredLove.class
 Koishi\cards\Powers\Uncommon\BramblyRoseGarden.class
+Koishi\relics\TeethAndClaws.class
 Koishi\cards\Skills\Uncommon\Bloodlust.class
 Koishi\cards\AbstractDefaultCard.class
+Koishi\relics\AHoleWhereASisterShouldBe.class
 Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
@@ -48,6 +52,7 @@ Koishi\relics\ImperfectMetamorphosis$1.class
 Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
 Koishi\actions\SilentAndRestlessAction.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
+Koishi\patches\ApplyPowerRelicPatch.class
 Koishi\cards\Attacks\Uncommon\TremblingHands.class
 Koishi\powers\FormlessExistencePower.class
 Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class

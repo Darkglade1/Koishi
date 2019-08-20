@@ -33,5 +33,26 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of each turn. #yEphemeral now triggers at #b", " stacks instead of #b", "."
     ]
+  },
+  "Koishi:AHoleWhereASisterShouldBe": {
+    "NAME": "A Hole Where a Sister Should Be",
+    "FLAVOR": "It hurt. It hurt to remember the sound of her laugh, the touch of her mind against her own.",
+    "DESCRIPTIONS": [
+      "The first time you draw an #yId card each combat, gain [E] and draw #b", " card."
+    ]
+  },
+  "Koishi:TeethAndClaws": {
+    "NAME": "Teeth and Claws",
+    "FLAVOR": "Not everyone plays by the rules. Those who don’t tend to be dealt with. Swiftly.",
+    "DESCRIPTIONS": [
+      "The first time you apply a debuff each turn, gain #b", " Block."
+    ]
+  },
+  "Koishi:EchoesOfADeadGirl": {
+    "NAME": "Echoes of a Dead Girl",
+    "FLAVOR": "She wasn't sure if there was anything left of her sister in that shell, that hollow existence that could only mindlessly follow its primal urges.",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yIntangible, gain [E] ."
+    ]
   }
 }
