@@ -87,7 +87,7 @@
   },
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
-    "DESCRIPTION": "Deal !D! damage twice. NL Apply 1 koishi:Terror !M! times."
+    "DESCRIPTION": "Deal !D! damage and apply !M! koishi:Terror twice."
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
@@ -210,8 +210,8 @@
   },
   "Koishi:GeneticsOfTheUnconscious": {
     "NAME": "Genetics of the Unconscious",
-    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile !Koishi:SecondMagic! times. NL Draw !M! cards."
+    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! card."
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",

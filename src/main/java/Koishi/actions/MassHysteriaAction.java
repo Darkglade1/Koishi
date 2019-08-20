@@ -27,6 +27,7 @@ public class MassHysteriaAction extends AbstractGameAction {
         while(iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
             if (!mo.isDeadOrEscaped()) {
+                mo.createIntent(); //To address the edge case where this card is drawn before enemy intents are properly initialized
                 if (ForceIntentAction.attackTest.test(mo)) {
                     int moDamage = (Integer) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "intentDmg");
                     if ((Boolean) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "isMultiDmg")) {

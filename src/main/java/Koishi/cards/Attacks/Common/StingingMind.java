@@ -29,8 +29,7 @@ public class StingingMind extends AbstractDefaultCard {
     private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int DEBUFF = 3;
-    private static final int UPGRADE_PLUS_DEBUFF = 1;
+    private static final int DEBUFF = 2;
 
     public StingingMind() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,8 +43,8 @@ public class StingingMind extends AbstractDefaultCard {
         KoishiMod.runAnimation("specialAttackC");
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        for (int i = 0; i < magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, 1), 1));
+        for (int i = 0; i < 2; i++) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
         }
     }
 
@@ -54,7 +53,6 @@ public class StingingMind extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_DEBUFF);
             initializeDescription();
         }
     }

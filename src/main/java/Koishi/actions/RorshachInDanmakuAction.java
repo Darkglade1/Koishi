@@ -22,7 +22,7 @@ public class RorshachInDanmakuAction extends AbstractGameAction {
 
     public void update() {
         this.isDone = false;
-
+        System.out.println(AbstractDungeon.actionManager.actions);
         AbstractPlayer p = AbstractDungeon.player;
         int totalBlock = 0;
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
@@ -30,6 +30,7 @@ public class RorshachInDanmakuAction extends AbstractGameAction {
             AbstractMonster mo = (AbstractMonster) iterator.next();
             if (!mo.isDeadOrEscaped()) {
                 System.out.println(mo.name + "'s intent is " + mo.intent);
+                mo.createIntent(); //To address the edge case where this card is drawn before enemy intents are properly initialized
                 if (ForceIntentAction.attackTest.test(mo)) {
                     int moDamage = (Integer) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "intentDmg");
                     if ((Boolean) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "isMultiDmg")) {
