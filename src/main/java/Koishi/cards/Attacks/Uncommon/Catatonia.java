@@ -25,7 +25,7 @@ public class Catatonia extends AbstractDefaultCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 14;
     private static final int UPGRADE_PLUS_DMG = 2;
 
     private static final int BONUS_DAMAGE = 2;

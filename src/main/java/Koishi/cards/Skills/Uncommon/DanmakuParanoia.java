@@ -25,7 +25,7 @@ public class DanmakuParanoia extends AbstractDefaultCard {
 
     private static final int COST = 2;
 
-    private static final int BLOCK = 10;
+    private static final int BLOCK = 13;
     private static final int UPGRADE_PLUS_BLOCK = 5;
 
     private static final int MULTIPLIER = 1;
