@@ -5,14 +5,13 @@ import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.tags.Tags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
-import com.megacrit.cardcrawl.vfx.combat.PowerDebuffEffect;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -48,22 +47,7 @@ public class RuptureMind extends AbstractDefaultCard {
         if (KoishiMod.appliedDebuffThisTurn) {
             for (AbstractPower debuff : m.powers) {
                 if (debuff.type == AbstractPower.PowerType.DEBUFF) {
-                    if (m.hasPower(ArtifactPower.POWER_ID)) {
-                        ArtifactPower artifact = (ArtifactPower)m.getPower(ArtifactPower.POWER_ID);
-                        artifact.onSpecificTrigger();
-                    } else {
-                        m.useFastShakeAnimation(0.5F);
-                        debuff.flash();
-                        AbstractDungeon.effectList.add(new PowerDebuffEffect(m.hb.cX - m.animX, m.hb.cY + m.hb.height / 2.0F, debuff.name));
-                        if (debuff.canGoNegative) {
-                            debuff.stackPower(-magicNumber);
-                        } else {
-                            debuff.stackPower(magicNumber);
-                        }
-                        debuff.updateDescription();
-                        KoishiMod.debuffCount++;
-                    }
-                    
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, debuff, magicNumber));
                 }
             }
         }
