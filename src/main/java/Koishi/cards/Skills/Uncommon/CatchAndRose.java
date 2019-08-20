@@ -23,7 +23,7 @@ public class CatchAndRose extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
-    private static final int DEBUFF = 3;
+    private static final int DEBUFF = 4;
     private static final int UPGRADE_PLUS_DEBUFF = 2;
 
     public CatchAndRose() {

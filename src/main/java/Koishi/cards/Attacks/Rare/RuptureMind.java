@@ -5,14 +5,14 @@ import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.tags.Tags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.ConstrictedPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.vfx.combat.PowerDebuffEffect;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -31,8 +31,8 @@ public class RuptureMind extends AbstractDefaultCard {
     private static final int DAMAGE = 12;
     private static final int UPGRADE_PLUS_DMG = 3;
 
-    private static final int DEBUFF = 3;
-    private static final int UPGRADE_PLUS_DEBUFF = 2;
+    private static final int DEBUFF = 2;
+    private static final int UPGRADE_PLUS_DEBUFF = 1;
 
     public RuptureMind() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,10 +44,28 @@ public class RuptureMind extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("occultAttack");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         if (KoishiMod.appliedDebuffThisTurn) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, magicNumber), magicNumber));
+            for (AbstractPower debuff : m.powers) {
+                if (debuff.type == AbstractPower.PowerType.DEBUFF) {
+                    if (m.hasPower(ArtifactPower.POWER_ID)) {
+                        ArtifactPower artifact = (ArtifactPower)m.getPower(ArtifactPower.POWER_ID);
+                        artifact.onSpecificTrigger();
+                    } else {
+                        m.useFastShakeAnimation(0.5F);
+                        debuff.flash();
+                        AbstractDungeon.effectList.add(new PowerDebuffEffect(m.hb.cX - m.animX, m.hb.cY + m.hb.height / 2.0F, debuff.name));
+                        if (debuff.canGoNegative) {
+                            debuff.stackPower(-magicNumber);
+                        } else {
+                            debuff.stackPower(magicNumber);
+                        }
+                        debuff.updateDescription();
+                        KoishiMod.debuffCount++;
+                    }
+                    
+                }
+            }
         }
     }
 

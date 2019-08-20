@@ -15,7 +15,7 @@
   },
   "Koishi:RuptureMind": {
     "NAME": "Rupture Mind",
-    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, apply !M! koishi:Constricted."
+    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, apply !M! additional stacks of every debuff on target enemy."
   },
   "Koishi:LastRemote": {
     "NAME": "Last Remote",
