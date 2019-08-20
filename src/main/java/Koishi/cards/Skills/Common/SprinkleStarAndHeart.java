@@ -22,7 +22,7 @@ public class SprinkleStarAndHeart extends AbstractIdCard {
 
     private static final int COST = 1;
 
-    private static final int DEBUFF = 1;
+    private static final int DEBUFF = 2;
     private static final int UPGRADE_PLUS_DEBUFF = 1;
 
     public SprinkleStarAndHeart() {

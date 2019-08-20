@@ -20,7 +20,7 @@ public class LettersToReimu extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("LettersToReimu.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("LettersToReimu.png"));
 
-    private static final int TEMP_HP = 3;
+    private static final int TEMP_HP = 2;
 
     public LettersToReimu() {
         super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.FLAT);
