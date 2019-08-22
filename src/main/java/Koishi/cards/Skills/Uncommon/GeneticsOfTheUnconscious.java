@@ -3,7 +3,6 @@ package Koishi.cards.Skills.Uncommon;
 import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
@@ -29,13 +28,16 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     private static final int ENERGY_LOSS = 1;
 
     private static final int DRAW = 1;
+    private static final int UPGRADE_DRAW = 1;
 
     private static final int EFFECT = 1;
+    private static final int UPGRADE_EFFECT = 1;
 
     public GeneticsOfTheUnconscious() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DRAW;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = EFFECT;
+        exhaust = true;
     }
 
     @Override
@@ -59,7 +61,8 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            AlwaysRetainField.alwaysRetain.set(this, true);
+            upgradeMagicNumber(UPGRADE_DRAW);
+            upgradeDefaultSecondMagicNumber(UPGRADE_EFFECT);
             rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }

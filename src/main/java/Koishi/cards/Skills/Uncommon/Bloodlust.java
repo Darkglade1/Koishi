@@ -27,6 +27,7 @@ public class Bloodlust extends AbstractDefaultCard {
     private static final int COST = 0;
 
     private static final int ENERGY = 2;
+    private static final int UPGRADE_ENERGY = 1;
 
     public Bloodlust() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -47,7 +48,7 @@ public class Bloodlust extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            exhaust = false;
+            upgradeMagicNumber(UPGRADE_ENERGY);
             rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }

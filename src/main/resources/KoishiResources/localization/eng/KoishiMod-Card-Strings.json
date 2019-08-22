@@ -206,12 +206,12 @@
   "Koishi:Bloodlust": {
     "NAME": "Bloodlust",
     "DESCRIPTION": "Retain. NL Gain [E] [E]. NL Lose [E] [E] next turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Lose [E] [E] next turn."
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E] [E]. NL Lose [E] [E] [E] next turn. NL Exhaust."
   },
   "Koishi:GeneticsOfTheUnconscious": {
     "NAME": "Genetics of the Unconscious",
-    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! card."
+    "DESCRIPTION": "Lose [E]. NL Put a card from your discard pile on top of your draw pile. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "NL Lose [E]. NL Put !Koishi:SecondMagic! cards from your discard pile on top of your draw pile. NL Draw !M! cards. NL Exhaust."
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",
