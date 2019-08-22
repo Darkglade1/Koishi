@@ -43,7 +43,6 @@ public class GeneticsOfTheUnconscious extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellCall");
-        AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(ENERGY_LOSS));
         for (int i = 0; i < defaultSecondMagicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new DiscardPileToTopOfDeckAction(p));
         }
