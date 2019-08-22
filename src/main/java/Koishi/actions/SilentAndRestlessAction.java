@@ -43,10 +43,9 @@ public class SilentAndRestlessAction extends AbstractGameAction {
                     }
                 }
 
-                for(var1 = GetAllInBattleInstances.get(this.uuid).iterator(); var1.hasNext();) {
+                for(var1 = GetAllInBattleInstances.get(this.uuid).iterator(); var1.hasNext(); c.magicNumber = c.baseMagicNumber = c.misc) {
                     c = (AbstractCard)var1.next();
                     c.misc += this.increaseAmount;
-                    c.magicNumber = c.baseMagicNumber = c.misc;
                     c.applyPowers();
                 }
             }

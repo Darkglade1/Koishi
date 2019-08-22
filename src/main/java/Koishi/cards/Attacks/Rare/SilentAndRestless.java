@@ -37,7 +37,8 @@ public class SilentAndRestless extends AbstractDefaultCard {
     public SilentAndRestless() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = misc = BUFF;
+        misc = BUFF;
+        magicNumber = baseMagicNumber = misc;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = KILL_BONUS;
         exhaust = true;
         AlwaysRetainField.alwaysRetain.set(this, true);
@@ -48,6 +49,13 @@ public class SilentAndRestless extends AbstractDefaultCard {
         KoishiMod.runAnimation("dashAttackA");
         AbstractDungeon.actionManager.addToBottom(new SilentAndRestlessAction(m, new DamageInfo(p, damage, damageTypeForTurn), defaultSecondMagicNumber, uuid));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, baseMagicNumber), baseMagicNumber));
+    }
+
+    @Override
+    public void applyPowers() {
+        magicNumber = baseMagicNumber = misc;
+        super.applyPowers();
+        this.initializeDescription();
     }
 
     @Override
