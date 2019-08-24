@@ -14,6 +14,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.BeatOfDeathPower;
+import com.megacrit.cardcrawl.powers.HexPower;
+import com.megacrit.cardcrawl.powers.SharpHidePower;
+import com.megacrit.cardcrawl.powers.StasisPower;
 
 public class MindControlPower extends AbstractPower {
     public AbstractCreature source;
@@ -54,11 +58,20 @@ public class MindControlPower extends AbstractPower {
         if (source == owner && power.type == PowerType.BUFF) {
             power.owner = this.source;
             AbstractDungeon.actionManager.currentAction.target = this.source;
+            if (power instanceof SharpHidePower || power instanceof BeatOfDeathPower || power instanceof StasisPower) {
+                if (power instanceof  StasisPower) {
+                    power.onDeath();
+                }
+                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.source, this.source, power.ID));
+            }
         }
         else if (source == owner && power.type == PowerType.DEBUFF) {
             AbstractMonster newTarget = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             power.owner = newTarget;
             AbstractDungeon.actionManager.currentAction.target = newTarget;
+            if (power instanceof HexPower) {
+                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(newTarget, newTarget, power.ID));
+            }
         }
     }
 
