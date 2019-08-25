@@ -36,18 +36,6 @@ public class ConditionedTeleport extends AbstractDefaultCard {
     }
 
     @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        Iterator<AbstractMonster> iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while (iterator.hasNext()) {
-            AbstractMonster mo = iterator.next();
-            if (mo.type == AbstractMonster.EnemyType.BOSS) {
-                return false;
-            }
-        }
-        return super.canUse(p, m);
-    }
-
-    @Override
     public float getTitleFontSize()
     {
         return 18;
@@ -56,7 +44,15 @@ public class ConditionedTeleport extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+        boolean hasBoss = false;
+        Iterator<AbstractMonster> iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+        while (iterator.hasNext()) {
+            AbstractMonster mo = iterator.next();
+            if (mo.type == AbstractMonster.EnemyType.BOSS) {
+                hasBoss = true;
+            }
+        }
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !hasBoss) {
             AbstractDungeon.getCurrRoom().smoked = true;
             AbstractDungeon.player.hideHealthBar();
             AbstractDungeon.player.isEscaping = true;

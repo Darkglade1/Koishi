@@ -28,7 +28,7 @@ public class MindStellarRelief extends AbstractDefaultCard {
     private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 3;
 
-    private static final int BONUS_DAMAGE = 5;
+    private static final int BONUS_DAMAGE = 3;
     private static final int UPGRADE_PLUS_BONUS_DAMAGE = 2;
 
     public MindStellarRelief() {

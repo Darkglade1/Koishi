@@ -78,27 +78,18 @@ public class ImperfectMetamorphosis extends CustomRelic {
         float displayCount = 0.0F;
         Iterator i = group.iterator();
 
-        while(i.hasNext()) {
-            AbstractCard card = (AbstractCard)i.next();
+        while (i.hasNext()) {
+            AbstractCard card = (AbstractCard) i.next();
             card.untip();
             card.unhover();
             AbstractDungeon.player.masterDeck.removeCard(card);
 
-            AbstractCard transformedCard;
-            Random rng = AbstractDungeon.miscRng;
-            switch(card.color) {
-                case CURSE:
-                    transformedCard = CardLibrary.getCurse(card, rng).makeCopy();
-                    break;
-                default:
-                    transformedCard = AbstractIdCard.returnTrulyRandomIdCard().makeCopy();
-            }
-
+            AbstractCard transformedCard = AbstractIdCard.returnTrulyRandomIdCard().makeCopy();
             UnlockTracker.markCardAsSeen(transformedCard.cardID);
 
             if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.TRANSFORM) {
-                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(transformedCard, (float) Settings.WIDTH / 3.0F + displayCount, (float)Settings.HEIGHT / 2.0F, false));
-                displayCount += (float)Settings.WIDTH / 6.0F;
+                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(transformedCard, (float) Settings.WIDTH / 3.0F + displayCount, (float) Settings.HEIGHT / 2.0F, false));
+                displayCount += (float) Settings.WIDTH / 6.0F;
             }
         }
 
