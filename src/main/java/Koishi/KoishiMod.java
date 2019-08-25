@@ -112,6 +112,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -563,60 +564,62 @@ public class KoishiMod implements
     
     // ================ /ADD CARDS/ ===================
     
-    
-    // ================ LOAD THE TEXT ===================
-    
-    @Override
-    public void receiveEditStrings() {
-        logger.info("You seeing this?");
-        logger.info("Beginning to edit strings for mod with ID: " + getModID());
-        
-        // CardStrings
-        BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Card-Strings.json");
-        
-        // PowerStrings
-        BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Power-Strings.json");
-        
-        // RelicStrings
-        BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Relic-Strings.json");
-        
-        // CharacterStrings
-        BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/KoishiMod-Character-Strings.json");
-        
-        logger.info("Done edittting strings");
+
+
+    private static String makeLocPath(Settings.GameLanguage language, String filename)
+    {
+        String ret = "localization/";
+        switch (language) {
+            case ZHS:
+                ret += "zhs/";
+                break;
+            default:
+                ret += "eng/";
+                break;
+        }
+        return getModID() + "Resources/" + (ret + filename + ".json");
     }
-    
-    // ================ /LOAD THE TEXT/ ===================
-    
-    // ================ LOAD THE KEYWORDS ===================
-    
+
+    private void loadLocFiles(Settings.GameLanguage language)
+    {
+        BaseMod.loadCustomStringsFile(CardStrings.class, makeLocPath(language, "KoishiMod-Card-Strings"));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, makeLocPath(language, "KoishiMod-Relic-Strings"));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, makeLocPath(language, "KoishiMod-Power-Strings"));
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, makeLocPath(language, "KoishiMod-Character-Strings"));
+    }
+
     @Override
-    public void receiveEditKeywords() {
-        // Keywords on cards are supposed to be Capitalized, while in Keyword-String.json they're lowercase
-        //
-        // Multiword keywords on cards are done With_Underscores
-        //
-        // If you're using multiword keywords, the first element in your NAMES array in your keywords-strings.json has to be the same as the PROPER_NAME.
-        // That is, in Card-Strings.json you would have #yA_Long_Keyword (#y highlights the keyword in yellow).
-        // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
-        
+    public void receiveEditStrings()
+    {
+        loadLocFiles(Settings.GameLanguage.ENG);
+        if (Settings.language != Settings.GameLanguage.ENG) {
+            loadLocFiles(Settings.language);
+        }
+    }
+
+    private void loadLocKeywords(Settings.GameLanguage language)
+    {
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/KoishiMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
-        com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
-        
+        String json = Gdx.files.internal(makeLocPath(language, "KoishiMod-Keyword-Strings")).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
             }
         }
     }
-    
-    // ================ /LOAD THE KEYWORDS/ ===================    
-    
+
+    @Override
+    public void receiveEditKeywords()
+    {
+        loadLocKeywords(Settings.GameLanguage.ENG);
+        if (Settings.language != Settings.GameLanguage.ENG) {
+            loadLocKeywords(Settings.language);
+        }
+    }
+
+
     // this adds "ModName:" before the ID of any card/relic/power etc.
     // in order to avoid conflicts if any other mod uses the same ID.
     public static String makeID(String idText) {

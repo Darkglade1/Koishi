@@ -1,0 +1,58 @@
+{
+  "Koishi:ImaginaryFriend": {
+    "NAME": "幻想中的好朋友",
+    "FLAVOR": "它们经常会忘了我。",
+    "DESCRIPTIONS": [
+      "每当你打出一张卡或者抽一张 #y本我 卡， 获得 #b", " 层 #y幻影 。"
+    ]
+  },
+  "Koishi:BloodstainedWhiteRose": {
+    "NAME": "沾血的白蔷薇",
+    "FLAVOR": "规则被打破，地灵殿的白蔷薇被永远的玷污了。",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，给予一个随机敌人 #b", " 层 #y惊恐 。"
+    ]
+  },
+  "Koishi:LettersToReimu": {
+    "NAME": "给灵梦的字条",
+    "FLAVOR": "一切都结束了，包括他们所信仰的梦想。这个故事也必定是一个悲惨的结局。",
+    "DESCRIPTIONS": [
+      "每#y消耗 一张卡，获得 #b", " 点 #y临时生命 。"
+    ]
+  },
+  "Koishi:ImperfectMetamorphosis": {
+    "NAME": "不完全转变",
+    "FLAVOR": "那是春季的第一天(立春)，但没人在意。",
+    "DESCRIPTIONS": [
+      "拾起时，选择 #b", " 张卡变化为随机的 #y本我 卡。"
+    ]
+  },
+  "Koishi:ColorfulDays": {
+    "NAME": "多彩年华",
+    "FLAVOR": "我所看到的、听到的、感受到的 . . . 所有的一切都变得多姿多彩。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。 #y幻影 现在每获得 #b", " 层就触发效果", "。"
+    ]
+  },
+  "Koishi:AHoleWhereASisterShouldBe": {
+    "NAME": "一个姐姐应该待的地方",
+    "FLAVOR": "很痛。想起她笑的声音，想起她对自己的触动，真让人伤心。",
+    "DESCRIPTIONS": [
+      "每场战斗你第一次抽到 #y本我 卡时， 获得 [E] 并抽 #b", " 张卡。"
+    ]
+  },
+  "Koishi:TeethAndClaws": {
+    "NAME": "牙齿和爪子",
+    "FLAVOR": "不是每个人都按规则行事。那些不按规矩的需要被处理。迅速的！",
+    "DESCRIPTIONS": [
+      "每回合你第一次给予负面效果时，获得 #b", " 点 #y格挡。"
+    ]
+  },
+  "Koishi:EchoesOfADeadGirl": {
+    "NAME": "死去女孩的回声",
+    "FLAVOR": "她不确定她姐姐的躯壳里还有没有什么东西，那空洞的存在只能盲目地追随它最初的欲望。",
+    "DESCRIPTIONS": [
+      "每当你获得 #y无实体 时，获得 [E] 。"
+    ]
+  }
+}

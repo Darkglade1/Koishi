@@ -1,13 +1,10 @@
 package Koishi.powers;
 
 import Koishi.KoishiMod;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -41,16 +38,6 @@ public class MindControlPower extends AbstractPower {
         this.loadRegion("confusion");
 
         updateDescription();
-    }
-
-    public int onAttackToChangeDamagePreBlock(DamageInfo info, int damageAmount) {
-        if (info.owner == owner) {
-            AbstractMonster newTarget = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-            AbstractDungeon.actionManager.currentAction.target = newTarget;
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(newTarget, new DamageInfo(source, info.base, info.type), AbstractGameAction.AttackEffect.NONE));
-            return 0; //makes the monster do 0 damage to the player
-        }
-        return damageAmount;
     }
 
     @Override

@@ -1,7 +1,6 @@
 Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
-Koishi\patches\MindControlDamagePatch$Locator.class
 Koishi\patches\ApplyPowerRelicPatch$Locator.class
 Koishi\actions\RorshachInDanmakuAction.class
 Koishi\powers\HeartbrokenPower.class
@@ -41,6 +40,7 @@ Koishi\cards\Skills\Common\BasicDefend.class
 Koishi\cards\Skills\Common\UnansweredLove.class
 Koishi\cards\Powers\Uncommon\BramblyRoseGarden.class
 Koishi\relics\TeethAndClaws.class
+Koishi\patches\MindControlRetargetPatch$Locator.class
 Koishi\cards\Skills\Uncommon\Bloodlust.class
 Koishi\cards\AbstractDefaultCard.class
 Koishi\relics\AHoleWhereASisterShouldBe.class
@@ -49,6 +49,7 @@ Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
 Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
+Koishi\patches\MindControlRetargetPatch.class
 Koishi\actions\SilentAndRestlessAction.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
 Koishi\patches\ApplyPowerRelicPatch.class
@@ -106,6 +107,7 @@ Koishi\relics\BloodstainedWhiteRose.class
 Koishi\patches\onGainedBlockPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
 Koishi\cards\Skills\Uncommon\Possession.class
+Koishi\KoishiMod$1.class
 Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\powers\EphemeralPower.class
@@ -119,7 +121,6 @@ Koishi\cards\Attacks\Uncommon\GrowingPain.class
 Koishi\powers\EgoPower.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
-Koishi\patches\MindControlDamagePatch.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\cards\Skills\Uncommon\FourthEye.class
 Koishi\cards\Attacks\Uncommon\MindNumbingTerror.class
