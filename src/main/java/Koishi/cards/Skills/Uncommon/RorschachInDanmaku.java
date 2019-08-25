@@ -1,15 +1,16 @@
 package Koishi.cards.Skills.Uncommon;
 
 import Koishi.KoishiMod;
-import Koishi.actions.RorshachInDanmakuAction;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import static Koishi.KoishiMod.makeCardPath;
-import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class RorschachInDanmaku extends AbstractIdCard {
 
@@ -23,21 +24,22 @@ public class RorschachInDanmaku extends AbstractIdCard {
 
     private static final int COST = 2;
 
-    private static final int BONUS_BLOCK = 5;
+    private static final int BLOCK = 17;
+    private static final int UPGRADE_PLUS_BLOCK = 5;
+
+    private static final int DRAW = 1;
 
     public RorschachInDanmaku() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = BONUS_BLOCK;
+        baseBlock = BLOCK;
+        magicNumber = baseMagicNumber = DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellA");
-        if (upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new RorshachInDanmakuAction(magicNumber));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new RorshachInDanmakuAction(0));
-        }
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, magicNumber), magicNumber));
     }
 
     @Override
@@ -51,7 +53,7 @@ public class RorschachInDanmaku extends AbstractIdCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
             initializeDescription();
         }
     }

@@ -6,7 +6,7 @@
   },
   "Koishi:SilentAndRestless": {
     "NAME": "寂静不安",
-    "DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 获得 !M! 层 koishi:幻影 。 NL 如果杀死了一个敌人，这张卡获得的 koishi:幻影 层数永久提升 !Koishi:SecondMagic! 。 NL  消耗 。"
+    "DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 获得 !M! 层 koishi:幻影 。 NL 如果杀死了一个敌人，这张卡获得的 koishi:幻影 层数永久提升 3 。 NL  消耗 。"
   },
   "Koishi:SuperEgo": {
     "NAME": "超我",
@@ -111,8 +111,8 @@
   },
   "Koishi:ConditionedTeleport": {
     "NAME": "条件性传送",
-    "DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非BOSS战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。 NL  虚无 。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非BOSS战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。"
+    "DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非 BOSS 战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。 NL  虚无 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非 BOSS 战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。"
   },
   "Koishi:RollingInRichesHeart": {
     "NAME": "陷入富贵之心",
@@ -215,11 +215,10 @@
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "弹幕的墨迹实验",
-    "DESCRIPTION": " koishi:本我 。 NL 获得等同 的 格挡 equal to incoming damage.",
-    "UPGRADE_DESCRIPTION": " koishi:本我 。 NL 获得等同 的 格挡 equal to incoming damage + 5."
+    "DESCRIPTION": " koishi:本我 。 NL 获得 !B! 点格挡。NL 下回合抽 !M! 张卡。"
   },
   "Koishi:CatchAndRose": {
-    "NAME": "Catch and Rose",
+    "NAME": "捕捉和玫瑰",
     "DESCRIPTION": "给予!M! 层 koishi:禁锢 。"
   },
   "Koishi:SprinkleStarAndHeart": {
@@ -283,7 +282,7 @@
   },
   "Koishi:ConfinedInnocent": {
     "NAME": "狭隘的天真",
-    "DESCRIPTION": "回合开始时，失去 !Koishi:SecondMagic! 点生命值并获得 !M! 层 koishi:幻影 。"
+    "DESCRIPTION": "回合开始时，失去 1 点生命值并获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:FormlessExistence": {
     "NAME": "无形的存在",

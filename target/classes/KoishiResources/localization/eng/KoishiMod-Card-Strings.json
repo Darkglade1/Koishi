@@ -215,8 +215,7 @@
   },
   "Koishi:RorschachInDanmaku": {
     "NAME": "Rorschach in Danmaku",
-    "DESCRIPTION": "koishi:Id. NL Gain Block equal to incoming damage.",
-    "UPGRADE_DESCRIPTION": "koishi:Id. NL Gain Block equal to incoming damage + 5."
+    "DESCRIPTION": "koishi:Id. NL Gain !B! Block. NL Next turn, draw !M! card."
   },
   "Koishi:CatchAndRose": {
     "NAME": "Catch and Rose",
