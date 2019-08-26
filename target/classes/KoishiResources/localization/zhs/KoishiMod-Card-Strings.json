@@ -14,16 +14,16 @@
     "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL  消耗 你所有的 koishi:本我 卡。 NL 每 消耗 一张，便获得  [E]  ，抽 !M! 张卡。 NL  消耗 。"
   },
   "Koishi:RuptureMind": {
-    "NAME": "思维断层",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果，将所有敌人的负面效果增加 !M! 层。"
+    "NAME": "思维断裂",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你在此回合施放过弱化效果，则对目标敌人施加 !M! 层每一种你施放过的弱化效果。"
   },
   "Koishi:LastRemote": {
-    "NAME": "最后的遥控",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得  [E] . NL 如果你在回合内打出过  koishi:本我 卡，本卡消耗为0。"
+    "NAME": "Last Remote",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E]。 NL 若你此回合抽到过 koishi:本我 牌，则这张牌消耗变为0。"
   },
   "Koishi:HeartAttack": {
-    "NAME": "心脏打击",
-    "DESCRIPTION": " koishi:本我 。 NL 对一个随机敌人造成 !D! 点伤害。 NL 本回合每打出一张  koishi:本我 卡，额外造成 !M! 点伤害。"
+    "NAME": "直击心脏",
+    "DESCRIPTION": "koishi:本我。 NL 对一名随机敌人造成 !D! 点伤害。 NL 你这场战斗中每抽到过一张本我卡则伤害增加 !M! 点。"
   },
   "Koishi:StrangeCloudFist": {
     "NAME": "怪云拳",
@@ -74,8 +74,8 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 从 抽牌堆 丢弃一张卡。 NL 若你本回合抽到过  koishi:本我 卡，本卡消耗为0。"
   },
   "Koishi:Jaunt": {
-    "NAME": "短途旅行",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张卡。 NL 若目标的意图为攻击，抽 !M! 张卡。"
+    "NAME": "幻化",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌。 NL 若目标敌人的意图为攻击，抽 !M! 张牌。"
   },
   "Koishi:RacingHeart": {
     "NAME": "心跳加速",
@@ -102,8 +102,8 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:SubconsciousSweep": {
-    "NAME": "潜意识扫描",
-    "DESCRIPTION": " koishi:本我 。 NL 对所有敌人造成 !D! 点伤害。"
+    "NAME": "无意识横斩",
+    "DESCRIPTION": "koishi:本我 。 NL 对所有敌人造成 !D! 点伤害。"
   },
   "Koishi:HauntingSlash": {
     "NAME": "挥之不去的利刃",
@@ -111,8 +111,8 @@
   },
   "Koishi:ConditionedTeleport": {
     "NAME": "条件性传送",
-    "DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非 首领 战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。 NL  虚无 。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL  保留 。 NL 从一场非 首领 战斗中逃脱并放弃所有奖励。 NL  koishi:畅流 。"
+    "DESCRIPTION": " 固有 。 NL 保留 。 NL 从一场非 首领 战斗中逃脱并放弃所有奖励。 NL koishi:畅流 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 保留 。 NL 从一场非 首领 战斗中逃脱并放弃所有奖励。 NL koishi:畅流 。"
   },
   "Koishi:RollingInRichesHeart": {
     "NAME": "陷入富贵之心",
@@ -182,8 +182,8 @@
     "UPGRADE_DESCRIPTION": " 保留 。 NL 如果可能，使所有敌人的意图变为攻击意图。 NL  koishi:畅流 。"
   },
   "Koishi:MassHysteria": {
-    "NAME": "集体歇斯底里",
-    "DESCRIPTION": " koishi:本我 。 NL 所有敌人失去其意图总和的生命值、"
+    "NAME": "群体狂乱",
+    "DESCRIPTION": " koishi:本我 。 NL 所有敌人失去其攻击意图数值总和的生命值。"
   },
   "Koishi:FourthEye": {
     "NAME": "第四只眼",
@@ -269,7 +269,7 @@
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "心跳骤停之怖",
-    "DESCRIPTION": "回合结束时，回合结束时，所有敌人失去等同其 koishi:惊恐 层数的生命值。"
+    "DESCRIPTION": "回合结束时，所有敌人失去等同其 koishi:惊恐 层数的生命值。"
   },
   "Koishi:Heartbroken": {
     "NAME": "心碎",
@@ -281,7 +281,7 @@
     "UPGRADE_DESCRIPTION": " 固有 。 NL 你的  koishi:本我  卡不再自动打出。 NL 当你打出一张  koishi:本我 卡时，抽 !M! 张卡。"
   },
   "Koishi:ConfinedInnocent": {
-    "NAME": "狭隘的天真",
+    "NAME": "囚禁的天真之人",
     "DESCRIPTION": "回合开始时，失去 1 点生命值并获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:FormlessExistence": {

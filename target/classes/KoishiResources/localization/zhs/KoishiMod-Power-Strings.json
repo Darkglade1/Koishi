@@ -40,7 +40,7 @@
         "DESCRIPTIONS": ["你的 #y本我 卡不再自动打出。每当你打出一张 #y本我 卡, 抽 #b", " 张卡。", " 张卡。"]
 },
 "Koishi:ConfinedInnocentPower": {
-        "NAME": "狭隘的天真",
+        "NAME": "囚禁的天真之人",
         "DESCRIPTIONS": ["回合开始时，失去 #b1 点生命值 #b", " 次", " 次", " 获得 #b", " 层 #y幻影 。"]
 },
 "Koishi:FormlessExistencePower": {
