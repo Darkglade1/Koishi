@@ -19,7 +19,7 @@
   },
   "Koishi:LastRemote": {
     "NAME": "Last Remote",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E]。 NL 若你此回合抽到过 koishi:本我 牌，则这张牌消耗变为0。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 若你此回合抽到过 koishi:本我 牌，则这张牌消耗变为0。"
   },
   "Koishi:HeartAttack": {
     "NAME": "直击心脏",
