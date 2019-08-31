@@ -39,7 +39,7 @@
   },
   "Koishi:UnseenTerror": {
     "NAME": "盲目之怖",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !Koishi:SecondMagic! 层 koishi:幻影 。 NL 若目标存在 koishi:惊恐 , 给予 !M! 层  koishi:惊恐 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !Koishi:SecondMagic! 层 koishi:幻影 。 NL 给予 !M! 层 koishi:惊恐 。"
   },
   "Koishi:Catatonia": {
     "NAME": "紧张症",

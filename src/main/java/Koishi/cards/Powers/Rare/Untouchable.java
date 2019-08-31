@@ -23,7 +23,7 @@ public class Untouchable extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
 
     private static final int BUFF = 1;
 

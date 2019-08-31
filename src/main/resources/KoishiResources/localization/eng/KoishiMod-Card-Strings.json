@@ -39,7 +39,7 @@
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !Koishi:SecondMagic! koishi:Ephemeral. NL If target enemy has koishi:Terror, apply !M! koishi:Terror."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !Koishi:SecondMagic! koishi:Ephemeral. NL Apply !M! koishi:Terror."
   },
   "Koishi:Catatonia": {
     "NAME": "Catatonia",

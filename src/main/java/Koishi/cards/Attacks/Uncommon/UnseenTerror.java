@@ -30,7 +30,7 @@ public class UnseenTerror extends AbstractDefaultCard {
     private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 3;
 
-    private static final int DEBUFF = 3;
+    private static final int DEBUFF = 2;
     private static final int UPGRADE_PLUS_DEBUFF = 1;
 
     private static final int BUFF = 2;
@@ -49,9 +49,7 @@ public class UnseenTerror extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
-        if (m.hasPower(TerrorPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
     }
 
     @Override
