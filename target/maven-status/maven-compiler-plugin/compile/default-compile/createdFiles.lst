@@ -1,4 +1,3 @@
-Koishi\cards\Attacks\Uncommon\BloodcurdlingScream.class
 Koishi\powers\FreudianInstinctPower.class
 Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\patches\ApplyPowerRelicPatch$Locator.class
@@ -10,6 +9,7 @@ Koishi\cards\Attacks\Rare\RuptureMind.class
 Koishi\powers\UnconsciousUrgesPower.class
 Koishi\cards\Attacks\Rare\SilentAndRestless.class
 Koishi\powers\LoseThornsPower.class
+Koishi\cards\Attacks\Common\BloodcurdlingScream.class
 Koishi\actions\HeartAttackAction.class
 Koishi\util\TextureLoader.class
 Koishi\actions\UnconsciousUrgesAction.class
@@ -47,7 +47,6 @@ Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
-Koishi\cards\Skills\Common\SprinkleStarAndHeart.class
 Koishi\patches\MindControlRetargetPatch.class
 Koishi\actions\SilentAndRestlessAction.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
@@ -62,6 +61,7 @@ Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
 Koishi\cards\Skills\Rare\ConditionedTeleport.class
+Koishi\cards\Attacks\Common\ParalyzingFear.class
 Koishi\powers\TerrorPower.class
 Koishi\powers\HeartStoppingHorrorPower.class
 Koishi\powers\FidgetySnatcherPower.class
@@ -72,6 +72,7 @@ Koishi\cards\Skills\Uncommon\MassHysteria.class
 Koishi\characters\KoishiCharacter.class
 Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
+Koishi\cards\Skills\Uncommon\SprinkleStarAndHeart.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
 Koishi\patches\CardGlowBorderPatch.class
 Koishi\cards\Skills\Rare\RollingInRichesHeart.class
@@ -86,13 +87,12 @@ Koishi\cards\Powers\Rare\Heartbroken.class
 Koishi\cards\Skills\Uncommon\Vanish.class
 Koishi\cards\Powers\Rare\HeartStoppingHorror.class
 Koishi\cards\Attacks\Rare\MentalBreakdown.class
+Koishi\cards\Skills\Common\SubterraneanRose.class
 Koishi\actions\MassHysteriaAction.class
-Koishi\cards\Attacks\Uncommon\ParalyzingFear.class
 Koishi\relics\LettersToReimu.class
 Koishi\cards\Powers\Rare\Ego.class
 Koishi\powers\ConfinedInnocentPower.class
 Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
-Koishi\cards\Attacks\Common\SubterraneanRose.class
 Koishi\patches\MindControlRemoveDebuffsPatch.class
 Koishi\cards\Attacks\Uncommon\LastRemote.class
 Koishi\cards\Attacks\Uncommon\HeartAttack.class

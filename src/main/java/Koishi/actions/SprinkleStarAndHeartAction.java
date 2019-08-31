@@ -1,6 +1,6 @@
 package Koishi.actions;
 
-import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
+import Koishi.cards.Skills.Uncommon.SprinkleStarAndHeart;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

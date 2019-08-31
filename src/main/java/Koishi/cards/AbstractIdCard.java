@@ -2,9 +2,9 @@ package Koishi.cards;
 
 import Koishi.actions.GlowCheckAction;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
-import Koishi.cards.Attacks.Common.SubterraneanRose;
+import Koishi.cards.Skills.Common.SubterraneanRose;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
-import Koishi.cards.Skills.Common.SprinkleStarAndHeart;
+import Koishi.cards.Skills.Uncommon.SprinkleStarAndHeart;
 import Koishi.cards.Skills.Common.UnconsciousUprising;
 import Koishi.cards.Skills.Rare.FadingMemory;
 import Koishi.cards.Skills.Uncommon.IdleWhim;

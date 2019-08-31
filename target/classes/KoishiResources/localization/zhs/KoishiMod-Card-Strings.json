@@ -83,7 +83,7 @@
   },
   "Koishi:SubterraneanRose": {
     "NAME": "地底蔷薇",
-    "DESCRIPTION": " koishi:本我 。 NL 对一个随机敌人造成 !D! 点伤害。 NL 本回合获得 !M! 层 荆棘 。"
+    "DESCRIPTION": " koishi:本我 。 NL 获得 !B! 点 格挡 。 NL 本回合获得 !M! 层 荆棘 。"
   },
   "Koishi:StingingMind": {
     "NAME": "精神尖刺",

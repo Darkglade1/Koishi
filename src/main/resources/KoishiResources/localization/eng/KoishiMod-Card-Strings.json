@@ -83,7 +83,7 @@
   },
   "Koishi:SubterraneanRose": {
     "NAME": "Subterranean Rose",
-    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy. NL Gain !M! Thorns this turn."
+    "DESCRIPTION": "koishi:Id. NL Gain !B! Block. NL Gain !M! Thorns this turn."
   },
   "Koishi:StingingMind": {
     "NAME": "Stinging Mind",
