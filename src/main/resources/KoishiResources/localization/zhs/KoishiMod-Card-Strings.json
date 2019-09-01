@@ -23,7 +23,7 @@
   },
   "Koishi:HeartAttack": {
     "NAME": "直击心脏",
-    "DESCRIPTION": "koishi:本我。 NL 对一名随机敌人造成 !D! 点伤害。 NL 你这场战斗中每抽到过一张本我卡则伤害增加 !M! 点。"
+    "DESCRIPTION": " koishi:本我 。 NL 对一名随机敌人造成 !D! 点伤害。 NL 你这场战斗中每抽到过一张本我卡则伤害增加 !M! 点。"
   },
   "Koishi:StrangeCloudFist": {
     "NAME": "怪云拳",
@@ -31,7 +31,7 @@
   },
   "Koishi:TraumaticStroke": {
     "NAME": "痛苦打击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果， 获得 !B! 点格挡。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果， 获得 !B! 点格挡 。"
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "思维麻痹之怖",
@@ -47,7 +47,7 @@
   },
   "Koishi:YoukaiPolygraph": {
     "NAME": "妖怪测谎仪",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果，抽 !M! 张卡。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果，造成 !D! 点伤害。"
   },
   "Koishi:TremblingHands": {
     "NAME": "颤栗的双手",

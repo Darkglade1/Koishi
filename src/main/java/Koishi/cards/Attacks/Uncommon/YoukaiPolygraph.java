@@ -6,7 +6,6 @@ import Koishi.characters.KoishiCharacter;
 import Koishi.tags.Tags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -26,16 +25,12 @@ public class YoukaiPolygraph extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 3;
-
-    private static final int DRAW = 3;
-    private static final int UPGRADE_PLUS_DRAW = 1;
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 2;
 
     public YoukaiPolygraph() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = DRAW;
         tags.add(Tags.DEBUFF_THIS_TURN);
     }
 
@@ -44,7 +39,7 @@ public class YoukaiPolygraph extends AbstractDefaultCard {
         KoishiMod.runAnimation("occultAttack");
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if (KoishiMod.appliedDebuffThisTurn) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
     }
 
@@ -60,7 +55,6 @@ public class YoukaiPolygraph extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_DRAW);
             initializeDescription();
         }
     }
