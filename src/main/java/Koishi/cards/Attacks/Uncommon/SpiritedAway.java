@@ -33,6 +33,9 @@ public class SpiritedAway extends AbstractDefaultCard {
 
     private static final int DRAW = 1;
 
+    private int originalCost = 0;
+    private boolean originalCostModified = false;
+
     public SpiritedAway() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
@@ -44,10 +47,27 @@ public class SpiritedAway extends AbstractDefaultCard {
     public void applyPowers() {
         super.applyPowers();
         if (AbstractDungeon.player.hasPower(IntangiblePlayerPower.POWER_ID) || AbstractDungeon.player.hasPower(IntangiblePower.POWER_ID)) {
-            freeToPlayOnce = true;
+            if (originalCost == 0) {
+                originalCost = costForTurn;
+                originalCostModified = isCostModifiedForTurn;
+                costForTurn = 0;
+                isCostModifiedForTurn = true;
+            }
         } else {
-            freeToPlayOnce = false;
+            if (originalCost != 0) {
+                costForTurn = originalCost;
+                isCostModifiedForTurn = originalCostModified;
+                originalCost = 0;
+                originalCostModified = false;
+            }
+
         }
+    }
+
+    @Override
+    public void atTurnStart() {
+        originalCost = COST;
+        originalCostModified = false;
     }
 
     @Override

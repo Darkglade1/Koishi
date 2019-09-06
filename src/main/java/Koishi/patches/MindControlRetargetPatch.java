@@ -26,7 +26,9 @@ public class MindControlRetargetPatch {
         if (instance.source != null) {
             if (instance.source.hasPower(MindControlPower.POWER_ID)) {
                 instance.target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-                info[0].applyPowers(instance.source, instance.target);
+                if (instance.target != null) {
+                    info[0].applyPowers(instance.source, instance.target);
+                }
             }
         }
     }
