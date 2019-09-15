@@ -47,7 +47,11 @@ public class RuptureMind extends AbstractDefaultCard {
         if (KoishiMod.appliedDebuffThisTurn) {
             for (AbstractPower debuff : m.powers) {
                 if (debuff.type == AbstractPower.PowerType.DEBUFF) {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, debuff, magicNumber));
+                    if (debuff.canGoNegative) {
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, debuff, -magicNumber));
+                    } else {
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, debuff, magicNumber));
+                    }
                 }
             }
         }
