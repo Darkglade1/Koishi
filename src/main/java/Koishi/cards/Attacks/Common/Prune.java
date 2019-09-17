@@ -52,12 +52,10 @@ public class Prune extends AbstractDefaultCard {
     public void applyPowers() {
         super.applyPowers();
         if (AbstractIdCard.drewIdCardThisTurn) {
-            System.out.println("here1");
             setCostForTurn(0);
             fromIdDraw = true;
         } else {
             if (fromIdDraw) {
-                System.out.println("here2");
                 setCostForTurn(this.cost);
                 this.isCostModifiedForTurn = false;
                 fromIdDraw = false;
