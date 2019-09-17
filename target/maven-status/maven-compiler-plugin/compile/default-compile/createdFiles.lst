@@ -15,6 +15,7 @@ Koishi\util\TextureLoader.class
 Koishi\actions\UnconsciousUrgesAction.class
 Koishi\variables\DefaultSecondMagicNumber.class
 Koishi\cards\Skills\Uncommon\EmbersOfLove.class
+Koishi\cards\Attacks\Rare\GrowingPain.class
 Koishi\cards\Attacks\Uncommon\UnseenTerror.class
 Koishi\powers\BloodlustPower.class
 Koishi\relics\ImaginaryFriend.class
@@ -25,6 +26,7 @@ Koishi\cards\Attacks\Common\PhantomStrike.class
 Koishi\powers\MindControlPower.class
 Koishi\cards\Attacks\Common\Prune.class
 Koishi\actions\ForceIntentAction.class
+Koishi\cards\Skills\Common\CatchAndRose.class
 Koishi\cards\Skills\Common\UnconsciousUprising.class
 Koishi\patches\MindControlRemoveDebuffsPatch$Locator.class
 Koishi\BetterSpriterAnimation.class
@@ -57,7 +59,6 @@ Koishi\cards\Skills\Uncommon\ApparitionsStalkTheNight.class
 Koishi\powers\UntouchablePower.class
 Koishi\cards\Skills\Common\ReflexRadar.class
 Koishi\patches\onGainedBlockPatch.class
-Koishi\cards\Skills\Uncommon\CatchAndRose.class
 Koishi\cards\Skills\Uncommon\IdleWhim.class
 Koishi\characters\KoishiCharacter$Enums.class
 Koishi\cards\Skills\Rare\ConditionedTeleport.class
@@ -80,7 +81,6 @@ Koishi\powers\VengefulSpiritPower.class
 Koishi\cards\Powers\Rare\Untouchable.class
 Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\actions\SubterraneanRoseAction.class
-Koishi\cards\Skills\Rare\DNAsFlaw.class
 Koishi\cards\Powers\Uncommon\UnconsciousUrges.class
 Koishi\actions\SprinkleStarAndHeartAction.class
 Koishi\cards\Powers\Rare\Heartbroken.class
@@ -107,6 +107,7 @@ Koishi\patches\onGainedBlockPatch$Locator.class
 Koishi\cards\Attacks\Common\SubconsciousSweep.class
 Koishi\cards\Skills\Uncommon\Possession.class
 Koishi\KoishiMod$1.class
+Koishi\cards\Skills\Uncommon\DNAsFlaw.class
 Koishi\cards\Skills\Common\Provoke.class
 Koishi\cards\Attacks\Common\StingingMind.class
 Koishi\powers\EphemeralPower.class
@@ -116,7 +117,6 @@ Koishi\KoishiMod.class
 Koishi\cards\Attacks\Common\DreadfulBlow.class
 Koishi\cards\Skills\Uncommon\GhostParty.class
 Koishi\cards\Skills\Rare\RoseHell.class
-Koishi\cards\Attacks\Uncommon\GrowingPain.class
 Koishi\powers\EgoPower.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class

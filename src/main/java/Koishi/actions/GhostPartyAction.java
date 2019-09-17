@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
 
 import java.util.Iterator;
 
@@ -23,12 +24,15 @@ public class GhostPartyAction extends AbstractGameAction {
 
     public void update() {
         this.isDone = false;
+
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, card.magicNumber), card.magicNumber));
-        Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while (iterator.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new IntangiblePlayerPower(mo, card.magicNumber), card.magicNumber));
+        if (!p.hasPower(IntangiblePlayerPower.POWER_ID) && !p.hasPower(IntangiblePower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, card.magicNumber), card.magicNumber));
+            Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+            while (iterator.hasNext()) {
+                AbstractMonster mo = (AbstractMonster)iterator.next();
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(mo, p, new IntangiblePlayerPower(mo, card.magicNumber), card.magicNumber));
+            }
         }
 
         this.isDone = true;

@@ -23,7 +23,7 @@
   },
   "Koishi:HeartAttack": {
     "NAME": "直击心脏",
-    "DESCRIPTION": " koishi:本我 。 NL 对一名随机敌人造成 !D! 点伤害。 NL 你这场战斗中每抽到过一张本我卡则伤害增加 !M! 点。"
+    "DESCRIPTION": " koishi:本我 。 NL 对一名随机敌人造成 !D! 点伤害。"
   },
   "Koishi:StrangeCloudFist": {
     "NAME": "怪云拳",
@@ -47,7 +47,7 @@
   },
   "Koishi:YoukaiPolygraph": {
     "NAME": "妖怪测谎仪",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果，造成 !D! 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 若你这回合给予过负面效果，获得  [E]   [E]  。"
   },
   "Koishi:TremblingHands": {
     "NAME": "颤栗的双手",
@@ -95,7 +95,8 @@
   },
   "Koishi:ReflexRadar": {
     "NAME": "本能反应雷达",
-    "DESCRIPTION": "失去  [E]  . NL 抽 !M! 张卡。 "
+    "DESCRIPTION": "失去  [E]  . NL 抽 !M! 张卡。 ",
+    "UPGRADE_DESCRIPTION": " 保留 。NL 失去  [E]  . NL 抽 !M! 张卡。 "
   },
   "Koishi:PhantomStrike": {
     "NAME": "幻影打击",
@@ -133,7 +134,7 @@
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA的瑕疵",
-    "DESCRIPTION": "获得 !M!  无实体。 NL  消耗 。"
+    "DESCRIPTION": "若目标敌人的意图为攻击，获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "现在就给你打电话",
@@ -165,7 +166,7 @@
   },
   "Koishi:GhostParty": {
     "NAME": "幽魂聚会",
-    "DESCRIPTION": " koishi:本我 。 NL 所有角色获得 !M! 层 无实体 。"
+    "DESCRIPTION": " koishi:本我 。 NL 若你没有 无实体 ，所有角色获得 !M! 层 无实体 。"
   },
   "Koishi:DanmakuParanoia": {
     "NAME": "弹幕偏执症",
@@ -239,7 +240,8 @@
   },
   "Koishi:UnansweredLove": {
     "NAME": "无回应的爱恋",
-    "DESCRIPTION": "失去 !Koishi:SecondMagic! 点生命值。 NL 获得 !M! 层 koishi:幻影 。"
+    "DESCRIPTION": "失去 !Koishi:SecondMagic! 点生命值。 NL 获得 !M! 层 koishi:幻影 。",
+    "UPGRADE_DESCRIPTION": " 保留 。NL 失去 !Koishi:SecondMagic! 点生命值。 NL 获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:FleetingPhantom": {
     "NAME": "转瞬即逝的幻影",
@@ -252,7 +254,7 @@
   "Koishi:Whimsy": {
     "NAME": "异想天开",
     "DESCRIPTION": " 保留 。 NL 抽 !M! 张卡。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL  保留 。 NL 抽 !M! 张卡。 NL  消耗 。"
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 预见 !M! 。NL 抽 !M! 张卡。 NL  消耗 。"
   },
   "Koishi:UnconsciousUprising": {
     "NAME": "潜意识暴动",

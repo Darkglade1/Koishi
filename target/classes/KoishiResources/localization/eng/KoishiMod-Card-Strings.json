@@ -23,7 +23,7 @@
   },
   "Koishi:HeartAttack": {
     "NAME": "Heart Attack",
-    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy. NL Deals !M! additional damage for each Id card you drew this combat."
+    "DESCRIPTION": "koishi:Id. NL Deal !D! damage to a random enemy."
   },
   "Koishi:StrangeCloudFist": {
     "NAME": "Strange Cloud Fist",
@@ -47,7 +47,7 @@
   },
   "Koishi:YoukaiPolygraph": {
     "NAME": "Youkai Polygraph",
-    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, gain [E] [E]."
   },
   "Koishi:TremblingHands": {
     "NAME": "Trembling Hands",
@@ -95,7 +95,8 @@
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
-    "DESCRIPTION": "Lose [E]. NL Draw !M! cards. "
+    "DESCRIPTION": "Lose [E]. NL Draw !M! cards.",
+    "UPGRADE_DESCRIPTION":"Retain. NL Lose [E]. NL Draw !M! cards."
   },
   "Koishi:PhantomStrike": {
     "NAME": "Phantom Strike",
@@ -133,7 +134,7 @@
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA's Flaw",
-    "DESCRIPTION": "Gain !M! Intangible. NL Exhaust."
+    "DESCRIPTION": "If target enemy intends to attack, gain !M! koishi:Ephemeral."
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
@@ -165,7 +166,7 @@
   },
   "Koishi:GhostParty": {
     "NAME": "Ghost Party",
-    "DESCRIPTION": "koishi:Id. NL ALL characters gain !M! Intangible."
+    "DESCRIPTION": "koishi:Id. NL If you do not have Intangible, ALL characters gain !M! Intangible."
   },
   "Koishi:DanmakuParanoia": {
     "NAME": "Danmaku Paranoia",
@@ -239,7 +240,8 @@
   },
   "Koishi:UnansweredLove": {
     "NAME": "Unanswered Love",
-    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL Gain !M! koishi:Ephemeral."
+    "DESCRIPTION": "Lose !Koishi:SecondMagic! HP. NL Gain !M! koishi:Ephemeral.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose !Koishi:SecondMagic! HP. NL Gain !M! koishi:Ephemeral."
   },
   "Koishi:FleetingPhantom": {
     "NAME": "Fleeting Phantom",
@@ -252,7 +254,7 @@
   "Koishi:Whimsy": {
     "NAME": "Whimsy",
     "DESCRIPTION": "Retain. NL Draw !M! card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Draw !M! card. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Retain. NL Scry !M!. NL Draw !M! card. NL Exhaust."
   },
   "Koishi:UnconsciousUprising": {
     "NAME": "Unconscious Uprising",

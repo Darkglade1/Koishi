@@ -4,6 +4,7 @@ import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.EphemeralPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class UnansweredLove extends AbstractDefaultCard {
 
@@ -25,7 +27,6 @@ public class UnansweredLove extends AbstractDefaultCard {
     private static final int COST = 0;
 
     private static final int BUFF = 2;
-    private static final int UPGRADE_PLUS_BUFF = 1;
 
     private static final int HP_LOSS = 1;
 
@@ -46,7 +47,8 @@ public class UnansweredLove extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_BUFF);
+            AlwaysRetainField.alwaysRetain.set(this, true);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

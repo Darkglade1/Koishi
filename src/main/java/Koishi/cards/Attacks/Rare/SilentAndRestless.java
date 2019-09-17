@@ -31,7 +31,7 @@ public class SilentAndRestless extends AbstractDefaultCard {
 
     private static final int BUFF = 2;
 
-    private static final int KILL_BONUS = 3;
+    private static final int KILL_BONUS = 2;
 
     public SilentAndRestless() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

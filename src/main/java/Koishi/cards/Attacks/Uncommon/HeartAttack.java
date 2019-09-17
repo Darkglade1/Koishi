@@ -22,16 +22,12 @@ public class HeartAttack extends AbstractIdCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 18;
-    private static final int UPGRADE_PLUS_DMG = 2;
-
-    private static final int BONUS_DAMAGE = 2;
-    private static final int UPGRADE_PLUS_BONUS = 1;
+    private static final int DAMAGE = 30;
+    private static final int UPGRADE_PLUS_DMG = 10;
 
     public HeartAttack() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = BONUS_DAMAGE;
     }
 
     @Override
@@ -41,29 +37,10 @@ public class HeartAttack extends AbstractIdCard {
     }
 
     @Override
-    public void calculateCardDamage(AbstractMonster mo) {
-        int realBaseDamage = this.baseDamage;
-        this.baseDamage += this.magicNumber * AbstractIdCard.idCardsDrawn;
-        super.calculateCardDamage(mo);
-        this.baseDamage = realBaseDamage;
-        this.isDamageModified = this.damage != this.baseDamage;
-    }
-
-    @Override
-    public void applyPowers() {
-        int realBaseDamage = this.baseDamage;
-        this.baseDamage += this.magicNumber * AbstractIdCard.idCardsDrawn;
-        super.applyPowers();
-        this.baseDamage = realBaseDamage;
-        this.isDamageModified = this.damage != this.baseDamage;
-    }
-
-    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_BONUS);
             initializeDescription();
         }
     }
