@@ -63,7 +63,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
         list.add(new SprinkleStarAndHeart());
         list.add(new SubterraneanRose());
         list.add(new IdleWhim());
-        list.add(new PredatoryInstincts());
+        //list.add(new PredatoryInstincts()); //No longer an Id card
         list.add(new RorschachInDanmaku());
         list.add(new HeartAttack());
         list.add(new MassHysteria());

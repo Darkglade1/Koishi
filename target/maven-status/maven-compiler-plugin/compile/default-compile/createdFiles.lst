@@ -96,7 +96,6 @@ Koishi\cards\Skills\Uncommon\GeneticsOfTheUnconscious.class
 Koishi\patches\MindControlRemoveDebuffsPatch.class
 Koishi\cards\Attacks\Uncommon\LastRemote.class
 Koishi\cards\Attacks\Uncommon\HeartAttack.class
-Koishi\actions\PruneAction.class
 Koishi\cards\AbstractIdCard.class
 Koishi\cards\Powers\Rare\ConfinedInnocent.class
 Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class

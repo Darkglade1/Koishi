@@ -1,19 +1,19 @@
 package Koishi.cards.Skills.Uncommon;
 
-import Koishi.cards.AbstractIdCard;
+import Koishi.KoishiMod;
+import Koishi.cards.AbstractDefaultCard;
+import Koishi.characters.KoishiCharacter;
 import Koishi.powers.TerrorPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.KoishiMod;
-import Koishi.characters.KoishiCharacter;
 
 import java.util.Iterator;
 
 import static Koishi.KoishiMod.makeCardPath;
 
-public class PredatoryInstincts extends AbstractIdCard {
+public class PredatoryInstincts extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(PredatoryInstincts.class.getSimpleName());
     public static final String IMG = makeCardPath("PredatoryInstincts.png");
@@ -25,12 +25,13 @@ public class PredatoryInstincts extends AbstractIdCard {
 
     private static final int COST = 1;
 
-    private static final int DEBUFF = 3;
-    private static final int UPGRADE_PLUS_DEBUFF = 1;
+    private static final int DEBUFF = 4;
+    private static final int UPGRADE_PLUS_DEBUFF = 2;
 
     public PredatoryInstincts() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DEBUFF;
+        exhaust = true;
         KoishiMod.setBackground(this, 1);
     }
 

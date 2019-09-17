@@ -1,12 +1,12 @@
 package Koishi.cards.Attacks.Common;
 
 import Koishi.KoishiMod;
-import Koishi.actions.PruneAction;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.unique.ReprogramAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -27,31 +27,41 @@ public class Prune extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int DISCARD = 1;
+    private static final int SCRY = 2;
+    private static final int UPGRADE_PLUS_SCRY = 1;
+
+    private boolean fromIdDraw = false;
+
 
     public Prune() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = DISCARD;
+        magicNumber = baseMagicNumber = SCRY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("downAttack");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new PruneAction(magicNumber, false));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        AbstractDungeon.actionManager.addToBottom(new ReprogramAction(magicNumber));
     }
 
     @Override
     public void applyPowers() {
         super.applyPowers();
         if (AbstractIdCard.drewIdCardThisTurn) {
-            freeToPlayOnce = true;
+            System.out.println("here1");
+            setCostForTurn(0);
+            fromIdDraw = true;
         } else {
-            freeToPlayOnce = false;
+            if (fromIdDraw) {
+                System.out.println("here2");
+                setCostForTurn(this.cost);
+                this.isCostModifiedForTurn = false;
+                fromIdDraw = false;
+            }
         }
     }
 
@@ -60,6 +70,7 @@ public class Prune extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_PLUS_SCRY);
             initializeDescription();
         }
     }

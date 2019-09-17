@@ -71,7 +71,7 @@
   },
   "Koishi:Prune": {
     "NAME": "剪除",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 从 抽牌堆 丢弃一张卡。 NL 若你本回合抽到过  koishi:本我 卡，本卡消耗为0。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 预见 !M! 。 NL 若你本回合抽到过  koishi:本我 卡，本卡消耗为0。"
   },
   "Koishi:Jaunt": {
     "NAME": "幻化",
@@ -198,7 +198,7 @@
   },
   "Koishi:PredatoryInstincts": {
     "NAME": "狩猎天性",
-    "DESCRIPTION": " koishi:本我 。 NL 给予所有敌人 !M! 层 koishi:惊恐 。"
+    "DESCRIPTION": " 给予所有敌人 !M! 层 koishi:惊恐 。NL  消耗 。"
   },
   "Koishi:IdleWhim": {
     "NAME": "空想",
