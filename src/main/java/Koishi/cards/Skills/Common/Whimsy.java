@@ -27,9 +27,12 @@ public class Whimsy extends AbstractDefaultCard {
 
     private static final int DRAW = 1;
 
+    private static final int SCRY = 2;
+
     public Whimsy() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DRAW;
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = SCRY;
         exhaust = true;
         AlwaysRetainField.alwaysRetain.set(this, true);
     }
@@ -38,7 +41,7 @@ public class Whimsy extends AbstractDefaultCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellCall");
         if (upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ReprogramAction(magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ReprogramAction(defaultSecondMagicNumber));
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
     }

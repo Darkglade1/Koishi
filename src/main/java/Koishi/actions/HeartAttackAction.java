@@ -25,7 +25,7 @@ public class HeartAttackAction extends AbstractGameAction {
 
         AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         card.calculateCardDamage(mo);
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, card.damage, card.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToTop(new DamageAction(mo, new DamageInfo(p, card.damage, card.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
 
         this.isDone = true;
         return;

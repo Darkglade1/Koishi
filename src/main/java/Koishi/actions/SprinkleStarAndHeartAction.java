@@ -29,8 +29,8 @@ public class SprinkleStarAndHeartAction extends AbstractGameAction {
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while(iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, card.magicNumber, false), card.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new VulnerablePower(mo, card.magicNumber, false), card.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(mo, p, new WeakPower(mo, card.magicNumber, false), card.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(mo, p, new VulnerablePower(mo, card.magicNumber, false), card.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
 
         this.isDone = true;

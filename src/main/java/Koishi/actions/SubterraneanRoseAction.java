@@ -25,9 +25,9 @@ public class SubterraneanRoseAction extends AbstractGameAction {
 
         AbstractPlayer p = AbstractDungeon.player;
         card.calculateCardDamage(null);
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, card.block));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ThornsPower(p, card.magicNumber), card.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new LoseThornsPower(p, card.magicNumber), card.magicNumber));
+        AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, card.block));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new ThornsPower(p, card.magicNumber), card.magicNumber));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new LoseThornsPower(p, card.magicNumber), card.magicNumber));
 
         this.isDone = true;
         return;

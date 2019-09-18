@@ -28,7 +28,7 @@ public class FourthEyeAction extends AbstractGameAction {
         }
 
         AbstractRelic r = new FrozenEye();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FourthEyePower(p, r)));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FourthEyePower(p, r)));
         this.isDone = true;
         return;
     }

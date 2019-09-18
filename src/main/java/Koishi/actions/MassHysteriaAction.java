@@ -42,11 +42,11 @@ public class MassHysteriaAction extends AbstractGameAction {
             newMultiDamage[i] = totalDamage;
         }
         if (Settings.FAST_MODE) {
-            AbstractDungeon.actionManager.addToBottom(new VFXAction(new OfferingEffect(), 0.1F));
+            AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.1F));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new VFXAction(new OfferingEffect(), 0.5F));
+            AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.5F));
         }
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, newMultiDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, newMultiDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
 
         this.isDone = true;
         return;

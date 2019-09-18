@@ -254,7 +254,7 @@
   "Koishi:Whimsy": {
     "NAME": "Whimsy",
     "DESCRIPTION": "Retain. NL Draw !M! card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Scry !M!. NL Draw !M! card. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Retain. NL Scry !Koishi:SecondMagic!. NL Draw !M! card. NL Exhaust."
   },
   "Koishi:UnconsciousUprising": {
     "NAME": "Unconscious Uprising",
