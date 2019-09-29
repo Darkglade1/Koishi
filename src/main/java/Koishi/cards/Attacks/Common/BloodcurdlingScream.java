@@ -42,6 +42,7 @@ public class BloodcurdlingScream extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = DEBUFF;
+        isMultiDamage = true;
         KoishiMod.setBackground(this, 0);
     }
 

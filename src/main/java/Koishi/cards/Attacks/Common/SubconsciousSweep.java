@@ -29,6 +29,7 @@ public class SubconsciousSweep extends AbstractIdCard {
     public SubconsciousSweep() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        isMultiDamage = true;
     }
 
     @Override
