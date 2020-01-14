@@ -6,7 +6,8 @@ import Koishi.cards.AbstractIdCard;
 import Koishi.characters.KoishiCharacter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.unique.ReprogramAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -45,7 +46,7 @@ public class Prune extends AbstractDefaultCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("downAttack");
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new ReprogramAction(magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ScryAction(magicNumber));
     }
 
     @Override
@@ -60,6 +61,14 @@ public class Prune extends AbstractDefaultCard {
                 this.isCostModifiedForTurn = false;
                 fromIdDraw = false;
             }
+        }
+    }
+
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+
+        if (AbstractIdCard.drewIdCardThisTurn) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
 

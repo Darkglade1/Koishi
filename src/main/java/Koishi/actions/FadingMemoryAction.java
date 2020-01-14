@@ -26,7 +26,7 @@ public class FadingMemoryAction extends AbstractGameAction {
         if (p.hand.size() != 0) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, card.magicNumber));
         }
-        AbstractDungeon.actionManager.addToTop(new ExhaustAction(p, p, card.magicNumber, false));
+        AbstractDungeon.actionManager.addToTop(new ExhaustAction(card.magicNumber, false));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, card.defaultSecondMagicNumber), card.defaultSecondMagicNumber));
 
         this.isDone = true;

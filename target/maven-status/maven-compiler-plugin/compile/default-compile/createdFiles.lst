@@ -49,8 +49,10 @@ Koishi\cards\Skills\Uncommon\ReleaseOfTheId.class
 Koishi\tags\Tags.class
 Koishi\cards\Skills\Common\EmbryosDream.class
 Koishi\cards\Skills\Rare\MindStellarRelief.class
+Koishi\patches\MindControlRetargetPatch$VampireDamageActionRetarget$Locator.class
 Koishi\patches\MindControlRetargetPatch.class
 Koishi\actions\SilentAndRestlessAction.class
+Koishi\patches\MindControlRetargetPatch$VampireDamageActionRetarget.class
 Koishi\cards\Skills\Common\PhantomBarrier.class
 Koishi\patches\ApplyPowerRelicPatch.class
 Koishi\cards\Attacks\Uncommon\TremblingHands.class
@@ -75,7 +77,6 @@ Koishi\cards\Attacks\Uncommon\SpiritedAway.class
 Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\Skills\Uncommon\SprinkleStarAndHeart.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
-Koishi\patches\CardGlowBorderPatch.class
 Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
 Koishi\cards\Powers\Rare\Untouchable.class

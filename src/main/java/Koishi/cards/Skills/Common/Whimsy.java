@@ -5,7 +5,7 @@ import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.unique.ReprogramAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -41,7 +41,7 @@ public class Whimsy extends AbstractDefaultCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("spellCall");
         if (upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ReprogramAction(defaultSecondMagicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ScryAction(defaultSecondMagicNumber));
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
     }

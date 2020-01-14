@@ -1,6 +1,7 @@
 package Koishi.actions;
 
 import Koishi.powers.UnconsciousUrgesPower;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -32,6 +33,7 @@ public class UnconsciousUrgesAction extends AbstractGameAction {
             for (AbstractCard card : AbstractDungeon.player.hand.group) {
                 if (card.cardID.equals(power.chosenCard.cardID)) {
                     card.flash();
+                    card.glowColor = new Color(0.0F, 0.85F, 0.0F, 1.0F);
                 }
             }
 

@@ -34,6 +34,7 @@ public class ImGoingToCallYouNow extends AbstractDefaultCard {
         magicNumber = baseMagicNumber = DEBUFF;
         exhaust = true;
         KoishiMod.setBackground(this, 1);
+        this.cardsToPreview = new SoAnswerThePhone();
     }
 
     @Override

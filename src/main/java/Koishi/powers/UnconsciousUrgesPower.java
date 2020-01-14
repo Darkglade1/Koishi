@@ -2,6 +2,7 @@ package Koishi.powers;
 
 import Koishi.KoishiMod;
 import Koishi.actions.UnconsciousUrgesAction;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -49,6 +50,24 @@ public class UnconsciousUrgesPower extends AbstractPower {
             triggered = true;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new EnergyNextTurnPower(owner, amount), amount));
             updateDescription();
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.cardID.equals(chosenCard.cardID)) {
+                    c.glowColor = new Color(0.2F, 0.9F, 1.0F, 0.25F);
+                    c.triggerOnGlowCheck();
+                }
+            }
+        } else {
+            if (!triggered && chosenCard != null) {
+                chosenCard.glowColor = new Color(0.0F, 0.85F, 0.0F, 1.0F);
+            }
+        }
+    }
+
+    @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        super.onApplyPower(power, target, source);
+        if (!triggered && chosenCard != null) {
+            chosenCard.glowColor = new Color(0.0F, 0.85F, 0.0F, 1.0F);
         }
     }
 

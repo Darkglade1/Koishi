@@ -1,16 +1,17 @@
 package Koishi.cards.Attacks.Uncommon;
 
+import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.cards.AbstractIdCard;
+import Koishi.characters.KoishiCharacter;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.KoishiMod;
-import Koishi.characters.KoishiCharacter;
 
 import static Koishi.KoishiMod.makeCardPath;
 
@@ -31,6 +32,8 @@ public class LastRemote extends AbstractDefaultCard {
 
     private static final int ENERGY = 1;
 
+    private boolean fromId = false;
+
     public LastRemote() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
@@ -49,9 +52,22 @@ public class LastRemote extends AbstractDefaultCard {
     public void applyPowers() {
         super.applyPowers();
         if (AbstractIdCard.drewIdCardThisTurn) {
-            freeToPlayOnce = true;
+            setCostForTurn(0);
+            fromId = true;
         } else {
-            freeToPlayOnce = false;
+            if (fromId) {
+                setCostForTurn(this.cost);
+                this.isCostModifiedForTurn = false;
+                fromId = false;
+            }
+        }
+    }
+
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+
+        if (AbstractIdCard.drewIdCardThisTurn) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
 

@@ -163,7 +163,7 @@ public class KoishiMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DARK_GREEN = CardHelper.getColor(2.0f, 40.0f, 0.0f);
+    public static final Color DARK_GREEN = CardHelper.getColor(2, 40, 0);
   
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_GREEN = "KoishiResources/images/512/bg_attack_green.png";
