@@ -24,7 +24,7 @@ public class DrawCardActionPatch {
             int remainder = instance.amount - 1;
             instance.amount = 1;
             for (int i = 0; i < remainder; i++) {
-                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(source, 1, endTurnDraw));
+                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(source, 1, false));
             }
         }
     }
