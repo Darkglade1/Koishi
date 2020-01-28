@@ -25,7 +25,7 @@
 },
 "Koishi:UntouchablePower": {
         "NAME": "谜不可触",
-        "DESCRIPTIONS": ["回合开始时，消耗所有 #y状态 和 #r诅咒 卡。"]
+        "DESCRIPTIONS": ["每当你获得 无实体 时，获得 #b", " #y临时生命 。"]
 },
 "Koishi:HeartbrokenPower": {
         "NAME": "心碎",
@@ -61,7 +61,7 @@
 },
 "Koishi:TerrifyingSpectrePower": {
         "NAME": "可怕的幽灵",
-        "DESCRIPTIONS": ["每当你获得 #y无实体 ，给予所有敌人 #b", " 层 #惊恐 。"]
+        "DESCRIPTIONS": ["每当你造成 #y惊恐 怖时, 获得 #b", " 层 #y幻影 。"]
 },
 "Koishi:VengefulSpiritPower": {
         "NAME": "复仇之魂",

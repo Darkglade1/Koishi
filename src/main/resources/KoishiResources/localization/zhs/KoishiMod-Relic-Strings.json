@@ -3,7 +3,7 @@
     "NAME": "幻想中的好朋友",
     "FLAVOR": "它们经常会忘了我。",
     "DESCRIPTIONS": [
-      "每当你打出一张卡或者抽一张 #y本我 卡， 获得 #b", " 层 #y幻影 。"
+      "你每打出一张牌， 获得 #b", " 层 #y幻影 。"
     ]
   },
   "Koishi:BloodstainedWhiteRose": {

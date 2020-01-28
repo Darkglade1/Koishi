@@ -35,7 +35,8 @@
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "思维麻痹之怖",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复等同目标  koishi:惊恐 层数一半的生命值。 NL  消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复等同目标  koishi:惊恐 层数一半的生命值。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 回复等同目标  koishi:惊恐 层数一半的生命值。 NL  消耗 。"
   },
   "Koishi:UnseenTerror": {
     "NAME": "盲目之怖",
@@ -232,7 +233,8 @@
   },
   "Koishi:JumpScare": {
     "NAME": "吓你一跳",
-    "DESCRIPTION": " 固有 。 NL 给予 !M! 层 koishi:惊恐 。 NL  消耗 。"
+    "DESCRIPTION": " 固有 。 NL 给予 !M! 层 koishi:惊恐 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 给予 !M! 层 koishi:惊恐 两次 。 NL  消耗 。"
   },
   "Koishi:HeartfeltFancy": {
     "NAME": "由衷的幻想",
@@ -266,8 +268,8 @@
   },
   "Koishi:Untouchable": {
     "NAME": "谜不可触",
-    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 回合开始时，消耗所有 状态 和 诅咒 卡。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL 获得 !M! 层 人工制品 。 NL 回合开始时，消耗所有 状态 和 诅咒 卡。"
+    "DESCRIPTION": "获得 !M! 暂时性生命 。 NL 每当你获得 无实体 时，获得 !M! 暂时性生命 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 获得 !M! 暂时性生命 。 NL 每当你获得 无实体 时，获得 !M! 暂时性生命 。"
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "心跳骤停之怖",
@@ -297,7 +299,8 @@
   },
   "Koishi:FreudianInstinct": {
     "NAME": "弗洛伊德本能",
-    "DESCRIPTION": "每当你抽到一张 koishi:本我 卡，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "每当你抽到一张 koishi:本我 卡，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每当你抽到一张 koishi:本我 卡，获得 !M! 点 格挡 。"
   },
   "Koishi:BramblyRoseGarden": {
     "NAME": "带刺的蔷薇园",
@@ -305,8 +308,7 @@
   },
   "Koishi:TerrifyingSpectre": {
     "NAME": "可怕的幽灵",
-    "DESCRIPTION": "每当你获得 无实体 时，给予所有敌人 !M! 层 koishi:惊恐 。",
-    "UPGRADE_DESCRIPTION": " 固有 。 NL 每当你获得 无实体 时，给予所有敌人 !M! 层 koishi:惊恐 。"
+    "DESCRIPTION": "每当你造成 koishi:惊恐 怖时，NL 获得 !M! 层 koishi:幻影 。"
   },
   "Koishi:VengefulSpirit": {
     "NAME": "复仇之魂",
