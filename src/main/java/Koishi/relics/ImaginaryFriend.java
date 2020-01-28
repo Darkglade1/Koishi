@@ -36,15 +36,6 @@ public class ImaginaryFriend extends CustomRelic {
     }
 
     @Override
-    public void onCardDraw(AbstractCard drawnCard) {
-        if (drawnCard instanceof AbstractIdCard) {
-            this.flash();
-            AbstractPlayer p = AbstractDungeon.player;
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EphemeralPower(p, EPHEMERAL), EPHEMERAL));
-        }
-    }
-
-    @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0] + EPHEMERAL + DESCRIPTIONS[1];
     }

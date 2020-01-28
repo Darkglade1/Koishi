@@ -23,11 +23,12 @@ public class FadingMemoryAction extends AbstractGameAction {
     public void update() {
         this.isDone = false;
         AbstractPlayer p = AbstractDungeon.player;
-        if (p.hand.size() != 0) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, card.magicNumber));
-        }
-        AbstractDungeon.actionManager.addToTop(new ExhaustAction(card.magicNumber, false));
+
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, card.defaultSecondMagicNumber), card.defaultSecondMagicNumber));
+        AbstractDungeon.actionManager.addToTop(new ExhaustAction(card.magicNumber, false));
+        if (p.hand.size() != 0) {
+            AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, card.magicNumber));
+        }
 
         this.isDone = true;
         return;

@@ -3,14 +3,14 @@
     "NAME": "Imaginary Friend",
     "FLAVOR": "They'll forget about me. They always do.",
     "DESCRIPTIONS": [
-      "Whenever you play a card or draw an #yId card, gain #b", " #yEphemeral."
+      "Whenever you play a card, gain #b", " #ykoishi:Ephemeral."
     ]
   },
   "Koishi:BloodstainedWhiteRose": {
     "NAME": "Bloodstained White Rose",
     "FLAVOR": "The treaty was broken, and the White Rose of Chireiden was stained forever.",
     "DESCRIPTIONS": [
-      "At the start of combat, apply #b", " #yTerror to a random enemy."
+      "At the start of combat, apply #b", " #ykoishi:Terror to a random enemy."
     ]
   },
   "Koishi:LettersToReimu": {
@@ -24,21 +24,21 @@
     "NAME": "Imperfect Metamorphosis",
     "FLAVOR": "It was the first day of spring, and nobody cared.",
     "DESCRIPTIONS": [
-      "Upon pickup, choose and Transform #b", " cards into random #yId cards."
+      "Upon pickup, choose and Transform #b", " cards into random #ykoishi:Id cards."
     ]
   },
   "Koishi:ColorfulDays": {
     "NAME": "Colorful Days",
     "FLAVOR": "Everything I saw, everything I heard, everything I felt . . . all the scenery around me started to take color.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn. #yEphemeral now triggers at #b", " stacks instead of #b", "."
+      "Gain [E] at the start of each turn. #ykoishi:Ephemeral now triggers at #b", " stacks instead of #b", "."
     ]
   },
   "Koishi:AHoleWhereASisterShouldBe": {
     "NAME": "A Hole Where a Sister Should Be",
     "FLAVOR": "It hurt. It hurt to remember the sound of her laugh, the touch of her mind against her own.",
     "DESCRIPTIONS": [
-      "The first time you draw an #yId card each combat, gain [E] and draw #b", " card."
+      "The first time you draw an #ykoishi:Id card each combat, gain [E] and draw #b", " card."
     ]
   },
   "Koishi:TeethAndClaws": {

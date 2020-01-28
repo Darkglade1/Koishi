@@ -37,7 +37,7 @@
 },
 "Koishi:EgoPower": {
         "NAME": "Ego",
-        "DESCRIPTIONS": ["Your #yId cards no longer automatically use themselves. Whenever you play an #yId card, draw #b", " card.", " cards."]
+        "DESCRIPTIONS": ["Your #yId cards no longer automatically play themselves. Whenever you play an #yId card, draw #b", " card.", " cards."]
 },
 "Koishi:ConfinedInnocentPower": {
         "NAME": "Confined Innocent",

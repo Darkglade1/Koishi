@@ -1,6 +1,7 @@
 package Koishi.patches;
 
 import Koishi.cards.AbstractIdCard;
+import basemod.BaseMod;
 import com.evacipated.cardcrawl.modthespire.lib.LineFinder;
 import com.evacipated.cardcrawl.modthespire.lib.Matcher;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertLocator;

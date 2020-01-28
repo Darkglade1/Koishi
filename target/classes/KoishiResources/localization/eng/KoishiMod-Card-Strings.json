@@ -279,8 +279,8 @@
   },
   "Koishi:Ego": {
     "NAME": "Ego",
-    "DESCRIPTION": "Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Your koishi:Id cards no longer automatically use themselves. NL Whenever you play an koishi:Id card, draw !M! card."
+    "DESCRIPTION": "Your koishi:Id cards no longer automatically play themselves. NL Whenever you play an koishi:Id card, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Your koishi:Id cards no longer automatically play themselves. NL Whenever you play an koishi:Id card, draw !M! card."
   },
   "Koishi:ConfinedInnocent": {
     "NAME": "Confined Innocent",
