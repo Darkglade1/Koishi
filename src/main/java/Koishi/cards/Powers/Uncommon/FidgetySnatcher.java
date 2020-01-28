@@ -21,9 +21,9 @@ public class FidgetySnatcher extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
 
-    private static final int EFFECT = 1;
+    private static final int EFFECT = 2;
     private static final int UPGRADE_PLUS_EFFECT = 1;
 
     public FidgetySnatcher() {

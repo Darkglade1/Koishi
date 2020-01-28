@@ -35,7 +35,8 @@
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "Mind Numbing Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust."
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
@@ -232,7 +233,8 @@
   },
   "Koishi:JumpScare": {
     "NAME": "Jump Scare",
-    "DESCRIPTION": "Innate. NL Apply !M! koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Innate. NL Apply !M! koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! koishi:Terror twice. NL Exhaust."
   },
   "Koishi:HeartfeltFancy": {
     "NAME": "Heartfelt Fancy",
@@ -266,8 +268,8 @@
   },
   "Koishi:Untouchable": {
     "NAME": "Untouchable",
-    "DESCRIPTION": "Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status and Curse cards.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Artifact. NL At the start of your turn, exhaust ALL your Status and Curse cards."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL Whenever you gain Intangible, gain !M! Temporary_HP.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! Temporary_HP. NL Whenever you gain Intangible, gain !M! Temporary_HP."
   },
   "Koishi:HeartStoppingHorror": {
     "NAME": "Heart-Stopping Horror",
@@ -297,7 +299,8 @@
   },
   "Koishi:FreudianInstinct": {
     "NAME": "Freudian Instinct",
-    "DESCRIPTION": "Whenever you draw an koishi:Id card, gain !M! Block."
+    "DESCRIPTION": "Whenever you draw an koishi:Id card, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you draw an koishi:Id card, gain !M! Block."
   },
   "Koishi:BramblyRoseGarden": {
     "NAME": "Brambly Rose Garden",
@@ -305,8 +308,7 @@
   },
   "Koishi:TerrifyingSpectre": {
     "NAME": "Terrifying Spectre",
-    "DESCRIPTION": "Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you gain Intangible, apply !M! koishi:Terror to ALL enemies."
+    "DESCRIPTION": "Whenever you apply koishi:Terror, gain !M! koishi:Ephemeral."
   },
   "Koishi:VengefulSpirit": {
     "NAME": "Vengeful Spirit",

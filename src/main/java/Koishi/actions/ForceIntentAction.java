@@ -2,9 +2,7 @@ package Koishi.actions;
 
 import Koishi.cards.AbstractIntentChangingCard;
 import basemod.ReflectionHacks;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
@@ -12,15 +10,14 @@ import com.megacrit.cardcrawl.monsters.beyond.GiantHead;
 import com.megacrit.cardcrawl.monsters.beyond.Maw;
 import com.megacrit.cardcrawl.monsters.city.BookOfStabbing;
 import com.megacrit.cardcrawl.monsters.ending.CorruptHeart;
-import com.megacrit.cardcrawl.monsters.exordium.Hexaghost;
 
 import java.util.function.Predicate;
 
 public class ForceIntentAction extends AbstractGameAction {
 
 	private AbstractIntentChangingCard.IntentTypes intentType;
-	public static Predicate<AbstractMonster> attackTest = (mo) -> mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF;
-	public static Predicate<AbstractMonster> notAttackTest = (mo) -> !(mo.intent == AbstractMonster.Intent.ATTACK || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND || mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK_BUFF);
+	public static Predicate<AbstractMonster> attackTest = (mo) -> mo.getIntentBaseDmg() >= 0;
+	public static Predicate<AbstractMonster> notAttackTest = (mo) -> !(mo.getIntentBaseDmg() >= 0);
 
 	private AbstractPlayer p;
 	private AbstractMonster m;

@@ -10,21 +10,21 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Koishi.KoishiMod.makeCardPath;
-import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class TerrifyingSpectre extends AbstractDefaultCard {
 
     public static final String ID = KoishiMod.makeID(TerrifyingSpectre.class.getSimpleName());
     public static final String IMG = makeCardPath("TerrifyingSpectre.png");
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
+    private static final int UPGRADED_COST = 1;
 
-    private static final int EFFECT = 3;
+    private static final int EFFECT = 1;
 
     public TerrifyingSpectre() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -48,8 +48,7 @@ public class TerrifyingSpectre extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isInnate = true;
-            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

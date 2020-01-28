@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class JumpScare extends AbstractDefaultCard {
 
@@ -24,7 +25,6 @@ public class JumpScare extends AbstractDefaultCard {
     private static final int COST = 0;
 
     private static final int DEBUFF = 2;
-    private static final int UPGRADE_PLUS_DEBUFF = 1;
 
     public JumpScare() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -38,13 +38,16 @@ public class JumpScare extends AbstractDefaultCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("occultAttack");
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TerrorPower(m, p, magicNumber), magicNumber));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_DEBUFF);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

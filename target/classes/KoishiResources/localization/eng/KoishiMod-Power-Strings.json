@@ -25,7 +25,7 @@
 },
 "Koishi:UntouchablePower": {
         "NAME": "Untouchable",
-        "DESCRIPTIONS": ["At the start of your turn, exhaust ALL your #yStatus and #yCurse cards."]
+        "DESCRIPTIONS": ["Whenever you gain #yIntangible, gain #b", " #yTemporary #yHP."]
 },
 "Koishi:HeartbrokenPower": {
         "NAME": "Heartbroken",
@@ -61,7 +61,7 @@
 },
 "Koishi:TerrifyingSpectrePower": {
         "NAME": "Terrifying Spectre",
-        "DESCRIPTIONS": ["Whenever you gain #yIntangible, apply #b", " #yTerror to ALL enemies."]
+        "DESCRIPTIONS": ["Whenever you apply #yTerror, gain #b", " #yEphemeral."]
 },
 "Koishi:VengefulSpiritPower": {
         "NAME": "Vengeful Spirit",

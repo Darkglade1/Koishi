@@ -1,19 +1,20 @@
 package Koishi.cards.Attacks.Uncommon;
 
+import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
+import Koishi.characters.KoishiCharacter;
 import Koishi.powers.TerrorPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import Koishi.KoishiMod;
-import Koishi.characters.KoishiCharacter;
 
 import static Koishi.KoishiMod.makeCardPath;
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class MindNumbingTerror extends AbstractDefaultCard {
 
@@ -28,7 +29,6 @@ public class MindNumbingTerror extends AbstractDefaultCard {
     private static final int COST = 2;
 
     private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
 
     public MindNumbingTerror() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -59,7 +59,8 @@ public class MindNumbingTerror extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            AlwaysRetainField.alwaysRetain.set(this, true);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

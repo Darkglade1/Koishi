@@ -6,12 +6,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
-import com.megacrit.cardcrawl.powers.IntangiblePower;
-
-import java.util.Iterator;
 
 public class TerrifyingSpectrePower extends AbstractPower {
 
@@ -37,18 +32,9 @@ public class TerrifyingSpectrePower extends AbstractPower {
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (target == owner && (power instanceof IntangiblePlayerPower || power instanceof IntangiblePower)) {
-            if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-                this.flash();
-                Iterator iterator = AbstractDungeon.getMonsters().monsters.iterator();
-
-                while (iterator.hasNext()) {
-                    AbstractMonster m = (AbstractMonster) iterator.next();
-                    if (!m.isDead && !m.isDying) {
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, owner, new TerrorPower(m, owner, amount), amount));
-                    }
-                }
-            }
+        if (source == owner && power instanceof TerrorPower) {
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new EphemeralPower(this.owner, this.amount), this.amount));
         }
     }
 

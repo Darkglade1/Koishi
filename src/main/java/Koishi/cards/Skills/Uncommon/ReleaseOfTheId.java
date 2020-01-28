@@ -24,7 +24,7 @@ public class ReleaseOfTheId extends AbstractDefaultCard {
 
     private static final int COST = 0;
 
-    private static final int EFFECT = 2;
+    private static final int EFFECT = 3;
 
     public ReleaseOfTheId() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
