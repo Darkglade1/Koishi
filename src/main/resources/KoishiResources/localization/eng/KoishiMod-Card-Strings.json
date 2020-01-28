@@ -1,8 +1,8 @@
 {
   "Koishi:MentalBreakdown": {
     "NAME": "Mental Breakdown",
-    "DESCRIPTION": "Deal !D! damage. NL If target enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If target enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL If the enemy does NOT intend to attack, apply !M! koishi:Stun. NL Exhaust."
   },
   "Koishi:SilentAndRestless": {
     "NAME": "Silent and Restless",
@@ -15,7 +15,7 @@
   },
   "Koishi:RuptureMind": {
     "NAME": "Rupture Mind",
-    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, apply !M! additional stacks of every debuff on target enemy."
+    "DESCRIPTION": "Deal !D! damage. NL If you applied a debuff this turn, apply !M! additional stacks of every debuff on the enemy."
   },
   "Koishi:LastRemote": {
     "NAME": "Last Remote",
@@ -35,8 +35,8 @@
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "Mind Numbing Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Heal HP equal to half of target enemy's koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of the enemy's koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Heal HP equal to half of the enemy's koishi:Terror. NL Exhaust."
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
@@ -44,7 +44,7 @@
   },
   "Koishi:Catatonia": {
     "NAME": "Catatonia",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of koishi:Terror on target enemy."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each stack of koishi:Terror on the enemy."
   },
   "Koishi:YoukaiPolygraph": {
     "NAME": "Youkai Polygraph",
@@ -52,11 +52,11 @@
   },
   "Koishi:TremblingHands": {
     "NAME": "Trembling Hands",
-    "DESCRIPTION": "Deal !D! damage. NL Target enemy loses Strength this turn equal to its koishi:Terror."
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses Strength this turn equal to its koishi:Terror."
   },
   "Koishi:ParalyzingFear": {
     "NAME": "Paralyzing Fear",
-    "DESCRIPTION": "Deal !D! damage. NL If target enemy has koishi:Terror, apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has koishi:Terror, apply !M! Weak."
   },
   "Koishi:BloodcurdlingScream": {
     "NAME": "Bloodcurdling Scream",
@@ -76,11 +76,11 @@
   },
   "Koishi:Jaunt": {
     "NAME": "Jaunt",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If target enemy intends to attack, draw !M! card."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL If the enemy intends to attack, draw !M! card."
   },
   "Koishi:RacingHeart": {
     "NAME": "Racing Heart",
-    "DESCRIPTION": "Deal !D! damage. NL If target enemy has koishi:Terror, apply !M! koishi:Terror."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has koishi:Terror, apply !M! koishi:Terror."
   },
   "Koishi:SubterraneanRose": {
     "NAME": "Subterranean Rose",
@@ -92,7 +92,7 @@
   },
   "Koishi:DreadfulBlow": {
     "NAME": "Dreadful Blow",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force target enemy to NOT intend to attack this turn if possible."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! koishi:Terror. NL Force the enemy to NOT intend to attack this turn if possible."
   },
   "Koishi:ReflexRadar": {
     "NAME": "Reflex Radar",
@@ -131,11 +131,11 @@
   },
   "Koishi:MindStellarRelief": {
     "NAME": "Mind Stellar Relief",
-    "DESCRIPTION": "Retain. NL Target enemy loses !M! HP. NL It loses !Koishi:SecondMagic! additional HP for every time you applied a debuff this combat. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Enemy loses !M! HP. NL It loses !Koishi:SecondMagic! additional HP for every time you applied a debuff this combat. NL Exhaust."
   },
   "Koishi:DNAsFlaw": {
     "NAME": "DNA's Flaw",
-    "DESCRIPTION": "If target enemy intends to attack, gain !M! koishi:Ephemeral."
+    "DESCRIPTION": "If the enemy intends to attack, gain !M! koishi:Ephemeral."
   },
   "Koishi:ImGoingToCallYouNow": {
     "NAME": "I'm Going to Call You Now",
@@ -144,8 +144,8 @@
   },
   "Koishi:SoAnswerThePhone": {
     "NAME": "So Answer the Phone",
-    "DESCRIPTION": "Double target enemy's koishi:Terror. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Triple target enemy's koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Double the enemy's koishi:Terror. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple the enemy's koishi:Terror. NL Exhaust."
   },
   "Koishi:PerfectMindControl": {
     "NAME": "Perfect Mind Control",
@@ -229,7 +229,7 @@
   },
   "Koishi:EmbryosDream": {
     "NAME": "Embryo's Dream",
-    "DESCRIPTION": "If target enemy intends to attack, gain !B! Block. NL If target enemy does not intend to attack, deal !D! damage."
+    "DESCRIPTION": "If the enemy intends to attack, gain !B! Block. NL If the enemy does not intend to attack, deal !D! damage."
   },
   "Koishi:JumpScare": {
     "NAME": "Jump Scare",
@@ -264,7 +264,7 @@
   },
   "Koishi:Provoke": {
     "NAME": "Provoke",
-    "DESCRIPTION": "Gain !B! Block. NL Force target enemy to intend to attack this turn if possible."
+    "DESCRIPTION": "Gain !B! Block. NL Force the enemy to intend to attack this turn if possible."
   },
   "Koishi:Untouchable": {
     "NAME": "Untouchable",
