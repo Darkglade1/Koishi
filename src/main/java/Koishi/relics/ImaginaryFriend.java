@@ -1,7 +1,6 @@
 package Koishi.relics;
 
 import Koishi.KoishiMod;
-import Koishi.cards.AbstractIdCard;
 import Koishi.powers.EphemeralPower;
 import Koishi.util.TextureLoader;
 import basemod.abstracts.CustomRelic;

@@ -37,16 +37,18 @@ public class MassHysteriaAction extends AbstractGameAction {
                 }
             }
         }
-        int[] newMultiDamage = new int[AbstractDungeon.getCurrRoom().monsters.monsters.size()];
-        for (int i = 0; i < newMultiDamage.length; i++) {
-            newMultiDamage[i] = totalDamage;
+        if (totalDamage > 0) {
+            int[] newMultiDamage = new int[AbstractDungeon.getCurrRoom().monsters.monsters.size()];
+            for (int i = 0; i < newMultiDamage.length; i++) {
+                newMultiDamage[i] = totalDamage;
+            }
+            if (Settings.FAST_MODE) {
+                AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.1F));
+            } else {
+                AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.5F));
+            }
+            AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, newMultiDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
         }
-        if (Settings.FAST_MODE) {
-            AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.1F));
-        } else {
-            AbstractDungeon.actionManager.addToTop(new VFXAction(new OfferingEffect(), 0.5F));
-        }
-        AbstractDungeon.actionManager.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, newMultiDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
 
         this.isDone = true;
         return;

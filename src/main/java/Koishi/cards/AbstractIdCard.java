@@ -1,5 +1,6 @@
 package Koishi.cards;
 
+import Koishi.actions.PlayIdCardAction;
 import Koishi.cards.Attacks.Common.SubconsciousSweep;
 import Koishi.cards.Attacks.Uncommon.HeartAttack;
 import Koishi.cards.Skills.Common.SubterraneanRose;
@@ -9,11 +10,9 @@ import Koishi.cards.Skills.Uncommon.IdleWhim;
 import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.SprinkleStarAndHeart;
-import com.megacrit.cardcrawl.actions.GameActionManager;
-import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import java.util.ArrayList;
 
@@ -37,17 +36,15 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     @Override
     public void triggerWhenDrawn() {
         if (idEnabled) {
-            AbstractCard tmp = this.makeSameInstanceOf();
-            AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(tmp));
-            AbstractDungeon.player.discardPile.removeCard(tmp);
 
             if (!freeToPlayOnce) {
-                AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(costForTurn));
+                if (EnergyPanel.getCurrentEnergy() > 0) {
+                    AbstractDungeon.player.energy.use(this.costForTurn);
+                }
             } else {
                 freeToPlayOnce = false;
             }
-
-            GameActionManager.queueExtraCard(this, null);
+            AbstractDungeon.actionManager.addToBottom(new PlayIdCardAction(this, AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), false));
         }
         idCardsDrawn++;
         drewIdCardThisTurn = true;

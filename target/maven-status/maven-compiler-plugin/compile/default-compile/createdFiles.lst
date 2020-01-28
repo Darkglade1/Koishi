@@ -71,6 +71,7 @@ Koishi\powers\FidgetySnatcherPower.class
 Koishi\cards\Skills\Uncommon\DanmakuParanoia.class
 Koishi\cards\Powers\Uncommon\FreudianInstinct.class
 Koishi\powers\FourthEyePower.class
+Koishi\actions\PlayIdCardAction.class
 Koishi\cards\Skills\Uncommon\MassHysteria.class
 Koishi\characters\KoishiCharacter.class
 Koishi\cards\Attacks\Uncommon\SpiritedAway.class
@@ -119,6 +120,7 @@ Koishi\cards\Skills\Rare\RoseHell.class
 Koishi\powers\EgoPower.class
 Koishi\cards\Skills\Uncommon\RorschachInDanmaku.class
 Koishi\cards\AbstractIntentChangingCard.class
+Koishi\patches\DrawCardActionPatch.class
 Koishi\cards\AbstractIntentChangingCard$IntentTypes.class
 Koishi\cards\Skills\Uncommon\FourthEye.class
 Koishi\cards\Attacks\Uncommon\MindNumbingTerror.class

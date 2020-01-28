@@ -1,7 +1,6 @@
 package Koishi.patches;
 
 import Koishi.cards.AbstractIdCard;
-import basemod.BaseMod;
 import com.evacipated.cardcrawl.modthespire.lib.LineFinder;
 import com.evacipated.cardcrawl.modthespire.lib.Matcher;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertLocator;
@@ -27,7 +26,6 @@ public class IdCardPatch {
     public static void FixDiscardPatch(AbstractPlayer instance, int drawAmount, AbstractCard c) {
         if (c instanceof AbstractIdCard && AbstractIdCard.idEnabled) {
             instance.hand.removeCard(c);
-            instance.discardPile.addToTop(c);
         }
     }
 
