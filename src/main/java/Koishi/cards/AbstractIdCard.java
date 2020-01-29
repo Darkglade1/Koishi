@@ -36,9 +36,8 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     @Override
     public void triggerWhenDrawn() {
         if (idEnabled) {
-
             if (!freeToPlayOnce) {
-                if (EnergyPanel.getCurrentEnergy() > 0) {
+                if (EnergyPanel.getCurrentEnergy() > 0 && this.canUse(AbstractDungeon.player, null)) {
                     AbstractDungeon.player.energy.use(this.costForTurn);
                 }
             } else {
