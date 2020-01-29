@@ -5,6 +5,7 @@ import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.TerrorPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -25,12 +26,16 @@ public class PredatoryInstincts extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
+    private static final int BLOCK = 5;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
+
     private static final int DEBUFF = 4;
     private static final int UPGRADE_PLUS_DEBUFF = 2;
 
     public PredatoryInstincts() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = DEBUFF;
+        baseBlock = BLOCK;
         exhaust = true;
         KoishiMod.setBackground(this, 1);
     }
@@ -38,6 +43,7 @@ public class PredatoryInstincts extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("occultAttack");
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, this.block));
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while (iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
@@ -56,6 +62,7 @@ public class PredatoryInstincts extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(UPGRADE_PLUS_DEBUFF);
             initializeDescription();
         }

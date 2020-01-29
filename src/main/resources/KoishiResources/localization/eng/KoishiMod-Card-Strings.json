@@ -35,8 +35,7 @@
   },
   "Koishi:MindNumbingTerror": {
     "NAME": "Mind Numbing Terror",
-    "DESCRIPTION": "Deal !D! damage. NL Heal HP equal to half of the enemy's koishi:Terror. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL Heal HP equal to half of the enemy's koishi:Terror. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL ALL enemies lose HP equal to their koishi:Terror."
   },
   "Koishi:UnseenTerror": {
     "NAME": "Unseen Terror",
@@ -199,7 +198,7 @@
   },
   "Koishi:PredatoryInstincts": {
     "NAME": "Predatory Instincts",
-    "DESCRIPTION": "Apply !M! koishi:Terror to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! koishi:Terror to ALL enemies. NL Exhaust."
   },
   "Koishi:IdleWhim": {
     "NAME": "Idle Whim",

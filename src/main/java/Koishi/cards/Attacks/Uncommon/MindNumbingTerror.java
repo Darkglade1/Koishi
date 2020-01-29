@@ -4,17 +4,14 @@ import Koishi.KoishiMod;
 import Koishi.cards.AbstractDefaultCard;
 import Koishi.characters.KoishiCharacter;
 import Koishi.powers.TerrorPower;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static Koishi.KoishiMod.makeCardPath;
-import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public class MindNumbingTerror extends AbstractDefaultCard {
 
@@ -26,25 +23,26 @@ public class MindNumbingTerror extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = KoishiCharacter.Enums.COLOR_DARK_GREEN;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 10;
+    private static final int UPGRADE_PLUS_DAMAGE = 3;
 
     public MindNumbingTerror() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        exhaust = true;
         KoishiMod.setBackground(this, 0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         KoishiMod.runAnimation("airAttack");
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if (m.hasPower(TerrorPower.POWER_ID)) {
-            int healAmount = m.getPower(TerrorPower.POWER_ID).amount;
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, healAmount / 2));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (mo.hasPower(TerrorPower.POWER_ID)) {
+                int hpLoss = mo.getPower(TerrorPower.POWER_ID).amount;
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, hpLoss, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.NONE));
+            }
         }
     }
 
@@ -59,8 +57,7 @@ public class MindNumbingTerror extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            AlwaysRetainField.alwaysRetain.set(this, true);
-            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
+            upgradeDamage(UPGRADE_PLUS_DAMAGE);
             initializeDescription();
         }
     }
