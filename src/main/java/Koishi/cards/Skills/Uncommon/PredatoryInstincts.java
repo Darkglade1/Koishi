@@ -38,6 +38,7 @@ public class PredatoryInstincts extends AbstractDefaultCard {
         baseBlock = BLOCK;
         exhaust = true;
         KoishiMod.setBackground(this, 1);
+        tags.add(CardTags.HEALING);
     }
 
     @Override

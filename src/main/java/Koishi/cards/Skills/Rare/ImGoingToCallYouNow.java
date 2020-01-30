@@ -35,6 +35,7 @@ public class ImGoingToCallYouNow extends AbstractDefaultCard {
         exhaust = true;
         KoishiMod.setBackground(this, 1);
         this.cardsToPreview = new SoAnswerThePhone();
+        tags.add(CardTags.HEALING);
     }
 
     @Override

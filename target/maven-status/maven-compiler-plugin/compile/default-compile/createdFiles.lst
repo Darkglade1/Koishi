@@ -1,5 +1,4 @@
 Koishi\powers\FreudianInstinctPower.class
-Koishi\cards\Powers\Uncommon\TerrifyingSpectre.class
 Koishi\patches\ApplyPowerRelicPatch$Locator.class
 Koishi\powers\HeartbrokenPower.class
 Koishi\cards\Skills\Common\HeartfeltFancy.class
@@ -41,6 +40,7 @@ Koishi\cards\Skills\Common\BasicDefend.class
 Koishi\cards\Skills\Common\UnansweredLove.class
 Koishi\cards\Powers\Uncommon\BramblyRoseGarden.class
 Koishi\relics\TeethAndClaws.class
+Koishi\cards\Powers\Rare\TerrifyingSpectre.class
 Koishi\patches\MindControlRetargetPatch$Locator.class
 Koishi\cards\Skills\Uncommon\Bloodlust.class
 Koishi\cards\AbstractDefaultCard.class
@@ -74,13 +74,10 @@ Koishi\powers\FourthEyePower.class
 Koishi\actions\PlayIdCardAction.class
 Koishi\cards\Skills\Uncommon\MassHysteria.class
 Koishi\characters\KoishiCharacter.class
-Koishi\cards\Attacks\Uncommon\SpiritedAway.class
-Koishi\cards\Skills\Common\Whimsy.class
 Koishi\cards\Skills\Uncommon\SprinkleStarAndHeart.class
 Koishi\cards\Powers\Uncommon\VengefulSpirit.class
 Koishi\cards\Skills\Rare\RollingInRichesHeart.class
 Koishi\powers\VengefulSpiritPower.class
-Koishi\cards\Powers\Rare\Untouchable.class
 Koishi\cards\Skills\Rare\FadingMemory.class
 Koishi\actions\SubterraneanRoseAction.class
 Koishi\cards\Powers\Uncommon\UnconsciousUrges.class
@@ -101,7 +98,9 @@ Koishi\cards\Attacks\Uncommon\HeartAttack.class
 Koishi\cards\AbstractIdCard.class
 Koishi\cards\Powers\Rare\ConfinedInnocent.class
 Koishi\cards\Attacks\Uncommon\YoukaiPolygraph.class
+Koishi\cards\Attacks\Common\SpiritedAway.class
 Koishi\cards\Skills\Common\JumpScare.class
+Koishi\cards\Skills\Uncommon\Whimsy.class
 Koishi\patches\IdCardPatch$Locator.class
 Koishi\relics\BloodstainedWhiteRose.class
 Koishi\patches\onGainedBlockPatch$Locator.class
@@ -139,5 +138,6 @@ Koishi\KoishiPlayerListener.class
 Koishi\actions\GhostPartyAction.class
 Koishi\relics\ImperfectMetamorphosis.class
 Koishi\cards\Skills\Uncommon\PredatoryInstincts.class
+Koishi\cards\Powers\Uncommon\Untouchable.class
 Koishi\cards\Attacks\Uncommon\TraumaticStroke.class
 Koishi\cards\Attacks\Rare\SuperEgo.class
