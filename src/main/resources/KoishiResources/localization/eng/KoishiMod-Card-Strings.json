@@ -6,7 +6,7 @@
   },
   "Koishi:SilentAndRestless": {
     "NAME": "Silent and Restless",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If this kills an enemy, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Gain !M! koishi:Ephemeral. NL If Fatal, permanently increase this card's koishi:Ephemeral gain by !Koishi:SecondMagic!. NL Exhaust."
   },
   "Koishi:SuperEgo": {
     "NAME": "Super-Ego",
@@ -121,7 +121,7 @@
   },
   "Koishi:FadingMemory": {
     "NAME": "Fading Memory",
-    "DESCRIPTION": "koishi:Id. NL If your hand is not empty, draw !M! card. NL Exhaust a card in your hand. NL Next turn, draw !Koishi:SecondMagic! cards."
+    "DESCRIPTION": "koishi:Id. NL If your hand is not empty, draw !M! card. NL Exhaust a card. NL Next turn, draw !Koishi:SecondMagic! cards."
   },
   "Koishi:RoseHell": {
     "NAME": "Rose Hell",

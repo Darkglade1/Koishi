@@ -3,8 +3,8 @@
   "name": "Koishi",
   "author_list": ["Darkglade"],
   "description": "My hat is my friend. It helps me relax.",
-  "version": "2.0.0",
-  "sts_version": "01-14-2020",
+  "version": "2.1.0",
+  "sts_version": "01-27-2020",
   "mts_version": "3.8.0",
   "dependencies": ["basemod", "stslib"],
   "update_json": ""
