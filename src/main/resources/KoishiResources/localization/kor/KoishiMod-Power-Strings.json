@@ -1,0 +1,74 @@
+{
+"Koishi:EphemeralPower": {
+        "NAME": "덧없음",
+        "DESCRIPTIONS": ["#y덧없음 을 #b", " 얻을 시, #y불가침 을 #b", " 얻습니다."]
+},
+"Koishi:TerrorPower": {
+        "NAME": "공포",
+        "DESCRIPTIONS": ["이 적이 사망하면, 체력을 #b", " 회복합니다."]
+},
+"Koishi:MindControlPower": {
+        "NAME": "정신 조종",
+        "DESCRIPTIONS": ["이 적은 #b", " 턴 간 도와줄 것입니다.", " 턴 간 도와줄 것입니다."]
+},
+"Koishi:FourthEyePower": {
+        "NAME": "포스 아이",
+        "DESCRIPTIONS": ["전투가 끝나면 #y얼어붙은 #y눈 을 잃습니다."]
+},
+"Koishi:BloodlustPower": {
+        "NAME": "핏빛 갈망",
+        "DESCRIPTIONS": ["다음 턴에 ", " 을 잃습니다."]
+},
+"Koishi:LoseThornsPower": {
+        "NAME": "가시 저하",
+        "DESCRIPTIONS": ["다음 턴에 #y가시 를 #b", " 잃습니다."]
+},
+"Koishi:UntouchablePower": {
+        "NAME": "무적",
+        "DESCRIPTIONS": ["#y불가침 을 얻으면, #y임시 #y체력 을 #b", " 얻습니다."]
+},
+"Koishi:HeartbrokenPower": {
+        "NAME": "상심",
+        "DESCRIPTIONS": ["#y불가침 일 때, #b", "배의 피해를 가합니다."]
+},
+"Koishi:HeartStoppingHorrorPower": {
+        "NAME": "심장이 멎는 공포",
+        "DESCRIPTIONS": ["턴이 끝날 때, 모든 적이 #y공포 의 #b", "배만큼 체력을 잃습니다."]
+},
+"Koishi:EgoPower": {
+        "NAME": "에고",
+        "DESCRIPTIONS": ["#y이드 카드가 더 이상 스스로 작동하지 않습니다. #y이드 카드를 낼 때, 카드를 #b", " 장 뽑습니다.", " 장 뽑습니다."]
+},
+"Koishi:ConfinedInnocentPower": {
+        "NAME": "컨파인드 이노센트",
+        "DESCRIPTIONS": ["내 턴의 시작에, 체력을 #b1 만큼 #b", "번 잃고", "번 잃고", " #y덧없음 을 #b", " 얻습니다."]
+},
+"Koishi:FormlessExistencePower": {
+        "NAME": "무형의 존재",
+        "DESCRIPTIONS": ["#y불가침 을 #b", "배만큼 얻습니다. 더 이상 체력을 회복하지 못합니다."]
+},
+"Koishi:UnconsciousUrgesPower": {
+        "NAME": "무의식적 충동",
+        "DESCRIPTIONS": ["내 턴의 시작에, 손패에서 카드를 무작위로 고릅니다. 그 카드를 사용하면 다음 턴에 ", " 를 얻습니다.", " ", " 카드를 사용하면 적용됩니다."]
+},
+"Koishi:EnergyNextTurnPower": {
+        "NAME": "생기",
+        "DESCRIPTIONS": ["다음 턴 ", " 를 얻습니다."]
+},
+"Koishi:FreudianInstinctPower": {
+        "NAME": "프로이트성 본능",
+        "DESCRIPTIONS": ["#y이드 카드를 뽑을 때, 방어도를 #b", " 얻습니다."]
+},
+"Koishi:TerrifyingSpectrePower": {
+        "NAME": "악령",
+        "DESCRIPTIONS": ["#y공포 를 적용시킬 때, #y덧없음 을 #b", " 얻습니다."]
+},
+"Koishi:VengefulSpiritPower": {
+        "NAME": "원령",
+        "DESCRIPTIONS": ["#y불가침 을 얻을 때, 모든 적에게 #y취약 을 #b", " 적용시킵니다."]
+},
+"Koishi:FidgetySnatcherPower": {
+        "NAME": "피지티 스내쳐",
+        "DESCRIPTIONS": ["내 턴의 시작에, 모든 적에게 #y포박 을 #b", " 줍니다."]
+}
+}

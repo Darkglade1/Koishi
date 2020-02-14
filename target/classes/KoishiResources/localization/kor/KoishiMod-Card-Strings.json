@@ -1,0 +1,328 @@
+{
+  "Koishi:MentalBreakdown": {
+    "NAME": "정신 붕괴",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적의 의도가 공격이 아니라면, koishi:기절 을 !M! 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 적의 의도가 공격이 아니라면, koishi:기절 을 !M! 줍니다. NL 소멸."
+  },
+  "Koishi:SilentAndRestless": {
+    "NAME": "고요와 불안",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL koishi:덧없음 을 !M! 얻습니다. NL 치명타 라면, 이 카드의 koishi:덧없음 획득량을 !Koishi:SecondMagic! 만큼 영구히 늘립니다. NL 소멸."
+  },
+  "Koishi:SuperEgo": {
+    "NAME": "슈퍼 에고",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 모든 koishi:이드 카드를 소멸 시킵니다. NL 소멸된 카드 수 만큼 [E] 를 얻고 카드를 !M! 장 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 모든 koishi:이드 카드를 소멸 시킵니다. NL 소멸된 카드 수 만큼 [E] 를 얻고 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "Koishi:RuptureMind": {
+    "NAME": "정신 파열",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 해로운 효과를 부여했다면, 적의 모든 해로운 효과에 !M! 을 더합니다."
+  },
+  "Koishi:LastRemote": {
+    "NAME": "라스트 리모트",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL [E] 를 얻습니다. NL 이번 턴에 koishi:이드 카드를 사용했다면 비용이 0이 됩니다."
+  },
+  "Koishi:HeartAttack": {
+    "NAME": "심장마비",
+    "DESCRIPTION": "koishi:이드. NL 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "Koishi:StrangeCloudFist": {
+    "NAME": "괴운권",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 불가침 일 시 피해를 두 배로 줍니다."
+  },
+  "Koishi:TraumaticStroke": {
+    "NAME": "외상성 발작",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 해로운 효과를 부여했다면, 방어도를 !B! 얻습니다."
+  },
+  "Koishi:MindNumbingTerror": {
+    "NAME": "정신을 멎게 하는 공포",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 모든 적이 koishi:공포 만큼의 피해를 받습니다."
+  },
+  "Koishi:UnseenTerror": {
+    "NAME": "본 적 없는 공포",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL koishi:덧없음 을 !Koishi:SecondMagic! 얻습니다. NL koishi:공포 를 !M! 줍니다."
+  },
+  "Koishi:Catatonia": {
+    "NAME": "강경증",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 가지고 있는 koishi:공포 만큼 피해를 !M! 번 더 줍니다."
+  },
+  "Koishi:YoukaiPolygraph": {
+    "NAME": "요괴 폴리그래프",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 해로운 효과를 부여했다면, [E] [E] 를 얻습니다."
+  },
+  "Koishi:TremblingHands": {
+    "NAME": "트렘블링 핸즈",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 이번 턴 koishi:공포 만큼의 힘을 잃습니다."
+  },
+  "Koishi:ParalyzingFear": {
+    "NAME": "얼어붙는 공포",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 koishi:공포 가 있다면, 약화 를 !M! 줍니다."
+  },
+  "Koishi:BloodcurdlingScream": {
+    "NAME": "소름돋는 비명",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL koishi:공포 가 있는 적들에게 취약 을 !M! 줍니다."
+  },
+  "Koishi:SpiritedAway": {
+    "NAME": "혼비백산",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다. 불가침 일 때 비용이 0이 됩니다."
+  },
+  "Koishi:GrowingPain": {
+    "NAME": "그로잉 페인",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 이번 전투에 얻은 불가침 만큼 피해를 더 줍니다."
+  },
+  "Koishi:Prune": {
+    "NAME": "쳐내기",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 예지 !M!. NL 이번 턴 koishi:이드 카드를 뽑았을 시 비용이 0이 됩니다."
+  },
+  "Koishi:Jaunt": {
+    "NAME": "동분서주",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 !M! 장 뽑습니다. NL 적의 의도가 공격이라면, 카드를 !M! 장 뽑습니다."
+  },
+  "Koishi:RacingHeart": {
+    "NAME": "두근대는 심장",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 적이 koishi:공포 가 있다면, koishi:공포 를 !M! 줍니다."
+  },
+  "Koishi:SubterraneanRose": {
+    "NAME": "서브터레이니언 로즈",
+    "DESCRIPTION": "koishi:이드. NL 방어도를 !B! 얻습니다. NL 이번 턴 가시 를 !M! 얻습니다."
+  },
+  "Koishi:StingingMind": {
+    "NAME": "스팅깅 마인드",
+    "DESCRIPTION": "피해를 !D! 만큼 두 번 주고 koishi:공포 를 !M! 만큼 두 번 줍니다."
+  },
+  "Koishi:DreadfulBlow": {
+    "NAME": "공포의 일격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL koishi:공포 를 !M! 줍니다. NL 가능하다면 이번 턴 적이 공격하지 않도록 만듭니다."
+  },
+  "Koishi:ReflexRadar": {
+    "NAME": "리플렉스 레이더",
+    "DESCRIPTION": "[E] 를 잃습니다. NL 카드를 !M! 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION":"보존. NL [E] 를 잃습니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "Koishi:PhantomStrike": {
+    "NAME": "망령 타격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:SubconsciousSweep": {
+    "NAME": "서브컨시어스 스윕",
+    "DESCRIPTION": "koishi:이드. NL 모든 적에게 피해를 !D! 줍니다."
+  },
+  "Koishi:HauntingSlash": {
+    "NAME": "헌팅 슬래시",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL koishi:공포 를 !M! 줍니다."
+  },
+  "Koishi:ConditionedTeleport": {
+    "NAME": "컨디션드 텔레포트",
+    "DESCRIPTION": "선천성. NL 보존. NL 보스가 아닌 전투에서 도망치지만, 보상을 받지 못합니다. NL koishi:흐름. NL 도망.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 보존. NL 보스가 아닌 전투에서 도망치지만, 보상을 받지 못합니다. NL koishi:흐름."
+  },
+  "Koishi:RollingInRichesHeart": {
+    "NAME": "큰 금화 작은 금화 무더기로 하트",
+    "DESCRIPTION": "골드를 !Koishi:SecondMagic! 잃습니다. NL 손패에 있는 모든 공격 카드의 피해를 !M! 늘립니다."
+  },
+  "Koishi:FadingMemory": {
+    "NAME": "흐려지는 기억",
+    "DESCRIPTION": "koishi:이드. NL 손패가 비어있지 않았다면, 카드를 !M! 장 뽑습니다. NL 카드를 소멸시킵니다. NL 다음 턴에, 카드를 !Koishi:SecondMagic! 장 뽑습니다."
+  },
+  "Koishi:RoseHell": {
+    "NAME": "로즈 지옥",
+    "DESCRIPTION": "가시 를 !M! 만큼 X 번 얻습니다. NL 모든 적에게 koishi:포박 을 !M! 만큼 X 번 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "가시를 !M! 만큼 X + 1 번 얻습니다. NL 모든 적에게 koishi:포박 을 !M! 만큼 X + 1 번 줍니다. NL 소멸."
+  },
+  "Koishi:MindStellarRelief": {
+    "NAME": "마인드 스텔라 릴리프",
+    "DESCRIPTION": "보존. NL 적이 체력을 !M! 잃습니다. NL 이번 전투에서 해로운 효과를 준 만큼 체력을 !Koishi:SecondMagic! 더 잃습니다. NL 소멸."
+  },
+  "Koishi:DNAsFlaw": {
+    "NAME": "DNA의 흠",
+    "DESCRIPTION": "적의 의도가 공격이라면 koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:ImGoingToCallYouNow": {
+    "NAME": "지금 전화할테니까 받아",
+    "DESCRIPTION": "koishi:공포 를 !M! 줍니다. NL koishi:메리씨의_전화 를 손패에 넣습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "koishi:공포 를 !M! 줍니다. NL koishi:메리씨의_전화+ 를 손패에 넣습니다. NL 소멸."
+  },
+  "Koishi:SoAnswerThePhone": {
+    "NAME": "메리씨의 전화",
+    "DESCRIPTION": "적의 koishi:공포 를 두 배로 만듭니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "적의 koishi:공포 를 세 배로 만듭니다. NL 소멸."
+  },
+  "Koishi:PerfectMindControl": {
+    "NAME": "퍼펙트 마인드 컨트롤",
+    "DESCRIPTION": "모든 적에게 koishi:정신_조종 을 !M! 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 모든 적에게 koishi:정신_조종 을 !M! 줍니다. NL 소멸."
+  },
+  "Koishi:Possession": {
+    "NAME": "매료",
+    "DESCRIPTION": "보존. NL koishi:정신_조종 을 !M! 줍니다. NL 불가침 일 때만 사용할 수 있습니다. NL 소멸."
+  },
+  "Koishi:ApparitionsStalkTheNight": {
+    "NAME": "요마야행",
+    "DESCRIPTION": "체력을 !Koishi:SecondMagic! 잃습니다. NL 불가침 이 없을 시, 불가침 을 !M! 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 체력을 !Koishi:SecondMagic! 잃습니다. NL 불가침 이 없을 시, 불가침 을 !M! 얻습니다. NL 소멸."
+  },
+  "Koishi:Vanish": {
+    "NAME": "소실",
+    "DESCRIPTION": "체력을 1 만큼 !Koishi:SecondMagic! 번 잃습니다. NL koishi:덧없음 을 !M! 얻습니다. NL 소멸."
+  },
+  "Koishi:GhostParty": {
+    "NAME": "고스트 파티",
+    "DESCRIPTION": "koishi:이드. NL 불가침 이 없을 시, 모두가 불가침 을 !M! 얻습니다."
+  },
+  "Koishi:DanmakuParanoia": {
+    "NAME": "탄막 파라노이아",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL koishi:공포 가 있는 적마다 방어도를 !M! 더 얻습니다."
+  },
+  "Koishi:EmbersOfLove": {
+    "NAME": "사랑의 매화",
+    "DESCRIPTION": "보존. NL 가능하다면 모든 적이 이번 턴 공격하지 않게 합니다. NL koishi:흐름. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 가능하다면 모든 적이 이번 턴 공격하지 않게 합니다. NL koishi:흐름."
+  },
+  "Koishi:PhilosophyOfTheDespised": {
+    "NAME": "미움받는 자의 필로소피",
+    "DESCRIPTION": "보존. NL 가능하다면 모든 적이 이번 턴 공격하게 합니다. NL koishi:흐름. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 가능하다면 모든 적이 이번 턴 공격하게 합니다. NL koishi:흐름."
+  },
+  "Koishi:MassHysteria": {
+    "NAME": "집단 히스테리",
+    "DESCRIPTION": "koishi:이드. NL 모든 적이 가하고자 하는 피해를 합친 수만큼 피해를 받습니다."
+  },
+  "Koishi:FourthEye": {
+    "NAME": "포스 아이",
+    "DESCRIPTION": "이번 전투에서 koishi:얼어붙은_눈 을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 이번 전투에서 koishi:얼어붙은_눈 을 얻습니다. NL 소멸."
+  },
+  "Koishi:ReleaseOfTheId": {
+    "NAME": "이드의 해방",
+    "DESCRIPTION": "무작위 koishi:이드 카드 !M! 장을 뽑을 카드 더미에 섞습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "무작위 강화된 koishi:이드 카드 !M! 장을 뽑을 카드 더미에 섞습니다. NL 소멸."
+  },
+  "Koishi:PredatoryInstincts": {
+    "NAME": "포식자의 본능",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 적에게 koishi:공포 를 !M! 줍니다. NL 소멸."
+  },
+  "Koishi:IdleWhim": {
+    "NAME": "공상",
+    "DESCRIPTION": "koishi:이드. NL 다음 턴에, 카드를 !M! 장 뽑습니다."
+  },
+  "Koishi:Bloodlust": {
+    "NAME": "핏빛 갈망",
+    "DESCRIPTION": "보존. NL [E] [E] 를 얻습니다. NL 다음 턴에 [E] [E] 를 잃습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL [E] [E] [E] 를 얻습니다. NL 다음 턴에 [E] [E] [E] 를 잃습니다. NL 소멸."
+  },
+  "Koishi:GeneticsOfTheUnconscious": {
+    "NAME": "무의식의 유전자",
+    "DESCRIPTION": "버린 카드 더미에서 한 장을 뽑기 카드 더미의 맨 위에 올려놓습니다. NL 카드를 !M! 장 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "NL 버린 카드 더미에서 !Koishi:SecondMagic! 장을 뽑기 카드 더미의 맨 위에 올려놓습니다. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "Koishi:RorschachInDanmaku": {
+    "NAME": "탄막 로르샤흐",
+    "DESCRIPTION": "koishi:이드. NL 방어도를 !B! 얻습니다. NL 다음 턴에, 카드를 !M! 장 뽑습니다."
+  },
+  "Koishi:CatchAndRose": {
+    "NAME": "캐치 앤드 로즈",
+    "DESCRIPTION": "koishi:포박 을 !M! 줍니다."
+  },
+  "Koishi:SprinkleStarAndHeart": {
+    "NAME": "스프링클 스타&하트",
+    "DESCRIPTION": "koishi:이드. NL 모든 적에게 약화 와 취약 을 !M! 줍니다."
+  },
+  "Koishi:EmbryosDream": {
+    "NAME": "태아의 꿈",
+    "DESCRIPTION": "적의 의도가 공격이라면, 방어도를 !B! 얻습니다. NL 적의 의도가 공격이 아니라면, 피해를 !D! 줍니다."
+  },
+  "Koishi:JumpScare": {
+    "NAME": "점프스케어",
+    "DESCRIPTION": "선천성. NL koishi:공포 를 !M! 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL koishi:공포 를 !M! 만큼 두 번 줍니다. NL 소멸."
+  },
+  "Koishi:HeartfeltFancy": {
+    "NAME": "하트펠트 팬시",
+    "DESCRIPTION": "버린 카드 더미에서 한 장을 뽑기 카드 더미의 맨 위에 올려놓습니다. NL [E] 를 잃습니다. NL 이후 방어도를 !B! 얻습니다."
+  },
+  "Koishi:UnansweredLove": {
+    "NAME": "언앤서드 러브",
+    "DESCRIPTION": "체력을 !Koishi:SecondMagic! 잃습니다. NL koishi:덧없음 을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 체력을 !Koishi:SecondMagic! 잃습니다. NL koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:FleetingPhantom": {
+    "NAME": "떠다니는 환영",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL koishi:덧없음 을 !Koishi:SecondMagic! 얻습니다."
+  },
+  "Koishi:PhantomBarrier": {
+    "NAME": "환영결계",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:Whimsy": {
+    "NAME": "변덕",
+    "DESCRIPTION": "보존. NL 예지 !Koishi:SecondMagic!. NL 카드를 !M! 장 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 예지 !Koishi:SecondMagic!. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "Koishi:UnconsciousUprising": {
+    "NAME": "무의식의 반기",
+    "DESCRIPTION": "koishi:이드. NL 방어도를 !B! 얻습니다."
+  },
+  "Koishi:Provoke": {
+    "NAME": "도발",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 가능하다면 적이 이번 턴 공격하게 합니다."
+  },
+  "Koishi:Untouchable": {
+    "NAME": "무적",
+    "DESCRIPTION": "임시 체력을 !M! 얻습니다. NL 불가침 을 얻으면, 임시 체력을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 임시 체력을 !M! 얻습니다. NL 불가침 을 얻으면, 임시 체력을 !M! 얻습니다."
+  },
+  "Koishi:HeartStoppingHorror": {
+    "NAME": "심장이 멎는 공포",
+    "DESCRIPTION": "턴의 끝에, 모든 적이 koishi:공포 만큼 체력을 잃습니다."
+  },
+  "Koishi:Heartbroken": {
+    "NAME": "상심",
+    "DESCRIPTION": "불가침 일 때, 피해를 두 배로 가합니다."
+  },
+  "Koishi:Ego": {
+    "NAME": "에고",
+    "DESCRIPTION": "더 이상 koishi:이드 카드가 자동으로 사용되지 않습니다. NL koishi:이드 카드를 사용하면, 카드를 !M! 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 더 이상 koishi:이드 카드가 자동으로 사용되지 않습니다. NL koishi:이드 카드를 사용하면, 카드를 !M! 장 뽑습니다."
+  },
+  "Koishi:ConfinedInnocent": {
+    "NAME": "컨파인드 이노센트",
+    "DESCRIPTION": "턴의 시작에, 체력을 !Koishi:SecondMagic! 잃고 koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:FormlessExistence": {
+    "NAME": "무형의 존재",
+    "DESCRIPTION": "불가침 을 얻으면, 두 배만큼 얻습니다. NL 더 이상 체력을 회복할 수 없습니다."
+  },
+  "Koishi:UnconsciousUrges": {
+    "NAME": "무의식적 충동",
+    "DESCRIPTION": "턴의 시작에, 손패에서 카드를 무작위로 고릅니다. NL 그 카드를 사용하면 다음 턴 [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 턴의 시작에, 손패에서 카드를 무작위로 고릅니다. NL 그 카드를 사용하면 다음 턴 [E] 를 얻습니다."
+  },
+  "Koishi:FreudianInstinct": {
+    "NAME": "프로이트성 본능",
+    "DESCRIPTION": "koishi:이드 카드를 뽑으면, 방어도를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL koishi:이드 카드를 뽑으면, 방어도를 !M! 얻습니다."
+  },
+  "Koishi:BramblyRoseGarden": {
+    "NAME": "브램블리 로즈 가든",
+    "DESCRIPTION": "가시를 !M! 얻습니다."
+  },
+  "Koishi:TerrifyingSpectre": {
+    "NAME": "악령",
+    "DESCRIPTION": "koishi:공포 를 부여할 때, koishi:덧없음 을 !M! 얻습니다."
+  },
+  "Koishi:VengefulSpirit": {
+    "NAME": "원령",
+    "DESCRIPTION": "불가침 을 얻을 때, 모든 적에게 취약 을 !M! 줍니다."
+  },
+  "Koishi:FidgetySnatcher": {
+    "NAME": "피지티 스내쳐",
+    "DESCRIPTION": "턴의 시작에, 모든 적에게 koishi:포박 을 !M! 줍니다."
+  },
+  "Koishi:BasicStrike": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "Koishi:BasicDefend": {
+    "NAME": "방어",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  }
+}

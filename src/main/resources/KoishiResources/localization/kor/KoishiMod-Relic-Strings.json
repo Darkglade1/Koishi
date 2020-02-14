@@ -1,0 +1,58 @@
+{
+  "Koishi:ImaginaryFriend": {
+    "NAME": "상상의 친구",
+    "FLAVOR": "'다들 날 잊어버려. 항상 그래왔어.'",
+    "DESCRIPTIONS": [
+      "카드를 사용하면 #ykoishi:덧없음 을 #b", " 얻습니다."
+    ]
+  },
+  "Koishi:BloodstainedWhiteRose": {
+    "NAME": "피 묻은 흰 장미",
+    "FLAVOR": "'평화는 깨졌고, 지령전의 흰 장미는 영원히 물들게 되었어.'",
+    "DESCRIPTIONS": [
+      "전투의 시작에 무작위 적에게 #ykoishi:공포 를 #b", " 가합니다."
+    ]
+  },
+  "Koishi:LettersToReimu": {
+    "NAME": "레이무에게의 편지",
+    "FLAVOR": "'무엇이든 끝이 존재해, 자기가 믿었던 꿈이라 해도 말야. 이 이야기는 슬프고 비극적으로 끝나게 될거야.'",
+    "DESCRIPTIONS": [
+      "카드가 소멸될 시, #y임시 #y체력 을 #b", " 얻습니다."
+    ]
+  },
+  "Koishi:ImperfectMetamorphosis": {
+    "NAME": "불완전변이",
+    "FLAVOR": "'봄의 첫 날이었고, 아무도 관심이 없었어.'",
+    "DESCRIPTIONS": [
+      "획득 시 카드를 #b", " 장 고른 후 무작위 #ykoishi:이드 카드로 바꿉니다."
+    ]
+  },
+  "Koishi:ColorfulDays": {
+    "NAME": "화려한 나날",
+    "FLAVOR": "'내가 보고, 듣고, 느낀 모든 것들... 내 주위의 모든 것들이 색을 띄기 시작했어.'",
+    "DESCRIPTIONS": [
+      "매 턴의 시작에 [E] 를 얻습니다. #ykoishi:덧없음 이 이제 #b", " 스택이 쌓여야 적용되고, 더 이상 #b", " 스택이 쌓여도 적용되지 않습니다."
+    ]
+  },
+  "Koishi:AHoleWhereASisterShouldBe": {
+    "NAME": "언니가 있을 곳",
+    "FLAVOR": "'아파. 그녀의 웃음 소리를 들을 때마다, 생각을 읽을 때마다 아파와.'",
+    "DESCRIPTIONS": [
+      "매 전투에서 처음 #ykoishi:이드 카드를 뽑을 때 [E] 를 얻고 카드를 #b", " 장 뽑습니다."
+    ]
+  },
+  "Koishi:TeethAndClaws": {
+    "NAME": "이빨과 발톱",
+    "FLAVOR": "'모두가 정정당당히 하는 건 아냐. 언제나 얍삽한 게 있기 마련이지.'",
+    "DESCRIPTIONS": [
+      "매 턴 처음으로 해로운 효과를 적용시킬 때 방어도를 #b", " 얻습니다."
+    ]
+  },
+  "Koishi:EchoesOfADeadGirl": {
+    "NAME": "죽은 소녀의 메아리",
+    "FLAVOR": "그녀는 의식 없이 원초적 본능만을 따르는 공허한 존재인 동생의 겉껍질에 무엇이라도 남았는지조차 확신할 수 없었습니다.",
+    "DESCRIPTIONS": [
+      "#y불가침 을 얻을 때 [E] 를 얻습니다."
+    ]
+  }
+}

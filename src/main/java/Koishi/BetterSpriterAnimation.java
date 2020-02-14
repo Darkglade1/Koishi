@@ -1,6 +1,6 @@
 package Koishi;
 
-import basemod.animations.AbstractAnimation;
+import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class BetterSpriterAnimation extends AbstractAnimation {
+public class BetterSpriterAnimation extends SpriterAnimation {
     public static boolean drawBones = false;
     private static final float animFps = 0.016666668F;
     private float frameRegulator = 0.0F;
@@ -25,6 +25,7 @@ public class BetterSpriterAnimation extends AbstractAnimation {
     public Player myPlayer;
 
     public BetterSpriterAnimation(String filepath) {
+        super(filepath);
         FileHandle handle = Gdx.files.internal(filepath);
         Data data = (new SCMLReader(handle.read())).getData();
         this.loader = new LibGdxLoader(data);

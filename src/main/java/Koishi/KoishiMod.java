@@ -563,6 +563,9 @@ public class KoishiMod implements
             case ZHS:
                 ret += "zhs/";
                 break;
+            case KOR:
+                ret += "kor/";
+                break;
             default:
                 ret += "eng/";
                 break;

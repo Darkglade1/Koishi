@@ -1,0 +1,66 @@
+[
+  {
+    "NAMES": [
+	  "이드"
+    ],
+    "DESCRIPTION": "#y이드 카드는 뽑을 시 자동으로 사용됩니다."
+  },
+  {
+    "NAMES": [
+	  "공포"
+    ],
+    "DESCRIPTION": "적이 사망할 시, #y공포 의 수치 만큼 체력을 회복합니다."
+  },
+  {
+    "NAMES": [
+	  "덧없음"
+    ],
+    "DESCRIPTION": "#y덧없음 이 #b15 만큼 있으면, #y불가침 을 #b1 얻습니다."
+  },
+  {
+    "NAMES": [
+	  "흐름"
+    ],
+    "DESCRIPTION": "#y흐름 카드를 뽑을 시 카드를 #b1 장 뽑습니다."
+  },
+  {
+    "PROPER_NAME": "정신 조종",
+    "NAMES": [
+      "정신_조종",
+      "mind_control",
+      "Mind_Control",
+      "mind controlled"
+    ],
+    "DESCRIPTION": "정신을 지배당하는 적이 공격하거나 해로운 효과를 가할 때, 무작위 적이 대신 피해를 받습니다. 이로운 효과나 방어도, 체력 회복등의 효과는 대신 받습니다."
+  },
+  {
+    "PROPER_NAME": "얼어붙은 눈",
+    "NAMES": [
+      "얼어붙은_눈",
+      "frozen_eye",
+      "Frozen_Eye"
+    ],
+    "DESCRIPTION": "뽑을 카드 더미의 카드가 뽑을 순서대로 배치됩니다."
+  },
+  {
+    "PROPER_NAME": "메리씨의 전화",
+    "NAMES": [
+      "메리씨의_전화",
+      "so_answer_the_phone",
+      "So_Answer_The_Phone"
+    ],
+    "DESCRIPTION": "적의 #y공포 를 배로 증가시키고 소멸합니다."
+  },
+  {
+    "NAMES": [
+      "기절"
+    ],
+    "DESCRIPTION": "#y기절 한 적은 아무것도 하지 못합니다."
+  },
+  {
+    "NAMES": [
+      "포박"
+    ],
+    "DESCRIPTION": "#y포박 당한 적은 턴이 끝날 때 피해를 입습니다."
+  }
+]
