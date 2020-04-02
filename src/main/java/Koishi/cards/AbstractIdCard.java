@@ -10,11 +10,16 @@ import Koishi.cards.Skills.Uncommon.IdleWhim;
 import Koishi.cards.Skills.Uncommon.MassHysteria;
 import Koishi.cards.Skills.Uncommon.RorschachInDanmaku;
 import Koishi.cards.Skills.Uncommon.SprinkleStarAndHeart;
+import com.megacrit.cardcrawl.blights.AbstractBlight;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.EntanglePower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public abstract class AbstractIdCard extends AbstractDefaultCard {
 
@@ -37,7 +42,7 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
     public void triggerWhenDrawn() {
         if (idEnabled) {
             if (!freeToPlayOnce) {
-                if (EnergyPanel.getCurrentEnergy() > 0 && this.canUse(AbstractDungeon.player, null)) {
+                if (EnergyPanel.getCurrentEnergy() > 0 && canPlayDisregardingEnergy()) {
                     AbstractDungeon.player.energy.use(this.costForTurn);
                 }
             } else {
@@ -47,6 +52,62 @@ public abstract class AbstractIdCard extends AbstractDefaultCard {
         }
         idCardsDrawn++;
         drewIdCardThisTurn = true;
+    }
+
+    public boolean canPlayDisregardingEnergy() {
+        if (AbstractDungeon.actionManager.turnHasEnded) {
+            return false;
+        } else {
+            Iterator var1 = AbstractDungeon.player.powers.iterator();
+
+            AbstractPower p;
+            do {
+                if (!var1.hasNext()) {
+                    if (AbstractDungeon.player.hasPower(EntanglePower.POWER_ID) && this.type == AbstractCard.CardType.ATTACK) {
+                        return false;
+                    }
+
+                    var1 = AbstractDungeon.player.relics.iterator();
+
+                    AbstractRelic r;
+                    do {
+                        if (!var1.hasNext()) {
+                            var1 = AbstractDungeon.player.blights.iterator();
+
+                            AbstractBlight b;
+                            do {
+                                if (!var1.hasNext()) {
+                                    var1 = AbstractDungeon.player.hand.group.iterator();
+
+                                    AbstractCard c;
+                                    do {
+                                        if (!var1.hasNext()) {
+                                            return true;
+                                        }
+
+                                        c = (AbstractCard)var1.next();
+                                    } while(c.canPlay(this));
+
+                                    return false;
+                                }
+
+                                b = (AbstractBlight)var1.next();
+                            } while(b.canPlay(this));
+
+                            return false;
+                        }
+
+                        r = (AbstractRelic)var1.next();
+                    } while(r.canPlay(this));
+
+                    return false;
+                }
+
+                p = (AbstractPower)var1.next();
+            } while(p.canPlayCard(this));
+
+            return false;
+        }
     }
 
     public static AbstractIdCard returnTrulyRandomIdCard() {
