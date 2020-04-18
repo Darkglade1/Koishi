@@ -7,6 +7,7 @@ Koishi\relics\ColorfulDays.class
 Koishi\cards\Attacks\Rare\RuptureMind.class
 Koishi\powers\UnconsciousUrgesPower.class
 Koishi\cards\Attacks\Rare\SilentAndRestless.class
+Koishi\powers\FormlessExistencePower$1.class
 Koishi\powers\LoseThornsPower.class
 Koishi\cards\Attacks\Common\BloodcurdlingScream.class
 Koishi\actions\HeartAttackAction.class
