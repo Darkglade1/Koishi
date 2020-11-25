@@ -1,30 +1,29 @@
 package Koishi.patches;
 
+import basemod.ReflectionHacks;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 @SpirePatch(
         clz = DrawCardAction.class,
-        method = SpirePatch.CONSTRUCTOR,
-        paramtypez = {
-                AbstractCreature.class,
-                int.class,
-                boolean.class
-        }
+        method = "update"
 
 )
 // A patch to make draw happen one at a time
 public class DrawCardActionPatch {
-    @SpirePostfixPatch
-    public static void DrawOneAtATime(DrawCardAction instance, AbstractCreature source, int amount, boolean endTurnDraw) {
+    @SpirePrefixPatch
+    public static void DrawOneAtATime(DrawCardAction instance) {
         if (instance.amount > 1) {
-            int remainder = instance.amount - 1;
-            instance.amount = 1;
-            for (int i = 0; i < remainder; i++) {
-                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(source, 1, false));
+            AbstractGameAction followUp = ReflectionHacks.getPrivate(instance, DrawCardAction.class, "followUpAction");
+            if (followUp == null) { //avoid breaking actions with followUps
+                int remainder = instance.amount - 1;
+                instance.amount = 1;
+                for (int i = 0; i < remainder; i++) {
+                    AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
+                }
             }
         }
     }
