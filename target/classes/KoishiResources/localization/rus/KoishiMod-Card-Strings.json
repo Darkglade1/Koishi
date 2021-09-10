@@ -1,0 +1,328 @@
+{
+  "Koishi:MentalBreakdown": {
+    "NAME": "Нервный срыв",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! koishi:Оглушения, если враг НЕ намеревается атаковать. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Накладывает !M! koishi:Оглушения, если враг НЕ намеревается атаковать. NL Сжигается."
+  },
+  "Koishi:SilentAndRestless": {
+    "NAME": "Тихая и беспокойная",
+    "DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Даёт !M! koishi:Эфемерности. NL Навсегда повышает даваемую этой картой koishi:Эфемерность на !Koishi:SecondMagic!, если Казнит врага. NL Сжигается."
+  },
+  "Koishi:SuperEgo": {
+    "NAME": "Суперэго",
+    "DESCRIPTION": "Наносит !D! урона. NL Сжигает ВСЕ ваши koishi:Id-карты. NL Вы получаете [E] и берёте !M! карту за каждую Сожжённую таким образом карту. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Сжигает ВСЕ ваши koishi:Id-карты. NL Вы получаете [E] и берёте !M! карту за каждую Сожжённую таким образом карту. NL Сжигается."
+  },
+  "Koishi:RuptureMind": {
+    "NAME": "Разрыв разума",
+    "DESCRIPTION": "Наносит !D! урона. NL Если вы накладывали отриц. эффект в этом ходу, повышает ВСЕ отриц. эффекты выбранного врага на !M!."
+  },
+  "Koishi:LastRemote": {
+    "NAME": "Последний путь",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт [E]. NL Эта карта стоит 0, если вы берёте koishi:Id-карту в этом ходу."
+  },
+  "Koishi:HeartAttack": {
+    "NAME": "Приступ сердца",
+    "DESCRIPTION": "koishi:Id. NL Наносит !D! урона случ. врагу."
+  },
+  "Koishi:StrangeCloudFist": {
+    "NAME": "Странный кулак облака",
+    "DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Наносит удвоенный урон, когда вы в Неосязаемости."
+  },
+  "Koishi:TraumaticStroke": {
+    "NAME": "Штрих боли",
+    "DESCRIPTION": "Наносит !D! урона. NL Если вы накладывали отриц. эффект в этом ходу, даёт !B! Защиты."
+  },
+  "Koishi:MindNumbingTerror": {
+    "NAME": "Ошеломляющий ужас",
+    "DESCRIPTION": "Наносит !D! урона. NL ВСЕ враги теряют ОЗ, равные наложенному на них koishi:Ужасу."
+  },
+  "Koishi:UnseenTerror": {
+    "NAME": "Невиданный ужас",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !Koishi:SecondMagic! koishi:Эфемерности. NL Накладывает !M! koishi:Ужаса."
+  },
+  "Koishi:Catatonia": {
+    "NAME": "Кататония",
+    "DESCRIPTION": "Наносит !D! урона. NL Наносит по !M! доп. урона за каждый koishi:Ужас на враге."
+  },
+  "Koishi:YoukaiPolygraph": {
+    "NAME": "Полиграф Ёкая",
+    "DESCRIPTION": "Наносит !D! урона. NL Если вы накладывали отриц. эффект в этом ходу, даёт [E] [E]."
+  },
+  "Koishi:TremblingHands": {
+    "NAME": "Дрожащие руки",
+    "DESCRIPTION": "Наносит !D! урона. NL До конца своего хода враг теряет Силу, равную наложенному на нём koishi:Ужасу."
+  },
+  "Koishi:ParalyzingFear": {
+    "NAME": "Парализующий страх",
+    "DESCRIPTION": "Наносит !D! урона. NL Если на врага наложен koishi:Ужас, накладывает !M! Слабости."
+  },
+  "Koishi:BloodcurdlingScream": {
+    "NAME": "Крик, леденящий кровь",
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. NL Накладывает !M! Уязвимости на ВСЕХ врагов с koishi:Ужасом."
+  },
+  "Koishi:SpiritedAway": {
+    "NAME": "Унесённые призраками",
+    "DESCRIPTION": "Оставляется. NL Наносит !D! урона. NL Вы берёте !M! карту. NL Эта карта стоит 0, когда вы в Неосязаемости."
+  },
+  "Koishi:GrowingPain": {
+    "NAME": "Растущая боль",
+    "DESCRIPTION": "Наносит !D! урона !M! раз(а). NL Наносит урон доп. раз за каждую полученную Неосязаемость в этом бою."
+  },
+  "Koishi:Prune": {
+    "NAME": "Урезать",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы Предсказываете !M! карты. NL Эта карта стоит 0, если вы берёте koishi:Id-карту в этом ходу."
+  },
+  "Koishi:Jaunt": {
+    "NAME": "Прогулка",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы берёте !M! карту. NL Вы берёте ещё !M! карту, если враг намеревается атаковать."
+  },
+  "Koishi:RacingHeart": {
+    "NAME": "Экстрасистола",
+    "DESCRIPTION": "Наносит !D! урона. NL Если на врага наложен koishi:Ужас, накладывает !M! koishi:Ужаса."
+  },
+  "Koishi:SubterraneanRose": {
+    "NAME": "Подземная роза",
+    "DESCRIPTION": "koishi:Id. NL Даёт !B! Защиты. NL Даёт !M! Шипов до конца вашего хода."
+  },
+  "Koishi:StingingMind": {
+    "NAME": "Изувечить разум",
+    "DESCRIPTION": "Наносит !D! урона и накладывает !M! koishi:Ужаса дважды."
+  },
+  "Koishi:DreadfulBlow": {
+    "NAME": "Кошмарная дурь",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! koishi:Ужаса. NL Заставляет врага НЕ атаковать вас в этом ходу, если это возможно."
+  },
+  "Koishi:ReflexRadar": {
+    "NAME": "Иное мировоззрение",
+    "DESCRIPTION": "Отнимает [E]. NL Вы берёте !M! карты.",
+    "UPGRADE_DESCRIPTION":"Оставляется. NL Отнимает [E]. NL Вы берёте !M! карты."
+  },
+  "Koishi:PhantomStrike": {
+    "NAME": "Фантомный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! koishi:Эфемерности."
+  },
+  "Koishi:SubconsciousSweep": {
+    "NAME": "Подсознательный взмах",
+    "DESCRIPTION": "koishi:Id. NL Наносит !D! урона ВСЕМ врагам."
+  },
+  "Koishi:HauntingSlash": {
+    "NAME": "Призрачный взмах",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! koishi:Ужаса."
+  },
+  "Koishi:ConditionedTeleport": {
+    "NAME": "Условный телепорт",
+    "DESCRIPTION": "Начальная. NL Оставляется. NL Позволяет сбежать из боя, не получив наград. Не работает на боссах. NL koishi:Текучая. NL Мимолётная.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Оставляется. NL Позволяет сбежать из боя, не получив наград. Не работает на боссах. NL koishi:Текучая."
+  },
+  "Koishi:RollingInRichesHeart": {
+    "NAME": "Жизнь в достатке",
+    "DESCRIPTION": "Отнимает !Koishi:SecondMagic! Золота. NL Повышает урон ВСЕХ Атак в руке на !M! в этом бою."
+  },
+  "Koishi:FadingMemory": {
+    "NAME": "Угасающие воспоминания",
+    "DESCRIPTION": "koishi:Id. NL Вы берёте !M! карту, если в руке есть карты. NL Сжигает 1 карту. NL В след. ходу вы возьмёте на !Koishi:SecondMagic! карты больше."
+  },
+  "Koishi:RoseHell": {
+    "NAME": "Ад из роз",
+    "DESCRIPTION": "Даёт !M! Шипов X раз. NL Накладывает !M! koishi:Сдавленности на ВСЕХ врагов X раз. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Даёт !M! Шипов X+1 раз. NL Накладывает !M! koishi:Сдавленности на ВСЕХ врагов X+1 раз. NL Сжигается."
+  },
+  "Koishi:MindStellarRelief": {
+    "NAME": "Сияние чистого разума",
+    "DESCRIPTION": "Оставляется. NL Враг теряет !M! ОЗ. NL Враги теряют !Koishi:SecondMagic! доп. ОЗ в этом бою, когда вы накладываете отриц. эффект. NL Сжигается."
+  },
+  "Koishi:DNAsFlaw": {
+    "NAME": "Ошибка ДНК",
+    "DESCRIPTION": " Даёт !M! koishi:Эфемерности, если враг намеревается атаковать."
+  },
+  "Koishi:ImGoingToCallYouNow": {
+    "NAME": "Я собираюсь позвонить тебе",
+    "DESCRIPTION": "Накладывает !M! koishi:Ужаса. NL Добавляет в руку koishi:Так,_ответь_на_звонок! NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Накладывает !M! koishi:Ужаса. NL Добавляет в руку koishi:Так,_ответь_на_звонок!+ NL Сжигается."
+  },
+  "Koishi:SoAnswerThePhone": {
+    "NAME": "Так, ответь на звонок!",
+    "DESCRIPTION": "Удваивает наложенный на врага koishi:Ужас. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Утраивает наложенный на врага koishi:Ужас. NL Сжигается."
+  },
+  "Koishi:PerfectMindControl": {
+    "NAME": "Идеальный контроль разума",
+    "DESCRIPTION": "Накладывает !M! koishi:Контроль_разума на ВСЕХ врагов. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Накладывает !M! koishi:Контроль_разума на ВСЕХ врагов. NL Сжигается."
+  },
+  "Koishi:Possession": {
+    "NAME": "Одержимость",
+    "DESCRIPTION": "Оставляется. NL Накладывает !M! koishi:Контроль_разума. NL Можно разыграть, только если вы в Неосязаемости. NL Сжигается."
+  },
+  "Koishi:ApparitionsStalkTheNight": {
+    "NAME": "Ночные преследователи",
+    "DESCRIPTION": "Отнимает !Koishi:SecondMagic! ОЗ. NL Даёт !M! Неосязаемости, если у вас нет Неосязаемости. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Отнимает !Koishi:SecondMagic! ОЗ. NL Даёт !M! Неосязаемости, если у вас нет Неосязаемости. NL Сжигается."
+  },
+  "Koishi:Vanish": {
+    "NAME": "Исчезнуть",
+    "DESCRIPTION": "Отнимает 1 ОЗ !Koishi:SecondMagic! раза. NL Даёт !M! koishi:Эфемерности. NL Сжигается."
+  },
+  "Koishi:GhostParty": {
+    "NAME": "Призрачный отряд",
+    "DESCRIPTION": "koishi:Id. NL Даёт !M! Неосязаемости ВСЕМ, если у вас нет Неосязаемости."
+  },
+  "Koishi:DanmakuParanoia": {
+    "NAME": "Паранойя Данмаку",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Даёт по !M! доп. Защиты за каждый koishi:Ужас на враге."
+  },
+  "Koishi:EmbersOfLove": {
+    "NAME": "Угольки любви",
+    "DESCRIPTION": "Оставляется. NL Заставляет ВСЕХ врагов НЕ атаковать вас в этом ходу, если это возможно. NL koishi:Текучая. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Заставляет ВСЕХ врагов НЕ атаковать вас в этом ходу, если это возможно. NL koishi:Текучая."
+  },
+  "Koishi:PhilosophyOfTheDespised": {
+    "NAME": "Философия презираемых",
+    "DESCRIPTION": "Оставляется. NL Заставляет ВСЕХ врагов атаковать вас в этом ходу, если это возможно. NL koishi:Текучая. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Заставляет ВСЕХ врагов атаковать вас в этом ходу, если это возможно. NL koishi:Текучая."
+  },
+  "Koishi:MassHysteria": {
+    "NAME": "Массовая истерия",
+    "DESCRIPTION": "koishi:Id. NL ВСЕ враги теряют ОЗ, равные сумме их намерений."
+  },
+  "Koishi:FourthEye": {
+    "NAME": "Четвёртый глаз",
+    "DESCRIPTION": "Даёт koishi:Замёрзший_глаз на этот бой. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Даёт koishi:Замёрзший_глаз на этот бой. NL Сжигается."
+  },
+  "Koishi:ReleaseOfTheId": {
+    "NAME": "Освобождение Id",
+    "DESCRIPTION": "Добавляет !M! случ. koishi:Id-карт в стопку добора. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Добавляет !M! случ. Улучшенных koishi:Id-карт в стопку добора. NL Сжигается."
+  },
+  "Koishi:PredatoryInstincts": {
+    "NAME": "Инстинкт хищника",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Накладывает !M! koishi:Ужаса на ВСЕХ врагов. NL Сжигается."
+  },
+  "Koishi:IdleWhim": {
+    "NAME": "Пустой каприз",
+    "DESCRIPTION": "koishi:Id. NL В след. ходу вы возьмёте на !M! карты больше."
+  },
+  "Koishi:Bloodlust": {
+    "NAME": "Кровожадность",
+    "DESCRIPTION": "Оставляется. NL Даёт [E] [E]. NL Отнимает [E] [E] в вашем след. ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Даёт [E] [E] [E]. NL Отнимает [E] [E] [E] в вашем след. ходу. NL Сжигается."
+  },
+  "Koishi:GeneticsOfTheUnconscious": {
+    "NAME": "Генетика подсознания",
+    "DESCRIPTION": "Вы кладёте карту из стопки сброса на верх стопки добора и берёте !M! карту. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "NL Вы кладёте !Koishi:SecondMagic! карты из стопки сброса на верх стопки добора и берёте !M! карты. NL Сжигается."
+  },
+  "Koishi:RorschachInDanmaku": {
+    "NAME": "Донмаку Роршаха",
+    "DESCRIPTION": "koishi:Id. NL Даёт !B! Защиты. NL В след. ходу вы возьмёте на !M! карту больше."
+  },
+  "Koishi:CatchAndRose": {
+    "NAME": "Лови и расти",
+    "DESCRIPTION": "Накладывает !M! koishi:Сдавленности."
+  },
+  "Koishi:SprinkleStarAndHeart": {
+    "NAME": "Обсыпать сердцем и звездой",
+    "DESCRIPTION": "koishi:Id. NL Накладывает !M! Слабости и !M! Уязвимости на ВСЕХ врагов."
+  },
+  "Koishi:EmbryosDream": {
+    "NAME": "Сон эмбриона",
+    "DESCRIPTION": " Даёт !B! Защиты, если враг намеревается атаковать. NL Наносит !D! урона, если враг НЕ намеревается атаковать."
+  },
+  "Koishi:JumpScare": {
+    "NAME": "Страшилка",
+    "DESCRIPTION": "Начальная. NL Накладывает !M! koishi:Ужаса. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Накладывает !M! koishi:Ужаса дважды. NL Сжигается."
+  },
+  "Koishi:HeartfeltFancy": {
+    "NAME": "Сердечные мечты",
+    "DESCRIPTION": "Вы кладёте карту из стопки сброса на верх стопки добора. NL Отнимает [E]. NL Даёт !B! Защиты, если [E] была отнята."
+  },
+  "Koishi:UnansweredLove": {
+    "NAME": "Невзаимная любовь",
+    "DESCRIPTION": "Отнимает !Koishi:SecondMagic! ОЗ. NL Даёт !M! koishi:Эфемерности.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Отнимает !Koishi:SecondMagic! ОЗ. NL Даёт !M! koishi:Эфемерности."
+  },
+  "Koishi:FleetingPhantom": {
+    "NAME": "Мимолётный дух",
+    "DESCRIPTION": "Вы берёте !M! карты. NL Даёт !Koishi:SecondMagic! koishi:Эфемерности."
+  },
+  "Koishi:PhantomBarrier": {
+    "NAME": "Фантомный барьер",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Даёт !M! koishi:Эфемерности."
+  },
+  "Koishi:Whimsy": {
+    "NAME": "Причуда",
+    "DESCRIPTION": "Оставляется. NL Вы Предсказываете !Koishi:SecondMagic! карты. NL Вы берёте !M! карту. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Вы Предсказываете !Koishi:SecondMagic! карты. NL Вы берёте !M! карты. NL Сжигается."
+  },
+  "Koishi:UnconsciousUprising": {
+    "NAME": "Мятеж подсознания",
+    "DESCRIPTION": "koishi:Id. NL Даёт !B! Защиты."
+  },
+  "Koishi:Provoke": {
+    "NAME": "Провокация",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Заставляет врага атаковать вас в этом ходу, если это возможно."
+  },
+  "Koishi:Untouchable": {
+    "NAME": "Недосягаемая",
+    "DESCRIPTION": "Даёт !M! Временных_ОЗ. NL Даёт ещё !M! Временных_ОЗ, когда вы получаете Неосязаемость.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Даёт !M! Временных_ОЗ. NL Даёт ещё !M! Временных_ОЗ, когда вы получаете Неосязаемость."
+  },
+  "Koishi:HeartStoppingHorror": {
+    "NAME": "Сковывающий ужас",
+    "DESCRIPTION": "В конце вашего хода ВСЕ враги теряют ОЗ, равные наложенному на них koishi:Ужасу."
+  },
+  "Koishi:Heartbroken": {
+    "NAME": "Разбитое сердце",
+    "DESCRIPTION": "Вы наносите удвоенный урон, когда вы в Неосязаемости."
+  },
+  "Koishi:Ego": {
+    "NAME": "Эго",
+    "DESCRIPTION": " koishi:Id-карты больше не разыгрываются автоматически. NL Вы берёте !M! карту, когда разыгрываете koishi:Id-карту.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL koishi:Id-карты больше не разыгрываются автоматически. NL Вы берёте !M! карту, когда разыгрываете koishi:Id-карту."
+  },
+  "Koishi:ConfinedInnocent": {
+    "NAME": "Запертая невинность",
+    "DESCRIPTION": "Отнимает !Koishi:SecondMagic! ОЗ и даёт !M! koishi:Эфемерности в начале вашего хода."
+  },
+  "Koishi:FormlessExistence": {
+    "NAME": "Бесформенное бытие",
+    "DESCRIPTION": "Вы получаете в два раза больше Неосязаемости. NL Вы не можете восполнять ОЗ."
+  },
+  "Koishi:UnconsciousUrges": {
+    "NAME": "Желание подсознания",
+    "DESCRIPTION": "Случайно выбирает карту в руке в начале вашего хода. NL Даёт [E] в вашем след. ходу, если вы разыграете выбранную карту.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Случайно выбирает карту в руке в начале вашего хода. NL Даёт [E] в вашем след. ходу, если вы разыграете выбранную карту."
+  },
+  "Koishi:FreudianInstinct": {
+    "NAME": "Чутьё Фрейда",
+    "DESCRIPTION": "Даёт !M! Защиты, когда вы берёте koishi:Id-карту.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Даёт !M! Защиты, когда вы берёте koishi:Id карту."
+  },
+  "Koishi:BramblyRoseGarden": {
+    "NAME": "Ягодный розарий",
+    "DESCRIPTION": "Даёт !M! Шипов."
+  },
+  "Koishi:TerrifyingSpectre": {
+    "NAME": "Страшная угроза",
+    "DESCRIPTION": "Даёт !M! koishi:Эфемерности, когда вы накладываете koishi:Ужас."
+  },
+  "Koishi:VengefulSpirit": {
+    "NAME": "Мстительный дух",
+    "DESCRIPTION": "Накладывает !M! Уязвимости на ВСЕХ врагов, когда вы получаете Неосязаемость."
+  },
+  "Koishi:FidgetySnatcher": {
+    "NAME": "Нервная воришка",
+    "DESCRIPTION": "Накладывает !M! koishi:Сдавленности на ВСЕХ врагов в начале вашего хода."
+  },
+  "Koishi:BasicStrike": {
+    "NAME": "Удар",
+    "DESCRIPTION": "Наносит !D! урона."
+  },
+  "Koishi:BasicDefend": {
+    "NAME": "Оборона",
+    "DESCRIPTION": "Даёт !B! Защиты."
+  }
+}

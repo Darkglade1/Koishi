@@ -1,0 +1,74 @@
+{
+"Koishi:EphemeralPower": {
+        "NAME": "Эфемерность",
+        "DESCRIPTIONS": ["Когда вы получаете #b", " #yЭфемерности, даёт #b", " #yНеосязаемости."] 
+},
+"Koishi:TerrorPower": {
+        "NAME": "Ужас",
+        "DESCRIPTIONS": ["Погибая, восполняет #b", " ваших ОЗ."]
+},
+"Koishi:MindControlPower": {
+        "NAME": "Контроль разума",
+        "DESCRIPTIONS": ["Этот враг помогает вам в течение #b", " хода.", " ходов."]
+},
+"Koishi:FourthEyePower": {
+        "NAME": "Четвёртый глаз",
+        "DESCRIPTIONS": ["Отнимает #yЗамёрзший #yглаз в конце боя."]
+},
+"Koishi:BloodlustPower": {
+        "NAME": "Кровожадность",
+        "DESCRIPTIONS": ["Отнимает", " в вашем след. ходу."]
+},
+"Koishi:LoseThornsPower": {
+        "NAME": "Понижение Шипов",
+        "DESCRIPTIONS": ["Отнимает #b", " #yШипов в конце этого хода."]
+},
+"Koishi:UntouchablePower": {
+        "NAME": "Недосягаемая",
+        "DESCRIPTIONS": ["Даёт #b", " #yВременных #yОЗ, когда вы получаете #yНеосязаемость."]
+},
+"Koishi:HeartbrokenPower": {
+        "NAME": "Разбитое сердце",
+        "DESCRIPTIONS": ["Вы наносите на #b", "x больше урона, когда в #yНеосязаемости."]
+},
+"Koishi:HeartStoppingHorrorPower": {
+        "NAME": "Сковывающий ужас",
+        "DESCRIPTIONS": ["В конце вашего хода ВСЕ враги теряют ОЗ, равные #b", "x наложенному на них #yУжасу."]
+},
+"Koishi:EgoPower": {
+        "NAME": "Эго",
+        "DESCRIPTIONS": ["#yId-карты больше не разыгрываются автоматически. Когда вы разыгрываете #yId-карту, вы берёте #b", " карту.", " карты."]
+},
+"Koishi:ConfinedInnocentPower": {
+        "NAME": "Запертая невинность",
+        "DESCRIPTIONS": ["Отнимает #b1 ОЗ #b", " раз", " раза", " и даёт #b", " #yЭфемерности в начале вашего хода."]
+},
+"Koishi:FormlessExistencePower": {
+        "NAME": "Бесформенное бытие",
+        "DESCRIPTIONS": ["Повышает получаемую #yНеосязаемость на #b", "x. Вы не можете восполнять ОЗ."]
+},
+"Koishi:UnconsciousUrgesPower": {
+        "NAME": "Желание подсознания",
+        "DESCRIPTIONS": ["Случайно выбирает карту в руке в начале вашего хода. Если вы разыграете эту карту, вы получите", " в своём след. ходу.", "Разыграйте карту «", "», чтобы получить"]
+},
+"Koishi:EnergyNextTurnPower": {
+        "NAME": "Энергичность",
+        "DESCRIPTIONS": ["Даёт", " в вашем след. ходу."]
+},
+"Koishi:FreudianInstinctPower": {
+        "NAME": "Чутьё Фрейда",
+        "DESCRIPTIONS": ["Даёт #b", " #yЗащиты за каждую взятую #yId-карту."]
+},
+"Koishi:TerrifyingSpectrePower": {
+        "NAME": "Страшная угроза",
+        "DESCRIPTIONS": ["Даёт #b", " #yЭфемерности, когда вы накладываете #yУжас."]
+},
+"Koishi:VengefulSpiritPower": {
+        "NAME": "Мстительный дух",
+        "DESCRIPTIONS": ["Накладывает #b", " #yУязвимости на ВСЕХ врагов, когда вы получаете #yНеосязаемость."]
+},
+"Koishi:FidgetySnatcherPower": {
+        "NAME": "Нервная воришка",
+        "DESCRIPTIONS": ["Накладывает #b", " #yСдавленности на ВСЕХ врагов в начале вашего хода."]
+}
+}
